@@ -2,11 +2,21 @@
 #pragma once
 
 #include <string>
-
+#include "Charactor.h"
 using std::string;
+enum class Stat {
+ Alive,
+ Dead,
+ empty
+};
 
 class Player {
+ string name;
+Charactor* charactor ;
+Stat status  ;
 public:
+
+
     /**
      * Gets the description of the player
      *
@@ -48,4 +58,9 @@ public:
      * @return - coins of the player
     */
     int getCoins() const;
+
+
+ // return charactor refrence
+ const Charactor& getCharator() const;
+ Charactor& getCharator() ;
 };
