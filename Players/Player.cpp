@@ -24,7 +24,16 @@ int Player::getHealthPoints() const {
    return charactor->getHealthPoints();
 }
 string Player::getDescription() const {
-   
+string descreption = this->name ;
+   descreption+= charactor->getJobName();
+   descreption+=" with ";
+   descreption+= charactor->getBehaviorName() ;
+   descreption+= " charactor " ;
+   descreption+= "(level ";
+   descreption+= charactor->getLevel();
+   descreption+= ", force ";
+   descreption+= charactor->getForce();
+   return  descreption;
 }
 
 

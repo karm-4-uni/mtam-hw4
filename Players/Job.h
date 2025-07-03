@@ -10,4 +10,5 @@
 class Job {
 public:
     virtual void doAction();
+    virtual string getType();
 };

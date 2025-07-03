@@ -4,16 +4,21 @@
 
 #ifndef CHARACTOR_H
 #define CHARACTOR_H
+#include <memory>
+
 
 #endif //CHARACTOR_H
-#include <string>
+class  Behavior;
+using std::string;
+class Player ;
+class Job ;
  class  Charactor {
 const std::string   name ;
   int Level;
      int CurrentHP;
      int maxHP;
-     const Job* jop;
-     Behivior behivior ;
+     const  std::unique_ptr<Job>  jop;
+     std::unique_ptr<Behavior>   behivior ;
      int coin ;
      int force ;
  public:
@@ -63,4 +68,11 @@ std::string getName() const;
      */
      int getCoins() const;
 void setCpoins(int gainedCoin);
+
+  const Job& getJob() const ;
+   string getJobName()  ;
+
+  const Behavior& getBehavior() const ;
+  string getBehaviorName()  ;
+
  };

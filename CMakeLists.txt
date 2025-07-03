@@ -21,4 +21,5 @@ add_executable(mtam_hw4
         Players/Worrior.h
         Players/Archer.h
         "Players/Magician .h"
-        Players/Player.cpp)
+        Players/Player.cpp
+        Players/Behavior.h)

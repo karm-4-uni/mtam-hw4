@@ -12,7 +12,7 @@ enum class Stat {
 
 class Player {
  string name;
-Charactor* charactor ;
+ std::unique_ptr<Charactor> charactor ;
 Stat status  ;
 public:
 
