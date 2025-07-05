@@ -63,4 +63,8 @@ public:
  // return charactor refrence
  const Charactor& getCharator() const;
  Charactor& getCharator() ;
+
+ const bool isfullhp() const {
+  return (this->getHealthPoints() == this->getCharator().getMaxHP());
+ }
 };

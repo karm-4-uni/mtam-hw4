@@ -4,9 +4,11 @@
 
 #ifndef CHARACTOR_H
 #define CHARACTOR_H
-
+#include "Behiviors/Behivior.h"
 #endif //CHARACTOR_H
 #include <string>
+class Job;
+
  class  Charactor {
 const std::string   name ;
   int Level;
@@ -62,5 +64,7 @@ std::string getName() const;
       * @return - coins of the player
      */
      int getCoins() const;
-void setCpoins(int gainedCoin);
+void setCoins(int gainedCoin);
+
+  const int getMaxHP() const ;
  };

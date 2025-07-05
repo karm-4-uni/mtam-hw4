@@ -17,8 +17,13 @@ add_executable(mtam_hw4
     Utilities.h
         Players/PlayerFactory.h
         Players/Charactor.h
-        Players/Job.h
-        Players/Worrior.h
-        Players/Archer.h
-        "Players/Magician .h"
-        Players/Player.cpp)
+        Players/Jobs/Job.h
+        Players/Jobs/Worrior.h
+        Players/Jobs/Archer.h
+        "Players/Jobs/Magician .h"
+        Players/Player.cpp
+        Players/Jobs/Job.cpp
+        Players/Behiviors/Behivior.h
+        Players/Behiviors/Responsible.h
+        Players/Behiviors/RiskTaking.h
+        Players/Behiviors/Behivior.cpp)
