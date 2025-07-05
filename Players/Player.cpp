@@ -24,7 +24,7 @@ int Player::getHealthPoints() const {
    return charactor->getHealthPoints();
 }
 string Player::getDescription() const {
-   
+
 }
 
 

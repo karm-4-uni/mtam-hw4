@@ -1,8 +1,10 @@
 
 #pragma once
 
+#include <memory>
 #include <string>
 #include "Charactor.h"
+
 using std::string;
 enum class Stat {
  Alive,
@@ -12,7 +14,7 @@ enum class Stat {
 
 class Player {
  string name;
-Charactor* charactor ;
+std::unique_ptr<Charactor> charactor ;
 Stat status  ;
 public:
 

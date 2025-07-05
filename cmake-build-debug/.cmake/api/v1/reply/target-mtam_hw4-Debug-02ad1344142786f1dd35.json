@@ -91,7 +91,8 @@
 				5,
 				13,
 				14,
-				18
+				18,
+				19
 			]
 		}
 	],
@@ -152,7 +153,8 @@
 				5,
 				13,
 				14,
-				18
+				18,
+				19
 			]
 		}
 	],
@@ -240,23 +242,29 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Players/Jobs/Behivior.h",
+			"path" : "Players/Behiviors/Behivior.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Players/Jobs/Responsible.h",
+			"path" : "Players/Behiviors/Responsible.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Players/Jobs/RiskTaking.h",
+			"path" : "Players/Behiviors/RiskTaking.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Players/Jobs/Behivior.cpp",
+			"path" : "Players/Behiviors/Behivior.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Players/Charactor.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

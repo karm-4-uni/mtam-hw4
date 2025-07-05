@@ -4,18 +4,22 @@
 
 #ifndef CHARACTOR_H
 #define CHARACTOR_H
-#include "Behiviors/Behivior.h"
+#include <memory>
+
 #endif //CHARACTOR_H
 #include <string>
 class Job;
-
+class Behivior;
  class  Charactor {
+  friend  class Jop;
+  friend  class Behivior;
+
 const std::string   name ;
   int Level;
      int CurrentHP;
      int maxHP;
-     const Job* jop;
-     Behivior behivior ;
+     const std::unique_ptr<Job> jop;
+     const std::unique_ptr<Behivior> behivior ;
      int coin ;
      int force ;
  public:
@@ -67,4 +71,5 @@ std::string getName() const;
 void setCoins(int gainedCoin);
 
   const int getMaxHP() const ;
+  const  Job& getJop() const;
  };

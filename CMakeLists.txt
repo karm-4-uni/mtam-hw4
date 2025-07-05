@@ -26,4 +26,5 @@ add_executable(mtam_hw4
         Players/Behiviors/Behivior.h
         Players/Behiviors/Responsible.h
         Players/Behiviors/RiskTaking.h
-        Players/Behiviors/Behivior.cpp)
+        Players/Behiviors/Behivior.cpp
+        Players/Charactor.cpp)

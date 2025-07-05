@@ -10,6 +10,7 @@ class Player;
 class Charactor;
 
 class Behivior {
+    friend  class  Charactor;
 protected:
     virtual  const std::string getBehivior() const ;
     virtual void PotionsMerchant(Player& player) ;

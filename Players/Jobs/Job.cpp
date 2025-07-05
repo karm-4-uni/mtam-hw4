@@ -5,6 +5,7 @@
 #include "Archer.h"
 #include "Magician .h"
 #include "Worrior.h"
+#include "Charactor.h"
 void Job::doJob(Charactor& charactor) {
 // nothing
 }
@@ -17,7 +18,7 @@ void Worrior::doJob(Charactor& charactor) {
 }
 void Archer::doJob(Charactor& charactor) {
     int newCoin = charactor.getCoins() +  10;
-    charactor.setCpoins(newCoin);
+    charactor.setCoins(newCoin);
 }
 
 

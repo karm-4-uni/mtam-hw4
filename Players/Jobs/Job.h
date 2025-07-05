@@ -6,12 +6,13 @@
 #define JOB_H
 #include <string>
 
-#include "Charactor.h"
+class Charactor;
 
 #endif //JOB_H
 
 
 class Job {
+    friend  class  Charactor;
 public:
     virtual void doJob(Charactor& charactor); // nothing
     virtual const std::string getjob() const;
