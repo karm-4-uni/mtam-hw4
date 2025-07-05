@@ -70,12 +70,12 @@ build CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj: CXX_COMPILER__mtam_hw4_unscanne
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir
 
-build CMakeFiles/mtam_hw4.dir/Player.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Player.cpp || cmake_object_order_depends_target_mtam_hw4
-  DEP_FILE = CMakeFiles\mtam_hw4.dir\Player.cpp.obj.d
+build CMakeFiles/mtam_hw4.dir/Players/Player.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Players/Player.cpp || cmake_object_order_depends_target_mtam_hw4
+  DEP_FILE = CMakeFiles\mtam_hw4.dir\Players\Player.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Admin/Documents/uni/mtam-hw4/. -IC:/Users/Admin/Documents/uni/mtam-hw4/Events -IC:/Users/Admin/Documents/uni/mtam-hw4/Players
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
-  OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir
+  OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Players
 
 
 # =============================================================================
@@ -85,7 +85,7 @@ build CMakeFiles/mtam_hw4.dir/Player.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_D
 #############################################
 # Link the executable mtam_hw4.exe
 
-build mtam_hw4.exe: CXX_EXECUTABLE_LINKER__mtam_hw4_Debug CMakeFiles/mtam_hw4.dir/main.cpp.obj CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj CMakeFiles/mtam_hw4.dir/Player.cpp.obj
+build mtam_hw4.exe: CXX_EXECUTABLE_LINKER__mtam_hw4_Debug CMakeFiles/mtam_hw4.dir/main.cpp.obj CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj CMakeFiles/mtam_hw4.dir/Players/Player.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
