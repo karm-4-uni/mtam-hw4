@@ -10,6 +10,8 @@ class Turn {
     std::shared_ptr<Event> currEvent;
 
 
+    Turn();
+
 
 
 };
