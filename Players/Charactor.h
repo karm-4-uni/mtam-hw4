@@ -18,11 +18,18 @@ const std::string   name ;
   int Level;
      int CurrentHP;
      int maxHP;
-     const std::unique_ptr<Job> jop;
+     const std::unique_ptr<Job> job;
      const std::unique_ptr<Behivior> behivior ;
      int coin ;
      int force ;
  public:
+
+  Charactor(std::string name,
+            const Job& job,
+           const Behivior& behavior,
+            int force,
+            int hp,
+            int coin);
      /**
    * Gets the description of the player
    *
@@ -72,4 +79,7 @@ void setCoins(int gainedCoin);
 
   const int getMaxHP() const ;
   const  Job& getJop() const;
+
+  const bool isfullhp() const ;
+
  };

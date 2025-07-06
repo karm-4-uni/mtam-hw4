@@ -18,7 +18,7 @@ add_executable(mtam_hw4
         Players/PlayerFactory.h
         Players/Charactor.h
         Players/Jobs/Job.h
-        Players/Jobs/Worrior.h
+        Players/Jobs/Warrior.h
         Players/Jobs/Archer.h
         "Players/Jobs/Magician .h"
         Players/Player.cpp
@@ -27,4 +27,7 @@ add_executable(mtam_hw4
         Players/Behiviors/Responsible.h
         Players/Behiviors/RiskTaking.h
         Players/Behiviors/Behivior.cpp
-        Players/Charactor.cpp)
+        Players/Charactor.cpp
+        Players/PlayerFactory.cpp
+        maintest.cpp
+)

@@ -7,11 +7,18 @@
 
 #endif //PLAYERFACTORY_H
 
-class  player_factory {
+#include <memory>
+#include <string>
+#include "Player.h"
+class  Playerfactory {
 public:
 
-    static std::unique_ptr<Player>
-    createPlayer(const std::string& type,
-        const std::string& name);
-
+    static Player createPlayer(
+       const std::string& name,
+       string job,
+       string behavior,
+       int force = 5,
+       int health = 100 ,
+       int coin = 10
+   );
 };

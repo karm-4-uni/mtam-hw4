@@ -1,5 +1,16 @@
 #include  "Player.h"
 
+#include <stdexcept>
+#include "Player.h"
+#include "Jobs/Magician .h"
+#include "Jobs/Warrior.h"
+#include "Behiviors/RiskTaking.h"
+#include "Behiviors/Responsible.h"
+#include <stdexcept>
+#include <utility>
+
+#include "Jobs/Archer.h"
+
 string Player::getName() const {
    return  this->charactor->getName();
 }
@@ -27,6 +38,33 @@ string Player::getDescription() const {
 
 }
 
+Player::Player(std::string name,
+               int health,
+               int coin,
+               int force,
+               std::string jobName,
+               std::string behaviorName)
+    : name(std::move(name))
+
+{
+  Charactor charactor = new Charactor(std::make_unique<Charactor>(
+          this->name,
+          job(jobName),
+          Behivior(behaviorName),
+          force,
+          health,
+          coin))
+   // You could add validation here if needed
+}
 
 
+const bool Player::isfullhp() const {
+   return this->charactor->isfullhp();
+}
 
+Player::Player(std::string name,
+   std::unique_ptr<Charactor> charactor, Stat status) {
+   this->name = name;
+   this->charactor = std::move(charactor);
+   this->status = status;
+}

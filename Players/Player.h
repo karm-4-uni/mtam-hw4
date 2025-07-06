@@ -16,9 +16,18 @@ class Player {
  string name;
 std::unique_ptr<Charactor> charactor ;
 Stat status  ;
+ static  int playernumber  ;
 public:
-
-
+Player(string name
+ , int health = 100
+ , int coin = 10
+ , int force
+ , string job
+ ,string behiviar
+ );
+ Player(std::string name,
+  std::unique_ptr<Charactor> charactor,
+  Stat status);
     /**
      * Gets the description of the player
      *
@@ -66,7 +75,6 @@ public:
  const Charactor& getCharator() const;
  Charactor& getCharator() ;
 
- const bool isfullhp() const {
-  return (this->getHealthPoints() == this->getCharator().getMaxHP());
- }
+ const bool isfullhp() const ;
+
 };
