@@ -8,8 +8,9 @@
 
 #endif //RESPONSIBLE_H
 class Responsible : public Behivior {
-    Responsible() = default ;
+protected:
     const std::string getBehivior() const override ;
     void PotionsMerchant(Player& player) override ;
-
+public:
+    Responsible() = default ;
 };

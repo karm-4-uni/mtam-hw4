@@ -7,6 +7,9 @@
 
 #endif //RISKTAKING_H
  class Risktaking : public Behivior {
+ protected:
      const std::string getBehivior() const override ;
      void PotionsMerchant(Player& player) override ;
+ public:
+     Risktaking() = default;
  };

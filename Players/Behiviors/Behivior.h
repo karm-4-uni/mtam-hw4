@@ -11,9 +11,14 @@ class Charactor;
 #pragma once
 
 class Behivior {
-    friend  class  Charactor;
+     friend  class  Charactor;
+
 protected:
+
     Behivior() = default;
     virtual  const std::string getBehivior() const ;
     virtual void PotionsMerchant(Player& player) ;
+    static std::unique_ptr<Behivior> fromString(const std::string& name);
+
+
 };
