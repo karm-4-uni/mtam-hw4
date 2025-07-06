@@ -44,19 +44,16 @@ Player::Player(std::string name,
                int force,
                std::string jobName,
                std::string behaviorName)
-    : name(std::move(name))
-
-{
-  Charactor charactor = new Charactor(std::make_unique<Charactor>(
-          this->name,
-          job(jobName),
-          Behivior(behaviorName),
+    : name(std::move(name)),
+      charactor(std::make_unique<Charactor>(
+          name,
+          jobName,
+          behaviorName,
           force,
           health,
-          coin))
-   // You could add validation here if needed
-}
-
+          coin
+      ))
+{}
 
 const bool Player::isfullhp() const {
    return this->charactor->isfullhp();

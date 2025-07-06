@@ -15,8 +15,8 @@ public:
 
     static Player createPlayer(
        const std::string& name,
-       string job,
-       string behavior,
+       const string& job,
+       const string& behavior,
        int force = 5,
        int health = 100 ,
        int coin = 10

@@ -75,19 +75,15 @@ void valiadation(std::string name , int force,
 }
 
 Charactor::Charactor(std::string name,
-                     const Job& jobRef,
-                     const Behivior& behaviorRef,
-                     int force,
-                     int hp,
-                     int coin)
-    : name(std::move(name)),
-      Level(1),
-      CurrentHP(hp),
-      maxHP(hp),
-      job(std::make_unique<Job>(jobRef)),
-      behivior(std::make_unique<Behivior>(behaviorRef)),
-      coin(coin),
-      force(force)
+          std::string jobName,
+          std::string behaviorName,
+          int force, int hp, int coin)
+: name(std::move(name)) ,
+    Level(1),
+    CurrentHP(hp),
+    maxHP(hp),
+    job(Job::fromString(jobName)),                 // ✅ new job built here
+    behivior(Behivior::fromString(behaviorName))
 {
     valiadation(this->name, force, hp, coin);
 }

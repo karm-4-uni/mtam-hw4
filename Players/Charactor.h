@@ -25,8 +25,8 @@ const std::string   name ;
  public:
 
   Charactor(std::string name,
-            const Job& job,
-           const Behivior& behavior,
+            const std::string job,
+           const std::string behavior,
             int force,
             int hp,
             int coin);
