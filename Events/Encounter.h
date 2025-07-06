@@ -7,4 +7,7 @@ class encounter : Event {
 
 
 virtual string getDescription() const override;
+    virtual Player &applyEvent(Player &currPlayer) override;
 };
+
+

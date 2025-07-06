@@ -8,19 +8,13 @@
 class Round {
 
 std::shared_ptr<std::queue<std::shared_ptr<Player>>>players;
+    std::shared_ptr<std::queue<std::shared_ptr<Event>>> events;
      int RoundNum;
     std::vector<std::shared_ptr<Turn>> turns;
 public:
 Round();
-Round(std::shared_ptr<std::queue<std::shared_ptr<Player>>>otherplayers){
+Round(std::shared_ptr<std::queue<std::shared_ptr<Player>>>otherplayers,
+    std::shared_ptr<std::queue<std::shared_ptr<Event>>>events);
 
-    players =otherplayers;
-    this->RoundNum=1;
-    for(int i=0;i<this->players->size();i++) {
-turns.push_back(std::make_shared<Turn>());
-    }
-    }
-
-
-
+    void startRound();
 };
