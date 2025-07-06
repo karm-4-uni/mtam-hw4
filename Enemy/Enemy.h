@@ -3,27 +3,79 @@
 
 # include "memory"
 class Enemy {
-int loot;
-    int combatPower;
-    int damge;
+protected:
+    int loot=0;
+    int combatPower=0;
+    int damge=0;
 
 public:
     Enemy();
-    virtual void attack(std::shared_ptr<Player>);
+   virtual std::shared_ptr<Enemy> create() const=0;
+
+    virtual void attack(std::shared_ptr<Player>)const =0;
 
 
 };
 
-class Snail : Enemy {
+class Snail : public Enemy {
 
-     void  attack(std::shared_ptr<Player>) override;
+    Snail() {
+        this->damge=10;
+        this->loot =2;
+        this->combatPower=5;
+    }
+    std::shared_ptr<Enemy> create() override {
+    return std::make_shared<Snail>();
+    }
+     void  attack(std::shared_ptr<Player>) override {
+
+    }
 };
 
-class Slime : Enemy {
+class Slime : public Enemy {
 
-    void attack(std::shared_ptr<Player>) override;
+    Slime() {
+        this->damge=25;
+        this->loot =5;
+        this->combatPower=12;
+    }
+    std::shared_ptr<Enemy> create() override
+    {
+    return std::make_shared<Slime>();    }
+    void attack(std::shared_ptr<Player>) override {
+
+    }
 };
 
-class Barlog : Enemy {
-void attack(std::shared_ptr<Player>) override;
+class Barlog : public Enemy {
+
+    Barlog() {
+        this->damge=10;
+        this->loot =2;
+        this->combatPower=5;
+    }
+    std::shared_ptr<Enemy> create() override {
+    return std::make_shared<Barlog>();
+    };
+void attack(std::shared_ptr<Player>) override {
+
+}
+    class Pack : public Enemy {
+    std::vector<std::shared_ptr<Enemy>> enemies;
+public:
+    Pack(const std::vector<std::shared_ptr<Enemy>>& es) : enemies(es) {}
+
+    void attack(std::shared_ptr<Player> player) const override {
+        for (const auto& e : enemies)
+            e->attack(player);
+    }
+
+    std::shared_ptr<Enemy> create() const override {
+        std::vector<std::shared_ptr<Enemy>> copies;
+        for (const auto& e : enemies)
+            copies.push_back(e->create());
+        return std::make_shared<Pack>(copies);
+    }
+};
+
 };
