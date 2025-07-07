@@ -2,18 +2,15 @@
 
 #include "Event.h"
 
-class Enemy;
+#include "Enemy/Enemy.h"
 
-class encounter : Event {
+class Encounter : Event {
 
     std::shared_ptr<Enemy> enemy;
 
 
 virtual string getDescription() const override;
-    virtual Player &applyEvent(Player &currPlayer) override {
-
-
-    }
+    virtual Player& applyEvent(Player &currPlayer) override ;
 };
 
 

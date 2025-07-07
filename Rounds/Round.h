@@ -15,6 +15,6 @@ public:
 Round();
 Round(std::shared_ptr<std::queue<std::shared_ptr<Player>>>otherplayers,
     std::shared_ptr<std::queue<std::shared_ptr<Event>>>events);
-
+    ~Round();
     void startRound();
 };

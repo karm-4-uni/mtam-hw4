@@ -6,7 +6,7 @@
 class Event {
 
 public:
-
+    virtual ~Event() = default;
     /**
      * Gets the description of the event
      *

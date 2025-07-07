@@ -22,4 +22,7 @@ add_executable(mtam_hw4
         Events/Encounter.h
         Enemy/Enemy.h
         Leaderboard.h
-        Turns/Turn.cpp)
+        Turns/Turn.cpp
+        "Events/Event .cpp"
+        "Events/Encounter .cpp"
+        Events/SpecialEvent.cpp)

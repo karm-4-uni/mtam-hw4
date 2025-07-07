@@ -84,6 +84,27 @@ build CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o: CXX_COMPILER__mtam_hw4_unscanned
   OBJECT_DIR = CMakeFiles/mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles/mtam_hw4.dir/Turns
 
+build CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.o: CXX_COMPILER__mtam_hw4_unscanned_Debug /Users/baseladdd/Documents/mtam-hw4/Events/Event$ .cpp || cmake_object_order_depends_target_mtam_hw4
+  DEP_FILE = CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/baseladdd/Documents/mtam-hw4/. -I/Users/baseladdd/Documents/mtam-hw4/Events -I/Users/baseladdd/Documents/mtam-hw4/Players
+  OBJECT_DIR = CMakeFiles/mtam_hw4.dir
+  OBJECT_FILE_DIR = CMakeFiles/mtam_hw4.dir/Events
+
+build CMakeFiles/mtam_hw4.dir/Events/Encounter_.cpp.o: CXX_COMPILER__mtam_hw4_unscanned_Debug /Users/baseladdd/Documents/mtam-hw4/Events/Encounter$ .cpp || cmake_object_order_depends_target_mtam_hw4
+  DEP_FILE = CMakeFiles/mtam_hw4.dir/Events/Encounter_.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/baseladdd/Documents/mtam-hw4/. -I/Users/baseladdd/Documents/mtam-hw4/Events -I/Users/baseladdd/Documents/mtam-hw4/Players
+  OBJECT_DIR = CMakeFiles/mtam_hw4.dir
+  OBJECT_FILE_DIR = CMakeFiles/mtam_hw4.dir/Events
+
+build CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o: CXX_COMPILER__mtam_hw4_unscanned_Debug /Users/baseladdd/Documents/mtam-hw4/Events/SpecialEvent.cpp || cmake_object_order_depends_target_mtam_hw4
+  DEP_FILE = CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/baseladdd/Documents/mtam-hw4/. -I/Users/baseladdd/Documents/mtam-hw4/Events -I/Users/baseladdd/Documents/mtam-hw4/Players
+  OBJECT_DIR = CMakeFiles/mtam_hw4.dir
+  OBJECT_FILE_DIR = CMakeFiles/mtam_hw4.dir/Events
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target mtam_hw4
@@ -92,7 +113,7 @@ build CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o: CXX_COMPILER__mtam_hw4_unscanned
 #############################################
 # Link the executable mtam_hw4
 
-build mtam_hw4: CXX_EXECUTABLE_LINKER__mtam_hw4_Debug CMakeFiles/mtam_hw4.dir/main.cpp.o CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o CMakeFiles/mtam_hw4.dir/Utilities.cpp.o CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o
+build mtam_hw4: CXX_EXECUTABLE_LINKER__mtam_hw4_Debug CMakeFiles/mtam_hw4.dir/main.cpp.o CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o CMakeFiles/mtam_hw4.dir/Utilities.cpp.o CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.o CMakeFiles/mtam_hw4.dir/Events/Encounter_.cpp.o CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
   OBJECT_DIR = CMakeFiles/mtam_hw4.dir
   POST_BUILD = :

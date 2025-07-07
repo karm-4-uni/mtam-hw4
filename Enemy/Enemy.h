@@ -10,6 +10,7 @@ protected:
 
 public:
     Enemy();
+    ~Enemy() = default;
    virtual std::shared_ptr<Enemy> create() const=0;
 
     virtual void attack(std::shared_ptr<Player>)const =0;
@@ -24,11 +25,11 @@ class Snail : public Enemy {
         this->loot =2;
         this->combatPower=5;
     }
-    std::shared_ptr<Enemy> create() override {
+    std::shared_ptr<Enemy> create() const override {
     return std::make_shared<Snail>();
     }
-     void  attack(std::shared_ptr<Player>) override {
-
+     void  attack(std::shared_ptr<Player>)const  override {
+//player.takedamge
     }
 };
 
@@ -39,11 +40,11 @@ class Slime : public Enemy {
         this->loot =5;
         this->combatPower=12;
     }
-    std::shared_ptr<Enemy> create() override
+    std::shared_ptr<Enemy> create() const override
     {
     return std::make_shared<Slime>();    }
-    void attack(std::shared_ptr<Player>) override {
-
+    void attack(std::shared_ptr<Player>) const  override {
+//player.take damge
     }
 };
 
@@ -54,11 +55,11 @@ class Barlog : public Enemy {
         this->loot =2;
         this->combatPower=5;
     }
-    std::shared_ptr<Enemy> create() override {
+    std::shared_ptr<Enemy> create()  const override {
     return std::make_shared<Barlog>();
     };
-void attack(std::shared_ptr<Player>) override {
-
+void attack(std::shared_ptr<Player>) const  override {
+//player.takedamge
 }
     class Pack : public Enemy {
     std::vector<std::shared_ptr<Enemy>> enemies;

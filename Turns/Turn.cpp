@@ -5,9 +5,15 @@
 Turn::Turn() {
 
 }
-Turn::Turn(std::shared_ptr<Player> currPlayer, std::shared_ptr<Event> currEvent) {
+Turn::Turn(std::shared_ptr<Player> currPlayer, std::shared_ptr<Event> currEvent)
+    : currPlayer(currPlayer), currEvent(currEvent) {}
+
+
+Turn::~Turn() {
 
 }
-void Turn::applyTurn(Player &player) {
- this->currEvent->applyEvent(player);
+
+void Turn::applyTurn() {
+
+ this->currEvent->applyEvent(*this->currPlayer);
 }

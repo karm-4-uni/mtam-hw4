@@ -16,22 +16,50 @@ Round::Round(std::shared_ptr<std::queue<std::shared_ptr<Player>>>otherplayers,
         turns.push_back(std::make_shared<Turn>());
     }
 }
+Round::~Round() {
+    players.reset();
+    events.reset();
+    turns.clear();
+}
+
+
 
 void Round::startRound() {
-
-
     std::queue<std::shared_ptr<Player>> players_copy = *players;
 
-    while (!players_copy.empty()) {
+    while (!players_copy.empty() && !events->empty()) {
         std::shared_ptr<Player> p = players_copy.front();
         players_copy.pop();
+
         if (p) {
-//p.playturn(Event)   make the player do the event  (inside this function we will use the applay turn(player) {double dispatch}
-            std::shared_ptr<Event> front = this->events->front();
+            std::shared_ptr<Event> frontEvent = events->front();
             events->pop();
-            events->push(front);
+
+            // Each player applies the current event
+            if (frontEvent)
+              //  frontEvent->applyTurn(*p);  // double dispatch
+
+            // Push event to the back
+            events->push(frontEvent);
         }
     }
+}
+
+// void Round::startRound() {
+//
+//
+//     std::queue<std::shared_ptr<Player>> players_copy = *players;
+//
+//     while (!players_copy.empty()) {
+//         std::shared_ptr<Player> p = players_copy.front();
+//         players_copy.pop();
+//         if (p) {
+// //p.playturn(Event)   make the player do the event  (inside this function we will use the applay turn(player) {double dispatch}
+//             std::shared_ptr<Event> front = this->events->front();
+//             events->pop();
+//             events->push(front);
+//         }
+//     }
 
 
 

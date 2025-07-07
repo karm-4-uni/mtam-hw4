@@ -11,7 +11,8 @@ class Turn {
 
     Turn();
     Turn(std::shared_ptr<Player> currPlayer,    std::shared_ptr<Event> currEvent);
-void applyTurn(Player& player);
+    ~Turn();
+void applyTurn();
 
 
 };
