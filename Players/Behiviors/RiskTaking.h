@@ -12,6 +12,7 @@
      void PotionsMerchant(Player& player) override ;
  public:
      Risktaking() = default;
+     ~Risktaking()  = default;
  }
 ;
 #endif //RISKTAKING_H

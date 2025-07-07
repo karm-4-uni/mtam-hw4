@@ -12,11 +12,13 @@
 #include "Jobs/Warrior.h"
 
 
-Player Playerfactory::createPlayer(const std::string& name,
+Player PlayerFactory::createPlayer(const std::string& name,
  const std::string& job,
 const std::string& behavior,
 int  health,int  coin, int  force) {
- return Player(name, job ,behavior,health, coin,force);
+Player newplayer = Player(name, job ,behavior,health, coin,force);
+ newplayer.getCharator().doJob();
+ return newplayer;
 }
 
 

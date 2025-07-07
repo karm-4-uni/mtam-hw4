@@ -27,7 +27,7 @@ void Responsible::PotionsMerchant(Player& player) {
         if(coins > PostinCost) {
             player.getCharator().setCoins(coins - PostinCost);
             player.getCharator().setHealthPoints(hp + 10);
-            getPotionsPurchaseMessage(player,1);
+         //   getPotionsPurchaseMessage(player,1);
         }
 
     }

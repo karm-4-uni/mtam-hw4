@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
 
-#include "PlayerFactory.h"   // has createPlayer(...)
+#include "Players/PlayerFactory.h"
 
 
 int main() {
     try {
-        // --- Create players via the factory ---
-        Player p1 = Playerfactory::createPlayer(
+
+        Player p1 = PlayerFactory::createPlayer(
             "Aragorn",        // name  (≤15 chars)
             "Warrior",        // job
             "Responsible",    // behaviour
@@ -16,7 +16,7 @@ int main() {
             30                // coins
         );
 
-        Player p2 = Playerfactory::createPlayer(
+        Player p2 = PlayerFactory::createPlayer(
             "Gandalf",        // name
             "Magician",       // job
             "Risktaking",     // behaviour
@@ -25,7 +25,7 @@ int main() {
             50                // coins
         );
 
-        Player p3 = Playerfactory::createPlayer(
+        Player p3 = PlayerFactory::createPlayer(
             "Legolas",        // name
             "Archer",         // job
             "Responsible",    // behaviour
@@ -42,10 +42,15 @@ int main() {
         for (const Player* pl : party) {
             std::cout <<  pl->getDescription() << std::endl ;
         }
+        for (const Player* pl : party) {
+            std::cout <<  pl->getplayerID() << std::endl ;
+
+        }
     }
     catch (const std::exception& ex) {
         std::cerr << "Error creating player: " << ex.what() << '\n';
     }
+
 
     return 0;
 }

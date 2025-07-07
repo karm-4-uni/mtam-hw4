@@ -10,9 +10,8 @@
 #include <memory>
 #include <string>
 #include "Player.h"
-class  Playerfactory {
+class  PlayerFactory {
 public:
-
     static Player createPlayer(
        const std::string& name,
        const string& job,

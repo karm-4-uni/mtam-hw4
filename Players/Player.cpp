@@ -11,6 +11,7 @@
 
 #include "Jobs/Archer.h"
 
+int Player::numberofplayers = 0 ;
 string Player::getName() const {
    return  this->charactor->getName();
 }
@@ -45,7 +46,8 @@ Player::Player(std::string name
                int coin,
                int force
                )
-    : name(std::move(name)),
+    : name(name),
+playernumber(numberofplayers++),
       charactor(std::make_unique<Charactor>(
           name,
           jobName,
@@ -61,8 +63,16 @@ const bool Player::isfullhp() const {
 }
 
 Player::Player(std::string name,
-   std::unique_ptr<Charactor> charactor, Stat status) {
+   std::unique_ptr<Charactor> charactor, Stat status) :
+playernumber(numberofplayers++) {
    this->name = name;
    this->charactor = std::move(charactor);
    this->status = status;
+
+}
+
+
+
+const int Player::getplayerID() const {
+   return playernumber;
 }

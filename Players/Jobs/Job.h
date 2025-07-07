@@ -17,6 +17,7 @@ class Job {
     friend  class  Charactor;
 public:
       Job () ;
+    ~Job()  = default ;
     virtual void doJob(Charactor& charactor); // nothing
     virtual const std::string getjob() const = 0;
     virtual  void SolarEclipse(Charactor& charactor) ;

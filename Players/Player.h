@@ -16,7 +16,10 @@ class Player {
  string name;
 std::unique_ptr<Charactor> charactor ;
 Stat status  ;
- static  int playernumber  ;
+
+ static int numberofplayers ;
+ const int playernumber;
+ friend class PlayerFactory;
 public:
 Player(string name, string job,string behiviar
  , int health = 100
@@ -26,7 +29,10 @@ Player(string name, string job,string behiviar
  Player(std::string name,
   std::unique_ptr<Charactor> charactor,
   Stat status);
-    /**
+ ~Player() = default;
+ Player(Player&&) = default;
+ Player& operator=(Player&&) = default;
+ /**
      * Gets the description of the player
      *
      * @return - description of the player
@@ -75,4 +81,6 @@ Player(string name, string job,string behiviar
 
  const bool isfullhp() const ;
 
+
+ const int getplayerID() const ;
 };

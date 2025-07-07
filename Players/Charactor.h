@@ -35,6 +35,7 @@ const std::string   name ;
    *
    * @return - description of the player
   */
+  ~Charactor()  = default;
 std::string getDescription() const;
 
      /**
@@ -81,5 +82,8 @@ void setCoins(int gainedCoin);
   const  Job& getJop() const;
 
   const bool isfullhp() const ;
+
+  void doJob ();
+
 
  };

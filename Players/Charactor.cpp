@@ -82,7 +82,7 @@ Charactor::Charactor(std::string name,
     Level(1),
     CurrentHP(hp),
     maxHP(hp),
-    job(Job::fromString(jobName)),                 // ✅ new job built here
+    job(Job::fromString(jobName)),
     behivior(Behivior::fromString(behaviorName)) ,
 force(force)
 {
@@ -92,4 +92,7 @@ force(force)
 
 const bool Charactor::isfullhp() const {
     return (this->getHealthPoints() == maxHP);
+}
+void Charactor::doJob() {
+    this->job.get()->doJob(*this);
 }
