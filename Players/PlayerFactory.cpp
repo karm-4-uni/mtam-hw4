@@ -15,8 +15,8 @@
 Player Playerfactory::createPlayer(const std::string& name,
  const std::string& job,
 const std::string& behavior,
-int  force,int  health, int  coin) {
- return Player(name,health, coin,  force,job,behavior);
+int  health,int  coin, int  force) {
+ return Player(name, job ,behavior,health, coin,force);
 }
 
 

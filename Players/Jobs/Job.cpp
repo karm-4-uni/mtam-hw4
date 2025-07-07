@@ -65,6 +65,7 @@ Job::Job() {
 }
 
 Warrior::Warrior() : Job(){
+
 }
 Archer::Archer() : Job(){
 

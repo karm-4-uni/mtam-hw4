@@ -16,11 +16,11 @@ string Player::getName() const {
 }
 
 
-Charactor &Player::getCharator() {
-   return this->getCharator();
+Charactor& Player::getCharator() {
+   return *this->charactor.get();
 }
-const Charactor &Player::getCharator() const {
-   return this->getCharator();
+const Charactor& Player::getCharator() const {
+   return *this->charactor.get();
 }
 int Player::getCoins() const {
    return this->charactor->getCoins();
@@ -35,23 +35,24 @@ int Player::getHealthPoints() const {
    return charactor->getHealthPoints();
 }
 string Player::getDescription() const {
-
+return this->charactor.get()->getDescription();
 }
 
-Player::Player(std::string name,
+Player::Player(std::string name
+   ,std::string jobName,
+   std::string behaviorName,
                int health,
                int coin,
-               int force,
-               std::string jobName,
-               std::string behaviorName)
+               int force
+               )
     : name(std::move(name)),
       charactor(std::make_unique<Charactor>(
           name,
           jobName,
           behaviorName,
-          force,
           health,
-          coin
+          coin,
+          force
       ))
 {}
 

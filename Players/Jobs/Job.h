@@ -9,7 +9,7 @@
 
 class Charactor;
 
-#endif //JOB_H
+
 #pragma once
 
 
@@ -22,3 +22,4 @@ public:
     virtual  void SolarEclipse(Charactor& charactor) ;
     static std::unique_ptr<Job> fromString(const std::string& name) ;
 };
+#endif //JOB_H

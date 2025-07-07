@@ -1,47 +1,50 @@
-//
-// Created by Admin on 05/07/2025.
-//
 #include <iostream>
-#include "Player.h"
-#include "PlayerFactory.h"
-#include "Behiviors/Responsible.h"
-#include "Jobs/Magician .h"
+#include <vector>
+
+#include "PlayerFactory.h"   // has createPlayer(...)
+
 
 int main() {
     try {
-        std::cout << "=== Testing PlayerFactory ===" << std::endl;
-
+        // --- Create players via the factory ---
         Player p1 = Playerfactory::createPlayer(
-            "Alice",
-            std::make_unique<Magician>(),
-            std::make_unique<Behivior>(std::make_unique<Responsible>()),
-            5,   // force
-            100, // health
-            10   // coin
+            "Aragorn",        // name  (≤15 chars)
+            "Warrior",        // job
+            "Responsible",    // behaviour
+            40,               // force
+            120,              // health
+            30                // coins
         );
 
-        std::cout << "Player 1 created by factory:\n";
-        std::cout << "Name: " << p1.getName() << std::endl;
-        std::cout << "Description: " << p1.getDescription() << std::endl;
-        std::cout << "HP: " << p1.getHealthPoints() << "/" << p1.getCharator().getMaxHP() << std::endl;
-        std::cout << "Coins: " << p1.getCoins() << std::endl;
-        std::cout << "Force: " << p1.getForce() << std::endl;
-        std::cout << "Level: " << p1.getLevel() << std::endl;
+        Player p2 = Playerfactory::createPlayer(
+            "Gandalf",        // name
+            "Magician",       // job
+            "Risktaking",     // behaviour
+            50,               // force
+            110,              // health
+            50                // coins
+        );
 
-        std::cout << "\n=== Testing direct Player constructor ===" << std::endl;
+        Player p3 = Playerfactory::createPlayer(
+            "Legolas",        // name
+            "Archer",         // job
+            "Responsible",    // behaviour
+            35,               // force
+            95,               // health
+            25                // coins
+        );
 
-        Player p2("Bob", 100, 10, 5, "Warrior", "Selfish");
+        // --- Put them into a party vector ---
+        std::vector<Player*> party { &p1, &p2, &p3 };
 
-        std::cout << "Player 2 created with strings:\n";
-        std::cout << "Name: " << p2.getName() << std::endl;
-        std::cout << "Description: " << p2.getDescription() << std::endl;
-        std::cout << "HP: " << p2.getHealthPoints() << "/" << p2.getCharator().getMaxHP() << std::endl;
-        std::cout << "Coins: " << p2.getCoins() << std::endl;
-        std::cout << "Force: " << p2.getForce() << std::endl;
-        std::cout << "Level: " << p2.getLevel() << std::endl;
+        // --- Print descriptions ---
+        std::cout << "=== Party Roster ===\n";
+        for (const Player* pl : party) {
+            std::cout <<  pl->getDescription() << std::endl ;
+        }
     }
-    catch (const std::exception& e) {
-        std::cerr << "\n❌ Exception occurred: " << e.what() << std::endl;
+    catch (const std::exception& ex) {
+        std::cerr << "Error creating player: " << ex.what() << '\n';
     }
 
     return 0;

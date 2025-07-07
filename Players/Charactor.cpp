@@ -50,10 +50,10 @@ std::string Charactor::getDescription() const {
     description+= job->getjob();
     description+= " with ";
     description+= behivior->getBehivior();
-    description+=" character (lecel ";
-    description+=Level;
+    description+=" character (level ";
+    description+= std::to_string(Level)  ;
     description+=",force ";
-    description+= force;
+    description+= std::to_string(force) ;
     return description;
 }
 
@@ -77,13 +77,14 @@ void valiadation(std::string name , int force,
 Charactor::Charactor(std::string name,
           std::string jobName,
           std::string behaviorName,
-          int force, int hp, int coin)
+          int hp, int coin, int force)
 : name(std::move(name)) ,
     Level(1),
     CurrentHP(hp),
     maxHP(hp),
     job(Job::fromString(jobName)),                 // ✅ new job built here
-    behivior(Behivior::fromString(behaviorName))
+    behivior(Behivior::fromString(behaviorName)) ,
+force(force)
 {
     valiadation(this->name, force, hp, coin);
 }

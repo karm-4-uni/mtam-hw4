@@ -8,8 +8,8 @@
 
 #endif //CHARACTOR_H
 #include <string>
-class Job;
-class Behivior;
+#include "Jobs/Job.h"
+#include "Behiviors/Behivior.h"
  class  Charactor {
   friend  class Jop;
   friend  class Behivior;
@@ -27,9 +27,9 @@ const std::string   name ;
   Charactor(std::string name,
             const std::string job,
            const std::string behavior,
-            int force,
-            int hp,
-            int coin);
+           int hp ,
+            int coin,
+            int force);
      /**
    * Gets the description of the player
    *

@@ -1,0 +1,26 @@
+# ninja log v6
+3	318	7735396453126898	build.ninja	2981b76fb8540121
+15	299	7735388614148176	CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.obj	c69e76b56594b5da
+14	362	7735390198004593	CMakeFiles/mtam_hw4.dir/Players/Jobs/Job.cpp.obj	2e6718bd305900f1
+17	66	7735381925188050	CMakeFiles/mtam_hw4.dir/main.cpp.obj	e1d9a08d5a7001c8
+362	475	7735390201487095	mtam_hw4.exe	73f53b6ea5d7bc04
+14	470	7735386019200686	CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj	6bea643e8b99bb19
+17	499	7735386019235859	CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj	f8e9df1ab0a8b756
+20	391	7735388155968974	CMakeFiles/mtam_hw4.dir/maintest.cpp.obj	6c368691760c2b9b
+26	534	7735386019321120	CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.obj	8b63db2d8619ab61
+18	274	7735390198049645	CMakeFiles/mtam_hw4.dir/Players/PlayerFactory.cpp.obj	de40b7991061b254
+14	308	7735386306519737	CMakeFiles/mtam_hw4.dir/Players/Player.cpp.obj	f316aa2210394006
+15	348	7735396779894040	CMakeFiles/mtam_hw4.dir/main.cpp.obj	e1d9a08d5a7001c8
+16	59	7735397199266678	CMakeFiles/mtam_hw4.dir/main.cpp.obj	e1d9a08d5a7001c8
+25	449	7735400146153315	CMakeFiles/mtam_hw4.dir/Players/PlayerFactory.cpp.obj	de40b7991061b254
+22	453	7735400146113234	CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.obj	c69e76b56594b5da
+11	514	7735400146003260	CMakeFiles/mtam_hw4.dir/Players/Player.cpp.obj	f316aa2210394006
+8	533	7735400145973303	CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj	f8e9df1ab0a8b756
+4	539	7735400145933214	CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj	6bea643e8b99bb19
+18	552	7735400146073273	CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.obj	8b63db2d8619ab61
+14	588	7735400146033231	CMakeFiles/mtam_hw4.dir/Players/Jobs/Job.cpp.obj	2e6718bd305900f1
+30	672	7735400146193248	CMakeFiles/mtam_hw4.dir/maintest.cpp.obj	6c368691760c2b9b
+672	812	7735400152608994	mtam_hw4.exe	73f53b6ea5d7bc04
+15	349	7735400419355071	CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj	f8e9df1ab0a8b756
+26	902	7735697390737196	CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj	f8e9df1ab0a8b756
+903	1108	7735697399501285	mtam_hw4.exe	73f53b6ea5d7bc04

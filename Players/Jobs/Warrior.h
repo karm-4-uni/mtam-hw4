@@ -5,7 +5,7 @@
 
 #ifndef WORRIOR_H
 #define WORRIOR_H
-#include "Jobs/Job.h"
+#include "Job.h"
 #endif //WORRIOR_H
 
 class Warrior: public Job {

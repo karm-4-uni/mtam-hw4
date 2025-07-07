@@ -30,4 +30,5 @@ add_executable(mtam_hw4
         Players/Charactor.cpp
         Players/PlayerFactory.cpp
         maintest.cpp
+        maintest.cpp
 )

@@ -18,12 +18,10 @@ std::unique_ptr<Charactor> charactor ;
 Stat status  ;
  static  int playernumber  ;
 public:
-Player(string name
+Player(string name, string job,string behiviar
  , int health = 100
  , int coin = 10
- , int force
- , string job
- ,string behiviar
+ , int force = 0
  );
  Player(std::string name,
   std::unique_ptr<Charactor> charactor,
