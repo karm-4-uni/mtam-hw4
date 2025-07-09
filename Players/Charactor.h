@@ -84,6 +84,6 @@ void setCoins(int gainedCoin);
   const bool isfullhp() const ;
 
   void doJob ();
-
+  
 
  };
