@@ -81,7 +81,10 @@ class Barlog : public Enemy {
 
     class Pack : public Enemy {
     std::vector<std::shared_ptr<Enemy>> enemies;
+        int count ;
 public:
+
+        Pack() = default ;
     Pack(const std::vector<std::shared_ptr<Enemy>>& es) : enemies(es) {}
 
     void attack(std::shared_ptr<Player> player) const override {
