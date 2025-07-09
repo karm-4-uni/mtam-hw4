@@ -22,3 +22,4 @@ Player newplayer = Player(name, job ,behavior,health, coin,force);
 }
 
 
+//
