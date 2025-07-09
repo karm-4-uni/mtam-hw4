@@ -1,3 +1,4 @@
+
 #include  "Player.h"
 
 #include <stdexcept>
@@ -70,7 +71,6 @@ playernumber(numberofplayers++) {
    this->status = status;
 
 }
-
 
 
 const int Player::getplayerID() const {

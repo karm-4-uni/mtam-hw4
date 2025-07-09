@@ -1,3 +1,4 @@
+
 //
 // Created by Admin on 03/07/2025.
 //
@@ -52,7 +53,6 @@ std::string getName() const;
      */
      int getLevel() const;
   void setLevel(int newLevel);
-
      /**
       * Gets the of force the player has
       *
@@ -84,6 +84,6 @@ void setCoins(int gainedCoin);
   const bool isfullhp() const ;
 
   void doJob ();
-  
+
 
  };
