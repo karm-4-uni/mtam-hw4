@@ -15,6 +15,7 @@ add_executable(mtam_hw4
     MatamStory.h
     Utilities.cpp
     Utilities.h
+<<<<<<< HEAD
         Rounds/Round.h
         Rounds/Round.cpp
         Turns/Turn.h
@@ -26,3 +27,13 @@ add_executable(mtam_hw4
         "Events/Event .cpp"
         "Events/Encounter .cpp"
         Events/SpecialEvent.cpp)
+=======
+        Players/PlayerFactory.h
+        Players/Charactor.h
+        Players/Job.h
+        Players/Worrior.h
+        Players/Archer.h
+        "Players/Magician .h"
+        Players/Player.cpp
+        Players/Behavior.h)
+>>>>>>> origin/PlayerBranch

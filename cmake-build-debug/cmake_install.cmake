@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: /Users/baseladdd/Documents/mtam-hw4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/usr/local")
+=======
+# Install script for directory: C:/Users/Admin/Documents/uni/mtam-hw4
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/mtam_hw4")
+>>>>>>> origin/PlayerBranch
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +42,11 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
+<<<<<<< HEAD
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
+=======
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/objdump.exe")
+>>>>>>> origin/PlayerBranch
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +57,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/Admin/Documents/uni/mtam-hw4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> origin/PlayerBranch
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,39 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -G Ninja -S /Users/baseladdd/Documents/mtam-hw4 -B /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 2. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 8. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 23. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 33. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 45. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 55. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 71. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 88. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 105. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 114. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 135. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 163. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 186. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 213. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 225. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 253. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 303. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 313. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 322. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 326. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 332. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 336. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 348. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 352. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 360. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 380. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 391. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 403. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 414. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 426. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 451. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 457. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 482. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 505. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 534. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt on line 544. Offending entry: >>>>>>> origin/PlayerBranch
+CMake Error: The current CMakeCache.txt directory /Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeCache.txt is different than the directory c:/Users/Admin/Documents/uni/mtam-hw4/cmake-build-debug where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source "/Users/baseladdd/Documents/mtam-hw4/CMakeLists.txt" does not match the source "C:/Users/Admin/Documents/uni/mtam-hw4/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
