@@ -1,11 +1,14 @@
 
 # include "SpecialEvent.h"
 
-string SpecialEvent::getDescription() const {
+#include <string>
+
+#include  "../Players/Charactor.h"
+std::string SpecialEvent::getDescription() const {
 
 
 }
-Player& SpecialEvent:: applyEvent(Player &currPlayer) {
+void SpecialEvent:: applyEvent(Charactor &charactor) {
 
 
 }

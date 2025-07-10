@@ -53,6 +53,7 @@ public:
     */
     MatamStory(std::istream& eventsStream, std::istream& playersStream);
 
+
     /**
      * Plays the entire game
      *

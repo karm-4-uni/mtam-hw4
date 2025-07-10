@@ -14,6 +14,6 @@ Turn::~Turn() {
 }
 
 void Turn::applyTurn() {
-
- this->currEvent->applyEvent(*this->currPlayer);
+this->currPlayer.get()->doEvent(*currEvent.get());
+// this->currEvent->applyEvent(*this->currPlayer);
 }

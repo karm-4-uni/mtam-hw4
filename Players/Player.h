@@ -85,5 +85,4 @@ Player(const string& name,const string& job,const string& behiviar
 
  void doEvent(Event& event);
 
- void doSpecialEvent(Event& event);
 };

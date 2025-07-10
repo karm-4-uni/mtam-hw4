@@ -6,56 +6,65 @@
 #include <vector>
 #include <algorithm>
 #include "MatamStory.h"
-// int main() {
-//     try {
-//
-//         Player p1 = PlayerFactory::createPlayer(
-//             "Aragorn",        // name  (≤15 chars)
-//             "Warrior",        // job
-//             "Responsible",    // behaviour
-//             40,               // force
-//             120,              // health
-//             30                // coins
-//         );
-//
-//         Player p2 = PlayerFactory::createPlayer(
-//             "Gandalf",        // name
-//             "Magician",       // job
-//             "Risktaking",     // behaviour
-//             50,               // force
-//             110,              // health
-//             50                // coins
-//         );
-//
-//         Player p3 = PlayerFactory::createPlayer(
-//             "Legolas",        // name
-//             "Archer",         // job
-//             "Responsible",    // behaviour
-//             35,               // force
-//             95,               // health
-//             25                // coins
-//         );
-//
-//         // --- Put them into a party vector ---
-//         std::vector<Player*> party { &p1, &p2, &p3 };
-//
-//         // --- Print descriptions ---
-//         std::cout << "=== Party Roster ===\n";
-//         for (const Player* pl : party) {
-//             std::cout <<  pl->getDescription() << std::endl ;
-//         }
-//         for (const Player* pl : party) {
-//             std::cout <<  pl->getplayerID() << std::endl ;
-//
-//         }
-//     }
-//     catch (const std::exception& ex) {
-//         std::cerr << "Error creating player: " << ex.what() << '\n';
-//     }
-//
-//
-//     return 0;
-// }
+#include "PlayerFactory.h"
+void runTest(const char* name) ;
+int main() {
+    try {
+
+        Player p1 = PlayerFactory::createPlayer(
+            "Aragorn",        // name  (≤15 chars)
+            "Warrior",        // job
+            "Responsible",    // behaviour
+            40,               // force
+            120,              // health
+            30                // coins
+        );
+
+        Player p2 = PlayerFactory::createPlayer(
+            "Gandalf",        // name
+            "Magician",       // job
+            "Risktaking",     // behaviour
+            50,               // force
+            110,              // health
+            50                // coins
+        );
+
+        Player p3 = PlayerFactory::createPlayer(
+            "Legolas",        // name
+            "Archer",         // job
+            "Responsible",    // behaviour
+            35,               // force
+            95,               // health
+            25                // coins
+        );
+
+        // --- Put them into a party vector ---
+        std::vector<Player*> party { &p1, &p2, &p3 };
+
+        // --- Print descriptions ---
+        std::cout << "=== Party Roster ===\n";
+        for (const Player* pl : party) {
+            std::cout <<  pl->getDescription() << std::endl ;
+        }
+        for (const Player* pl : party) {
+            std::cout <<  pl->getplayerID() << std::endl ;
+
+        }
+    }
+    catch (const std::exception& ex) {
+        std::cerr << "Error creating player: " << ex.what() << '\n';
+    }
+    std::istringstream emptyEvents{""};
+
+    // 2) Construct MatamStory using the empty stream for events.
+    //    We don't care about playersStream here because we'll
+    //    call addPlayers by hand.
+    MatamStory story(emptyEvents, emptyEvents);
+
+    // 3) Now read your players *once* from cin:
+
+    return 0;
+}
 
 void runTest(const char* name) {
     std::cout << "=== " << name << " ===\n";
@@ -88,9 +97,3 @@ void runTest(const char* name) {
     std::cout << "\n\n";
 }
 
-int main() {
-    runTest("test1");
-    runTest("test2");
-    runTest("test3");
-    return 0;
-}

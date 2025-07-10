@@ -1,7 +1,6 @@
 
 #pragma once
 
-#include "../Players/Player.h"
 
 class Event {
 
@@ -12,8 +11,8 @@ public:
      *
      * @return - the description of the event
     */
-   virtual  string getDescription() const=0;
-    virtual  Player& applyEvent(Player& currPlayer);
+   virtual  std::string getDescription() const=0;
+    virtual  void applyEvent(Charactor &currcharactor);
 
 
 };

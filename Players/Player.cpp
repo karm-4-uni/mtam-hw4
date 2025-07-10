@@ -80,5 +80,5 @@ const int Player::getplayerID() const {
 
 
 void Player::doEvent(Event& event) {
-
+this->charactor.get()->doEvent(event);
 }

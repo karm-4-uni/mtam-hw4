@@ -5,6 +5,7 @@
 
 #include <stdexcept>
 
+#include "Event.h"
 #include "Behiviors/Behivior.h"
 #include "Jobs/Job.h"
 
@@ -99,5 +100,5 @@ void Charactor::doJob() {
 
 
 void Charactor::doEvent(Event& event) {
-
+    event.applyEvent(*this);
 }

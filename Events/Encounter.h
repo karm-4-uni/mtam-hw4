@@ -10,7 +10,7 @@ class Encounter : Event {
 
 
 virtual string getDescription() const override;
-    virtual Player& applyEvent(Player &currPlayer) override ;
+    virtual void applyEvent(Charactor &charactor) override ;
 };
 
 

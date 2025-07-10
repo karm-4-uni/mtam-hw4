@@ -9,7 +9,7 @@
   return this->enemy->getdescription();
 
  }
-Player& Encounter:: applyEvent(Player &currPlayer) {
+void Encounter:: applyEvent(Charactor& charactor) {
 
 
  }
