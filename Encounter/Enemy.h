@@ -5,14 +5,26 @@
 # include <vector>
 class Enemy {
 protected:
-    string name;
+    string name="";
     int loot=0;
     int combatPower=0;
     int damge=0;
 
 public:
     Enemy();
-    ~Enemy() = default;
+   virtual  ~Enemy() = default;
+   int getloot() const  {
+       return this->loot;
+   }
+    int getcobatpower()const {
+       return this->combatPower;
+   }
+    int getdamge()const {
+       return this->damge;
+   }
+    std::string getname() const {
+       return this->name;
+   }
    virtual std::shared_ptr<Enemy> create() const=0;
 virtual std::string getdescription()const =0;
     virtual void attack(std::shared_ptr<Player>)const =0;
@@ -88,13 +100,19 @@ class Barlog : public Enemy {
     std::vector<std::shared_ptr<Enemy>> enemies;
         int count ;
 public:
-
         Pack() = default ;
     Pack(const std::vector<std::shared_ptr<Enemy>>& es) : enemies(es) {}
 
     void attack(std::shared_ptr<Player> player) const override {
         for (const auto& e : enemies)
             e->attack(player);
+    }
+        void addEnemy(const std::shared_ptr<Enemy>& e) {
+        this->loot +=e->getloot();
+        this->damge +=e->getdamge();
+        this->combatPower +=this->getcobatpower();
+        enemies.push_back(e);
+        this->count++;
     }
 
     std::shared_ptr<Enemy> create() const override {
@@ -104,6 +122,7 @@ public:
         return std::make_shared<Pack>(copies);
     }
         string getdescription() const override {
+
 
     }
 };

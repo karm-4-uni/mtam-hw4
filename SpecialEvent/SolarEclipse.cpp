@@ -1,9 +1,7 @@
 
 
 #include "SolarEclipse.h"
-SolarEclipse::SolarEclipse():SpecialEvent("SolarEclipse")
-{
-}
+
 
 
 
@@ -12,6 +10,5 @@ string SolarEclipse::getDescription() const {
 
 }
 Player& SolarEclipse:: applyEvent(Player &currPlayer) {
-//do
     return currPlayer;
 }

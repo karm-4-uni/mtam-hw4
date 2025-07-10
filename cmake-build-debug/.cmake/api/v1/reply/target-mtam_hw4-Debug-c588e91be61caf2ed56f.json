@@ -92,13 +92,13 @@
 				16,
 				17,
 				18,
-				19,
+				20,
+				21,
 				22,
 				23,
-				24,
 				25,
 				26,
-				28
+				27
 			]
 		}
 	],
@@ -141,9 +141,8 @@
 				11,
 				12,
 				13,
-				20,
-				21,
-				27
+				19,
+				24
 			]
 		},
 		{
@@ -159,13 +158,13 @@
 				16,
 				17,
 				18,
-				19,
+				20,
+				21,
 				22,
 				23,
-				24,
 				25,
 				26,
-				28
+				27
 			]
 		}
 	],
@@ -266,12 +265,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SpecialEvent/SpecialEvent.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "maintest.cpp",
 			"sourceGroupIndex" : 1
 		},
@@ -288,19 +281,8 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SpecialEvent/SolarEclipse.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "SpecialEvent/PotionsMerchant.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "SpecialEvent/SolarEclipse.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -330,6 +312,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Events/EventFactory.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SpecialEvent/SpecialEvent.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SpecialEvent/SolarEclipse.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -25,18 +25,17 @@ add_executable(mtam_hw4
         Turns/Turn.cpp
         "Events/Event .cpp"
         "Encounter/Encounter .cpp"
-        SpecialEvent/SpecialEvent.cpp
         Leaderboard.h
         maintest.cpp
         mainRound.cpp
         SpecialEvent/PotionsMerchant.h
-        SpecialEvent/SolarEclipse.h
         SpecialEvent/PotionsMerchant.cpp
-        SpecialEvent/SolarEclipse.cpp
         Players/PlayerFactory.cpp
         Players/Player.cpp
         Players/Jobs/Job.cpp
         Events/EventFactory.h
         Events/EventFactory.cpp
+        SpecialEvent/SpecialEvent.cpp
+        SpecialEvent/SolarEclipse.cpp
 )
 
