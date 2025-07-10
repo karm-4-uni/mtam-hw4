@@ -8,27 +8,14 @@ include_directories(Events)
 include_directories(Players)
 
 add_executable(mtam_hw4
-    Events/Event.h
     Players/Player.h
     main.cpp
     MatamStory.cpp
     MatamStory.h
     Utilities.cpp
     Utilities.h
-<<<<<<< HEAD
-        Rounds/Round.h
-        Rounds/Round.cpp
-        Turns/Turn.h
-        Events/SpecialEvent.h
-        Events/Encounter.h
-        Enemy/Enemy.h
+
         Leaderboard.h
-        Turns/Turn.cpp
-        "Events/Event .cpp"
-        "Events/Encounter .cpp"
-        Events/SpecialEvent.cpp
-        Leaderboard.h)
-=======
         Players/PlayerFactory.h
         Players/Charactor.h
         Players/Jobs/Job.h
@@ -44,5 +31,6 @@ add_executable(mtam_hw4
         Players/Charactor.cpp
         Players/PlayerFactory.cpp
         maintest.cpp
-        maintest.cpp
+        Enemy/Enemy.h
+
 )

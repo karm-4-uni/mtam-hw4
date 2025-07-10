@@ -11,6 +11,8 @@
 #include <string>
 #include "Jobs/Job.h"
 #include "Behiviors/Behivior.h"
+class Event;
+
  class  Charactor {
   friend  class Jop;
   friend  class Behivior;
@@ -25,7 +27,7 @@ const std::string   name ;
      int force ;
  public:
 
-  Charactor(std::string name,
+   Charactor(std::string name,
             const std::string job,
            const std::string behavior,
            int hp ,
@@ -85,5 +87,5 @@ void setCoins(int gainedCoin);
 
   void doJob ();
 
-
+  void doEvent(Event& event);
  };

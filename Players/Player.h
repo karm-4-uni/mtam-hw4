@@ -21,14 +21,13 @@ Stat status  ;
  const int playernumber;
  friend class PlayerFactory;
 public:
-Player(string name, string job,string behiviar
+Player(const string& name,const string& job,const string& behiviar
  , int health = 100
  , int coin = 10
  , int force = 0
  );
  Player(std::string name,
-  std::unique_ptr<Charactor> charactor,
-  Stat status);
+  std::unique_ptr<Charactor> charactor);
  ~Player() = default;
  Player(Player&&) = default;
  Player& operator=(Player&&) = default;
@@ -83,4 +82,8 @@ Player(string name, string job,string behiviar
 
 
  const int getplayerID() const ;
+
+ void doEvent(Event& event);
+
+ void doSpecialEvent(Event& event);
 };

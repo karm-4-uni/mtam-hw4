@@ -11,9 +11,10 @@
 
 class MatamStory{
 private:
+ static int numberofplayrs  ;
     unsigned int m_turnIndex;
-std::vector<std::unique_ptr<Round>> Rounds;
-
+//std::vector<std::unique_ptr<Round>> Rounds;
+std::queue<Player> players ;
     /**
      * Playes a single turn for a player
      *
@@ -37,6 +38,9 @@ std::vector<std::unique_ptr<Round>> Rounds;
     */
     bool isGameOver() const;
 
+
+ void addPlayers( std::istream& in = std::cin);
+
 public:
     /**
      * Constructor of MatamStory class
@@ -55,4 +59,5 @@ public:
      * @return - void
     */
     void play();
+
 };

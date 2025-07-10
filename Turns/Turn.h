@@ -1,8 +1,8 @@
 # pragma once
 
 
-# include "Player.h"
-# include "Events/Event.h"
+# include "../Players/Player.h"
+# include "../Events/Event.h"
 # include <memory>
 class Turn {
     std::shared_ptr<Player> currPlayer;

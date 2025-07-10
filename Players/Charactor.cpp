@@ -96,3 +96,8 @@ const bool Charactor::isfullhp() const {
 void Charactor::doJob() {
     this->job.get()->doJob(*this);
 }
+
+
+void Charactor::doEvent(Event& event) {
+
+}

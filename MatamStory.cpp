@@ -2,13 +2,27 @@
 #include "MatamStory.h"
 
 #include "Utilities.h"
+#include <fstream>
 
+#include "Players/PlayerFactory.h"
+static int numberofplayrs = 0  ;
 MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream) {
 
     /*===== TODO: Open and read events file =====*/
 
     /*==========================================*/
-
+    try {
+        string Playersfile ;
+    getline(std::cin,Playersfile);
+    std::ifstream inPlayersfile(Playersfile);
+    if (!inPlayersfile) {
+        throw  std::runtime_error("can't open  Playerfile ");
+    }
+addPlayers(inPlayersfile);
+    } catch (...) {
+        std::cerr << "Error adding players: " <<  "\n";
+        throw;
+    }
 
     /*===== TODO: Open and Read players file =====*/
 
@@ -59,7 +73,6 @@ bool MatamStory::isGameOver() const {
 void MatamStory::play() {
     printStartMessage();
     /*===== TODO: Print start message entry for each player using "printStartPlayerEntry" =====*/
-
     /*=========================================================================================*/
     printBarrier();
 
@@ -71,4 +84,41 @@ void MatamStory::play() {
     /*===== TODO: Print either a "winner" message or "no winner" message =====*/
 
     /*========================================================================*/
+}
+
+
+void MatamStory::addPlayers(std::istream &in) {
+    std::string line;
+    int  playercount = 0 ;
+    std::vector<string> playerinput  ;
+    while ( std::getline(in, line)) {
+        playercount++;
+        if(playercount > 6) {
+            throw std::domain_error("There only be 6 player's");
+        }
+        playerinput.clear();
+
+        int i = 0 ;
+
+while ( i < line.size()) {
+     string word = "";
+        while (i < line.size() && line[i] == ' '){i++;}
+        while (line[i] != ' ' && i < line.size()) {
+            word += line[i++];
+        }
+
+        playerinput.push_back(word);
+        word.clear();
+}
+        if(playerinput.size() != 3 ) {
+            throw std::domain_error("Invalid input");
+        }
+        players.push(
+    PlayerFactory::createPlayer(
+        playerinput[0],
+        playerinput[1],
+        playerinput[2]
+    )
+);
+    }
 }

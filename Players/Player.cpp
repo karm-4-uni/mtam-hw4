@@ -10,6 +10,7 @@
 #include <stdexcept>
 #include <utility>
 
+#include "Event.h"
 #include "Jobs/Archer.h"
 
 int Player::numberofplayers = 0 ;
@@ -40,9 +41,9 @@ string Player::getDescription() const {
 return this->charactor.get()->getDescription();
 }
 
-Player::Player(std::string name
-   ,std::string jobName,
-   std::string behaviorName,
+Player::Player(const std::string& name
+   , const std::string& jobName,
+  const std::string& behaviorName,
                int health,
                int coin,
                int force
@@ -62,17 +63,22 @@ playernumber(numberofplayers++),
 const bool Player::isfullhp() const {
    return this->charactor->isfullhp();
 }
-
-Player::Player(std::string name,
-   std::unique_ptr<Charactor> charactor, Stat status) :
-playernumber(numberofplayers++) {
-   this->name = name;
-   this->charactor = std::move(charactor);
-   this->status = status;
-
-}
+//
+// Player::Player(std::string name,
+//    std::unique_ptr<Charactor> charactor, Stat status) :
+// playernumber(numberofplayers++) {
+//    this->name = name;
+//    this->charactor = std::move(charactor);
+//    this->status = status;
+//
+// }
 
 
 const int Player::getplayerID() const {
    return playernumber;
+}
+
+
+void Player::doEvent(Event& event) {
+
 }

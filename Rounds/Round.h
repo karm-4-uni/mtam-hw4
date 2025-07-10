@@ -1,9 +1,9 @@
 # pragma once
 
 # include <queue>
-# include "Player.h"
+# include "../Players/Player.h"
 # include <vector>
-# include "Turns/Turn.h"
+# include "../Turns/Turn.h"
 # include <memory>
 class Round {
 
