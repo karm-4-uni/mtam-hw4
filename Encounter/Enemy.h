@@ -5,6 +5,7 @@
 # include <vector>
 class Enemy {
 protected:
+    string name;
     int loot=0;
     int combatPower=0;
     int damge=0;
@@ -24,6 +25,7 @@ virtual std::string getdescription()const =0;
 class Snail : public Enemy {
 
     Snail() {
+        this->name="Snail";
         this->damge=10;
         this->loot =2;
         this->combatPower=5;
@@ -44,6 +46,8 @@ class Snail : public Enemy {
 class Slime : public Enemy {
 
     Slime() {
+        this->name="Slime";
+
         this->damge=25;
         this->loot =5;
         this->combatPower=12;
@@ -62,6 +66,7 @@ class Slime : public Enemy {
 
 class Barlog : public Enemy {
     Barlog() {
+        this->name="Barlog";
         this->damge=10;
         this->loot =2;
         this->combatPower=5;

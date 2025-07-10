@@ -15,34 +15,28 @@ add_executable(mtam_hw4
     MatamStory.h
     Utilities.cpp
     Utilities.h
-<<<<<<< HEAD
         Rounds/Round.h
         Rounds/Round.cpp
         Turns/Turn.h
-        Events/SpecialEvent.h
-        Events/Encounter.h
-        Enemy/Enemy.h
+        SpecialEvent/SpecialEvent.h
+        Encounter/Encounter.h
+        Encounter/Enemy.h
         Leaderboard.h
         Turns/Turn.cpp
         "Events/Event .cpp"
-        "Events/Encounter .cpp"
-        Events/SpecialEvent.cpp
-        Leaderboard.h)
-=======
-        Players/PlayerFactory.h
-        Players/Charactor.h
-        Players/Jobs/Job.h
-        Players/Jobs/Warrior.h
-        Players/Jobs/Archer.h
-        "Players/Jobs/Magician .h"
+        "Encounter/Encounter .cpp"
+        SpecialEvent/SpecialEvent.cpp
+        Leaderboard.h
+        maintest.cpp
+        mainRound.cpp
+        SpecialEvent/PotionsMerchant.h
+        SpecialEvent/SolarEclipse.h
+        SpecialEvent/PotionsMerchant.cpp
+        SpecialEvent/SolarEclipse.cpp
+        Players/PlayerFactory.cpp
         Players/Player.cpp
         Players/Jobs/Job.cpp
-        Players/Behiviors/Behivior.h
-        Players/Behiviors/Responsible.h
-        Players/Behiviors/RiskTaking.h
-        Players/Behiviors/Behivior.cpp
-        Players/Charactor.cpp
-        Players/PlayerFactory.cpp
-        maintest.cpp
-        maintest.cpp
+        Events/EventFactory.h
+        Events/EventFactory.cpp
 )
+

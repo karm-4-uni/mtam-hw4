@@ -1,18 +1,45 @@
 
 #include "MatamStory.h"
+# include <fstream>
+# include <iostream>
+# include <string>
 
+#include "Encounter/Encounter.h"
 #include "Utilities.h"
 
 MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream) {
+    auto events = std::make_shared<std::queue<std::shared_ptr<Event>>>();
+    std::string line,first="" ;
+    int i=0;
+    while(std::getline(eventsStream,line )) {
+        if(line.operator[](i)!=' ') {
+            first+= line.operator[](i);
 
-    /*===== TODO: Open and read events file =====*/
+        }else {
+            if(first == "Snail") {
+                events->push(std::make_shared<Event>());
 
-    /*==========================================*/
+            }
+                if(first=="Barlog") {
+
+                }
+                    if(first=="Pack") {
+
+                    }
+                        if(first=="Slime") {
+
+                        }
+            if(first=="SolarEclipse") {
+
+            }
+            if( first=="PotionsMerchant") {
+
+            }
+        }
+    }
 
 
-    /*===== TODO: Open and Read players file =====*/
 
-    /*============================================*/
 
 
     this->m_turnIndex = 1;
