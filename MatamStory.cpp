@@ -113,14 +113,12 @@ while ( i < line.size()) {
         if(playerinput.size() != 3 ) {
             throw std::domain_error("Invalid input");
         }
-        players.push(
-    PlayerFactory::createPlayer(
-        playerinput[0],
-        playerinput[1],
-        playerinput[2]
-    )
-);
+std::shared_ptr<Player> player1 = PlayerFactory::createPlayer(
+          playerinput[0],
+          playerinput[1],
+          playerinput[2]);
+        playersQ.push(player1);
+        playersV.push_back(player1);
     }
 }
-
 

@@ -12,7 +12,7 @@
 #include "Player.h"
 class  PlayerFactory {
 public:
-    static Player createPlayer(
+    static std::shared_ptr<Player> createPlayer(
        const std::string& name,
        const string& job,
        const string& behavior,

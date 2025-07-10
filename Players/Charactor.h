@@ -88,4 +88,8 @@ void setCoins(int gainedCoin);
   void doJob ();
 
   void doEvent(Event& event);
+
+  bool operator>=( const Charactor& other) const;
+bool operator== (const Charactor& other) const;
  };
+bool operator<=(const Charactor& currntChar,const Charactor& other) ;

@@ -14,7 +14,8 @@ private:
  static int numberofplayrs  ;
     unsigned int m_turnIndex;
 //std::vector<std::unique_ptr<Round>> Rounds;
-std::queue<Player> players ;
+std::queue<std::shared_ptr<Player>> playersQ ;
+ std::vector<std::shared_ptr<Player>> playersV;
     /**
      * Playes a single turn for a player
      *

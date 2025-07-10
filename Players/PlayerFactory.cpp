@@ -12,12 +12,15 @@
 #include "Jobs/Warrior.h"
 
 
-Player PlayerFactory::createPlayer(const std::string& name,
+std::shared_ptr<Player> PlayerFactory::createPlayer(const std::string& name,
  const std::string& job,
 const std::string& behavior,
 int  health,int  coin, int  force) {
-Player newplayer = Player(name, job ,behavior,health, coin,force);
- newplayer.getCharator().doJob();
+std::shared_ptr<Player>  newplayer  = std::make_shared<Player>(
+         name, job, behavior,
+         health, coin, force
+     );
+ newplayer.get()->getCharator().doJob();
  return newplayer;
 }
 

@@ -82,3 +82,22 @@ const int Player::getplayerID() const {
 void Player::doEvent(Event& event) {
 this->charactor.get()->doEvent(event);
 }
+
+
+bool Player::operator>(const Player &other) const {
+   if(this->charactor == other.charactor) {
+      if(this->name == other.name) {
+         throw std::out_of_range("A player has the same artuibut");
+      } else {
+         if(this->name > other.name) {
+            return  true;
+         } else { return  false ;}
+      }
+   } else {
+      return (this->charactor >= other.charactor );
+   }
+}
+
+bool operator<(const Player &thisplayer, const Player &other) {
+   return  (other > thisplayer);
+}

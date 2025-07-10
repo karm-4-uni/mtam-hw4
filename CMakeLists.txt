@@ -32,5 +32,6 @@ add_executable(mtam_hw4
         Players/PlayerFactory.cpp
         maintest.cpp
         Enemy/Enemy.h
+        LeaderBoard.cpp
 
 )
