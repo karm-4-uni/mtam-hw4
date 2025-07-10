@@ -81,6 +81,8 @@ const int Player::getplayerID() const {
 
 void Player::doEvent(Event& event) {
 this->charactor.get()->doEvent(event);
+   isDead()
+
 }
 
 
@@ -100,4 +102,12 @@ bool Player::operator>(const Player &other) const {
 
 bool operator<(const Player &thisplayer, const Player &other) {
    return  (other > thisplayer);
+}
+
+
+bool Player::isDead()  {
+ if(this->charactor->getHealthPoints() <= 0 ) {
+    this->status = Stat::Dead ;return  true;
+ }
+   return  false ;
 }
