@@ -6,7 +6,7 @@ public:
     SolarEclipse():SpecialEvent("SolarEclipse"){}
 
     std:: string getDescription() const override;
-    Player& applyEvent(Player& currPlayer) override;
+    void applyEvent(std::shared_ptr<Charactor>charactor) override;
 };
 
 

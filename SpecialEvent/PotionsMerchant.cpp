@@ -12,7 +12,7 @@ string PotionsMerchant::getDescription() const {
     return getname();
 
 }
-Player& PotionsMerchant:: applyEvent(Player &currPlayer) {
+void PotionsMerchant:: applyEvent(std::shared_ptr<Charactor>charactor) {
 
 
 

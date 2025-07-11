@@ -1,12 +1,10 @@
-//
-// Created by Admin on 05/07/2025.
-//
+
 #include <stdexcept>
 
-#include "Player.h"
-#include "Utilities.h"
-#include  "Behiviors/Responsible.h"
-#include "Behiviors/RiskTaking.h"
+#include "Responsible.h"
+#include "RiskTaking.h"
+#include "../Player.h"
+#include "Behivior.h"
 const int PostinCost = 5 ;
 const std::string Behivior::getBehivior() const {
     return "defult";
@@ -17,10 +15,10 @@ const std::string Responsible::getBehivior() const {
 const std::string Risktaking::getBehivior() const {
     return "Risktaking";
 }
-void Behivior::PotionsMerchant() {
+void Behivior::PotionsMerchant(Player& player) {
     //nothing
 }
-void Responsible::PotionsMerchant() {
+void Responsible::PotionsMerchant(Player& player) {
     if(player.getCharator().getHealthPoints() < 50  ) {
        int coins = player.getCoins();
         int hp = player.getHealthPoints();
@@ -32,7 +30,7 @@ void Responsible::PotionsMerchant() {
 
     }
 }
-void Risktaking::PotionsMerchant() {
+void Risktaking::PotionsMerchant(Player& player) {
     int count = 0 ;
     int coins = player.getCoins();
     int hp = player.getHealthPoints();
@@ -43,7 +41,6 @@ void Risktaking::PotionsMerchant() {
         player.getCharator().setHealthPoints(hp);
         count++;
     }
-    getPotionsPurchaseMessage(player,count);
 
 }
 

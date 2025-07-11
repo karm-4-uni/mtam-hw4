@@ -6,8 +6,7 @@
 
 #include "Archer.h"
 #include "Magician .h"
-#include "Charactor.h"
-#include "Jobs/Job.h"
+#include "../Charactor.h"
 #include "Warrior.h"
 void Job::doJob(Charactor& charactor) {
 // nothing
@@ -72,12 +71,17 @@ Archer::Archer() : Job(){
 Magician::Magician() : Job() {
 
 }
+
 std::unique_ptr<Job> Job::fromString(const std::string &name) {
      if (name == "Warrior") {return std::make_unique<Warrior>();}
     if (name == "Magician")   { return std::make_unique<Magician>();}
     if ( name == "Archer") { return  std::make_unique<Archer>();}
     throw std::invalid_argument("Unknown job: " + name);
 }
+void Warrior::takeDamge(std::shared_ptr<Enemy> enemy) {
+
+}
+
 
 
 

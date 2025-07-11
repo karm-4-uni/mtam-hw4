@@ -1,20 +1,21 @@
 
-//
-// Created by Admin on 03/07/2025.
-//
 
-#ifndef CHARACTOR_H
-#define CHARACTOR_H
+#pragma once
 #include <memory>
 
-#endif //CHARACTOR_H
+#include "../Encounter/Enemy.h"
+
 #include <string>
 #include "Jobs/Job.h"
 #include "Behiviors/Behivior.h"
 class Event;
-
+class Job;
  class  Charactor {
-  friend  class Jop;
+  friend  class Warrior ;
+  friend  class  Archer ;
+  friend  class  Magician ;
+  friend  class  job;
+
   friend  class Behivior;
 
 const std::string   name ;
@@ -87,13 +88,14 @@ void setCoins(int gainedCoin);
 
   void doJob ();
 
-  void doEvent(Event& event);
+  void doEvent(std::shared_ptr<Event>event);
 
   bool operator>=( const Charactor& other) const;
 bool operator== (const Charactor& other) const;
 
 
   void doBehivior();
+  void takeDamge(std::shared_ptr<Enemy>enemy);
 
  };
 bool operator<=(const Charactor& currntChar,const Charactor& other) ;

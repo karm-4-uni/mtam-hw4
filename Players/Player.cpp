@@ -9,8 +9,8 @@
 #include "Behiviors/Responsible.h"
 #include <stdexcept>
 #include <utility>
-
-#include "Event.h"
+#include <memory>
+#include "../Events/Event.h"
 #include "Jobs/Archer.h"
 
 int Player::numberofplayers = 0 ;
@@ -79,9 +79,9 @@ const int Player::getplayerID() const {
 }
 
 
-void Player::doEvent(Event& event) {
-this->charactor.get()->doEvent(event);
-   isDead() ;
+void Player::doEvent(std::shared_ptr<Event> event) {
+  if(! isDead())
+     event.operator*().applyEvent(charactor);
 
 }
 
@@ -115,5 +115,8 @@ void Player::Encounter(std::shared_ptr<Enemy> enemy) {
 
 }
 void Player::doBehivior() {
-   this->charactor.get()
+   this->charactor.get();
+}
+void Player::takeDamge(std::shared_ptr<Enemy>enemy) {
+charactor.operator*().takeDamge(enemy);
 }

@@ -9,6 +9,7 @@ string SolarEclipse::getDescription() const {
     return getname();
 
 }
-Player& SolarEclipse:: applyEvent(Player &currPlayer) {
-    return currPlayer;
+void SolarEclipse::applyEvent(std::shared_ptr<Charactor> charactor) {
+
 }
+

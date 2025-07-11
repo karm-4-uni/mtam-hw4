@@ -201,6 +201,30 @@ Events/Event_.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.s
 .PHONY : Events/Event_.cpp.s
 
+LeaderBoard.o: LeaderBoard.cpp.o
+.PHONY : LeaderBoard.o
+
+# target to build an object file
+LeaderBoard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.o
+.PHONY : LeaderBoard.cpp.o
+
+LeaderBoard.i: LeaderBoard.cpp.i
+.PHONY : LeaderBoard.i
+
+# target to preprocess a source file
+LeaderBoard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.i
+.PHONY : LeaderBoard.cpp.i
+
+LeaderBoard.s: LeaderBoard.cpp.s
+.PHONY : LeaderBoard.s
+
+# target to generate assembly for a file
+LeaderBoard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.s
+.PHONY : LeaderBoard.cpp.s
+
 MatamStory.o: MatamStory.cpp.o
 .PHONY : MatamStory.o
 
@@ -224,6 +248,54 @@ MatamStory.s: MatamStory.cpp.s
 MatamStory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/MatamStory.cpp.s
 .PHONY : MatamStory.cpp.s
+
+Players/Behiviors/Behivior.o: Players/Behiviors/Behivior.cpp.o
+.PHONY : Players/Behiviors/Behivior.o
+
+# target to build an object file
+Players/Behiviors/Behivior.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o
+.PHONY : Players/Behiviors/Behivior.cpp.o
+
+Players/Behiviors/Behivior.i: Players/Behiviors/Behivior.cpp.i
+.PHONY : Players/Behiviors/Behivior.i
+
+# target to preprocess a source file
+Players/Behiviors/Behivior.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.i
+.PHONY : Players/Behiviors/Behivior.cpp.i
+
+Players/Behiviors/Behivior.s: Players/Behiviors/Behivior.cpp.s
+.PHONY : Players/Behiviors/Behivior.s
+
+# target to generate assembly for a file
+Players/Behiviors/Behivior.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.s
+.PHONY : Players/Behiviors/Behivior.cpp.s
+
+Players/Charactor.o: Players/Charactor.cpp.o
+.PHONY : Players/Charactor.o
+
+# target to build an object file
+Players/Charactor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.o
+.PHONY : Players/Charactor.cpp.o
+
+Players/Charactor.i: Players/Charactor.cpp.i
+.PHONY : Players/Charactor.i
+
+# target to preprocess a source file
+Players/Charactor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.i
+.PHONY : Players/Charactor.cpp.i
+
+Players/Charactor.s: Players/Charactor.cpp.s
+.PHONY : Players/Charactor.s
+
+# target to generate assembly for a file
+Players/Charactor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.s
+.PHONY : Players/Charactor.cpp.s
 
 Players/Jobs/Job.o: Players/Jobs/Job.cpp.o
 .PHONY : Players/Jobs/Job.o
@@ -531,9 +603,18 @@ help:
 	@echo "... Events/Event_.o"
 	@echo "... Events/Event_.i"
 	@echo "... Events/Event_.s"
+	@echo "... LeaderBoard.o"
+	@echo "... LeaderBoard.i"
+	@echo "... LeaderBoard.s"
 	@echo "... MatamStory.o"
 	@echo "... MatamStory.i"
 	@echo "... MatamStory.s"
+	@echo "... Players/Behiviors/Behivior.o"
+	@echo "... Players/Behiviors/Behivior.i"
+	@echo "... Players/Behiviors/Behivior.s"
+	@echo "... Players/Charactor.o"
+	@echo "... Players/Charactor.i"
+	@echo "... Players/Charactor.s"
 	@echo "... Players/Jobs/Job.o"
 	@echo "... Players/Jobs/Job.i"
 	@echo "... Players/Jobs/Job.s"

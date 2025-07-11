@@ -11,5 +11,5 @@ SpecialEvent();
     SpecialEvent(const std::string& name );
 
     virtual string getDescription() const =0;
-    virtual Player &applyEvent(Player &currPlayer) =0;
+    virtual void applyEvent(std::shared_ptr<Charactor>charactor) =0;
 };

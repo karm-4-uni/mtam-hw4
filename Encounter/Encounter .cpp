@@ -20,7 +20,7 @@ Encounter::Encounter(std::shared_ptr<Enemy> enemy) {
   return this->enemy->getdescription();
 
  }
-void Encounter:: applyEvent(Charactor& charactor) {
+void Encounter:: applyEvent(std::shared_ptr<Charactor>charactor) {
 
 
  }
