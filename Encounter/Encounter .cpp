@@ -1,6 +1,17 @@
 
 
-# include "Encounter.h"
+#include "Encounter.h"
+
+
+Encounter::Encounter() {
+
+}
+
+Encounter::Encounter(std::shared_ptr<Enemy> enemy) {
+
+ this->enemy = std::move(enemy);
+
+}
 
 
 

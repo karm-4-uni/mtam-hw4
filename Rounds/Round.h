@@ -7,7 +7,7 @@
 # include <memory>
 class Round {
 
-std::shared_ptr<std::queue<std::shared_ptr<Player>>>players;
+std::shared_ptr<std::queue<std:: shared_ptr<Player>>>players;
     std::shared_ptr<std::queue<std::shared_ptr<Event>>> events;
      int RoundNum;
     std::vector<std::shared_ptr<Turn>> turns;

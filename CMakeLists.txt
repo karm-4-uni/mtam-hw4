@@ -8,13 +8,19 @@ include_directories(Events)
 include_directories(Players)
 
 add_executable(mtam_hw4
+    Events/Event.h
     Players/Player.h
     main.cpp
     MatamStory.cpp
     MatamStory.h
     Utilities.cpp
     Utilities.h
-
+        Rounds/Round.h
+        Rounds/Round.cpp
+        Turns/Turn.h
+        Events/SpecialEvent.h
+        Events/Encounter.h
+        Enemy/Enemy.h
         Leaderboard.h
         Players/PlayerFactory.h
         Players/Charactor.h
@@ -24,6 +30,10 @@ add_executable(mtam_hw4
         "Players/Jobs/Magician .h"
         Players/Player.cpp
         Players/Jobs/Job.cpp
+        Events/EventFactory.h
+        Events/EventFactory.cpp
+        SpecialEvent/SpecialEvent.cpp
+        SpecialEvent/SolarEclipse.cpp
         Players/Behiviors/Behivior.h
         Players/Behiviors/Responsible.h
         Players/Behiviors/RiskTaking.h
