@@ -11,7 +11,7 @@ void runTest(const char* name) ;
 int main() {
     try {
 
-        Player p1 = PlayerFactory::createPlayer(
+        std::shared_ptr<Player> p1 = PlayerFactory::createPlayer(
             "Aragorn",        // name  (≤15 chars)
             "Warrior",        // job
             "Responsible",    // behaviour
@@ -20,7 +20,7 @@ int main() {
             30                // coins
         );
 
-        Player p2 = PlayerFactory::createPlayer(
+        std::shared_ptr<Player> p2 = PlayerFactory::createPlayer(
             "Gandalf",        // name
             "Magician",       // job
             "Risktaking",     // behaviour
@@ -29,7 +29,7 @@ int main() {
             50                // coins
         );
 
-        Player p3 = PlayerFactory::createPlayer(
+        std::shared_ptr<Player>  p3 = PlayerFactory::createPlayer(
             "Legolas",        // name
             "Archer",         // job
             "Responsible",    // behaviour
@@ -38,16 +38,16 @@ int main() {
             25                // coins
         );
 
-        // --- Put them into a party vector ---
-        std::vector<Player*> party { &p1, &p2, &p3 };
+        // --- Put them into a party vector --
+        std::vector<std::shared_ptr<Player> > party { p1, p2, p3 };
 
         // --- Print descriptions ---
         std::cout << "=== Party Roster ===\n";
-        for (const Player* pl : party) {
-            std::cout <<  pl->getDescription() << std::endl ;
+        for (const std::shared_ptr<Player>  pl : party) {
+            std::cout <<  pl.get()->getDescription() << std::endl ;
         }
-        for (const Player* pl : party) {
-            std::cout <<  pl->getplayerID() << std::endl ;
+        for (const std::shared_ptr<Player> pl : party) {
+            std::cout <<  pl.get()->getplayerID() << std::endl ;
 
         }
     }

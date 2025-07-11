@@ -81,7 +81,7 @@ const int Player::getplayerID() const {
 
 void Player::doEvent(Event& event) {
 this->charactor.get()->doEvent(event);
-   isDead()
+   isDead() ;
 
 }
 
@@ -110,4 +110,10 @@ bool Player::isDead()  {
     this->status = Stat::Dead ;return  true;
  }
    return  false ;
+}
+void Player::Encounter(std::shared_ptr<Enemy> enemy) {
+
+}
+void Player::doBehivior() {
+   this->charactor.get()
 }

@@ -17,10 +17,10 @@ const std::string Responsible::getBehivior() const {
 const std::string Risktaking::getBehivior() const {
     return "Risktaking";
 }
-void Behivior::PotionsMerchant(Player& player) {
+void Behivior::PotionsMerchant() {
     //nothing
 }
-void Responsible::PotionsMerchant(Player& player) {
+void Responsible::PotionsMerchant() {
     if(player.getCharator().getHealthPoints() < 50  ) {
        int coins = player.getCoins();
         int hp = player.getHealthPoints();
@@ -32,7 +32,7 @@ void Responsible::PotionsMerchant(Player& player) {
 
     }
 }
-void Risktaking::PotionsMerchant(Player& player) {
+void Risktaking::PotionsMerchant() {
     int count = 0 ;
     int coins = player.getCoins();
     int hp = player.getHealthPoints();

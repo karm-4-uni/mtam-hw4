@@ -9,7 +9,7 @@
  class Risktaking : public Behivior {
  protected:
      const std::string getBehivior() const override ;
-     void PotionsMerchant(Player& player) override ;
+     void PotionsMerchant() override ;
  public:
      Risktaking() = default;
      ~Risktaking()  = default;

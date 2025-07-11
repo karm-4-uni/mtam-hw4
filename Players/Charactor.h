@@ -91,5 +91,9 @@ void setCoins(int gainedCoin);
 
   bool operator>=( const Charactor& other) const;
 bool operator== (const Charactor& other) const;
+
+
+  void doBehivior();
+
  };
 bool operator<=(const Charactor& currntChar,const Charactor& other) ;

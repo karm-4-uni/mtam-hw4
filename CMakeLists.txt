@@ -33,5 +33,6 @@ add_executable(mtam_hw4
         maintest.cpp
         Enemy/Enemy.h
         LeaderBoard.cpp
+        Events/Encounter.h
 
 )

@@ -9,7 +9,7 @@ class Encounter : Event {
     std::shared_ptr<Enemy> enemy;
 
 
-virtual string getDescription() const override;
+std::string getDescription() const override;
     virtual void applyEvent(Charactor &charactor) override ;
 };
 

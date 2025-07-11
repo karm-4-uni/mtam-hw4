@@ -5,6 +5,7 @@
 #include <string>
 #include "Charactor.h"
 
+class Enemy;
 using std::string;
 enum class Stat {
  Alive,
@@ -89,5 +90,10 @@ Player(const string& name,const string& job,const string& behiviar
 
 
  bool isDead() ;
+// not done
+ void Encounter(std::shared_ptr<Enemy> enemy);
+ //
+ void doBehivior();
 };
 bool operator<(const Player& thisplayer ,const Player& other) ;
+
