@@ -31,8 +31,10 @@ if(name=="PotionsMerchant") {
 
 
     if(name=="SolarEclipse") {
-std::shared_ptr<Event> new_event = std::make_shared<SolarEclipse>();
-        return new_event;
+//std::shared_ptr<Event> new_event = std::make_shared<SolarEclipse>();
+////   return new_event;
+        return std::make_shared<SolarEclipse>();
+
 
     }
 

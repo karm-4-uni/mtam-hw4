@@ -35,7 +35,7 @@ virtual std::string getdescription()const =0;
 };
 
 class Snail : public Enemy {
-
+public:
     Snail() {
         this->name="Snail";
         this->damge=10;
@@ -50,13 +50,14 @@ class Snail : public Enemy {
     }
     string getdescription() const override {
 
-        string g= "Snail (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                                                                                                "damge "+std::to_string(damge);
+        string g= "Snail (power "+ std::to_string(combatPower) +", loot "
+        + std::to_string(loot)+", damge "+std::to_string(damge);
+        return g;
     }
 };
 
 class Slime : public Enemy {
-
+public:
     Slime() {
         this->name="Slime";
 
@@ -72,11 +73,14 @@ class Slime : public Enemy {
     }
     string getdescription() const override {
         string g= "Slime (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                                                                                                      "damge "+std::to_string(damge);
+         "damge "+std::to_string(damge);
+return  g;
     }
+
 };
 
 class Barlog : public Enemy {
+public:
     Barlog() {
         this->name="Barlog";
         this->damge=10;
@@ -92,7 +96,9 @@ class Barlog : public Enemy {
 
     string getdescription() const override {
         string g= "Barlog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                                                                                                      "damge "+std::to_string(damge);
+         "damge "+std::to_string(damge);
+        return  g;
+
     }
 };
 
@@ -122,8 +128,8 @@ public:
         return std::make_shared<Pack>(copies);
     }
         string getdescription() const override {
-
-
+string mama = "d";
+return mama;
     }
 };
 

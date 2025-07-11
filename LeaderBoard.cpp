@@ -4,7 +4,7 @@
 #include <algorithm>
 
 #include "Leaderboard.h"
-#include  "../Players/Player.h"
+#include "Players/Player.h"
 LeaderBoard::LeaderBoard(std::vector<std::shared_ptr<Player>> playersV)
 : playersV(playersV){
 orderPlayers();}
