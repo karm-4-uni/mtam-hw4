@@ -1,6 +1,5 @@
 # pragma once
 
-#include  "../Utilities.h"
 # include "../Players/Player.h"
 # include "../Events/Event.h"
 # include <memory>
@@ -14,6 +13,6 @@ public:
     Turn(std::shared_ptr<Player> currPlayer,    std::shared_ptr<Event> currEvent);
     ~Turn();
 void applyTurn();
-void printdetail() const;
+const std::string printTurnoutcome() ;
 
 };

@@ -46,7 +46,8 @@ void Round::startRound() {
             events->push(frontEvent);
             count++;
            newTurn.get()->applyTurn();
-
+printTurnDetails(count,*p,*frontEvent);
+            printTurnOutcome(newTurn.get()->printTurnoutcome());
         }
 
     }   checkPlayers();
@@ -55,23 +56,6 @@ void Round::startRound() {
     }
 
 }
-
-// void Round::startRound() {
-//
-//
-//     std::queue<std::shared_ptr<Player>> players_copy = *players;
-//
-//     while (!players_copy.empty()) {
-//         std::shared_ptr<Player> p = players_copy.front();
-//         players_copy.pop();
-//         if (p) {
-// //p.playturn(Event)   make the player do the event  (inside this function we will use the applay turn(player) {double dispatch}
-//             std::shared_ptr<Event> front = this->events->front();
-//             events->pop();
-//             events->push(front);
-//         }
-//     }
-
 
 void Round::checkPlayers() {
     for (int i = 0  ; i <  players.get()->size() ; i++)

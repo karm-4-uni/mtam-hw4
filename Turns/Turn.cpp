@@ -17,3 +17,8 @@ void Turn::applyTurn() {
 this->currPlayer.get()->doEvent(*currEvent.get());
 // this->currEvent->applyEvent(*this->currPlayer);
 }
+
+const std::string Turn::printTurnoutcome() {
+    //add getdetails
+  return   currEvent.get().getdetails();
+}
