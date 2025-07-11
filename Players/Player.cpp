@@ -77,7 +77,7 @@ this->charactor.get()->doEvent(event);
 }
 
 
-bool Player::operator>(const Player &other) const {
+bool Player::operator>=(const Player &other) const {
    if(this->charactor == other.charactor) {
       if(this->name == other.name) {
          throw std::out_of_range("A player has the same artuibut");
@@ -91,8 +91,8 @@ bool Player::operator>(const Player &other) const {
    }
 }
 
-bool operator<(const Player &thisplayer, const Player &other) {
-   return  (other > thisplayer);
+bool operator<=(const Player &thisplayer, const Player &other) {
+   return  (other >= thisplayer);
 }
 
 

@@ -8,14 +8,18 @@
 # include <memory>
 
 #include "Rounds/Round.h"
-
+enum class Gamestat {
+ notOver,
+ ALLPlayerDead,
+ Winner
+};
 class MatamStory{
 private:
  static int numberofplayrs  ;
     unsigned int m_turnIndex;
-std::queue<std::shared_ptr<Player>> playersQ ;
+std::shared_ptr<std::queue<std::shared_ptr<Player>>>  playersQ ;
  std::vector<std::shared_ptr<Player>> playersV;
-std::vector<std::unique_ptr<Round>> Rounds;
+//std::vector<std::unique_ptr<Round>> Rounds;
  std::shared_ptr<std::queue<std::shared_ptr<Event>>> events;
 
     /**
@@ -39,10 +43,11 @@ std::vector<std::unique_ptr<Round>> Rounds;
      *
      * @return - true if the game is over, false otherwise
     */
-    bool isGameOver() const;
+   const Gamestat isGameOver() ;
 
 
  void addPlayers( std::istream& in = std::cin);
+ void addEvants(std::istream& in = std::cin);
 
 public:
     /**
@@ -64,4 +69,5 @@ public:
     */
     void play();
 
+ void checkdeadplayer() ;
 };

@@ -86,7 +86,7 @@ Player(const string& name,const string& job,const string& behiviar
 
  void doEvent(Event& event);
 
-  bool operator>( const Player& other) const;
+  bool operator>=( const Player& other) const;
 
 
  bool isDead() ;
@@ -95,5 +95,5 @@ Player(const string& name,const string& job,const string& behiviar
  //
  void doBehivior();
 };
-bool operator<(const Player& thisplayer ,const Player& other) ;
+bool operator<=(const Player& thisplayer ,const Player& other) ;
 

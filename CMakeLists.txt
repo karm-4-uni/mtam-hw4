@@ -3,12 +3,16 @@ project(mtam_hw4)
 
 set(CMAKE_CXX_STANDARD 14)
 
-# List *only* your .cpp files here—headers are found by your include paths.
+target_include_directories(mtam_hw4
+        PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}  # makes `mtam-hw4/` an include root
+)
 add_executable(mtam_hw4
+
         main.cpp
         mainRound.cpp
         maintest.cpp
-Utilities.h
+        Utilities.h
         MatamStory.cpp
         Utilities.cpp
         Players/Player.h
@@ -31,5 +35,6 @@ Utilities.h
         SpecialEvent/SpecialEvent.cpp
         Turns/Turn.cpp
         Players/Charactor.h
-        Players/
+        Events/EventFactory.h
+
 )

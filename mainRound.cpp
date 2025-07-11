@@ -3,10 +3,3 @@
 
 #include "Players/PlayerFactory.h"
 
-
-int main() {
-
-
-
-    return 0;
-}

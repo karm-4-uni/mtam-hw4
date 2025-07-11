@@ -135,13 +135,7 @@
 				3,
 				6,
 				10,
-				22
-			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
+				22,
 				23
 			]
 		}
@@ -284,8 +278,8 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : ".",
-			"sourceGroupIndex" : 2
+			"path" : "Events/EventFactory.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
