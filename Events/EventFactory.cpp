@@ -57,11 +57,10 @@ f = "";
             for(int j =0;i<enemynum;j++) {
           while (name.at(i)!=' ') {
               f+ name.operator[](i);
+
               i++;
           }
-                auto encounter = std::dynamic_pointer_cast<Encounter>(new_event);
-                auto pack = std::dynamic_pointer_cast<Pack>(encounter);
-                pack->addEnemy(std::make_shared<Snail>());
+
 
             }
 
