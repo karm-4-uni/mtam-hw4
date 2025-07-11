@@ -7,67 +7,58 @@
 #include "SpecialEvent/SolarEclipse.h"
 
 std::shared_ptr<Event> EventFactory::createevent( std::string name) {
-    if(name=="Snail") {
-        std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Snail>());
-return new_event;
-    }
+    if (name == "Snail")
+        return std::make_shared<Encounter>(std::make_shared<Snail>());
 
-    if(name=="Barlog") {
-        std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Barlog>());
-        return new_event;
-    }
-    if(name=="Slime") {
-        std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Slime>());
-        return new_event;
-    }
+    if (name == "Slime")
+        return std::make_shared<Encounter>(std::make_shared<Slime>());
 
-if(name=="PotionsMerchant") {
-    std::shared_ptr<Event> new_event = std::make_shared<PotionsMerchant>();
-    return new_event;
+    if (name == "Barlog")
+        return std::make_shared<Encounter>(std::make_shared<Barlog>());
 
-}
+    if (name == "PotionsMerchant")
+        return std::make_shared<PotionsMerchant>();
 
+    if (name == "SolarEclipse")
+        return std::make_shared<SolarEclipse>();
 
-    if(name=="SolarEclipse") {
-std::shared_ptr<Event> new_event = std::make_shared<SolarEclipse>();
-        return new_event;
+    if (name.substr(0, 4) == "Pack") {
+        int i = 5; 
+        std::string f;
 
-    }
-
-
-if(!(name.find("Pack"))) {
-
-    throw std::invalid_argument("Undefined event type: " + name);
-
-}
-    else {
-        int i=5;
-        std::string f="";
-
-        for ( ;i<name.length();i++) {
-            while(name.at(i)!=' ') {
-                f+=name.operator[](i);
-                i++;
-            }
+        while (i < name.length() && name.operator[](i) != ' ') {
+            f += name.operator[](i++);
         }
-        i++;
-            int enemynum= std::stoi(f);
-            std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Pack>());
-f = "";
-            for(int j =0;i<enemynum;j++) {
-          while (name.at(i)!=' ') {
-              f+ name.operator[](i);
 
-              i++;
-          }
+        int count = std::stoi(f);
+        ++i;
+        std::vector<std::shared_ptr<Enemy>> enemies;
 
+        for (int j = 0; j < count; ++j) {
+            std::string enemy_type;
 
+            while (i < name.length() && name.operator[](i) != ' ') {
+                enemy_type += name.operator[](i++);
             }
+            ++i;
 
+            auto event = createevent(enemy_type);
+            auto encounter_ptr = std::dynamic_pointer_cast<Encounter>(event);
+            if (!encounter_ptr)
+                throw std::invalid_argument("Non-enemy used inside pack: " + enemy_type);
 
+            auto enemy = encounter_ptr->getEnemy();
+            if (!enemy)
+                throw std::invalid_argument("Null enemy inside pack: " + enemy_type);
+
+            enemies.push_back(enemy);
         }
+
+        return std::make_shared<Encounter>(std::make_shared<Pack>(enemies));
     }
 
+    throw std::invalid_argument("Unknown event type: " + name);
+}
 
 
 

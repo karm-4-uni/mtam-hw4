@@ -6,12 +6,17 @@
 
 class Encounter :  public Event {
 
-    Encounter();
     std::shared_ptr<Enemy> enemy;
+public:
+    Encounter();
 Encounter(std::shared_ptr<Enemy> enemy);
 
-virtual string getDescription() const override;
-    virtual Player& applyEvent(Player &currPlayer) override ;
+ string getDescription() const override;
+    Player& applyEvent(Player &currPlayer) override ;
+
+    std::shared_ptr<Enemy> getEnemy() const {
+        return this->enemy;
+    }
 };
 
 

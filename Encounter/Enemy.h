@@ -35,7 +35,7 @@ virtual std::string getdescription()const =0;
 };
 
 class Snail : public Enemy {
-
+public:
     Snail() {
         this->name="Snail";
         this->damge=10;
@@ -57,6 +57,7 @@ class Snail : public Enemy {
 
 class Slime : public Enemy {
 
+public:
     Slime() {
         this->name="Slime";
 
@@ -77,6 +78,7 @@ class Slime : public Enemy {
 };
 
 class Barlog : public Enemy {
+public:
     Barlog() {
         this->name="Barlog";
         this->damge=10;
@@ -110,7 +112,7 @@ public:
         void addEnemy(const std::shared_ptr<Enemy>& e) {
         this->loot +=e->getloot();
         this->damge +=e->getdamge();
-        this->combatPower +=this->getcobatpower();
+        this->combatPower +=e->getcobatpower();
         enemies.push_back(e);
         this->count++;
     }
