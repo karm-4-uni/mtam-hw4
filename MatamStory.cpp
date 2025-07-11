@@ -85,28 +85,30 @@ void MatamStory::playTurn(Player& player) {
     */
 }
 
+
+void printLeaderBordplayer(std::vector<std::shared_ptr<Player>> playersV) {
+    for (auto it = playersV.begin();it !=  playersV.end();  ++it) {
+        printLeaderBoardEntry(it->get()->getplayerID(), *it->get());
+    }
+}
 void MatamStory::playRound() {
-
     printRoundStart();
-
 std::shared_ptr<Round> new_round =  std::make_shared<Round> (playersQ,events );
-    new_round.get()->startRound();
+ /*===== TODO: Play a turn for each player =====*/
+        new_round.get()->startRound();
+     /*=============================================*/
     checkdeadplayer();
 if(isGameOver() != Gamestat::notOver) {
     return;
 }
-    /*===== TODO: Play a turn for each player =====*/
 
-    /*=============================================*/
 
+orderPlayers(this->playersV);
     printRoundEnd();
-
     printLeaderBoardMessage();
-
     /*===== TODO: Print leaderboard entry for each player using "printLeaderBoardEntry" =====*/
-
+printLeaderBordplayer(this->playersV);
     /*=======================================================================================*/
-
     printBarrier();
 }
 
@@ -202,4 +204,27 @@ void MatamStory::checkdeadplayer() {
     }
 }
 
+void orderPlayers( std::vector<std::shared_ptr<Player>> playersV) {
+    int n = playersV.size();
+    int aliveEnd = 0;
+    try {
+        for (int i = 0; i < n; ++i) {
+            if (!playersV[i]->isDead()) {
+                std::swap(playersV[i], playersV[aliveEnd]);
+                ++aliveEnd;
+            }
+        }
+        for (int i = 0; i < aliveEnd; ++i) {
+            int best = i;
+            for (int j = i + 1; j < aliveEnd; ++j) {
+                if (*playersV[j] >= *playersV[best])
+                    best = j;
+            }
+            if (best != i)
+                std::swap(playersV[i], playersV[best]);
+        }
+    } catch (...) {
+        throw std::runtime_error("orderplayer Error");
+    }
 
+}

@@ -70,4 +70,6 @@ public:
     void play();
 
  void checkdeadplayer() ;
+
 };
+void orderPlayers(std::vector<std::shared_ptr<Player>> playersV);
