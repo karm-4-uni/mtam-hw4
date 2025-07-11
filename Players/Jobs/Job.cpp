@@ -6,9 +6,9 @@
 
 #include "Archer.h"
 #include "Magician .h"
-#include "Charactor.h"
-#include "Jobs/Job.h"
+#include "Job.h"
 #include "Warrior.h"
+#include "../Charactor.h"
 void Job::doJob(Charactor& charactor) {
 // nothing
 }

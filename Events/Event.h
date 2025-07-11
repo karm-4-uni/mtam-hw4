@@ -1,7 +1,9 @@
 
 #pragma once
+#include <string>
 
 
+class Charactor;
 
 class Event {
 

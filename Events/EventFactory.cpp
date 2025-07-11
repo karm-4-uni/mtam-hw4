@@ -1,10 +1,12 @@
 
 #include "EventFactory.h"
 
+#include <stdexcept>
+
 #include "../Encounter/Encounter.h"
 #include "../Encounter/Enemy.h"
 #include "../SpecialEvent/PotionsMerchant.h"
-#include "SpecialEvent/SolarEclipse.h"
+#include "../SpecialEvent/SolarEclipse.h"
 
 std::shared_ptr<Event> EventFactory::createevent( std::string name) {
     if(name=="Snail") {

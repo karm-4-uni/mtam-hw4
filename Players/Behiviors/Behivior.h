@@ -4,6 +4,7 @@
 
 #ifndef BEHIVIOR_H
 #define BEHIVIOR_H
+#include <memory>
 #include <string>
 class Player;
 #endif //BEHIVIOR_H

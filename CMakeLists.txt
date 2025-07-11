@@ -3,46 +3,33 @@ project(mtam_hw4)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(.)
-include_directories(Events)
-include_directories(Players)
-
+# List *only* your .cpp files here—headers are found by your include paths.
 add_executable(mtam_hw4
-    Events/Event.h
-    Players/Player.h
-    main.cpp
-    MatamStory.cpp
-    MatamStory.h
-    Utilities.cpp
-    Utilities.h
-        Rounds/Round.h
-        Rounds/Round.cpp
-        Turns/Turn.h
-        Events/SpecialEvent.h
-        Events/Encounter.h
-        Enemy/Enemy.h
-        Leaderboard.h
-        Players/PlayerFactory.h
-        Players/Charactor.h
-        Players/Jobs/Job.h
-        Players/Jobs/Warrior.h
-        Players/Jobs/Archer.h
-        "Players/Jobs/Magician .h"
+        main.cpp
+        mainRound.cpp
+        maintest.cpp
+Utilities.h
+        MatamStory.cpp
+        Utilities.cpp
+        Players/Player.h
         Players/Player.cpp
-        Players/Jobs/Job.cpp
-        Events/EventFactory.h
-        Events/EventFactory.cpp
-        SpecialEvent/SpecialEvent.cpp
-        SpecialEvent/SolarEclipse.cpp
-        Players/Behiviors/Behivior.h
-        Players/Behiviors/Responsible.h
-        Players/Behiviors/RiskTaking.h
-        Players/Behiviors/Behivior.cpp
         Players/Charactor.cpp
         Players/PlayerFactory.cpp
-        maintest.cpp
-        Enemy/Enemy.h
-        LeaderBoard.cpp
-        Events/Encounter.h
 
+      Events/Event.h
+        # jobs
+        Players/Jobs/Job.cpp
+        # behaviors
+        Players/Behiviors/Behivior.cpp
+        LeaderBoard.cpp
+        "Events/Event .cpp"
+        Events/EventFactory.cpp
+        "Encounter/Encounter .cpp"
+        Rounds/Round.cpp
+        SpecialEvent/PotionsMerchant.cpp
+        SpecialEvent/SolarEclipse.cpp
+        SpecialEvent/SpecialEvent.cpp
+        Turns/Turn.cpp
+        Players/Charactor.h
+        Players/
 )

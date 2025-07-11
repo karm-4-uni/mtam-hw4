@@ -7,7 +7,7 @@ PotionsMerchant::PotionsMerchant(): SpecialEvent("PotionsMerchant") {
 }
 
 
-string PotionsMerchant::getDescription() const {
+std::string PotionsMerchant::getDescription() const {
 
     return getname();
 

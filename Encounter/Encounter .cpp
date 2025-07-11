@@ -14,8 +14,7 @@ Encounter::Encounter(std::shared_ptr<Enemy> enemy) {
 }
 
 
-
- string Encounter::getDescription() const {
+std::string Encounter::getDescription() const {
 
   return this->enemy->getdescription();
 

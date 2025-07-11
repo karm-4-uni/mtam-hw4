@@ -2,16 +2,7 @@
 #include  "Player.h"
 
 #include <stdexcept>
-#include "Player.h"
-#include "Jobs/Magician .h"
-#include "Jobs/Warrior.h"
-#include "Behiviors/RiskTaking.h"
-#include "Behiviors/Responsible.h"
-#include <stdexcept>
-#include <utility>
 
-#include "Event.h"
-#include "Jobs/Archer.h"
 
 int Player::numberofplayers = 0 ;
 string Player::getName() const {
@@ -115,5 +106,5 @@ void Player::Encounter(std::shared_ptr<Enemy> enemy) {
 
 }
 void Player::doBehivior() {
-   this->charactor.get()
+
 }

@@ -6,7 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include "MatamStory.h"
-#include "PlayerFactory.h"
+#include "Players/PlayerFactory.h"
 void runTest(const char* name) ;
 int main() {
     try {

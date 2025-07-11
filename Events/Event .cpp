@@ -1,5 +1,7 @@
 
 
+#include <string>
+
 # include "Event.h"
 Event::Event(const std::string &name) {
     this->name=name;

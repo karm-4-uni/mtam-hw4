@@ -1,5 +1,6 @@
 
 #include "SpecialEvent.h"
+#include "../Players/Player.h"
 
 class PotionsMerchant: public SpecialEvent{
 

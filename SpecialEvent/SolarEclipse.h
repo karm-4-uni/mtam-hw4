@@ -1,3 +1,4 @@
+#include "../Players/Player.h"
 
 #include "SpecialEvent.h"
 class SolarEclipse: public SpecialEvent{

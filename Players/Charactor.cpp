@@ -5,7 +5,7 @@
 
 #include <stdexcept>
 
-#include "Event.h"
+#include "../Events/Event.h"
 #include "Behiviors/Behivior.h"
 #include "Jobs/Job.h"
 
@@ -146,5 +146,4 @@ bool operator<=(const Charactor& currntChar ,const Charactor &other) {
 }
 
 void Charactor::doBehivior() {
-    this->behivior->PotionsMerchant();
 }
