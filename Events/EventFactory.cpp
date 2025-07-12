@@ -1,76 +1,43 @@
 
 #include "EventFactory.h"
-
-#include <stdexcept>
-
 #include "../Encounter/Encounter.h"
 #include "../Encounter/Enemy.h"
 #include "../SpecialEvent/PotionsMerchant.h"
 #include "../SpecialEvent/SolarEclipse.h"
+#include <sstream>
+#include <stdexcept>
 
-std::shared_ptr<Event> EventFactory::createevent( std::string name) {
-    if(name=="Snail") {
-        std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Snail>());
-return new_event;
-    }
+std::shared_ptr<Event> EventFactory::createEvent(const std::string& name) {
+    if (name == "Snail")
+        return std::make_shared<Encounter>(std::make_shared<Snail>());
+    if (name == "Slime")
+        return std::make_shared<Encounter>(std::make_shared<Slime>());
+    if (name == "Barlog")
+        return std::make_shared<Encounter>(std::make_shared<Barlog>());
+    if (name == "PotionsMerchant")
+        return std::make_shared<PotionsMerchant>();
+    if (name == "SolarEclipse")
+        return std::make_shared<SolarEclipse>();
 
-    if(name=="Barlog") {
-        std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Barlog>());
-        return new_event;
-    }
-    if(name=="Slime") {
-        std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Slime>());
-        return new_event;
-    }
+    if (name.substr(0, 4) == "Pack") {
+        std::istringstream stream(name.substr(5));
+        int count;
+        stream >> count;
+        if (!stream || count <= 0)
+            throw std::invalid_argument("Invalid pack count");
 
-if(name=="PotionsMerchant") {
-    std::shared_ptr<Event> new_event = std::make_shared<PotionsMerchant>();
-    return new_event;
-
-}
-
-
-    if(name=="SolarEclipse") {
-std::shared_ptr<Event> new_event = std::make_shared<SolarEclipse>();
-        return new_event;
-
-    }
-
-
-if(!(name.find("Pack"))) {
-
-    throw std::invalid_argument("Undefined event type: " + name);
-
-}
-    else {
-        int i=5;
-        std::string f="";
-
-        for ( ;i<name.length();i++) {
-            while(name.at(i)!=' ') {
-                f+=name.operator[](i);
-                i++;
-            }
+        std::vector<std::shared_ptr<Enemy>> enemies;
+        for (int j = 0; j < count; ++j) {
+            std::string enemy_name;
+            stream >> enemy_name;
+            auto event = createEvent(enemy_name);
+            auto encounter = std::dynamic_pointer_cast<Encounter>(event);
+            if (!encounter) throw std::invalid_argument("Invalid enemy");
+            enemies.push_back(encounter->getEnemy());
         }
-        i++;
-            int enemynum= std::stoi(f);
-            std::shared_ptr<Event> new_event = std::make_shared<Encounter>(std::make_shared<Pack>());
-f = "";
-            for(int j =0;i<enemynum;j++) {
-          while (name.at(i)!=' ') {
-              f+ name.operator[](i);
 
-              i++;
-          }
-
-
-            }
-
-
-        }
+        return std::make_shared<Encounter>(std::make_shared<Pack>(enemies));
     }
 
-
-
-
-
+    throw std::invalid_argument("Unknown event: " + name);
+}

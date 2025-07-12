@@ -13,9 +13,9 @@ enum class Stat {
  empty
 };
 
-class Player {
+class Player :public std::enable_shared_from_this<Player>{
  string name;
-std::unique_ptr<Charactor> charactor ;
+std::shared_ptr<Charactor> charactor ;
 Stat status  ;
 
  static int numberofplayers ;
@@ -28,7 +28,7 @@ Player(const string& name,const string& job,const string& behiviar
  , int force = 0
  );
  Player(std::string name,
-  std::unique_ptr<Charactor> charactor);
+  std::shared_ptr<Charactor> charactor);
  ~Player() = default;
  Player(Player&&) = default;
  Player& operator=(Player&&) = default;
@@ -84,7 +84,7 @@ Player(const string& name,const string& job,const string& behiviar
 
  const int getplayerID() const ;
 
- void doEvent(Event& event);
+ void doEvent(std::shared_ptr<Event> event);
 
   bool operator>( const Player& other) const;
 
@@ -94,6 +94,8 @@ Player(const string& name,const string& job,const string& behiviar
  void Encounter(std::shared_ptr<Enemy> enemy);
  //
  void doBehivior();
+
+ void takeDamge(std::shared_ptr<Enemy>enemy);
 };
 bool operator<(const Player& thisplayer ,const Player& other) ;
 

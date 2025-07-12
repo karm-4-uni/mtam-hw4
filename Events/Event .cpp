@@ -3,6 +3,7 @@
 #include <string>
 
 # include "Event.h"
+# include <string>
 Event::Event(const std::string &name) {
     this->name=name;
 }

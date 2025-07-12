@@ -1,11 +1,15 @@
 #pragma once
-#include "../Players/Player.h"
 
 # include <memory>
 # include <vector>
+
+#include "../Players/Charactor.h"
+class Charactor;
+class Player;
+
 class Enemy {
 protected:
-    string name="";
+    std::string name="";
     int loot=0;
     int combatPower=0;
     int damge=0;
@@ -27,11 +31,9 @@ public:
    }
    virtual std::shared_ptr<Enemy> create() const=0;
 virtual std::string getdescription()const =0;
-    virtual void attack(std::shared_ptr<Player>)const =0;
+     void attack(std::shared_ptr<Charactor> chara) const {
 
-
-
-
+     }
 };
 
 class Snail : public Enemy {
@@ -45,13 +47,10 @@ class Snail : public Enemy {
     std::shared_ptr<Enemy> create() const override {
     return std::make_shared<Snail>();
     }
-     void  attack(std::shared_ptr<Player>)const  override {
-//player.takedamge
-    }
-    string getdescription() const override {
 
-        string g= "Snail (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                                                                                                "damge "+std::to_string(damge);
+    std::string getdescription() const override {
+        std::string g= "Snail (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
+                       "damge "+std::to_string(damge);
     }
 };
 
@@ -67,12 +66,11 @@ class Slime : public Enemy {
     std::shared_ptr<Enemy> create() const override
     {
     return std::make_shared<Slime>();    }
-    void attack(std::shared_ptr<Player>) const  override {
-//player.take damge
-    }
-    string getdescription() const override {
-        string g= "Slime (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                                                                                                      "damge "+std::to_string(damge);
+
+
+    std::string getdescription() const override {
+        std::string g= "Slime (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
+                       "damge "+std::to_string(damge);
     }
 };
 
@@ -86,13 +84,11 @@ class Barlog : public Enemy {
     std::shared_ptr<Enemy> create()  const override {
         return std::make_shared<Barlog>();
     }
-    void attack(std::shared_ptr<Player>) const  override {
-        //player.takedamge
-    }
 
-    string getdescription() const override {
-        string g= "Barlog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                                                                                                      "damge "+std::to_string(damge);
+
+    std::string getdescription() const override {
+        std::string g= "Barlog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
+                       "damge "+std::to_string(damge);
     }
 };
 
@@ -103,10 +99,7 @@ public:
         Pack() = default ;
     Pack(const std::vector<std::shared_ptr<Enemy>>& es) : enemies(es) {}
 
-    void attack(std::shared_ptr<Player> player) const override {
-        for (const auto& e : enemies)
-            e->attack(player);
-    }
+
         void addEnemy(const std::shared_ptr<Enemy>& e) {
         this->loot +=e->getloot();
         this->damge +=e->getdamge();
@@ -121,7 +114,8 @@ public:
             copies.push_back(e->create());
         return std::make_shared<Pack>(copies);
     }
-        string getdescription() const override {
+
+    std::string getdescription() const override {
 
 
     }

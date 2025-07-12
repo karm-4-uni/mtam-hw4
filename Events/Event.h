@@ -2,10 +2,11 @@
 #pragma once
 #include <string>
 
+#include "../Players/Player.h"
 
 class Charactor;
 
-class Event {
+class Event:public std::enable_shared_from_this<Event>{
 
 protected:
  std::string name;
@@ -19,7 +20,7 @@ public:
      * @return - the description of the event
     */
    virtual  std::string getDescription() const = 0;
-    virtual  void applyEvent(Charactor& currcharactor);
+    virtual  void applyEvent( std::shared_ptr<Player>player);
 
 public:
  std::string getname() const;

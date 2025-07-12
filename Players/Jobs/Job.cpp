@@ -6,9 +6,9 @@
 
 #include "Archer.h"
 #include "Magician .h"
-#include "Job.h"
-#include "Warrior.h"
 #include "../Charactor.h"
+#include "Warrior.h"
+
 void Job::doJob(Charactor& charactor) {
 // nothing
 }
@@ -72,12 +72,78 @@ Archer::Archer() : Job(){
 Magician::Magician() : Job() {
 
 }
-std::unique_ptr<Job> Job::fromString(const std::string &name) {
-     if (name == "Warrior") {return std::make_unique<Warrior>();}
-    if (name == "Magician")   { return std::make_unique<Magician>();}
-    if ( name == "Archer") { return  std::make_unique<Archer>();}
+
+std::shared_ptr<Job> Job::fromString(const std::string &name) {
+     if (name == "Warrior") {return std::make_shared<Warrior>();}
+    if (name == "Magician")   { return std::make_shared<Magician>();}
+    if ( name == "Archer") { return  std::make_shared<Archer>();}
     throw std::invalid_argument("Unknown job: " + name);
 }
+void Warrior::takeDamge(std::shared_ptr<Enemy> enemy) {
+
+}
+
+void Warrior::applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) {
+    if(player.operator*().getCharator().getcombatpower()>
+        encounter.operator*().getEnemy().operator*().getcobatpower()){
+        player.operator*().getCharator().coin+=encounter.operator*().getEnemy().operator*().getloot();
+        player.operator*().getCharator().Level++;
+        getEncounterWonMessage(*player,encounter.operator*().getEnemy().operator*().getloot());
+        }else {
+            player.operator*().getCharator().CurrentHP-=encounter.operator*().getEnemy().operator*().getdamge();
+            getEncounterLostMessage(*player,encounter.operator*().getEnemy().operator*().getdamge());
+        }
+}
+void Warrior::applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) {
+    player.operator*().getCharator().force-=1;
+    getSolarEclipseMessage(*player,-1);
+
+}
+
+void Archer::applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) {
+if(player.operator*().getCharator().getcombatpower()>
+    encounter.operator*().getEnemy().operator*().getcobatpower()){
+player.operator*().getCharator().coin+=encounter.operator*().getEnemy().operator*().getloot();
+    player.operator*().getCharator().Level++;
+    getEncounterWonMessage(*player,encounter.operator*().getEnemy().operator*().getloot());
+    player.operator*().getCharator().CurrentHP-=encounter.operator*().getEnemy().operator*().getdamge();
+
+}else {
+    player.operator*().getCharator().CurrentHP-=encounter.operator*().getEnemy().operator*().getdamge();
+    getEncounterLostMessage(*player,encounter.operator*().getEnemy().operator*().getdamge());
+}
+}
+void Archer::applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) {
+
+    player.operator*().getCharator().force-=1;
+    getSolarEclipseMessage(*player,-1);
+
+}
+void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) {
+    if(player.operator*().getCharator().getcombatpower()>
+        encounter.operator*().getEnemy().operator*().getcobatpower()){
+        player.operator*().getCharator().coin+=encounter.operator*().getEnemy().operator*().getloot();
+        player.operator*().getCharator().Level++;
+        getEncounterWonMessage(*player,encounter.operator*().getEnemy().operator*().getloot());
+        }else {
+            player.operator*().getCharator().CurrentHP-=encounter.operator*().getEnemy().operator*().getdamge();
+            getEncounterLostMessage(*player,encounter.operator*().getEnemy().operator*().getdamge());
+        }
+
+}
+void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) {
+    player.operator*().getCharator().force+=1;
+    getSolarEclipseMessage(*player,1);
+
+}
+
+
+
+
+
+
+
+
 
 
 

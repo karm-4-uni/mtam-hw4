@@ -37,7 +37,7 @@ void Round::startRound() {
 
             // Each player applies the current event
             if (frontEvent)
-              //  frontEvent->applyTurn(*p);  // double dispatch
+              //  frontEvent->applyTurn();  // double dispatch
 
             // Push event to the back
             events->push(frontEvent);

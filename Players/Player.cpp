@@ -2,7 +2,16 @@
 #include  "Player.h"
 
 #include <stdexcept>
-
+#include "Player.h"
+#include "Jobs/Magician .h"
+#include "Jobs/Warrior.h"
+#include "Behiviors/RiskTaking.h"
+#include "Behiviors/Responsible.h"
+#include <stdexcept>
+#include <utility>
+#include <memory>
+#include "../Events/Event.h"
+#include "Jobs/Archer.h"
 
 int Player::numberofplayers = 0 ;
 string Player::getName() const {
@@ -41,7 +50,7 @@ Player::Player(const std::string& name
                )
     : name(name),
 playernumber(numberofplayers++),
-      charactor(std::make_unique<Charactor>(
+      charactor(std::make_shared<Charactor>(
           name,
           jobName,
           behaviorName,
@@ -70,9 +79,9 @@ const int Player::getplayerID() const {
 }
 
 
-void Player::doEvent(Event& event) {
-this->charactor.get()->doEvent(event);
-   isDead() ;
+void Player::doEvent(std::shared_ptr<Event> event) {
+  if(! isDead())
+     event.operator*().applyEvent(shared_from_this());
 
 }
 
@@ -106,5 +115,8 @@ void Player::Encounter(std::shared_ptr<Enemy> enemy) {
 
 }
 void Player::doBehivior() {
-
+   this->charactor.get();
+}
+void Player::takeDamge(std::shared_ptr<Enemy>enemy) {
+charactor.operator*().takeDamge(enemy);
 }
