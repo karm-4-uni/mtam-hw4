@@ -11,7 +11,7 @@ class Responsible : public Behivior {
 protected:
 
     const std::string getBehivior() const override ;
-    void PotionsMerchant(Player& player) override  ;
+    void PotionsMerchant(std::shared_ptr<Player>player) override  ;
 public:
     Responsible() = default ;
     ~Responsible()  = default;

@@ -5,6 +5,7 @@
 #include "RiskTaking.h"
 #include "../Player.h"
 #include "Behivior.h"
+#include "../../Utilities.h"
 const int PostinCost = 5 ;
 const std::string Behivior::getBehivior() const {
     return "defult";
@@ -15,32 +16,36 @@ const std::string Responsible::getBehivior() const {
 const std::string Risktaking::getBehivior() const {
     return "Risktaking";
 }
-void Behivior::PotionsMerchant(Player& player) {
+void Behivior::PotionsMerchant(std::shared_ptr<Player>player) {
     //nothing
 }
-void Responsible::PotionsMerchant(Player& player) {
-    if(player.getCharator().getHealthPoints() < 50  ) {
-       int coins = player.getCoins();
-        int hp = player.getHealthPoints();
+void Risktaking::PotionsMerchant(std::shared_ptr<Player>player) {
+    bool didhebuy=false;
+    if(player.operator*().getCharator().getHealthPoints() < 50  ) {
+       int coins = player.operator*().getCoins();
+        int hp = player.operator*().getHealthPoints();
         if(coins > PostinCost) {
-            player.getCharator().setCoins(coins - PostinCost);
-            player.getCharator().setHealthPoints(hp + 10);
+            player.operator*().getCharator().setCoins(coins - PostinCost);
+            player.operator*().getCharator().setHealthPoints(hp + 10);
+            didhebuy=true;
          //   getPotionsPurchaseMessage(player,1);
         }
+getPotionsPurchaseMessage(*player,didhebuy);
 
     }
 }
-void Risktaking::PotionsMerchant(Player& player) {
+void Responsible::PotionsMerchant(std::shared_ptr<Player>player) {
     int count = 0 ;
-    int coins = player.getCoins();
-    int hp = player.getHealthPoints();
-    while (player.getCoins() > PostinCost && player.isfullhp() ) {
-        player.getCharator().setCoins(coins - PostinCost);
+    int coins = player.operator*().getCoins();
+    int hp = player.operator*().getHealthPoints();
+    while (player.operator*().getCoins() > PostinCost && player.operator*().isfullhp() ) {
+        player.operator*().getCharator().setCoins(coins - PostinCost);
         coins-= PostinCost ;
         hp+= 10 ;
-        player.getCharator().setHealthPoints(hp);
+        player.operator*().getCharator().setHealthPoints(hp);
         count++;
     }
+    getPotionsPurchaseMessage(*player,count);
 
 }
 

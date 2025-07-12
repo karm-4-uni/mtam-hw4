@@ -1,4 +1,5 @@
 
+#pragma once
 
 #include "../Events/Event.h"
 
@@ -15,7 +16,7 @@ Encounter(std::shared_ptr<Enemy> enemy);
         return enemy;
     }
 std::string getDescription() const override;
-     void applyEvent(std::shared_ptr<Charactor>charactor) override ;
+     void applyEvent(std::shared_ptr<Player>player) override ;
 };
 
 

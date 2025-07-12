@@ -13,7 +13,7 @@ enum class Stat {
  empty
 };
 
-class Player {
+class Player :public std::enable_shared_from_this<Player>{
  string name;
 std::shared_ptr<Charactor> charactor ;
 Stat status  ;

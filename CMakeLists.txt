@@ -24,7 +24,6 @@ add_executable(mtam_hw4
         LeaderBoard.cpp
         "Events/Event .cpp"
         Events/EventFactory.cpp
-        "Encounter/Encounter .cpp"
         Rounds/Round.cpp
         SpecialEvent/PotionsMerchant.cpp
         SpecialEvent/SolarEclipse.cpp
@@ -32,6 +31,7 @@ add_executable(mtam_hw4
         Turns/Turn.cpp
         Players/Charactor.h
         Players/
+        "Encounter/Encounter .cpp"
 
 
 )

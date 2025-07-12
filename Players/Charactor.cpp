@@ -39,8 +39,9 @@ void Charactor::setHealthPoints(int gainedhealth) {
 void Charactor::setLevel(int newLevel) {
     this->Level = newLevel ;
 }
-const Job& Charactor::getJop() const {
-    return   *this->job.get();
+
+const std::shared_ptr<Job> &Charactor::getJop() const {
+    return  this->job;
 }
 
 std::string Charactor::getDescription() const {
@@ -99,7 +100,7 @@ void Charactor::doJob() {
 
 
 void Charactor::doEvent(std::shared_ptr<Event>event) {
-event.operator*().applyEvent
+event.operator*().applyEvent;
 }
 
 

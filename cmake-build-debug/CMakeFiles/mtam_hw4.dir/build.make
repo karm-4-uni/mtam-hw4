@@ -251,24 +251,10 @@ CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/baseladdd/Documents/mtam-hw4/Events/EventFactory.cpp -o CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.s
 
-CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
-CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o: /Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter\ .cpp
-CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o -MF CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o.d -o CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o -c "/Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter .cpp"
-
-CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter .cpp" > CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.i
-
-CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter .cpp" -o CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.s
-
 CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
 CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o: /Users/baseladdd/Documents/mtam-hw4/Rounds/Round.cpp
 CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o -MF CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d -o CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o -c /Users/baseladdd/Documents/mtam-hw4/Rounds/Round.cpp
 
 CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.i: cmake_force
@@ -282,7 +268,7 @@ CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.s: cmake_force
 CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
 CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o: /Users/baseladdd/Documents/mtam-hw4/SpecialEvent/PotionsMerchant.cpp
 CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o -MF CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o.d -o CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o -c /Users/baseladdd/Documents/mtam-hw4/SpecialEvent/PotionsMerchant.cpp
 
 CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.i: cmake_force
@@ -296,7 +282,7 @@ CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.s: cmake_force
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o: /Users/baseladdd/Documents/mtam-hw4/SpecialEvent/SolarEclipse.cpp
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o -MF CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o.d -o CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o -c /Users/baseladdd/Documents/mtam-hw4/SpecialEvent/SolarEclipse.cpp
 
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.i: cmake_force
@@ -310,7 +296,7 @@ CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.s: cmake_force
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o: /Users/baseladdd/Documents/mtam-hw4/SpecialEvent/SpecialEvent.cpp
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o -MF CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o.d -o CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o -c /Users/baseladdd/Documents/mtam-hw4/SpecialEvent/SpecialEvent.cpp
 
 CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.i: cmake_force
@@ -324,7 +310,7 @@ CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.s: cmake_force
 CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
 CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o: /Users/baseladdd/Documents/mtam-hw4/Turns/Turn.cpp
 CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o -MF CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o.d -o CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o -c /Users/baseladdd/Documents/mtam-hw4/Turns/Turn.cpp
 
 CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.i: cmake_force
@@ -334,6 +320,20 @@ CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.i: cmake_force
 CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/baseladdd/Documents/mtam-hw4/Turns/Turn.cpp -o CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.s
+
+CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o: CMakeFiles/mtam_hw4.dir/flags.make
+CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o: /Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter\ .cpp
+CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o: CMakeFiles/mtam_hw4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o -MF CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o.d -o CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o -c "/Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter .cpp"
+
+CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter .cpp" > CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.i
+
+CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/baseladdd/Documents/mtam-hw4/Encounter/Encounter .cpp" -o CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.s
 
 # Object files for target mtam_hw4
 mtam_hw4_OBJECTS = \
@@ -350,12 +350,12 @@ mtam_hw4_OBJECTS = \
 "CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.o" \
 "CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.o" \
 "CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.o" \
-"CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o" \
 "CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o" \
 "CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o" \
 "CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o" \
 "CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o" \
-"CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o"
+"CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o" \
+"CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o"
 
 # External object files for target mtam_hw4
 mtam_hw4_EXTERNAL_OBJECTS =
@@ -373,12 +373,12 @@ mtam_hw4: CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.o
-mtam_hw4: CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/SpecialEvent/PotionsMerchant.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o
+mtam_hw4: CMakeFiles/mtam_hw4.dir/Encounter/Encounter_.cpp.o
 mtam_hw4: CMakeFiles/mtam_hw4.dir/build.make
 mtam_hw4: CMakeFiles/mtam_hw4.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/baseladdd/Documents/mtam-hw4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable mtam_hw4"

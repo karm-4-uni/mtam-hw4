@@ -1,13 +1,12 @@
 
-#include <string>
+#pragma once
 #include <memory>
+#include <string>
+
 class Event;
+
 class EventFactory {
-
-    std::string name;
-
 public:
-    std::shared_ptr<Event> createEvent( const std::string& name );
-
-
+    std::shared_ptr<Event> createEvent(const std::string& name);
 };
+

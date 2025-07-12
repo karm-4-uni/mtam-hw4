@@ -9,16 +9,17 @@ class Player;
 #endif //BEHIVIOR_H
 class Charactor;
 #pragma once
-
+class PotionsMerchant;
 class Behivior {
      friend  class  Charactor;
-
+friend class PotionsMerchant;
 protected:
 
 
 
     virtual  const std::string getBehivior() const ;
-    virtual void PotionsMerchant(Player& player) ;
+    virtual void PotionsMerchant(std::shared_ptr<Player>player) =0 ;
+
     static std::unique_ptr<Behivior> fromString(const std::string& name);
 public:
      Behivior() = default;

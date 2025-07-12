@@ -50,7 +50,7 @@ Player::Player(const std::string& name
                )
     : name(name),
 playernumber(numberofplayers++),
-      charactor(std::make_unique<Charactor>(
+      charactor(std::make_shared<Charactor>(
           name,
           jobName,
           behaviorName,
@@ -81,7 +81,7 @@ const int Player::getplayerID() const {
 
 void Player::doEvent(std::shared_ptr<Event> event) {
   if(! isDead())
-     event.operator*().applyEvent(charactor);
+     event.operator*().applyEvent(shared_from_this());
 
 }
 

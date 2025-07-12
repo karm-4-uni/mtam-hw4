@@ -1,7 +1,7 @@
 
 
-#include "Encounter.h"
 
+#include "Encounter.h"
 
 Encounter::Encounter() {
 
@@ -20,8 +20,8 @@ Encounter::Encounter(std::shared_ptr<Enemy> enemy) {
   return this->enemy->getdescription();
 
  }
-void Encounter:: applyEvent(std::shared_ptr<Charactor>charactor) {
-
+void Encounter:: applyEvent(std::shared_ptr<Player>player) {
+player.operator*().getCharator().getjob().operator*().applyin(player,this->enemy);
 
  }
 

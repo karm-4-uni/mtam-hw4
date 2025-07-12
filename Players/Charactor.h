@@ -22,8 +22,8 @@ const std::string   name ;
   int Level;
      int CurrentHP;
      int maxHP;
-     const std::unique_ptr<Job> job;
-     const std::unique_ptr<Behivior> behivior ;
+     const std::shared_ptr<Job> job;
+     const std::shared_ptr<Behivior> behivior ;
      int coin ;
      int force ;
  public:
@@ -82,7 +82,7 @@ std::string getName() const;
 void setCoins(int gainedCoin);
 
   const int getMaxHP() const ;
-  const  Job& getJop() const;
+  const std::shared_ptr<Job>& getJop() const;
 
   const bool isfullhp() const ;
 
@@ -93,8 +93,19 @@ void setCoins(int gainedCoin);
   bool operator>=( const Charactor& other) const;
 bool operator== (const Charactor& other) const;
 
+int getcombatpower()
+  {
+   return this->force+this->getLevel();
+  }
 
+  std::shared_ptr<Job> getjob() {
+ return this->job;
+}
+  std::shared_ptr<Behivior>get_behivior() {
+ return this->behivior;
+}
   void doBehivior();
+
   void takeDamge(std::shared_ptr<Enemy>enemy);
 
  };

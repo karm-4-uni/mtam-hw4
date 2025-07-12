@@ -13,4 +13,6 @@ public:
       const std::string getjob() const override;
     void SolarEclipse(Charactor& charactor) override;
     void takeDamge(std::shared_ptr<Enemy> enemy) override;
+    void applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) override;
+    void applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) override;
 };
