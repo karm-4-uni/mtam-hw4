@@ -39,12 +39,14 @@ addPlayers(inPlayersfile);
 
 //return winnerindex
 int getWinner(const std::vector<std::shared_ptr<Player>> playersv) {
-    for(int i = 0 ; i < playersv.size() ; i++) {
+    int i = 0;
+    for( ; i < playersv.size() ; i++) {
         if( playersv[i].get()->getLevel() == 10 ) {
             return  i ;
         }
 
     }
+    return i;
 }
 
 
@@ -134,6 +136,7 @@ const Gamestat MatamStory::isGameOver()  {
     if(count == 1) { return Gamestat::Winner;}
     if(count == 0) {return  Gamestat::notOver;}
     /*===================================================*/
+    return  Gamestat::notOver;
 }
 
 
