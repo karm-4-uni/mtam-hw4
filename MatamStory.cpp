@@ -4,7 +4,7 @@
 # include <iostream>
 # include <string>
 
-#include "Encounter/Encounter.h"
+#include "Events/Encounter/Encounter.h"
 #include "Utilities.h"
 
 #include "Players/PlayerFactory.h"

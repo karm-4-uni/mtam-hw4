@@ -1,9 +1,9 @@
 
 #include "EventFactory.h"
-#include "../Encounter/Encounter.h"
-#include "../Encounter/Enemy.h"
-#include "../SpecialEvent/PotionsMerchant.h"
-#include "../SpecialEvent/SolarEclipse.h"
+#include "Encounter.h"
+#include "Enemy.h"
+#include "PotionsMerchant.h"
+#include "SolarEclipse.h"
 #include <sstream>
 #include <stdexcept>
 

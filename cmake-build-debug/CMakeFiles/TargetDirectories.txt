@@ -1,0 +1,3 @@
+C:/Users/Admin/Documents/uni/mtam-hw4/cmake-build-debug/CMakeFiles/mtam_hw4.dir
+C:/Users/Admin/Documents/uni/mtam-hw4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Documents/uni/mtam-hw4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

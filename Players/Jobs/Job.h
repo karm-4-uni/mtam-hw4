@@ -7,13 +7,10 @@
 #include <memory>
 #include <string>
 
-#include "../../Encounter/Encounter.h"
-#include "../../Encounter/Enemy.h"
-#include "../../SpecialEvent/PotionsMerchant.h"
-#include "../../SpecialEvent/SolarEclipse.h"
-#include "../../Utilities.h"
-
-
+#include "../../Events/PotionsMerchant.h"
+#include "../../Events/SolarEclipse.h"
+class Enemy;
+class Encounter;
 class Charactor;
 class Job {
 public:

@@ -1,28 +1,27 @@
 
-
 #pragma once
 #include <memory>
 
-#include "../Encounter/Enemy.h"
+#include "../Events/Enemy.h"
 
 #include <string>
 #include "Jobs/Job.h"
 #include "Behiviors/Behivior.h"
 class Event;
 class Job;
- class  Charactor {
+ class  Charactor  : public std::enable_shared_from_this<Charactor>{
   friend  class Warrior ;
   friend  class  Archer ;
   friend  class  Magician ;
   friend  class  job;
-
+friend class Event;
   friend  class Behivior;
-
+  class Enemy;
 const std::string   name ;
   int Level;
      int CurrentHP;
      int maxHP;
-     const std::shared_ptr<Job> job;
+     const std::shared_ptr< Job> job;
      const std::shared_ptr<Behivior> behivior ;
      int coin ;
      int force ;
@@ -82,23 +81,25 @@ std::string getName() const;
 void setCoins(int gainedCoin);
 
   const int getMaxHP() const ;
+  //const  std::shared_ptr<Job>& getJop() const;
   const std::shared_ptr<Job>& getJop() const;
 
   const bool isfullhp() const ;
 
   void doJob ();
 
-  void doEvent(std::shared_ptr<Event>event);
+//  void doEvent(std::shared_ptr<Event>event);
 
   bool operator>=( const Charactor& other) const;
 bool operator== (const Charactor& other) const;
+
 
 int getcombatpower()
   {
    return this->force+this->getLevel();
   }
 
-  std::shared_ptr<Job> getjob() {
+ const std::shared_ptr<Job> getjob()  {
  return this->job;
 }
   std::shared_ptr<Behivior>get_behivior() {
@@ -109,4 +110,4 @@ int getcombatpower()
   void takeDamge(std::shared_ptr<Enemy>enemy);
 
  };
-bool operator<=(const Charactor& currntChar,const Charactor& other) ;
+//tor<=(const Charactor& currntChar,const Charactor& other) ;

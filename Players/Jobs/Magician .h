@@ -4,7 +4,6 @@
 #pragma once
 #define MAGICIAN_H
 #include "Job.h"
-#include "../../Encounter/Enemy.h"
 class Magician: public Job {
 public:
     Magician( ) ;

@@ -38,7 +38,7 @@ int Player::getHealthPoints() const {
    return charactor->getHealthPoints();
 }
 string Player::getDescription() const {
-return this->charactor.get()->getDescription();
+   return this->charactor.get()->getDescription();
 }
 
 Player::Player(const std::string& name
@@ -81,42 +81,12 @@ const int Player::getplayerID() const {
 
 void Player::doEvent(std::shared_ptr<Event> event) {
   if(! isDead())
-     event.operator*().applyEvent(shared_from_this());
+   //  event.operator*().applyEventP(charactor);
+     event.operator*().applyEventP(shared_from_this());
 
 }
 
-
-bool Player::operator>(const Player &other) const {
-   if(this->charactor == other.charactor) {
-      if(this->name == other.name) {
-         throw std::out_of_range("A player has the same artuibut");
-      } else {
-         if(this->name > other.name) {
-            return  true;
-         } else { return  false ;}
-      }
-   } else {
-      return (this->charactor >= other.charactor );
-   }
-}
-
-bool operator<(const Player &thisplayer, const Player &other) {
-   return  (other > thisplayer);
-}
-
-
-bool Player::isDead()  {
- if(this->charactor->getHealthPoints() <= 0 ) {
-    this->status = Stat::Dead ;return  true;
- }
-   return  false ;
-}
-void Player::Encounter(std::shared_ptr<Enemy> enemy) {
-
-}
-void Player::doBehivior() {
-   this->charactor.get();
-}
-void Player::takeDamge(std::shared_ptr<Enemy>enemy) {
-charactor.operator*().takeDamge(enemy);
+void Player::doBehivior()
+{
+   charactor->get_behivior()->PotionsMerchant(shared_from_this());
 }

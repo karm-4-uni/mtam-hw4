@@ -1,6 +1,9 @@
 //
 // Created by Admin on 05/07/2025.
 //
+//
+// Created by Admin on 05/07/2025.
+//
 
 #include <stdexcept>
 # include "Charactor.h"
@@ -99,11 +102,6 @@ void Charactor::doJob() {
 }
 
 
-void Charactor::doEvent(std::shared_ptr<Event>event) {
-event.operator*().applyEvent;
-}
-
-
 
 bool Charactor::operator>=(const Charactor &other) const {
     if(this->Level >= other.Level) {
@@ -144,12 +142,13 @@ bool Charactor::operator==(const Charactor &other) const {
 bool operator<=(const Charactor& currntChar ,const Charactor &other) {
     return  (other  >= currntChar);
 }
-
-void Charactor::doBehivior() {
-    this->behivior->PotionsMerchant();
-}
+//
+// void Charactor::doBehivior() {
+//
+//         charactor->get_behivior()->PotionsMerchant(shared_from_this());
+//
+// }
 
 void Charactor::takeDamge(std::shared_ptr<Enemy> enemy) {
 
 }
-

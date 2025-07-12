@@ -22,15 +22,15 @@ void Behivior::PotionsMerchant(std::shared_ptr<Player>player) {
 void Risktaking::PotionsMerchant(std::shared_ptr<Player>player) {
     bool didhebuy=false;
     if(player.operator*().getCharator().getHealthPoints() < 50  ) {
-       int coins = player.operator*().getCoins();
+        int coins = player.operator*().getCoins();
         int hp = player.operator*().getHealthPoints();
         if(coins > PostinCost) {
             player.operator*().getCharator().setCoins(coins - PostinCost);
             player.operator*().getCharator().setHealthPoints(hp + 10);
             didhebuy=true;
-         //   getPotionsPurchaseMessage(player,1);
+            //   getPotionsPurchaseMessage(player,1);
         }
-getPotionsPurchaseMessage(*player,didhebuy);
+        getPotionsPurchaseMessage(*player,didhebuy);
 
     }
 }

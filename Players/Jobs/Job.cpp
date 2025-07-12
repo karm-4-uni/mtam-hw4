@@ -3,11 +3,12 @@
 //
 
 #include <stdexcept>
-
+#include "../../Events/Encounter.h"
 #include "Archer.h"
 #include "Magician .h"
 #include "../Charactor.h"
 #include "Warrior.h"
+#include "../../Utilities.h"
 
 void Job::doJob(Charactor& charactor) {
 // nothing
