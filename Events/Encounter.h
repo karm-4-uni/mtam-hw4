@@ -5,20 +5,14 @@ class Enemy;
 
 class Charactor;
 class Player;
-class Encounter :  public Event,std::enable_shared_from_this<Encounter> {
-    friend class Charactor;
-    friend class Player;
-
+class Encounter :  public Event {
 public:
     Encounter();
-
     std::shared_ptr<Enemy> enemy;
-Encounter(std::shared_ptr<Enemy> enemy);
-    std::shared_ptr<Enemy> getEnemy() const {
+    Encounter(std::shared_ptr<Enemy> enemy);
+    std::shared_ptr<Enemy> Encounter::getEnemy() const {
         return enemy;
     }
-std::string getDescription() const override;
-     void applyEventP(std::shared_ptr<Player>player) override ;
+    std::string getDescription() const override;
+    void applyEvent(std::shared_ptr<Player>player) override ;
 };
-
-

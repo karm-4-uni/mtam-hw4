@@ -6,18 +6,26 @@
 #include <memory>
 
 #include "Enemy.h"
+#include "Encounter.h"
+
 Encounter::Encounter() {
 
 }
-Encounter::Encounter(std::shared_ptr<Enemy> e) : enemy(std::move(e)) {}
+
+Encounter::Encounter(std::shared_ptr<Enemy> enemy) {
+
+    this->enemy = std::move(enemy);
+
+}
 
 
-std::string Encounter::getDescription() const {
 
-  return this->enemy->getdescription();
+string Encounter::getDescription() const {
 
- }
-void Encounter:: applyEventP(std::shared_ptr<Player>player) {
-player->getCharator().getjob().operator*().applyin(player,this->enemy);
- }
+    return this->enemy->getdescription();
 
+}
+void Encounter:: applyEvent(std::shared_ptr<Player>player) {
+    player.operator*().getCharator().getjob().operator*().applyin(player,this->enemy);
+
+}

@@ -13,6 +13,12 @@ Turn::~Turn() {
 }
 
 void Turn::applyTurn() {
-this->currPlayer.operator*().doEvent(currEvent);
-// this->currEvent->applyEvent(*this->currPlayer);
+    this->currPlayer.get()->doEvent(currEvent);
+    // this->currEvent->applyEvent(*this->currPlayer);
+}
+
+const std::string Turn::printTurnoutcome() {
+    //add getdetails
+    //return   currEvent.get().getdetails();
+    return "";
 }

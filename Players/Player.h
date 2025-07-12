@@ -19,11 +19,10 @@ enum class Stat {
   std::shared_ptr<Charactor> charactor ;
   Stat status  ;
 
-  static int numberofplayers ;
   const int playernumber;
   friend class PlayerFactory;
  public:
-  Player(const string& name,const string& job,const string& behiviar
+  Player(const string& name,const string& job,const string& behiviar ,int idnumber
    , int health = 100
    , int coin = 10
    , int force = 0
@@ -87,7 +86,7 @@ enum class Stat {
 
   void doEvent(std::shared_ptr<Event> event);
 
-  bool operator>( const Player& other) const;
+  bool operator>=( const Player& other) const;
 
 
   bool isDead() ;
@@ -98,4 +97,4 @@ enum class Stat {
 
   void takeDamge(std::shared_ptr<Enemy>enemy);
  };
- bool operator<(const Player& thisplayer ,const Player& other) ;
+bool operator<=(const Player& thisplayer ,const Player& other) ;

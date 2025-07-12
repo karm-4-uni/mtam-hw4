@@ -7,24 +7,11 @@
 #include "Players/Player.h"
 #include "Events/Encounter.h"
 #include "Utilities.h"
+#include "Events/EventFactory.h"
 
 #include "Players/PlayerFactory.h"
-static int numberofplayrs = 0  ;
+
 MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream) {
-    auto events = std::make_shared<std::queue<std::shared_ptr<Event>>>();
-    std::string line,first="" ;
-    int i=0;
-    while(std::getline(eventsStream,line )) {
-        if(line.operator[](i)!=' ') {
-            first+= line.operator[](i);
-
-        }else {
-            if(first == "Snail") {
-                events->push(std::make_shared<Encounter>());
-
-            }
-                if(first=="Barlog") {
-
     /*==========================================*/
     try {
         string Playersfile ;
@@ -38,29 +25,55 @@ addPlayers(inPlayersfile);
         std::cerr << "Error adding players: " <<  "\n";
         throw;
     }
-                }
-                    if(first=="Pack") {
+    // players added
+    /*==========================================*/
+    string EvantsFile ;
+    getline(std::cin,EvantsFile);
+    std::ifstream inEvantFile(EvantsFile);
 
-                    }
-                        if(first=="Slime") {
-
-                        }
-            if(first=="SolarEclipse") {
-
-            }
-            if( first=="PotionsMerchant") {
-
-            }
-        }
+    /*==========================================*/
+           play();
     }
 
+//return winnerindex
+int getWinner(const std::vector<std::shared_ptr<Player>> playersv) {
+     size_t i = 0;
+    for( ; i < playersv.size() ; i++) {
+        if( playersv[i].get()->getLevel() == 10 ) {
+            return  i ;
+        }
 
-
-
-
-    this->m_turnIndex = 1;
+    }
+    return i;
 }
 
+
+void MatamStory::play() {
+    printStartMessage();
+    /*===== TODO: Print start message entry for each player using "printStartPlayerEntry" =====*/
+    for (auto it = playersV.begin();  // 1) initialization
+         it != playersV.end();        // 2) loop‐condition
+         ++it)                        // 3) increment
+    {
+        printStartPlayerEntry(it->get()->getplayerID(),*it->get());
+    }
+
+    /*=========================================================================================*/
+    printBarrier();
+    Gamestat gamestate = isGameOver();
+    while (gamestate == Gamestat::notOver) {
+        playRound();
+         gamestate = isGameOver();
+    }
+    printGameOver();
+    if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
+    if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
+
+    printGameOver();
+    /*===== TODO: Print either a "winner" message or "no winner" message =====*/
+
+    /*========================================================================*/
+}
 void MatamStory::playTurn(Player& player) {
 
     /**
@@ -70,65 +83,75 @@ void MatamStory::playTurn(Player& player) {
      * 3. Play the event
      * 4. Print the turn outcome with "printTurnOutcome"
     */
-
-    m_turnIndex++;
 }
 
-void MatamStory::playRound() {
 
-    printRoundStart();
-
-    /*===== TODO: Play a turn for each player =====*/
-
-    /*=============================================*/
-
-    printRoundEnd();
-
-    printLeaderBoardMessage();
-
-    /*===== TODO: Print leaderboard entry for each player using "printLeaderBoardEntry" =====*/
-
-    /*=======================================================================================*/
-
-    printBarrier();
-}
-
-bool MatamStory::isGameOver() const {
-    /*===== TODO: Implement the game over condition =====*/
-    return false; // Replace this line
-    /*===================================================*/
-}
-
-void MatamStory::play() {
-    printStartMessage();
-    /*===== TODO: Print start message entry for each player using "printStartPlayerEntry" =====*/
-
-    /*=========================================================================================*/
-    printBarrier();
-
-    while (!isGameOver()) {
-        playRound();
+void printLeaderBordplayer(std::vector<std::shared_ptr<Player>> playersV) {
+    for (auto it = playersV.begin();it !=  playersV.end();  ++it) {
+        printLeaderBoardEntry(it->get()->getplayerID(), *it->get());
     }
-
-    printGameOver();
-    /*===== TODO: Print either a "winner" message or "no winner" message =====*/
-
-    /*========================================================================*/
 }
+void MatamStory::playRound() {
+    printRoundStart();
+std::shared_ptr<Round> new_round =  std::make_shared<Round> (playersQ,events );
+ /*===== TODO: Play a turn for each player =====*/
+        new_round.get()->startRound();
+     /*=============================================*/
+    checkdeadplayer();
+if(isGameOver() != Gamestat::notOver) {
+    return;
+}
+
+
+orderPlayers(this->playersV);
+    printRoundEnd();
+    printLeaderBoardMessage();
+    /*===== TODO: Print leaderboard entry for each player using "printLeaderBoardEntry" =====*/
+printLeaderBordplayer(this->playersV);
+    /*=======================================================================================*/
+    printBarrier();
+}
+
+const Gamestat MatamStory::isGameOver()  {
+    /*===== TODO: Implement the game over condition =====*/
+    // 0 = game isnt over
+    // -1 all player dead
+    // 1 there is one winner
+    // 1< more than one winners
+    if(playersQ.get()->size() == 0) {    return  Gamestat::ALLPlayerDead ; ;}
+
+    int count = 0 ;
+    for (size_t i = 0  ; i <  playersQ.get()->size() ; i++)
+    {
+        std::shared_ptr<Player> p = playersQ.get()->front();
+        if(p->getLevel() == 10 ) {
+            count++;
+        }
+       playersQ.get()->pop();
+
+           playersQ.get()->push(p);
+    }
+    if(count == 1) { return Gamestat::Winner;}
+    if(count == 0) {return  Gamestat::notOver;}
+    /*===================================================*/
+    return  Gamestat::notOver;
+}
+
+
 
 
 void MatamStory::addPlayers(std::istream &in) {
     std::string line;
-    int  playercount = 0 ;
+    int  numberofplayrs = 0;
     std::vector<string> playerinput  ;
     while ( std::getline(in, line)) {
-        playercount++;
-        if(playercount > 6) {
+     numberofplayrs++;
+        if(numberofplayrs > 6) {
             throw std::domain_error("There only be 6 player's");
         }
         playerinput.clear();
 
-        int i = 0 ;
+        std::string::size_type i = 0 ;
 
 while ( i < line.size()) {
      string word = "";
@@ -146,9 +169,64 @@ while ( i < line.size()) {
 std::shared_ptr<Player> player1 = PlayerFactory::createPlayer(
           playerinput[0],
           playerinput[1],
-          playerinput[2]);
-        playersQ.push(player1);
+          playerinput[2]
+          ,numberofplayrs);
+       playersQ.get()->push(player1);
         playersV.push_back(player1);
     }
 }
 
+
+void MatamStory::addEvants(std::istream &in) {
+    std::string line;
+   // std::vector<string> Evantinput  ;
+    EventFactory factory;
+    while ( std::getline(in, line)) {
+        if (line.empty()) { continue;}
+        while (!events->empty()) events->pop();
+        try {
+          std::shared_ptr<Event> newEvent = factory.createEvent(line);
+        events->push(newEvent);
+        } catch (...) {
+            throw std::runtime_error("EventFactory cant creat event");
+        }
+
+
+    }
+}
+
+void MatamStory::checkdeadplayer() {
+    for (size_t i = 0  ; i <  playersQ.get()->size() ; i++)
+    {
+      if(playersQ.get()->front().get()->isDead()) {
+         playersQ.get()->pop();
+      } else {
+          playersQ.get()->push(playersQ.get()->front());
+      }
+    }
+}
+
+void orderPlayers( std::vector<std::shared_ptr<Player>> playersV) {
+    int n = playersV.size();
+    int aliveEnd = 0;
+    try {
+        for (int i = 0; i < n; ++i) {
+            if (!playersV[i]->isDead()) {
+                std::swap(playersV[i], playersV[aliveEnd]);
+                ++aliveEnd;
+            }
+        }
+        for (int i = 0; i < aliveEnd; ++i) {
+            int best = i;
+            for (int j = i + 1; j < aliveEnd; ++j) {
+                if (*playersV[j] >= *playersV[best])
+                    best = j;
+            }
+            if (best != i)
+                std::swap(playersV[i], playersV[best]);
+        }
+    } catch (...) {
+        throw std::runtime_error("orderplayer Error");
+    }
+
+}

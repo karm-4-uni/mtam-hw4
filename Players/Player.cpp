@@ -13,7 +13,6 @@
 #include "../Events/Event.h"
 #include "Jobs/Archer.h"
 
-int Player::numberofplayers = 0 ;
 string Player::getName() const {
    return  this->charactor->getName();
 }
@@ -41,24 +40,18 @@ string Player::getDescription() const {
    return this->charactor.get()->getDescription();
 }
 
-Player::Player(const std::string& name
-   , const std::string& jobName,
-  const std::string& behaviorName,
+Player::Player(const std::string& name,
+               const std::string& job,
+               const std::string& behavior,
                int health,
                int coin,
-               int force
-               )
-    : name(name),
-playernumber(numberofplayers++),
-      charactor(std::make_shared<Charactor>(
-          name,
-          jobName,
-          behaviorName,
-          health,
-          coin,
-          force
-      ))
-{}
+               int force,
+               int playercount)
+  : name(name),
+    charactor(std::make_shared<Charactor>(name, job, behavior, health, coin, force)),
+    status(Stat::Alive),
+    playernumber(playercount)
+{  }
 
 const bool Player::isfullhp() const {
    return this->charactor->isfullhp();
@@ -95,4 +88,20 @@ bool Player::isDead()  {
       this->status = Stat::Dead ;return  true;
    }
    return  false ;
+}
+bool Player::operator>=(const Player &other) const {
+   if(this->charactor == other.charactor) {
+      if(this->name == other.name) {
+         throw std::out_of_range("A player has the same artuibut");
+      } else {
+         if(this->name > other.name) {
+            return  true;
+         } else { return  false ;}
+      }
+   } else {
+      return (this->charactor >= other.charactor );
+   }
+}
+bool operator<=(const Player &thisplayer, const Player &other) {
+   return  (other >= thisplayer);
 }

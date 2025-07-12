@@ -13,7 +13,6 @@ public:
     Turn();
     Turn(std::shared_ptr<Player> currPlayer,    std::shared_ptr<Event> currEvent);
     ~Turn();
-void applyTurn();
-
-
+    void applyTurn();
+    const std::string printTurnoutcome() ;
 };

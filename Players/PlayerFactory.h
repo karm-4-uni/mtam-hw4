@@ -16,6 +16,7 @@ public:
        const std::string& name,
        const string& job,
        const string& behavior,
+       int IDnumber ,
        int coin = 10,
        int health = 100 ,
        int force = 5
