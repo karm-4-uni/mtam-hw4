@@ -12,7 +12,8 @@ string SolarEclipse::getDescription() const {
 }
 
     void SolarEclipse::applyEventP(std::shared_ptr<Player> player) {
-    player->getCharator().getjob()->applyin(player);
+    auto self = std::static_pointer_cast<SolarEclipse>(shared_from_this());
+    player.get()->getCharator().getjob()->applyin(player, self);
 
     }
 

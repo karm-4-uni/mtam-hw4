@@ -25,7 +25,8 @@ string Encounter::getDescription() const {
     return this->enemy->getdescription();
 
 }
-void Encounter:: applyEvent(std::shared_ptr<Player>player) {
-    player.operator*().getCharator().getjob().operator*().applyin(player,this->enemy);
+void Encounter:: applyEventP(std::shared_ptr<Player>player) {
+    auto self = std::static_pointer_cast<SolarEclipse>(shared_from_this());
+    player.get()->getCharator().getjob()->applyin(player, self);
 
 }

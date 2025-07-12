@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 # List *only* your .cpp files here—headers are found by your include paths.
 add_executable(mtam_hw4
-        # mains/tests
         main.cpp
         maintest.cpp
 
@@ -18,20 +17,22 @@ add_executable(mtam_hw4
         Players/PlayerFactory.cpp
         Players/Behiviors/Behivior.cpp
 
+        # jobs  ← you must have this
+        Players/Jobs/Job.cpp
+
         # events
         Events/Event.cpp
         Events/EventFactory.cpp
-
-        # encounter
         Events/Encounter.cpp
         Events/SpecialEvent.cpp
         Events/PotionsMerchant.cpp
         Events/SolarEclipse.cpp
 
-        # rounds & turns
+        # rounds & turns  ← and this
         Rounds/Round.cpp
         Rounds/Turns/Turn.cpp
-        Players/Jobs/Job.cpp
+
+        # story driver
         MatamStory.cpp
 
 

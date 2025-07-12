@@ -24,10 +24,7 @@ std::shared_ptr<Player>  newplayer  = std::make_shared<Player>(
  newplayer.get()->getCharator().doJob();
  return newplayer;
 }
-void takeDamge(std::shared_ptr<Enemy>enemy) {
 
-
-}
 
 
 //

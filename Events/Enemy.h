@@ -16,7 +16,7 @@ protected:
     int damge=0;
 
 public:
-    Enemy();
+    Enemy() = default;
    virtual  ~Enemy() = default;
    int getloot() const  {
        return this->loot;
@@ -38,7 +38,7 @@ virtual std::string getdescription()const =0;
 };
 
 class Snail : public Enemy {
-
+public:
     Snail() {
         this->name="Snail";
         this->damge=10;
@@ -52,11 +52,13 @@ class Snail : public Enemy {
     std::string getdescription() const override {
         std::string g= "Snail (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                        "damge "+std::to_string(damge);
+        return  g;
     }
+
 };
 
 class Slime : public Enemy {
-
+public:
     Slime() {
         this->name="Slime";
 
@@ -72,10 +74,12 @@ class Slime : public Enemy {
     std::string getdescription() const override {
         std::string g= "Slime (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                        "damge "+std::to_string(damge);
+        return  g;
     }
 };
 
 class Barlog : public Enemy {
+public:
     Barlog() {
         this->name="Barlog";
         this->damge=10;
@@ -90,6 +94,7 @@ class Barlog : public Enemy {
     std::string getdescription() const override {
         std::string g= "Barlog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                        "damge "+std::to_string(damge);
+        return  g;
     }
 };
 
@@ -117,7 +122,7 @@ public:
     }
 
     std::string getdescription() const override {
-
+        return  "";
 
     }
 };

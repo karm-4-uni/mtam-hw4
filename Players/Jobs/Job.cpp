@@ -87,9 +87,8 @@ std::shared_ptr<Job> Job::fromString(const std::string &name) {
     if ( name == "Archer") { return  std::make_shared<Archer>();}
     throw std::invalid_argument("Unknown job: " + name);
 }
-void Warrior::takeDamge(std::shared_ptr<Enemy> enemy) {
 
-}
+
 
 void Warrior::applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) {
     if(player.operator*().getCharator().getcombatpower()>
@@ -142,6 +141,13 @@ void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter
 void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) {
     player.operator*().getCharator().force+=1;
     getSolarEclipseMessage(*player,1);
+
+}
+
+void Job::applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) {
+
+}
+void Job::applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) {
 
 }
 

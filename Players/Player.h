@@ -95,6 +95,6 @@ enum class Stat {
   //
   void doBehivior();
 
-  void takeDamge(std::shared_ptr<Enemy>enemy);
+// void takeDamge(std::shared_ptr<Enemy>enemy);
  };
 bool operator<=(const Player& thisplayer ,const Player& other) ;
