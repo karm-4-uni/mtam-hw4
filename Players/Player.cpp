@@ -19,10 +19,10 @@ string Player::getName() const {
 
 
 Charactor& Player::getCharator() {
-   return *this->charactor.get();
+   return *charactor;
 }
 const Charactor& Player::getCharator() const {
-   return *this->charactor.get();
+   return *charactor;  // or charactor.get()
 }
 int Player::getCoins() const {
    return this->charactor->getCoins();

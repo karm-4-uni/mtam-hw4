@@ -117,7 +117,7 @@ void Archer::applyin(std::shared_ptr<Player> player) {
 }
 void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) {
     if(player.operator*().getCharator().getcombatpower()>
-     enemy.operator*().getcobatpower()){
+     enemy->getcobatpower()){
         player.operator*().getCharator().coin+=enemy.operator*().getloot();
         player.operator*().getCharator().Level++;
         getEncounterWonMessage(*player,enemy.operator*().getloot());
