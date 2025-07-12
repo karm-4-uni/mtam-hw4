@@ -80,14 +80,15 @@ std::shared_ptr<Job> Job::fromString(const std::string &name) {
 
 
 void Warrior::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) {
-    if(player.operator*().getCharator().getcombatpower()>
-     enemy.operator*().getcobatpower()){
-        player.operator*().getCharator().coin+=enemy.operator*().getloot();
-        player.operator*().getCharator().Level++;
-        player.operator*().getCharator().CurrentHP-=enemy.operator*().getdamge();
+    Charactor& charct = player->getCharator();
+    if(charct.getcombatpower()>
+     enemy->getcobatpower()){
+        charct.setCoins(charct.getCoins()+enemy->getloot());
+        charct.setLevel(charct.getLevel()+1);
         getEncounterWonMessage(*player,enemy.operator*().getloot());
+        charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
      }else {
-         player.operator*().getCharator().CurrentHP-= enemy.operator*().getdamge();
+         charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
          getEncounterLostMessage(*player,enemy.operator*().getdamge());
      }
 }
@@ -98,16 +99,17 @@ void Warrior::applyin(std::shared_ptr<Player> player ) {
 }
 
 void Archer::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) {
-if(player.operator*().getCharator().getcombatpower()>
-    enemy.operator*().getcobatpower()){
-player.operator*().getCharator().coin+=enemy.operator*().getloot();
-    player.operator*().getCharator().Level++;
-    getEncounterWonMessage(*player,enemy.operator*().getloot());
+    Charactor& charct = player->getCharator();
+    if(charct.getcombatpower()>
+     enemy->getcobatpower()){
+        charct.setCoins(charct.getCoins()+enemy->getloot());
+        charct.setLevel(charct.getLevel()+1);
+        getEncounterWonMessage(*player,enemy.operator*().getloot());
 
-}else {
-    player.operator*().getCharator().CurrentHP-= enemy.operator*().getdamge();
-    getEncounterLostMessage(*player,enemy.operator*().getdamge());
-}
+     }else {
+         charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
+         getEncounterLostMessage(*player,enemy.operator*().getdamge());
+     }
 }
 void Archer::applyin(std::shared_ptr<Player> player) {
 
@@ -116,14 +118,15 @@ void Archer::applyin(std::shared_ptr<Player> player) {
 
 }
 void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) {
-    if(player.operator*().getCharator().getcombatpower()>
+    Charactor& charct = player->getCharator();
+    if(charct.getcombatpower()>
      enemy->getcobatpower()){
-        player.operator*().getCharator().coin+=enemy.operator*().getloot();
-        player.operator*().getCharator().Level++;
+        charct.setCoins(charct.getCoins()+enemy->getloot());
+        charct.setLevel(charct.getLevel()+1);
         getEncounterWonMessage(*player,enemy.operator*().getloot());
 
      }else {
-         player.operator*().getCharator().CurrentHP-= enemy.operator*().getdamge();
+         charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
          getEncounterLostMessage(*player,enemy.operator*().getdamge());
      }
 
