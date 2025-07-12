@@ -21,7 +21,7 @@ void printStartPlayerEntry(unsigned int index, const Player& player) {
 void printTurnDetails(unsigned int index, const Player& player, const Event& event) {
     cout << "Turn: " << index << endl;
     cout << "Player: " << player.getDescription() << endl;
-    //cout << "Event: " << event.getDescription() << endl;
+    cout << "Event: " << event.getDescription() << endl;
 }
 
 void printTurnOutcome(string outcome) {

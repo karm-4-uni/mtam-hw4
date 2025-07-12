@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # List *only* your .cpp files here—headers are found by your include paths.
 add_executable(mtam_hw4
         main.cpp
-        maintest.cpp
 
         # utilities
         Utilities.cpp

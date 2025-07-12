@@ -13,11 +13,12 @@ class Event :public std::enable_shared_from_this<Event> {
  protected:
   std::string name;
  Event() = default;
- virtual  std::string getDescription() const = 0;
    //virtual  void applyEvent( std::shared_ptr<Charactor> charactor);
    virtual  void applyEventP( std::shared_ptr<Player> player) = 0;
 
   public:
  Event(const std::string &name);
    std::string getname() const;
+ virtual  std::string getDescription() const = 0;
+
 };

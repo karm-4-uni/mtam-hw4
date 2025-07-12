@@ -1,6 +1,6 @@
 # include "Turn.h"
 # include "../../Events/Event.h"
-
+#include "../../Utilities.h"
 Turn::Turn() {
 
 }
@@ -13,13 +13,8 @@ Turn::~Turn() {
 }
 
 void Turn::applyTurn() {
-<<<<<<< HEAD
- //   currEvent.operator*().
-this->currPlayer.operator*().doEvent(currEvent);
-    // this->currEvent->applyEvent(*this->currPlayer);
-=======
+    printTurnDetails(1,*currPlayer,*currEvent);
 this->currPlayer->doEvent(currEvent);
->>>>>>> dd286c1 (fix get charactor root cuse)
 }
 
 const std::string Turn::printTurnoutcome() {
