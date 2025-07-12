@@ -7,6 +7,9 @@
 
 #include <stdexcept>
 # include "Charactor.h"
+
+#include <ostream>
+
 #include "../Events/Event.h"
 #include "Behiviors/Behivior.h"
 #include "Jobs/Job.h"
@@ -58,6 +61,7 @@ std::string Charactor::getDescription() const {
     description+= std::to_string(Level)  ;
     description+=",force ";
     description+= std::to_string(force) ;
+    description+= ")\n";
     return description;
 }
 

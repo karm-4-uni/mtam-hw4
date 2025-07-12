@@ -16,7 +16,7 @@ enum class Gamestat {
 };
 class MatamStory{
 private:
- unsigned int m_turnIndex;
+ static int m_turnIndex;
  std::shared_ptr<std::queue<std::shared_ptr<Player>>>  playersQ ;
  std::vector<std::shared_ptr<Player>> playersV;
  //std::vector<std::unique_ptr<Round>> Rounds;
