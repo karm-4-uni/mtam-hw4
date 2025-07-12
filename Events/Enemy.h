@@ -7,7 +7,6 @@
 class Charactor;
 class Player;
 
-
 class Enemy {
 protected:
     std::string name="";
@@ -16,7 +15,7 @@ protected:
     int damge=0;
 
 public:
-    Enemy() = default;
+    Enemy()= default;
    virtual  ~Enemy() = default;
    int getloot() const  {
        return this->loot;
@@ -54,7 +53,6 @@ public:
                        "damge "+std::to_string(damge);
         return  g;
     }
-
 };
 
 class Slime : public Enemy {
@@ -103,13 +101,20 @@ public:
         int count ;
 public:
         Pack() = default ;
-    Pack(const std::vector<std::shared_ptr<Enemy>>& es) : enemies(es) {}
+        Pack(const std::vector<std::shared_ptr<Enemy>>& es) : enemies(es), count(0) {
+            for (const auto& e : es) {
+                this->loot += e->getloot();
+                this->damge += e->getdamge();
+                this->combatPower += e->getcobatpower();
+                ++count;
+            }
+        }
 
 
         void addEnemy(const std::shared_ptr<Enemy>& e) {
         this->loot +=e->getloot();
         this->damge +=e->getdamge();
-        this->combatPower +=this->getcobatpower();
+        this->combatPower +=e->getcobatpower();
         enemies.push_back(e);
         this->count++;
     }
@@ -121,8 +126,11 @@ public:
         return std::make_shared<Pack>(copies);
     }
 
-    std::string getdescription() const override {
-        return  "";
+        std::string getdescription() const override {
+            std::string result = "Pack of " + std::to_string(count) + " enemies:\n";
+            for (const auto& e : enemies)
+                result += "  - " + e->getdescription() + "\n";
+            return result;
+        }
 
-    }
 };

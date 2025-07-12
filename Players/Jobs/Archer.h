@@ -1,6 +1,3 @@
-//
-// Created by Admin on 03/07/2025.
-//
 #pragma once
 
 #ifndef ARCHER_H
@@ -14,7 +11,6 @@ public:
     void doJob(Charactor& charactor) override;
     const std::string getjob() const override;
     void SolarEclipse( Charactor& charactor) override;
-    void applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) override;
-    void applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) override;
- //   void takeDamge(std::shared_ptr<Enemy> enemy) override;
+    void applyin(std::shared_ptr<Player> player) override;
+    void applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) override;
 };

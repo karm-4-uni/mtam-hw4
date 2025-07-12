@@ -73,8 +73,7 @@ const int Player::getplayerID() const {
 
 
 void Player::doEvent(std::shared_ptr<Event> event) {
-  if(! isDead())
-   //  event.operator*().applyEventP(charactor);
+
      event.operator*().applyEventP(shared_from_this());
 
 }

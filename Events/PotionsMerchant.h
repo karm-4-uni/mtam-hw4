@@ -10,7 +10,7 @@ public:
     PotionsMerchant();
 
 
-   std:: string getDescription() const override;
-     void applyEventP(std::shared_ptr<Player>player) override;
+    std:: string getDescription() const override;
+    void applyEventP(std::shared_ptr<Player>player) override;
     //void applyEvent(std::shared_ptr<Charactor> charactor) override;
-  };
+};

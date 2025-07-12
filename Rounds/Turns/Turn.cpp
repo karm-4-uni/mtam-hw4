@@ -13,7 +13,8 @@ Turn::~Turn() {
 }
 
 void Turn::applyTurn() {
-    this->currPlayer.get()->doEvent(currEvent);
+    currEvent.operator*().
+this->currPlayer.operator*().doEvent(currEvent);
     // this->currEvent->applyEvent(*this->currPlayer);
 }
 
