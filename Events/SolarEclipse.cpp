@@ -12,7 +12,7 @@ string SolarEclipse::getDescription() const {
 }
 
     void SolarEclipse::applyEventP(std::shared_ptr<Player> player) {
-    auto& job = *player->getCharator().getjob();
-    job.applyin(player, shared_from_this())
+    player->getCharator().getjob()->applyin(player);
+
     }
 

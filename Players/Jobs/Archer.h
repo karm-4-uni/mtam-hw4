@@ -14,7 +14,7 @@ public:
     void doJob(Charactor& charactor) override;
     const std::string getjob() const override;
     void SolarEclipse( Charactor& charactor) override;
-    void applyin(std::shared_ptr<Player> player, std::shared_ptr<::SolarEclipse> solar) override;
-    void applyin(std::shared_ptr<Player> player, std::shared_ptr<Encounter> encounter) override;
+    void applyin(std::shared_ptr<Player> player) override;
+    void applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) override;
     void takeDamge(std::shared_ptr<Enemy> enemy) override;
 };

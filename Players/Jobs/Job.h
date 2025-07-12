@@ -20,8 +20,8 @@ public:
     virtual const std::string getjob() const = 0;
     virtual  void SolarEclipse(Charactor& charactor) ;
     virtual void takeDamge(std::shared_ptr<Enemy>enemy);
-    virtual void applyin(std::shared_ptr<Player>player,std::shared_ptr<::SolarEclipse>solar)=0;
-    virtual void applyin(std::shared_ptr<Player>player,std::shared_ptr<Encounter>encounter)=0;
+    virtual void applyin(std::shared_ptr<Player>player)=0;
+    virtual void applyin(std::shared_ptr<Player>player,std::shared_ptr<Enemy>enemy)=0;
     static std::shared_ptr<Job> fromString(const std::string &name) ;
 };
 #endif //JOB_H

@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/mtam_hw4.dir/Events/Encounter.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Events/Encounter.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Events/PotionsMerchant.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Events/PotionsMerchant.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Events/SolarEclipse.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Events/SolarEclipse.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Players/Jobs/Job.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Players/Jobs/Job.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Players/PlayerFactory.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Players/PlayerFactory.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Rounds/Turns/Turn.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Rounds/Turns/Turn.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/Utilities.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/main.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/main.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/maintest.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d"
+  "mtam_hw4"
+  "mtam_hw4.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/mtam_hw4.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

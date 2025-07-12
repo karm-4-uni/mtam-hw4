@@ -5,7 +5,7 @@ class Enemy;
 
 class Charactor;
 class Player;
-class Encounter :  public Event {
+class Encounter :  public Event,std::enable_shared_from_this<Encounter> {
     friend class Charactor;
     friend class Player;
 

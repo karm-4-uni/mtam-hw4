@@ -18,8 +18,6 @@ std::string Encounter::getDescription() const {
 
  }
 void Encounter:: applyEventP(std::shared_ptr<Player>player) {
-    auto& job = *player->getCharator().getjob();
-    job.applyin(player, shared_from_this());
-
+player->getCharator().getjob().operator*().applyin(player,this->enemy);
  }
 

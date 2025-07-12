@@ -88,5 +88,4 @@ void Player::doEvent(std::shared_ptr<Event> event) {
 
 void Player::doBehivior()
 {
-   charactor->get_behivior()->PotionsMerchant(shared_from_this());
 }
