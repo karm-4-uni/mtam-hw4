@@ -51,7 +51,7 @@ void Responsible::PotionsMerchant(std::shared_ptr<Player>player) {
 
 std::unique_ptr<Behivior> Behivior::fromString(const std::string& name) {
     if (name == "Responsible") {  return std::make_unique<Responsible>();}
-    if (name == "Risktaking") {return std::make_unique<Risktaking>();}
+    if (name == "RiskTaking") {return std::make_unique<Risktaking>();}
     throw std::invalid_argument("Unknown behavior: " + name);
 }
 

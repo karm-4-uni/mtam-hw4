@@ -51,103 +51,103 @@ build cmake_object_order_depends_target_mtam_hw4: phony || .
 
 build CMakeFiles/mtam_hw4.dir/main.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/main.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir
 
 build CMakeFiles/mtam_hw4.dir/maintest.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/maintest.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\maintest.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir
 
 build CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Utilities.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Utilities.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir
 
 build CMakeFiles/mtam_hw4.dir/Players/Player.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Players/Player.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Players\Player.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Players
 
 build CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Players/Charactor.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Players\Charactor.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Players
 
 build CMakeFiles/mtam_hw4.dir/Players/PlayerFactory.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Players/PlayerFactory.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Players\PlayerFactory.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Players
 
 build CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Players/Behiviors/Behivior.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Players\Behiviors\Behivior.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Players\Behiviors
 
 build CMakeFiles/mtam_hw4.dir/Players/Jobs/Job.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Players/Jobs/Job.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Players\Jobs\Job.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Players\Jobs
 
 build CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Events/Event.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Events\Event.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Events
 
 build CMakeFiles/mtam_hw4.dir/Events/EventFactory.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Events/EventFactory.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Events\EventFactory.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Events
 
 build CMakeFiles/mtam_hw4.dir/Events/Encounter.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Events/Encounter.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Events\Encounter.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Events
 
 build CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Events/SpecialEvent.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Events\SpecialEvent.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Events
 
 build CMakeFiles/mtam_hw4.dir/Events/PotionsMerchant.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Events/PotionsMerchant.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Events\PotionsMerchant.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Events
 
 build CMakeFiles/mtam_hw4.dir/Events/SolarEclipse.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Events/SolarEclipse.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Events\SolarEclipse.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Events
 
 build CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Rounds/Round.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Rounds\Round.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Rounds
 
 build CMakeFiles/mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/Rounds/Turns/Turn.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\Rounds\Turns\Turn.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir\Rounds\Turns
 
 build CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj: CXX_COMPILER__mtam_hw4_unscanned_Debug C$:/Users/Admin/Documents/uni/mtam-hw4/MatamStory.cpp || cmake_object_order_depends_target_mtam_hw4
   DEP_FILE = CMakeFiles\mtam_hw4.dir\MatamStory.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\mtam_hw4.dir
   OBJECT_FILE_DIR = CMakeFiles\mtam_hw4.dir
 
@@ -171,6 +171,24 @@ build mtam_hw4.exe: CXX_EXECUTABLE_LINKER__mtam_hw4_Debug CMakeFiles/mtam_hw4.di
 
 
 #############################################
+# Utility command for run_test1
+
+build run_test1: phony CMakeFiles/run_test1 mtam_hw4.exe
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Admin\Documents\uni\mtam-hw4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
+
+#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -191,6 +209,13 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for CMakeFiles\run_test1
+
+build CMakeFiles/run_test1 | ${cmake_ninja_workdir}CMakeFiles/run_test1: CUSTOM_COMMAND mtam_hw4.exe || mtam_hw4.exe
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Admin\Documents\uni\mtam-hw4\tests && C:\Users\Admin\Documents\uni\mtam-hw4\cmake-build-debug\mtam_hw4.exe test1"
 
 # =============================================================================
 # Target aliases.

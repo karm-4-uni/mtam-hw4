@@ -1,13 +1,54 @@
-// #include <iostream>
-// #include <fstream>
-// #include <sstream>
-// #include <string>
-// #include <filesystem>
-// #include <vector>
-// #include <algorithm>
-// #include "MatamStory.h"
-// #include "Players/PlayerFactory.h"
-// void runTest(const char* name) ;
+
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <exception>
+#include "MatamStory.h"
+
+int main() {
+    using namespace std;
+
+    // 1) Read events
+    cout << "Enter events (type END on its own line to finish):" << endl;
+    vector<string> eventLines;
+    string line;
+    while (getline(cin, line)) {
+        if (line == "END") break;
+        // skip blank lines if you like:
+        if (!line.empty())
+            eventLines.push_back(line);
+    }
+
+    // 2) Read players
+    cout << "\nEnter players (type END on its own line to finish):" << endl;
+    vector<string> playerLines;
+    while (getline(cin, line)) {
+        if (line == "END") break;
+        if (!line.empty())
+            playerLines.push_back(line);
+    }
+
+    // 3) Build input‐streams
+    ostringstream evStreamBuf, plStreamBuf;
+    for (auto &l : eventLines)  evStreamBuf << l << '\n';
+    for (auto &l : playerLines) plStreamBuf << l << '\n';
+
+    istringstream evStream(evStreamBuf.str()), plStream(plStreamBuf.str());
+
+    // 4) Run the game
+    try {
+        MatamStory game(evStream, plStream);
+        // if your ctor already calls play(), you’re done
+    }
+    catch (const exception &e) {
+        cerr << "Error: " << e.what() << endl;
+        return 1;
+    }
+
+    return 0;
+}
 // int main() {
 //     try {
 //
@@ -54,46 +95,9 @@
 //     catch (const std::exception& ex) {
 //         std::cerr << "Error creating player: " << ex.what() << '\n';
 //     }
-//     std::istringstream emptyEvents{""};
-//
-//     // 2) Construct MatamStory using the empty stream for events.
-//     //    We don't care about playersStream here because we'll
-//     //    call addPlayers by hand.
-//     MatamStory story(emptyEvents, emptyEvents);
-//
-//     // 3) Now read your players *once* from cin:
 //
 //     return 0;
 // }
 //
-// void runTest(const char* name) {
-//     std::cout << "=== " << name << " ===\n";
-//
-//     // 1) open the two inputs
-//     std::ifstream evs(std::string("tests/") + name + ".events");
-//     std::ifstream pls(std::string("tests/") + name + ".players");
-//     if (!evs || !pls) {
-//         std::cerr << "  ERROR: missing files for " << name << "\n\n";
-//         return;
-//     }
-//
-//     // 2) run your story and capture its output to cout
-//     try {
-//         MatamStory story(evs, pls);
-//         story.play();
-//     }
-//     catch (const std::exception& e) {
-//         std::cerr << "  EXCEPTION: " << e.what() << "\n\n";
-//         return;
-//     }
-//
-//     // 3) print the “expected” so you can compare by eye
-//     std::ifstream expf(std::string("tests/") + name + ".expected");
-//     std::string line;
-//     std::cout << "\n--- expected (" << name << ") ---\n";
-//     while (std::getline(expf, line)) {
-//         std::cout << line << "\n";
-//     }
-//     std::cout << "\n\n";
-// }
-//
+
+

@@ -11,26 +11,24 @@
 
 #include "Players/PlayerFactory.h"
 
-MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream) {
+MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
+{
+    playersQ = std::make_shared<std::queue<std::shared_ptr<Player>>>();
+    events   = std::make_shared<std::queue<std::shared_ptr<Event>>>();
+
     /*==========================================*/
     try {
-        string Playersfile ;
-    getline(std::cin,Playersfile);
-    std::ifstream inPlayersfile(Playersfile);
-    if (!inPlayersfile) {
-        throw  std::runtime_error("can't open  Playerfile ");
-    }
-addPlayers(inPlayersfile);
+        addPlayers(playersStream);
     } catch (...) {
         std::cerr << "Error adding players: " <<  "\n";
         throw;
     }
     // players added
     /*==========================================*/
-    string EvantsFile ;
-    getline(std::cin,EvantsFile);
-    std::ifstream inEvantFile(EvantsFile);
-
+    // string EvantsFile ;
+    // getline(eventsStream,EvantsFile);
+    // std::ifstream inEvantFile(EvantsFile);
+addEvants(eventsStream);
     /*==========================================*/
            play();
     }
@@ -97,7 +95,7 @@ std::shared_ptr<Round> new_round =  std::make_shared<Round> (playersQ,events );
  /*===== TODO: Play a turn for each player =====*/
         new_round.get()->startRound();
      /*=============================================*/
-    checkdeadplayer();
+   // checkdeadplayer();
 if(isGameOver() != Gamestat::notOver) {
     return;
 }
@@ -140,41 +138,41 @@ const Gamestat MatamStory::isGameOver()  {
 
 
 
-void MatamStory::addPlayers(std::istream &in) {
-    std::string line;
-    int  numberofplayrs = 0;
-    std::vector<string> playerinput  ;
-    while ( std::getline(in, line)) {
-     numberofplayrs++;
-        if(numberofplayrs > 6) {
-            throw std::domain_error("There only be 6 player's");
-        }
-        playerinput.clear();
-
-        std::string::size_type i = 0 ;
-
-while ( i < line.size()) {
-     string word = "";
-        while (i < line.size() && line[i] == ' '){i++;}
-        while (line[i] != ' ' && i < line.size()) {
-            word += line[i++];
-        }
-
-        playerinput.push_back(word);
-        word.clear();
-}
-        if(playerinput.size() != 3 ) {
-            throw std::domain_error("Invalid input");
-        }
-std::shared_ptr<Player> player1 = PlayerFactory::createPlayer(
-          playerinput[0],
-          playerinput[1],
-          playerinput[2]
-          ,numberofplayrs);
-       playersQ.get()->push(player1);
-        playersV.push_back(player1);
-    }
-}
+// void MatamStory::addPlayers(std::istream &in) {
+//     std::string line;
+//     int  numberofplayrs = 0;
+//     std::vector<string> playerinput  ;
+//     while ( std::getline(in, line)) {
+//      numberofplayrs++;
+//         if(numberofplayrs > 6) {
+//             throw std::domain_error("There only be 6 player's");
+//         }
+//         playerinput.clear();
+//
+//         std::string::size_type i = 0 ;
+//
+// while (i < line.size() && line[i] != ' ') {
+//      string word = "";
+//         while (i < line.size() && line[i] == ' '){i++;}
+//         while (line[i] != ' ' && i < line.size()) {
+//             word += line[i++];
+//         }
+//
+//         playerinput.push_back(word);
+//         word.clear();
+// }
+//         if(playerinput.size() != 3 ) {
+//             throw std::domain_error("Invalid input");
+//         }
+// std::shared_ptr<Player> player1 = PlayerFactory::createPlayer(
+//           playerinput[0],
+//           playerinput[1],
+//           playerinput[2]
+//           ,numberofplayrs);
+//        playersQ.get()->push(player1);
+//         playersV.push_back(player1);
+//     }
+// }
 
 
 void MatamStory::addEvants(std::istream &in) {
@@ -186,7 +184,7 @@ void MatamStory::addEvants(std::istream &in) {
         while (!events->empty()) events->pop();
         try {
           std::shared_ptr<Event> newEvent = factory.createEvent(line);
-        events->push(newEvent);
+        events.get()->push(newEvent);
         } catch (...) {
             throw std::runtime_error("EventFactory cant creat event");
         }
@@ -195,16 +193,18 @@ void MatamStory::addEvants(std::istream &in) {
     }
 }
 
-void MatamStory::checkdeadplayer() {
-    for (size_t i = 0  ; i <  playersQ.get()->size() ; i++)
-    {
-      if(playersQ.get()->front().get()->isDead()) {
-         playersQ.get()->pop();
-      } else {
-          playersQ.get()->push(playersQ.get()->front());
-      }
-    }
-}
+
+//moved to round
+// void MatamStory::checkdeadplayer() {
+//     for (size_t i = 0  ; i <  playersQ.get()->size() ; i++)
+//     {
+//       if(playersQ.get()->front().get()->isDead()) {
+//          playersQ.get()->pop();
+//       } else {
+//           playersQ.get()->push(playersQ.get()->front());
+//       }
+//     }
+// }
 
 void orderPlayers( std::vector<std::shared_ptr<Player>> playersV) {
     int n = playersV.size();
@@ -229,4 +229,42 @@ void orderPlayers( std::vector<std::shared_ptr<Player>> playersV) {
         throw std::runtime_error("orderplayer Error");
     }
 
+}
+void MatamStory::addPlayers(std::istream& in) {
+    std::string line;
+    int count = 0;
+
+    while (std::getline(in, line)) {
+        // Skip blank/whitespace-only
+        if (line.find_first_not_of(" \t\r\n") == std::string::npos)
+            continue;
+
+        ++count;
+        if (count > 6)
+            throw std::domain_error("There can only be up to 6 players");
+
+        std::vector<std::string> tokens;
+        std::size_t i = 0;
+        while (i < line.size()) {
+            // skip spaces
+            while (i < line.size() && std::isspace(line[i])) ++i;
+            if (i >= line.size()) break;
+            // grab word
+            std::string w;
+            while (i < line.size() && !std::isspace(line[i]))
+                w += line[i++];
+            tokens.push_back(w);
+        }
+
+        if (tokens.size() != 3)
+            throw std::domain_error("Invalid input: each line must have exactly 3 tokens");
+
+        auto player = PlayerFactory::createPlayer(
+            tokens[0], tokens[1], tokens[2], count);
+        playersQ->push(player);
+        playersV.push_back(player);
+    }
+
+    if (count == 0)
+        throw std::domain_error("No players provided");
 }

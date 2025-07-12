@@ -69,7 +69,8 @@ public:
  */
  void play();
 
- void checkdeadplayer() ;
+ //moved to round
+ //void checkdeadplayer() ;
 
 };
 void orderPlayers(std::vector<std::shared_ptr<Player>> playersV);

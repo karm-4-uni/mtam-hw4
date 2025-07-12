@@ -28,7 +28,7 @@ Round::~Round() {
 
 
 void Round::startRound() {
-    int count = 0 ;
+     std::size_t count = 0 ;
     std::queue<std::shared_ptr<Player>> players_copy = *players;
     assert(!players_copy.empty() && !events->empty());
     //IF cant happen but if it happend then the code is fully worng
@@ -61,12 +61,13 @@ void Round::startRound() {
 }
 
 void Round::checkPlayers() {
-    for (int i = 0  ; i <  players.get()->size() ; i++)
-    {
-        if(players.get()->front().get()->isDead()) {
-            players.get()->pop();
-        } else {
-            players.get()->push(players.get()->front());
+     std::queue<std::shared_ptr<Player>> q = *players;
+        size_t n = q.size();
+    for ( size_t i = 0; i < n; ++i){
+        std::shared_ptr<Player> p = q.front();
+        q.pop();
+        if (!p->isDead()) {
+            q.push(p);
         }
     }
 }
