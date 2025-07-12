@@ -54,3 +54,7 @@ std::unique_ptr<Behivior> Behivior::fromString(const std::string& name) {
     if (name == "Risktaking") {return std::make_unique<Risktaking>();}
     throw std::invalid_argument("Unknown behavior: " + name);
 }
+
+void Behivior::PotionsMerchant(Player& player) {
+    // do nothing
+}

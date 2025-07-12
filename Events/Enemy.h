@@ -15,7 +15,8 @@ protected:
     int damge=0;
 
 public:
-    Enemy();
+    Enemy() = default;
+
    virtual  ~Enemy() = default;
    int getloot() const  {
        return this->loot;

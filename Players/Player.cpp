@@ -89,3 +89,10 @@ void Player::doEvent(std::shared_ptr<Event> event) {
 void Player::doBehivior()
 {
 }
+
+bool Player::isDead()  {
+   if(this->charactor->getHealthPoints() <= 0 ) {
+      this->status = Stat::Dead ;return  true;
+   }
+   return  false ;
+}

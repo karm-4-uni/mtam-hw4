@@ -3,8 +3,9 @@
 # include <fstream>
 # include <iostream>
 # include <string>
-
-#include "Events/Encounter/Encounter.h"
+#include "Events/Event.h"
+#include "Players/Player.h"
+#include "Events/Encounter.h"
 #include "Utilities.h"
 
 #include "Players/PlayerFactory.h"
@@ -19,7 +20,7 @@ MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream) 
 
         }else {
             if(first == "Snail") {
-                events->push(std::make_shared<Event>());
+                events->push(std::make_shared<Encounter>());
 
             }
                 if(first=="Barlog") {
