@@ -9,6 +9,7 @@
 #include "Behiviors/Responsible.h"
 #include <stdexcept>
 #include <utility>
+# include "Charactor.h"
 #include <memory>
 #include "../Events/Event.h"
 #include "Jobs/Archer.h"
@@ -19,12 +20,7 @@ string Player::getName() const {
 }
 
 
-Charactor& Player::getCharator() {
-   return *this->charactor.get();
-}
-const Charactor& Player::getCharator() const {
-   return *this->charactor.get();
-}
+
 int Player::getCoins() const {
    return this->charactor->getCoins();
 }
@@ -81,11 +77,13 @@ const int Player::getplayerID() const {
 
 void Player::doEvent(std::shared_ptr<Event> event) {
   if(! isDead())
-   //  event.operator*().applyEventP(charactor);
-     event.operator*().applyEventP(shared_from_this());
+     event.operator->()->applyEventP(shared_from_this());
 
 }
 
 void Player::doBehivior()
 {
+}
+bool Player::isDead() {
+   return this->getCharator().operator->()->getHealthPoints()<=0;
 }

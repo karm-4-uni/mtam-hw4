@@ -32,6 +32,7 @@ add_executable(mtam_hw4
         Rounds/Round.cpp
         Rounds/Turns/Turn.cpp
         Players/Jobs/Job.cpp
+        MatamStory.cpp
 
 
 )

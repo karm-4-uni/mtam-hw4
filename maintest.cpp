@@ -96,4 +96,3 @@ void runTest(const char* name) {
     }
     std::cout << "\n\n";
 }
-

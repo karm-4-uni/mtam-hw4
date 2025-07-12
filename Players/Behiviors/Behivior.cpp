@@ -21,12 +21,12 @@ void Behivior::PotionsMerchant(std::shared_ptr<Player>player) {
 }
 void Risktaking::PotionsMerchant(std::shared_ptr<Player>player) {
     bool didhebuy=false;
-    if(player.operator*().getCharator().getHealthPoints() < 50  ) {
+    if(player.operator*().getCharator().operator*().getHealthPoints() < 50  ) {
         int coins = player.operator*().getCoins();
         int hp = player.operator*().getHealthPoints();
         if(coins > PostinCost) {
-            player.operator*().getCharator().setCoins(coins - PostinCost);
-            player.operator*().getCharator().setHealthPoints(hp + 10);
+            player.operator*().getCharator().operator*().setCoins(coins - PostinCost);
+            player.operator*().getCharator().operator*().setHealthPoints(hp + 10);
             didhebuy=true;
             //   getPotionsPurchaseMessage(player,1);
         }
@@ -39,18 +39,18 @@ void Responsible::PotionsMerchant(std::shared_ptr<Player>player) {
     int coins = player.operator*().getCoins();
     int hp = player.operator*().getHealthPoints();
     while (player.operator*().getCoins() > PostinCost && player.operator*().isfullhp() ) {
-        player.operator*().getCharator().setCoins(coins - PostinCost);
+        player.operator*().getCharator().operator*().setCoins(coins - PostinCost);
         coins-= PostinCost ;
         hp+= 10 ;
-        player.operator*().getCharator().setHealthPoints(hp);
+        player.operator*().getCharator().operator*().setHealthPoints(hp);
         count++;
     }
     getPotionsPurchaseMessage(*player,count);
 
 }
 
-std::unique_ptr<Behivior> Behivior::fromString(const std::string& name) {
-    if (name == "Responsible") {  return std::make_unique<Responsible>();}
-    if (name == "Risktaking") {return std::make_unique<Risktaking>();}
+std::shared_ptr<Behivior> Behivior::fromString(const std::string& name) {
+    if (name == "Responsible") {  return std::make_shared<Responsible>();}
+    if (name == "Risktaking") {return std::make_shared<Risktaking>();}
     throw std::invalid_argument("Unknown behavior: " + name);
 }

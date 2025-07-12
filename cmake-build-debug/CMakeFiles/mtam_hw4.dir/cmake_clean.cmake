@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mtam_hw4.dir/Events/SolarEclipse.cpp.o.d"
   "CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o"
   "CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.o.d"
+  "CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o"
+  "CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d"
   "CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o"
   "CMakeFiles/mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o.d"
   "CMakeFiles/mtam_hw4.dir/Players/Charactor.cpp.o"

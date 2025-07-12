@@ -4,27 +4,13 @@
 # include <iostream>
 # include <string>
 
-#include "Events/Encounter/Encounter.h"
+#include "Events/Encounter.h"
 #include "Utilities.h"
 
 #include "Players/PlayerFactory.h"
 static int numberofplayrs = 0  ;
 MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream) {
-    auto events = std::make_shared<std::queue<std::shared_ptr<Event>>>();
-    std::string line,first="" ;
-    int i=0;
-    while(std::getline(eventsStream,line )) {
-        if(line.operator[](i)!=' ') {
-            first+= line.operator[](i);
 
-        }else {
-            if(first == "Snail") {
-                events->push(std::make_shared<Event>());
-
-            }
-                if(first=="Barlog") {
-
-    /*==========================================*/
     try {
         string Playersfile ;
     getline(std::cin,Playersfile);
@@ -38,27 +24,8 @@ addPlayers(inPlayersfile);
         throw;
     }
                 }
-                    if(first=="Pack") {
-
-                    }
-                        if(first=="Slime") {
-
-                        }
-            if(first=="SolarEclipse") {
-
-            }
-            if( first=="PotionsMerchant") {
-
-            }
-        }
-    }
 
 
-
-
-
-    this->m_turnIndex = 1;
-}
 
 void MatamStory::playTurn(Player& player) {
 
@@ -131,9 +98,9 @@ void MatamStory::addPlayers(std::istream &in) {
 
 while ( i < line.size()) {
      string word = "";
-        while (i < line.size() && line[i] == ' '){i++;}
-        while (line[i] != ' ' && i < line.size()) {
-            word += line[i++];
+        while (i < line.size() && line.operator[](i) == ' '){i++;}
+        while (line.operator[](i) != ' ' && i < line.size()) {
+            word += line.operator[](i);
         }
 
         playerinput.push_back(word);
@@ -143,9 +110,9 @@ while ( i < line.size()) {
             throw std::domain_error("Invalid input");
         }
 std::shared_ptr<Player> player1 = PlayerFactory::createPlayer(
-          playerinput[0],
-          playerinput[1],
-          playerinput[2]);
+          playerinput.operator[](0),
+          playerinput.operator[](1),
+          playerinput.operator[](2));
         playersQ.push(player1);
         playersV.push_back(player1);
     }

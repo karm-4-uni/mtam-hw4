@@ -273,6 +273,30 @@ Events/SpecialEvent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/Events/SpecialEvent.cpp.s
 .PHONY : Events/SpecialEvent.cpp.s
 
+MatamStory.o: MatamStory.cpp.o
+.PHONY : MatamStory.o
+
+# target to build an object file
+MatamStory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o
+.PHONY : MatamStory.cpp.o
+
+MatamStory.i: MatamStory.cpp.i
+.PHONY : MatamStory.i
+
+# target to preprocess a source file
+MatamStory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/MatamStory.cpp.i
+.PHONY : MatamStory.cpp.i
+
+MatamStory.s: MatamStory.cpp.s
+.PHONY : MatamStory.s
+
+# target to generate assembly for a file
+MatamStory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtam_hw4.dir/build.make CMakeFiles/mtam_hw4.dir/MatamStory.cpp.s
+.PHONY : MatamStory.cpp.s
+
 Players/Behiviors/Behivior.o: Players/Behiviors/Behivior.cpp.o
 .PHONY : Players/Behiviors/Behivior.o
 
@@ -540,6 +564,9 @@ help:
 	@echo "... Events/SpecialEvent.o"
 	@echo "... Events/SpecialEvent.i"
 	@echo "... Events/SpecialEvent.s"
+	@echo "... MatamStory.o"
+	@echo "... MatamStory.i"
+	@echo "... MatamStory.s"
 	@echo "... Players/Behiviors/Behivior.o"
 	@echo "... Players/Behiviors/Behivior.i"
 	@echo "... Players/Behiviors/Behivior.s"

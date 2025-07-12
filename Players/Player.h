@@ -4,9 +4,9 @@
 #include <memory>
 #include <string>
 #include "Charactor.h"
-class Charactor;
 class Enemy;
 class  Event;
+class Charactor;
 using std::string;
 enum class Stat {
  Alive,
@@ -32,7 +32,7 @@ enum class Stat {
    std::shared_ptr<Charactor> charactor);
   ~Player() = default;
   Player(Player&&) = default;
-  Player& operator=(Player&&) = default;
+  Player& operator=(Player&&) = delete;
   /**
       * Gets the description of the player
       *
@@ -77,8 +77,9 @@ enum class Stat {
 
 
   // return charactor refrence
-  const Charactor& getCharator() const;
-  Charactor& getCharator() ;
+  const std::shared_ptr<Charactor> getCharator() {
+   return this->charactor;
+  }
 
   const bool isfullhp() const ;
 
@@ -91,6 +92,8 @@ enum class Stat {
 
 
   bool isDead() ;
+
+
   // not done
   void Encounter(std::shared_ptr<Enemy> enemy);
   //

@@ -12,7 +12,7 @@ std::shared_ptr<Event> EventFactory::createEvent(const std::string& name) {
         return std::make_shared<Encounter>(std::make_shared<Snail>());
     if (name == "Slime")
         return std::make_shared<Encounter>(std::make_shared<Slime>());
-    if (name == "Barlog")
+    if (name == "Balrog")
         return std::make_shared<Encounter>(std::make_shared<Barlog>());
     if (name == "PotionsMerchant")
         return std::make_shared<PotionsMerchant>();

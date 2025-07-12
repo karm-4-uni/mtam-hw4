@@ -17,10 +17,9 @@ protected:
 
 
     virtual  const std::string getBehivior() const ;
-    virtual void PotionsMerchant(Player& player) ;
     virtual void PotionsMerchant(std::shared_ptr<Player>player) =0 ;
  //   virtual void PotionsMerchantC(std::shared_ptr<Charactor> charactor) =0 ;
-    static std::unique_ptr<Behivior> fromString(const std::string& name);
+    static std::shared_ptr<Behivior> fromString(const std::string& name);
 public:
      Behivior() = default;
 ~Behivior()  = default;

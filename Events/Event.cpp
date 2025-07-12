@@ -10,6 +10,10 @@ Event::Event(const std::string &name) {
 std::string Event::getname() const {
     return this->name;
 }
+Event::~Event() {
+
+}
+
 
 
 
