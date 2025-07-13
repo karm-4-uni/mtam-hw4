@@ -34,6 +34,7 @@ add_executable(mtam_hw4
 
         # story driver
         MatamStory.cpp
+        maintest.cpp
 
 
 )

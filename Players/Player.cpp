@@ -43,10 +43,11 @@ string Player::getDescription() const {
 Player::Player(const std::string& name,
                const std::string& job,
                const std::string& behavior,
+               int playercount,
                int health,
                int coin,
-               int force,
-               int playercount)
+               int force
+               )
   : name(name),
     charactor(std::make_shared<Charactor>(name, job, behavior, health, coin, force)),
     status(Stat::Alive),
