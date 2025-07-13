@@ -116,30 +116,11 @@ void Charactor::doJob() {
 
 
 bool Charactor::operator>=(const Charactor &other) const {
-    if(this->Level >= other.Level) {
-        if(this->Level == other.Level) {
-            if(this->coin >= other.coin) {
-                if(this->coin == other.coin) {
-                    if(this->name >= other.name) {
-                        if(this->name == other.name) {
-                            return  true; //same name
-                        } else {
-                            return  false;
-                        }
-                    } else {
-                        return  false ; //lower name
-                    }
-                } else {
-                    return  true; // highr coin
-                }
-            } else {
-                return  false ; // lower coin
-            }
-        } else {  return true; //higher level
-            }
-    } else {
-        return  false; //lower level
-    }
+        if (Level != other.Level)
+            return Level > other.Level;
+        if (coin != other.coin)
+            return coin > other.coin;
+        return name >= other.name;
 }
 
 bool Charactor::operator==(const Charactor &other) const {

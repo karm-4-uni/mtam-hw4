@@ -77,12 +77,15 @@ public:
 };
 
 class Barlog : public Enemy {
+    static int bonusPower;
 public:
+
     Barlog() {
         this->name="Balrog";
         this->damge=9001;
         this->loot =100;
-        this->combatPower=15;
+        this->combatPower=15 + bonusPower;
+       bonusPower+=2;
     }
     std::shared_ptr<Enemy> create()  const override {
         return std::make_shared<Barlog>();

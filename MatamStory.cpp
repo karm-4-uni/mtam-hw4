@@ -23,7 +23,7 @@ MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
     try {
         addPlayers(playersStream);
     } catch (...) {
-        std::cerr << "Invalid Events File " <<  "\n";
+        std::cerr << "Invalid Players File " <<  "\n";
         throw;
     }
     // players added
@@ -31,7 +31,13 @@ MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
     // string EvantsFile ;
     // getline(eventsStream,EvantsFile);
     // std::ifstream inEvantFile(EvantsFile);
-addEvants(eventsStream);
+    try {
+        addEvants(eventsStream);
+    } catch (...) {
+        throw std::runtime_error("Invalid Events File");
+
+    }
+
     /*==========================================*/
            play();
     }
@@ -229,7 +235,7 @@ void MatamStory::orderPlayers() {
             }
         );
     } catch (...) {
-        throw std::runtime_error("Invalid Events File");
+        throw std::runtime_error("Invalid Players File");
     }
 }
 
@@ -260,7 +266,7 @@ void MatamStory::addPlayers(std::istream& in) {
         }
 
         if (tokens.size() != 3)
-            throw std::domain_error("Invalid Events File");
+            throw std::domain_error("Invalid Players File");
 
         auto player = PlayerFactory::createPlayer(
             tokens[0], tokens[1], tokens[2], count);
