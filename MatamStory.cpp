@@ -228,7 +228,7 @@ void MatamStory::orderPlayers() {
         size_t bestplayer = i;
         for (size_t j = i + 1; j < n; ++j) {
             // inline strict compare: level ↓, coins ↓, name ↑
-            auto &A = *this->playersV[j], &B = *this->playersV[bestplayer];
+            auto &A = *playersV[j], &B = *playersV[bestplayer];
             if (   (A.getLevel()  > B.getLevel())
                 || (A.getLevel() == B.getLevel() && A.getCoins()  > B.getCoins())
                 || (A.getLevel() == B.getLevel() && A.getCoins() == B.getCoins()
@@ -236,7 +236,7 @@ void MatamStory::orderPlayers() {
             {
                 bestplayer = j;
             }
-        } std::swap(this->playersV[i], this->playersV[bestplayer]);}
+        } std::swap(playersV[i], playersV[bestplayer]);}
 }
 
 
