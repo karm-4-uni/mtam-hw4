@@ -58,13 +58,13 @@ const std::shared_ptr<Job> &Charactor::getJop() const {
 std::string Charactor::getDescription() const {
     std::string description = "";
     description+= this->name;
-    description+=",";
+    description+=", ";
     description+= job->getjob();
     description+= " with ";
     description+= behivior->getBehivior();
     description+=" character (level ";
     description+= std::to_string(Level)  ;
-    description+=",force ";
+    description+=", force ";
         description+= std::to_string((force) )  ;
     description+= ")";
     return description;

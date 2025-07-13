@@ -23,7 +23,7 @@ MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
     try {
         addPlayers(playersStream);
     } catch (...) {
-        std::cerr << "Error adding players: " <<  "\n";
+        std::cerr << "Invalid Events File " <<  "\n";
         throw;
     }
     // players added
@@ -72,12 +72,12 @@ void MatamStory::play() {
     printLeaderBordplayer(playersV);
     printBarrier();
     printGameOver();
-        if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
-
-    if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
 
     /*===== TODO: Print either a "winner" message or "no winner" message =====*/
+ if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
 
+    if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
+    return;
     /*========================================================================*/
 }
 void MatamStory::playTurn(Player& player) {
@@ -197,7 +197,7 @@ void MatamStory::addEvants(std::istream &in) {
           std::shared_ptr<Event> newEvent = factory.createEvent(line);
         events->push(newEvent);
         } catch (...) {
-            throw std::runtime_error("EventFactory cant creat event");
+            throw std::runtime_error("Invalid Events File");
         }
 
 
@@ -229,7 +229,7 @@ void MatamStory::orderPlayers() {
             }
         );
     } catch (...) {
-        throw std::runtime_error("orderplayer Error");
+        throw std::runtime_error("Invalid Events File");
     }
 }
 
@@ -260,7 +260,7 @@ void MatamStory::addPlayers(std::istream& in) {
         }
 
         if (tokens.size() != 3)
-            throw std::domain_error("Invalid input: each line must have exactly 3 tokens");
+            throw std::domain_error("Invalid Events File");
 
         auto player = PlayerFactory::createPlayer(
             tokens[0], tokens[1], tokens[2], count);

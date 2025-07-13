@@ -17,7 +17,7 @@ const std::string Responsible::getBehivior() const {
     return "Responsible";
 }
 const std::string Risktaking::getBehivior() const {
-    return "Risktaking";
+    return "RiskTaking";
 }
 void Behivior::PotionsMerchant(std::shared_ptr<Player>player) {
     //nothing
