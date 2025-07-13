@@ -127,10 +127,9 @@ public:
     }
 
         std::string getdescription() const override {
-            std::string result = "Pack of " + std::to_string(count) + " enemies:\n";
-            for (const auto& e : enemies)
-                result += "  - " + e->getdescription() + "\n";
-            return result;
+            std::string g= "Pack of "+std::to_string(count)+" members (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
+                          "damge "+std::to_string(damge)+")";
+            return  g;
         }
 
 };

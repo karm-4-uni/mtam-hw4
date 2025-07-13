@@ -38,9 +38,14 @@ void Charactor::setCoins(int gainedCoin) {
 void Charactor::setForce(int newForce) {
     this->force = newForce ;
 }
-void Charactor::setHealthPoints(int gainedhealth) {
-    this->CurrentHP = gainedhealth;
-}
+    void Charactor::setHealthPoints(int gainedhealth) {
+        if(gainedhealth<0) {
+            this->CurrentHP=0;
+        } else {
+            this->CurrentHP = gainedhealth;
+        }
+
+    }
 
 void Charactor::setLevel(int newLevel) {
     this->Level = newLevel ;
