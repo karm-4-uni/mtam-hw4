@@ -221,22 +221,24 @@ void MatamStory::addEvants(std::istream &in) {
 //       }
 //     }
 // }
-
 void MatamStory::orderPlayers() {
-    try {
-        std::sort(
-            this->playersV.begin(),
-            this->playersV.end(),
-            [](const std::shared_ptr<Player>& a,
-               const std::shared_ptr<Player>& b) {
-                // place “larger” players first
-                return *a > *b;
+      this->playersV;
+    size_t n = this->playersV.size();
+    for (size_t i = 0; i < n; ++i) {
+        size_t bestplayer = i;
+        for (size_t j = i + 1; j < n; ++j) {
+            // inline strict compare: level ↓, coins ↓, name ↑
+            auto &A = *this->playersV[j], &B = *this->playersV[bestplayer];
+            if (   (A.getLevel()  > B.getLevel())
+                || (A.getLevel() == B.getLevel() && A.getCoins()  > B.getCoins())
+                || (A.getLevel() == B.getLevel() && A.getCoins() == B.getCoins()
+                    && A.getName()   <  B.getName()) )
+            {
+                bestplayer = j;
             }
-        );
-    } catch (...) {
-        throw std::runtime_error("Invalid Players File");
-    }
+        } std::swap(this->playersV[i], this->playersV[bestplayer]);}
 }
+
 
 void MatamStory::addPlayers(std::istream& in) {
     std::string line;
@@ -251,24 +253,23 @@ void MatamStory::addPlayers(std::istream& in) {
         if (count > 6)
             throw std::domain_error("There can only be up to 6 players");
 
-        std::vector<std::string> tokens;
+        std::vector<std::string> words;
         std::size_t i = 0;
         while (i < line.size()) {
             // skip spaces
             while (i < line.size() && std::isspace(line[i])) ++i;
             if (i >= line.size()) break;
-            // grab word
             std::string w;
             while (i < line.size() && !std::isspace(line[i]))
                 w += line[i++];
-            tokens.push_back(w);
+           words.push_back(w);
         }
 
-        if (tokens.size() != 3)
+        if (words.size() != 3)
             throw std::domain_error("Invalid Players File");
 
         auto player = PlayerFactory::createPlayer(
-            tokens[0], tokens[1], tokens[2], count);
+            words[0], words[1], words[2], count);
         playersQ->push(player);
         playersV.push_back(player);
     }

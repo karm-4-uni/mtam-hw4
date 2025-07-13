@@ -30,7 +30,7 @@ public:
        return this->name;
    }
    virtual std::shared_ptr<Enemy> create() const=0;
-virtual std::string getdescription()const =0;
+virtual std::string getdescription() =0;
      void attack(std::shared_ptr<Charactor> chara) const {
 
      }
@@ -48,7 +48,7 @@ public:
     return std::make_shared<Snail>();
     }
 
-    std::string getdescription() const override {
+    std::string getdescription()  override {
         std::string g= "Snail (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                        "damage "+std::to_string(damge)+ ")";
         return  g;
@@ -69,7 +69,7 @@ public:
     return std::make_shared<Slime>();    }
 
 
-    std::string getdescription() const override {
+    std::string getdescription()  override {
         std::string g= "Slime (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                        "damage "+std::to_string(damge)+ ")";
         return  g;
@@ -77,14 +77,25 @@ public:
 };
 
 class Barlog : public Enemy {
-    static int bonusPower;
 public:
 
-    Barlog() ;
+    Barlog() {
+        this->name="Balrog";
+        this->damge=9001;
+        this->loot =100;
+        this->combatPower=15 ;
+    }
+    std::shared_ptr<Enemy> create()  const override {
+        return std::make_shared<Barlog>();
+    }
 
-    std::shared_ptr<Enemy> create()  const override ;
 
-    std::string getdescription() const override ;
+    std::string getdescription() override {
+        std::string g= "Balrog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
+                       "damage "+std::to_string(damge)+ ")";
+        this->combatPower += 2;
+        return  g;
+    }
 };
 
     class Pack : public Enemy {
@@ -117,7 +128,7 @@ public:
         return std::make_shared<Pack>(copies);
     }
 
-        std::string getdescription() const override {
+        std::string getdescription()  override {
             std::string g= "Pack of "+std::to_string(count)+" members (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                           "damage "+std::to_string(damge)+")";
             return  g;
