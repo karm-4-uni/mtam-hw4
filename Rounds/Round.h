@@ -6,7 +6,7 @@
 # include "../Rounds/Turns/Turn.h"
 # include <memory>
 class Round {
-
+static int turnNumber;
         friend  class  Turn;
         std::shared_ptr<std::queue<std:: shared_ptr<Player>>>players;
         std::shared_ptr<std::queue<std::shared_ptr<Event>>> events;

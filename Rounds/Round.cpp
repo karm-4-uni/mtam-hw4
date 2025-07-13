@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include "Turns/Turn.h"
 #include "../Utilities.h"
-
+int Round::turnNumber = 0;
 Round::Round() {
 
 }
@@ -31,9 +31,10 @@ void Round::startRound() {
      std::size_t count = 0 ;
     std::queue<std::shared_ptr<Player>> players_copy = *players;
     assert(!players_copy.empty() && !events->empty());
+    std::size_t playersize = players_copy.size();
     //IF cant happen but if it happend then the code is fully worng
     try {
-        while ( count <  players_copy.size() ) {
+        for (size_t i = 1; i <= playersize; ++i) {
             std::shared_ptr<Turn>  newTurn;
             std::shared_ptr<Player> p = players_copy.front();
             players_copy.pop();
@@ -42,14 +43,14 @@ void Round::startRound() {
                 events->pop();
                 // Each player applies the current event
                 if (frontEvent) {
-                    newTurn = std::make_shared<Turn>(p,frontEvent);
+                    newTurn = std::make_shared<Turn>(p,frontEvent,turnNumber++);
                 }
                 //  frontEvent->applyTurn(*p);  // double dispatch
                 // Push event to the back
                 events->push(frontEvent);
                 count++;
                 newTurn.get()->applyTurn();
-                printTurnDetails(count,*p,*frontEvent);
+                printTurnDetails(turnNumber,*p,*frontEvent);
                 printTurnOutcome(newTurn.get()->printTurnoutcome());
             }
 
@@ -57,7 +58,7 @@ void Round::startRound() {
     } catch (...) {
         throw std::runtime_error("can't creat  an Event");
     }
-
+turnNumber++;
 }
 
 void Round::checkPlayers() {

@@ -4,8 +4,9 @@
 Turn::Turn() {
 
 }
-Turn::Turn(std::shared_ptr<Player> currPlayer, std::shared_ptr<Event> currEvent)
-    : currPlayer(currPlayer), currEvent(currEvent) {}
+Turn::Turn(std::shared_ptr<Player> currPlayer, std::shared_ptr<Event> currEvent
+    ,int turnnumber)
+    : currPlayer(currPlayer), currEvent(currEvent) , turnnumber(turnnumber) {}
 
 
 Turn::~Turn() {
@@ -13,8 +14,9 @@ Turn::~Turn() {
 }
 
 void Turn::applyTurn() {
-    printTurnDetails(1,*currPlayer,*currEvent);
+    printTurnDetails(turnnumber,*currPlayer,*currEvent);
 this->currPlayer->doEvent(currEvent);
+
 }
 
 const std::string Turn::printTurnoutcome() {

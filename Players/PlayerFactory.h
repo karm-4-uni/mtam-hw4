@@ -17,8 +17,8 @@ public:
        const string& job,
        const string& behavior,
        int IDnumber ,
-       int coin = 10,
        int health = 100 ,
+       int coin = 10,
        int force = 5
    );
 };

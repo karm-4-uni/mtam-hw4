@@ -89,7 +89,7 @@ Charactor::Charactor(std::string name,
 : name(std::move(name)) ,
     Level(1),
     CurrentHP(hp),
-    maxHP(hp),
+    maxHP(hp),coin(coin),
     job(Job::fromString(jobName)),
     behivior(Behivior::fromString(behaviorName)) ,
 force(force)
