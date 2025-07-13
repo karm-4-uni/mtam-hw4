@@ -1,0 +1,2825 @@
+* commit ecba5782c2e4f62bab84b1babfb8a6ae28257159
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 20:18:31 2025 +0300
+| 
+|     start with 1
+| 
+|  MatamStory.cpp | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit d559ae25acb33c1c5b3a0942cd8e5a628f10a4d0
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 20:14:44 2025 +0300
+| 
+|     fix player idnumber
+| 
+|  MatamStory     | Bin 1907144 -> 1872224 bytes
+|  MatamStory.cpp |   5 +++--
+|  test1.out      |   2 +-
+|  3 files changed, 4 insertions(+), 3 deletions(-)
+| 
+* commit 2c2c53ee0caaddeef7221a32a1cea90f8bcb061f
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 20:05:56 2025 +0300
+| 
+|     order befor game over
+| 
+|  MatamStory     | Bin 1918200 -> 1907144 bytes
+|  MatamStory.cpp |   1 +
+|  main.cpp       |  70 ++++++++++-----------
+|  maintest.cpp   | 182 +++++++++++++++++++++++++++----------------------------
+|  test1.out      |   2 +-
+|  5 files changed, 128 insertions(+), 127 deletions(-)
+| 
+* commit 7984ff7fff4ca8a09dd14bcb77b3a6e41f00ea85
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 19:55:42 2025 +0300
+| 
+|     fix extra this
+| 
+|  MatamStory.cpp                                    |   4 +-
+|  MatamStory.h                                      |   1 +
+|  cmake-build-debug/.ninja_deps                     | Bin 70512 -> 75064 bytes
+|  cmake-build-debug/.ninja_log                      |  10 ++
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 946922 -> 946922 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 157866 -> 13065 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 737 -> 284315 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3254359 -> 3317874 bytes
+|  main.cpp                                          |  70 ++++++-------
+|  maintest.cpp                                      | 104 ++++++++++----------
+|  11 files changed, 103 insertions(+), 90 deletions(-)
+| 
+* commit cce14124bb88906ace85503afbc1b70ab682a6b3
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 17:49:07 2025 +0300
+| 
+|     17:49
+| 
+|  MatamStory.cpp                                    |   4 ++--
+|  cmake-build-debug/.ninja_deps                     | Bin 69704 -> 70512 bytes
+|  cmake-build-debug/.ninja_log                      |   2 ++
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 1013120 -> 946922 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 ++--
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3301911 -> 3254359 bytes
+|  6 files changed, 6 insertions(+), 4 deletions(-)
+| 
+* commit 7ec371504c02092799c2f6aabfe0421f6dc88344
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 17:44:10 2025 +0300
+| 
+|     final test propobly
+| 
+|  CMakeLists.txt                                    |   2 -
+|  Events/Barlog.cpp                                 |  22 -----
+|  Events/Enemy.h                                    |  27 +++++--
+|  MatamStory.cpp                                    |  37 ++++-----
+|  ...fa.json => cache-v2-7d2f3235698636087554.json} |   2 +-
+|  ...son => codemodel-v2-988cf63239b42672e520.json} |   2 +-
+|  ...3.json => index-2025-07-13T14-32-27-0686.json} |   8 +-
+|  ...rget-mtam_hw4-Debug-52bb1e418c5f4a010446.json} |  12 +--
+|  cmake-build-debug/.ninja_deps                     | Bin 59216 -> 69704 bytes
+|  cmake-build-debug/.ninja_log                      |  85 ++++++++------------
+|  cmake-build-debug/CMakeCache.txt                  |   2 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 158529 -> 158529 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 936809 -> 943591 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 143911 -> 143911 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Round.cpp.obj  | Bin 497923 -> 497923 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 121341 -> 121337 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Turn.cpp.obj   | Bin 139029 -> 139029 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 1013124 -> 1013120 bytes
+|  .../mtam_hw4.dir/Players/Behivior.cpp.obj         | Bin 275978 -> 275978 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Job.cpp.obj   | Bin 385272 -> 385272 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 268945 -> 268941 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 208704 -> 208704 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 131380 -> 131380 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 157870 -> 157866 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   4 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build.ninja                     |   8 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3434127 -> 3301911 bytes
+|  28 files changed, 86 insertions(+), 129 deletions(-)
+| 
+* commit 6fb418a5003cd2c2ed2017a7447141f1782c0673
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 17:25:21 2025 +0300
+| 
+|     fix few remanig  >=
+| 
+|  Players/Charactor.cpp                             |   2 +-
+|  Players/Player.cpp                                |   2 +-
+|  cmake-build-debug/.ninja_deps                     | Bin 48104 -> 59216 bytes
+|  cmake-build-debug/.ninja_log                      |  17 +++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Events/Barlog.cpp.obj | Bin 244502 -> 244502 bytes
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 158529 -> 158529 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 936813 -> 936809 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 143911 -> 143911 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Round.cpp.obj  | Bin 497927 -> 497923 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 121341 -> 121341 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Turn.cpp.obj   | Bin 139029 -> 139029 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 1013124 -> 1013124 bytes
+|  .../mtam_hw4.dir/Players/Behivior.cpp.obj         | Bin 275978 -> 275978 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 283220 -> 283220 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Job.cpp.obj   | Bin 385272 -> 385272 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 268945 -> 268945 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 208708 -> 208704 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 131380 -> 131380 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 157870 -> 157870 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 ++--
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3434679 -> 3434127 bytes
+|  21 files changed, 21 insertions(+), 4 deletions(-)
+| 
+* commit ffa6f72b4a68b6fd2688c2d276b087437ac577b9
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 17:20:34 2025 +0300
+| 
+|     switch to > operator
+| 
+|  MatamStory.cpp        | 2 +-
+|  Players/Charactor.cpp | 2 +-
+|  Players/Charactor.h   | 2 +-
+|  Players/Player.cpp    | 6 +++---
+|  Players/Player.h      | 4 ++--
+|  5 files changed, 8 insertions(+), 8 deletions(-)
+| 
+* commit a12ecec3bbb88ba63d322d9425a2dc86ec39ba52
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 17:13:31 2025 +0300
+| 
+|     turnd >= to >
+| 
+|  Players/Charactor.cpp | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit c79c706ec9b39bc9c4f3b46f0c1c277c40c4fc6b
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 16:56:32 2025 +0300
+| 
+|     add balrog cpp
+| 
+|  CMakeLists.txt                                    |   2 ++
+|  Events/Barlog.cpp                                 |  22 +++++++++++++
+|  Events/Encounter.cpp                              |   2 +-
+|  Events/Enemy.h                                    |  18 ++---------
+|  MatamStory.cpp                                    |   3 +-
+|  ...54.json => cache-v2-2d0b4b16d7df7fc8bcfa.json} |   2 +-
+|  ...son => codemodel-v2-2b6d957e295c5d53cbac.json} |   2 +-
+|  ...2.json => index-2025-07-13T13-51-01-0763.json} |   8 ++---
+|  ...rget-mtam_hw4-Debug-bd24fecdf780e02f8327.json} |  12 +++++--
+|  cmake-build-debug/.ninja_deps                     | Bin 53076 -> 48104 bytes
+|  cmake-build-debug/.ninja_log                      |  33 ++++++++++++++------
+|  cmake-build-debug/CMakeCache.txt                  |   2 +-
+|  .../CMakeFiles/mtam_hw4.dir/Events/Barlog.cpp.obj | Bin 0 -> 244502 bytes
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 158529 -> 158529 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 943671 -> 936813 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 1012982 -> 1013124 bytes
+|  .../mtam_hw4.dir/Players/Behivior.cpp.obj         | Bin 275994 -> 275978 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 283322 -> 283220 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 733 -> 157870 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 284164 -> 737 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   4 +--
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +--
+|  cmake-build-debug/build.ninja                     |   8 ++++-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3353952 -> 3434679 bytes
+|  24 files changed, 80 insertions(+), 42 deletions(-)
+| 
+* commit cc6f2132818056c3f957e334f5181075f70c6dd8
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 16:41:11 2025 +0300
+| 
+|     fix no barlog static in cpp
+| 
+|  Events/Encounter.cpp |   1 +
+|  MatamStory           | Bin 1907768 -> 1918200 bytes
+|  2 files changed, 1 insertion(+)
+| 
+* commit 25c7e8ffe0ef06ebec6221d731ae915bdd008b04
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 16:35:34 2025 +0300
+| 
+|     test fix charectar <= and palrol static int
+| 
+|  Events/Enemy.h        |  5 ++++-
+|  MatamStory.cpp        | 14 ++++++++++----
+|  Players/Charactor.cpp | 29 +++++------------------------
+|  3 files changed, 19 insertions(+), 29 deletions(-)
+| 
+* commit 14f423be78a72641639e5bede017317d91bab8d5
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 16:18:57 2025 +0300
+| 
+|     test dif 16:18
+| 
+|  Events/Enemy.h        |   6 +++---
+|  MatamStory            | Bin 1907768 -> 1907768 bytes
+|  MatamStory.cpp        |  14 +++++++-------
+|  Players/Behivior.cpp  |   2 +-
+|  Players/Charactor.cpp |   4 ++--
+|  5 files changed, 13 insertions(+), 13 deletions(-)
+| 
+* commit a0431b49bb3ea64b15edf6d4f5fcaa5dbfea9efa
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 16:05:59 2025 +0300
+| 
+|     test 16:05
+| 
+|  CMakeLists.txt                                    |  11 +-
+|  {Rounds => Events}/Round.cpp                      | 149 +++++-----
+|  {Rounds => Events}/Round.h                        |  44 +--
+|  {Rounds/Turns => Events}/Turn.cpp                 |  57 ++--
+|  {Rounds/Turns => Events}/Turn.h                   |  38 +--
+|  MatamStory                                        | Bin 0 -> 1907768 bytes
+|  MatamStory.cpp                                    |   4 +-
+|  MatamStory.h                                      |   2 +-
+|  Players/{Jobs => }/Archer.h                       |  27 +-
+|  Players/{Behiviors => }/Behivior.cpp              |   4 +-
+|  Players/{Behiviors => }/Behivior.h                |   0
+|  Players/Charactor.cpp                             |   4 +-
+|  Players/Charactor.h                               |   4 +-
+|  Players/{Jobs => }/Job.cpp                        | 288 ++++++++++----------
+|  Players/{Jobs => }/Job.h                          |  44 +--
+|  Players/{Jobs => }/Magician .h                    |  24 +-
+|  Players/Player.cpp                                |  10 +-
+|  Players/PlayerFactory.cpp                         |  10 +-
+|  Players/{Behiviors => }/Responsible.h             |  36 +--
+|  Players/{Behiviors => }/RiskTaking.h              |  34 +--
+|  Players/{Jobs => }/Warrior.h                      |  30 +-
+|  ...son => codemodel-v2-988cf63239b42672e520.json} |   2 +-
+|  ...0.json => index-2025-07-13T12-58-05-0132.json} |   4 +-
+|  ...rget-mtam_hw4-Debug-52bb1e418c5f4a010446.json} |  20 +-
+|  cmake-build-debug/.ninja_deps                     | Bin 48184 -> 53076 bytes
+|  cmake-build-debug/.ninja_log                      |  43 +--
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   8 +-
+|  .../CMakeFiles/mtam_hw4.dir/Events/Round.cpp.obj  | Bin 0 -> 497927 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Turn.cpp.obj   | Bin 0 -> 139029 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 1013040 -> 1012982 bytes
+|  .../mtam_hw4.dir/Players/Behivior.cpp.obj         | Bin 0 -> 275994 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 283458 -> 283322 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Job.cpp.obj   | Bin 0 -> 385272 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 498071 -> 498005 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Turn.cpp.obj   | Bin 0 -> 131709 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 157870 -> 733 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 737 -> 284164 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build.ninja                     |  26 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3299998 -> 3353952 bytes
+|  maintest.cpp                                      |   2 +-
+|  test1.out                                         |   2 +-
+|  42 files changed, 474 insertions(+), 457 deletions(-)
+| 
+* commit 2e5c11285a878c9d66e135268990b8a4946e64d9
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 15:24:58 2025 +0300
+| 
+|     15:24
+| 
+|  CMakeLists.txt                                    |  15 +---
+|  Players/Jobs/Job.cpp                              |   2 +-
+|  ...fa.json => cache-v2-7d2f3235698636087554.json} |   2 +-
+|  ...son => codemodel-v2-4f54a47ee8f1daed97c7.json} |  15 +---
+|  ...1.json => index-2025-07-13T12-24-03-0630.json} |   8 +--
+|  ...rget-mtam_hw4-Debug-c354d694b68e933348b0.json} |   2 +-
+|  ...rget-run_test1-Debug-6ba5c5aff2bf4bbf317a.json |  73 --------------------
+|  cmake-build-debug/.ninja_deps                     | Bin 36960 -> 48184 bytes
+|  cmake-build-debug/.ninja_log                      |  36 +++++-----
+|  cmake-build-debug/CMakeCache.txt                  |   2 +-
+|  .../CMakeFiles/TargetDirectories.txt              |   2 -
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   8 ++-
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 498087 -> 498071 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   4 +-
+|  cmake-build-debug/CTestTestfile.cmake             |   2 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build.ninja                     |  25 -------
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3299998 -> 3299998 bytes
+|  18 files changed, 43 insertions(+), 157 deletions(-)
+| 
+* commit 9e468795d3da536b4f63ea4fc3fa45ffbb6cdb22
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 15:13:26 2025 +0300
+| 
+|     try to check 15:13
+| 
+|  CMakeLists.txt                                    |    5 +-
+|  Events/EventFactory 2.cpp                         |   43 -
+|  Events/EventFactory 2.h                           |   12 -
+|  Events/PotionsMerchant 2.cpp                      |   18 -
+|  Events/PotionsMerchant 2.h                        |   16 -
+|  Events/PotionsMerchant.cpp                        |    2 +-
+|  LeaderBoard 2.cpp                                 |    1 -
+|  LeaderBoard.cpp                                   |    1 -
+|  Leaderboard.h                                     |    1 -
+|  Players/Behiviors/Behivior.cpp                    |  124 +-
+|  Players/Behiviors/Behivior.h                      |   56 +-
+|  Players/Behiviors/RiskTaking.h                    |    2 +-
+|  Players/Charactor.cpp                             |   19 +-
+|  Players/Charactor.h                               |   14 +-
+|  Rounds/Round.cpp                                  |   11 +-
+|  Rounds/Round.h                                    |    8 +-
+|  .../reply/cmakeFiles-v1-415425d98e9cdba7ed43.json |  330 ++--
+|  ...son => codemodel-v2-e0582de024c9d9d7c92d.json} |    4 +-
+|  .../directory-.-Debug-d0094a50bb2071803777.json   |   28 +-
+|  ...6.json => index-2025-07-13T12-12-14-0021.json} |    4 +-
+|  ...rget-mtam_hw4-Debug-20248e544e1257051205.json} |  468 ++---
+|  ...get-run_test1-Debug-6ba5c5aff2bf4bbf317a.json} |    2 +-
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |  186 +-
+|  cmake-build-debug/.ninja_deps                     |  Bin 59024 -> 36960 bytes
+|  cmake-build-debug/.ninja_log                      |   82 +-
+|  cmake-build-debug/CMakeCache.txt                  |  830 ++++-----
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |  160 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |  184 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        |  Bin 43069 -> 43069 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      |  Bin 43088 -> 43088 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |   12 +-
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |   30 +-
+|  .../3.29.6/CompilerIdC/CMakeCCompilerId.c         | 1790 +++++++++----------
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           |  Bin 43144 -> 43144 bytes
+|  .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp   | 1756 +++++++++---------
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         |  Bin 43172 -> 43172 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             |  908 +++++-----
+|  .../CMakeFiles/TargetDirectories.txt              |   10 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |    2 +-
+|  cmake-build-debug/CMakeFiles/cmake.check_cache    |    2 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         |  Bin 158529 -> 158529 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      |  Bin 943671 -> 943671 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   |  Bin 144103 -> 143911 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      |  Bin 121341 -> 121341 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    |  Bin 1013116 -> 1013040 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            |  Bin 276076 -> 276076 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        |  Bin 283462 -> 283458 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         |  Bin 385342 -> 385342 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           |  Bin 268957 -> 268945 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    |  Bin 208708 -> 208708 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  |  Bin 498159 -> 498087 bytes
+|  .../mtam_hw4.dir/Rounds/Round_2.cpp.obj           |  Bin 745 -> 0 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        |  Bin 131721 -> 131721 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     |  Bin 131380 -> 131380 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          |  Bin 157870 -> 157870 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |  128 +-
+|  cmake-build-debug/CTestTestfile.cmake             |   16 +-
+|  cmake-build-debug/Makefile                        |  611 -------
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |    6 +-
+|  cmake-build-debug/build.ninja                     |  534 +++---
+|  cmake-build-debug/cmake_install.cmake             |   98 +-
+|  cmake-build-debug/mtam_hw4                        |  Bin 677496 -> 0 bytes
+|  cmake-build-debug/mtam_hw4.exe                    |  Bin 3300575 -> 3299998 bytes
+|  63 files changed, 3881 insertions(+), 4633 deletions(-)
+| 
+* commit 85c6c7a48e2feae8ceaa6eb931b248a917310d62
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 13:50:26 2025 +0300
+| 
+|     FIX include Players/Jobs/Job.h problem
+| 
+|  Events/SolarEclipse 2.cpp                         |  18 ----
+|  Events/SolarEclipse 2.h                           |  21 ----
+|  Events/SpecialEvent 2.cpp                         |  11 ---
+|  Events/SpecialEvent 2.h                           |  18 ----
+|  Players/Charactor.cpp                             |   2 +-
+|  Players/Charactor.h                               |   2 +-
+|  cmake-build-debug/.ninja_deps                     | Bin 47756 -> 59024 bytes
+|  cmake-build-debug/.ninja_log                      |  19 ++++
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 943671 -> 943671 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 1013136 -> 1013116 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 733 -> 157870 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 284164 -> 737 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3352044 -> 3300575 bytes
+|  main.cpp                                          |  78 +++++++--------
+|  maintest.cpp                                      | 100 ++++++++++----------
+|  16 files changed, 112 insertions(+), 161 deletions(-)
+| 
+* commit 0aaef5f45d6017f01261f0782a948fd21eb5c4bb
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 13:42:21 2025 +0300
+| 
+|     fix print v1
+| 
+|  Events/Enemy.h                                    |   6 +-
+|  MatamStory                                        | Bin 394464 -> 0 bytes
+|  MatamStory.cpp                                    |  42 +++++-----
+|  MatamStory.h                                      |   3 +-
+|  Players/Behiviors/Behivior.cpp                    |  14 ++--
+|  Players/Charactor.cpp                             |  13 +--
+|  Players/Charactor.h                               |   5 +-
+|  Players/Jobs/Job.cpp                              |   8 +-
+|  Players/Player.cpp                                |   4 +-
+|  Rounds/Round.cpp                                  |   2 +-
+|  Rounds/Turns/Turn.cpp                             |   5 +-
+|  ...2.json => index-2025-07-13T09-59-47-0806.json} |   0
+|  cmake-build-debug/.ninja_deps                     | Bin 49848 -> 47756 bytes
+|  cmake-build-debug/.ninja_log                      |  83 ++++++++++----------
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   2 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 158529 -> 158529 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 943595 -> 943671 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 144103 -> 144103 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 121341 -> 121341 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 944721 -> 1013136 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 274584 -> 276076 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 283278 -> 283462 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 386280 -> 385342 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 273045 -> 268957 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 208708 -> 208708 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 498229 -> 498159 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 130589 -> 131721 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 131380 -> 131380 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 284104 -> 284164 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3305026 -> 3352044 bytes
+|  31 files changed, 97 insertions(+), 94 deletions(-)
+| 
+* commit ec731628984c8e10a40c1b063bc53793ad16356e
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 12:20:31 2025 +0300
+| 
+|     fix 12:20 halth and get decrioption fpr pack
+| 
+|  Events/Enemy.h        |  7 +++----
+|  Players/Charactor.cpp | 11 ++++++++---
+|  2 files changed, 11 insertions(+), 7 deletions(-)
+| 
+* commit 93f91432dad8683c372840b611dab50516522128
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 12:00:50 2025 +0300
+| 
+|     it look great just job problem
+| 
+|  Events/Enemy.h                                    |   6 ++---
+|  MatamStory.cpp                                    |   7 +++---
+|  Players/Jobs/Job.cpp                              |  17 +++++++-------
+|  Rounds/Round.cpp                                  |   3 +++
+|  cmake-build-debug/.ninja_deps                     | Bin 35940 -> 49848 bytes
+|  cmake-build-debug/.ninja_log                      |  24 ++++++++++++++++++++
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 943595 -> 943595 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 283298 -> 283278 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 383972 -> 386280 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 497123 -> 498229 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 ++--
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3303490 -> 3305026 bytes
+|  12 files changed, 45 insertions(+), 16 deletions(-)
+| 
+* commit ce7c5bc19c89cb0599b154f769dafe2b337c3267
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 11:49:30 2025 +0300
+| 
+|     FIX duoble turn
+| 
+|  CMakeLists.txt                                    |   4 +-
+|  Events/Encounter 2.cpp                            |  23 ----
+|  Events/Encounter 2.h                              |  24 ----
+|  Events/Enemy 2.h                                  | 127 --------------------
+|  Events/Enemy.h                                    |   6 +-
+|  Events/EventFactory 2.cpp                         |  84 ++++++-------
+|  Events/EventFactory 2.h                           |  24 ++--
+|  MatamStory.cpp                                    |   6 +-
+|  Players/Charactor.cpp                             |  11 +-
+|  Rounds/Round 2.cpp                                |  67 -----------
+|  Rounds/Round 2.h                                  |  20 ---
+|  Rounds/Round.cpp                                  |  56 ++++-----
+|  Rounds/Turns/Turn.cpp                             |  12 +-
+|  Rounds/Turns/Turn.h                               |   2 +-
+|  ...54.json => cache-v2-2d0b4b16d7df7fc8bcfa.json} |   2 +-
+|  ...9.json => index-2025-07-13T08-47-42-0122.json} |   4 +-
+|  cmake-build-debug/.ninja_deps                     | Bin 43128 -> 35940 bytes
+|  cmake-build-debug/.ninja_log                      |  40 +++---
+|  cmake-build-debug/CMakeCache.txt                  |   2 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   2 +-
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 943207 -> 943595 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 944567 -> 944721 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 280971 -> 283298 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 584648 -> 497123 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 150916 -> 130589 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   4 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3348275 -> 3303490 bytes
+|  28 files changed, 133 insertions(+), 391 deletions(-)
+| 
+* commit 05a93028457a9b69c1b5df198310ada5214c10fd
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 10:09:50 2025 +0300
+| 
+|     ADD turn counter
+| 
+|  CMakeLists.txt                                    |    2 +
+|  Players/Charactor.cpp                             |    2 +-
+|  Players/PlayerFactory.h                           |    2 +-
+|  Rounds/Round 2.cpp                                |  112 +-
+|  Rounds/Round 2.h                                  |   40 +-
+|  Rounds/Round.cpp                                  |   11 +-
+|  Rounds/Round.h                                    |    2 +-
+|  Rounds/Turns/Turn.cpp                             |    8 +-
+|  Rounds/Turns/Turn.h                               |    3 +-
+|  ...fa.json => cache-v2-7d2f3235698636087554.json} | 2654 +++++++++----------
+|  ...son => codemodel-v2-caed403148b736321cf8.json} |  138 +-
+|  ...0.json => index-2025-07-13T07-02-54-0929.json} |  216 +-
+|  ...get-run_test1-Debug-ef9e40b4f806e8291e23.json} |  146 +-
+|  cmake-build-debug/.ninja_deps                     |  Bin 37368 -> 43128 bytes
+|  cmake-build-debug/.ninja_log                      |   36 +-
+|  cmake-build-debug/CMakeCache.txt                  |    2 +-
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    |  Bin 944567 -> 944567 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        |  Bin 280971 -> 280971 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  |  Bin 582306 -> 584648 bytes
+|  .../mtam_hw4.dir/Rounds/Round_2.cpp.obj           |  Bin 0 -> 745 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        |  Bin 150778 -> 150916 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |    4 +-
+|  cmake-build-debug/CTestTestfile.cmake             |    2 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |    4 +-
+|  cmake-build-debug/mtam_hw4.exe                    |  Bin 3346211 -> 3348275 bytes
+|  25 files changed, 1697 insertions(+), 1687 deletions(-)
+| 
+* commit 6f046f99acc65c15ece7e9ae3f8cb2f7a1d46b5a
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 09:33:39 2025 +0300
+| 
+|     fix swap betwen health anf force
+| 
+|  CMakeLists.txt                                    |   105 +-
+|  Events/Encounter 2.cpp                            |    46 +-
+|  Events/Encounter 2.h                              |    48 +-
+|  Events/Encounter.cpp                              |    64 +-
+|  Events/Encounter.h                                |    36 +-
+|  Events/Enemy 2.h                                  |   254 +-
+|  Events/Enemy.h                                    |   270 +-
+|  Events/Event.cpp                                  |    40 +-
+|  Events/Event.h                                    |    48 +-
+|  Events/EventFactory 2.cpp                         |    86 +-
+|  Events/EventFactory 2.h                           |    24 +-
+|  Events/EventFactory.cpp                           |    88 +-
+|  Events/EventFactory.h                             |    24 +-
+|  Events/PotionsMerchant 2.cpp                      |    36 +-
+|  Events/PotionsMerchant 2.h                        |    32 +-
+|  Events/PotionsMerchant.cpp                        |    34 +-
+|  Events/PotionsMerchant.h                          |    30 +-
+|  Events/SolarEclipse 2.cpp                         |    36 +-
+|  Events/SolarEclipse 2.h                           |    42 +-
+|  Events/SolarEclipse.cpp                           |    36 +-
+|  Events/SolarEclipse.h                             |    42 +-
+|  Events/SpecialEvent 2.cpp                         |    22 +-
+|  Events/SpecialEvent 2.h                           |    36 +-
+|  Events/SpecialEvent.cpp                           |    22 +-
+|  Events/SpecialEvent.h                             |    36 +-
+|  LeaderBoard 2.cpp                                 |     2 +-
+|  LeaderBoard.cpp                                   |     2 +-
+|  Leaderboard.h                                     |     2 +-
+|  MatamStory.h                                      |   150 +-
+|  Players/Player.cpp                                |     5 +-
+|  Rounds/Round 2.cpp                                |   134 +-
+|  Rounds/Round 2.h                                  |    38 +-
+|  Rounds/Round.cpp                                  |   148 +-
+|  Rounds/Round.h                                    |    48 +-
+|  Rounds/Turns/Turn.cpp                             |    46 +-
+|  Rounds/Turns/Turn.h                               |    34 +-
+|  ...bb.json => cache-v2-2d0b4b16d7df7fc8bcfa.json} |  2494 +--
+|  .../reply/cmakeFiles-v1-415425d98e9cdba7ed43.json |   165 +
+|  .../reply/cmakeFiles-v1-61fb60a7c59cfec4e73d.json |   161 -
+|  ...son => codemodel-v2-b3518e953f3098dc1feb.json} |   138 +-
+|  ...> directory-.-Debug-d0094a50bb2071803777.json} |    28 +-
+|  ...8.json => index-2025-07-13T06-27-09-0300.json} |   216 +-
+|  ...rget-mtam_hw4-Debug-b39a93e252a53e937c29.json} |   453 +-
+|  ...get-run_test1-Debug-500bea3c785399e4a3c3.json} |   146 +-
+|  .../reply/toolchains-v1-34e713db58121691db7d.json |    87 -
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |    93 +
+|  cmake-build-debug/.ninja_deps                     |   Bin 0 -> 37368 bytes
+|  cmake-build-debug/.ninja_log                      |    23 +
+|  cmake-build-debug/CMakeCache.txt                  |   780 +-
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |   160 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |   184 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        |   Bin 17000 -> 43069 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      |   Bin 16984 -> 43088 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |     6 +
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |    30 +-
+|  .../3.29.6/CompilerIdC/CMakeCCompilerId.c         |  1790 +--
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           |   Bin 0 -> 43144 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.out           |   Bin 33736 -> 0 bytes
+|  .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp   |  1756 +--
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         |   Bin 0 -> 43172 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out         |   Bin 33736 -> 0 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             |   732 +-
+|  .../CMakeFiles/CMakeDirectoryInformation.cmake    |    16 -
+|  cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt  |     2 -
+|  cmake-build-debug/CMakeFiles/Makefile.cmake       |    52 -
+|  cmake-build-debug/CMakeFiles/Makefile2            |   139 -
+|  .../CMakeFiles/TargetDirectories.txt              |    10 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |     6 +-
+|  .../CMakeFiles/clion-environment.txt              |   Bin 161 -> 296 bytes
+|  cmake-build-debug/CMakeFiles/cmake.check_cache    |     2 +-
+|  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake      |    38 -
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o           |   Bin 102832 -> 0 bytes
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o.d         |   768 -
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         |   Bin 0 -> 158529 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o    |   Bin 76552 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o.d  |   767 -
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj  |   Bin 0 -> 80484 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o        |   Bin 538192 -> 0 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o.d      |   811 -
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      |   Bin 0 -> 943207 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o     |   Bin 97056 -> 0 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o.d   |   767 -
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   |   Bin 0 -> 144103 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o        |   Bin 90960 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o.d      |   768 -
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      |   Bin 0 -> 121341 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o        |   Bin 67472 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o.d      |   646 -
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj      |   Bin 0 -> 62431 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o      |   Bin 726656 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d    |   837 --
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    |   Bin 0 -> 944567 bytes
+|  .../mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o |   Bin 131552 -> 0 bytes
+|  .../Players/Behiviors/Behivior.cpp.o.d            |   772 -
+|  .../Players/Behiviors/Behivior.cpp.obj            |   Bin 0 -> 274584 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o          |   Bin 154992 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o.d        |   805 -
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        |   Bin 0 -> 280971 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o           |   Bin 206368 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o.d         |   773 -
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         |   Bin 0 -> 383972 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o  |   Bin 164496 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.o.d           |   772 -
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           |   Bin 0 -> 273045 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o      |   Bin 133336 -> 0 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d    |   772 -
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    |   Bin 0 -> 208708 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o    |   Bin 441776 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d  |   806 -
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  |   Bin 0 -> 582306 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o          |   Bin 98528 -> 0 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o.d        |   768 -
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        |   Bin 0 -> 150778 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o       |   Bin 171592 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d     |   808 -
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     |   Bin 0 -> 131380 bytes
+|  .../CMakeFiles/mtam_hw4.dir/build.make            |   350 -
+|  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake     |    41 -
+|  .../mtam_hw4.dir/compiler_depend.internal         | 12492 ---------------
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  | 14186 ------------------
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts    |     2 -
+|  .../CMakeFiles/mtam_hw4.dir/depend.make           |     2 -
+|  .../CMakeFiles/mtam_hw4.dir/flags.make            |    12 -
+|  .../CMakeFiles/mtam_hw4.dir/link.txt              |     1 -
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o            |   Bin 289320 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d          |   833 -
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          |   Bin 0 -> 733 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o        |   Bin 288240 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d      |   814 -
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      |   Bin 0 -> 284104 bytes
+|  .../CMakeFiles/mtam_hw4.dir/progress.make         |    18 -
+|  cmake-build-debug/CMakeFiles/progress.marks       |     1 -
+|  cmake-build-debug/CMakeFiles/rules.ninja          |    64 +
+|  .../CMakeFiles/run_test1.dir/DependInfo.cmake     |    22 -
+|  .../CMakeFiles/run_test1.dir/build.make           |    87 -
+|  .../CMakeFiles/run_test1.dir/cmake_clean.cmake    |     8 -
+|  .../CMakeFiles/run_test1.dir/compiler_depend.make |     2 -
+|  .../CMakeFiles/run_test1.dir/compiler_depend.ts   |     2 -
+|  .../CMakeFiles/run_test1.dir/progress.make        |     1 -
+|  cmake-build-debug/CTestTestfile.cmake             |    16 +-
+|  cmake-build-debug/Makefile                        |  1222 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |     6 +-
+|  cmake-build-debug/build.ninja                     |   267 +
+|  cmake-build-debug/cmake_install.cmake             |    98 +-
+|  cmake-build-debug/mtam_hw4.exe                    |   Bin 0 -> 3346211 bytes
+|  main.cpp                                          |    80 +-
+|  146 files changed, 7066 insertions(+), 47054 deletions(-)
+| 
+* commit fc3d43ee28245cd4b64c2c7f36daf79f1a211621
+| Author: Basel Addd <basselhejaze@gmail.com>
+| Date:   Sun Jul 13 02:23:43 2025 +0300
+| 
+|     dix description event
+| 
+|  CMakeLists.txt                                    |   1 -
+|  Events/Event 2.cpp                                |  19 -
+|  Events/Event.cpp                                  |   1 +
+|  Events/Event.h                                    |   3 +-
+|  Rounds/Turns/Turn.cpp                             |   9 +-
+|  Utilities.cpp                                     |   2 +-
+|  ...5d.json => cache-v2-093ba7bb237a63f474bb.json} | 326 ++------
+|  .../reply/cmakeFiles-v1-4cf80b2ee9196413e04b.json | 828 -------------------
+|  .../reply/cmakeFiles-v1-61fb60a7c59cfec4e73d.json | 161 ++++
+|  ...son => codemodel-v2-1c513bbc2582b6c9f5f1.json} |  10 +-
+|  ...> directory-.-Debug-f5ebdc15457944623624.json} |   0
+|  ...6.json => index-2025-07-12T23-20-12-0708.json} |  26 +-
+|  ...rget-mtam_hw4-Debug-946b13eb003b1e386048.json} |  25 +-
+|  ...get-run_test1-Debug-3532488c81a78ae5714d.json} |   2 +-
+|  .../reply/toolchains-v1-34e713db58121691db7d.json |  87 ++
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |  93 ---
+|  cmake-build-debug/.ninja_deps                     | Bin 38112 -> 0 bytes
+|  cmake-build-debug/.ninja_log                      |  23 -
+|  cmake-build-debug/CMakeCache.txt                  | 150 ++--
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |  36 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |  38 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        | Bin 43069 -> 17000 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      | Bin 43088 -> 16984 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |   6 -
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |  16 +-
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           | Bin 43144 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.out           | Bin 0 -> 33736 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         | Bin 43172 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out         | Bin 0 -> 33736 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             | 472 ++++-------
+|  .../CMakeFiles/CMakeDirectoryInformation.cmake    |  16 +
+|  cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt  |   2 +
+|  cmake-build-debug/CMakeFiles/Makefile.cmake       |  52 ++
+|  cmake-build-debug/CMakeFiles/Makefile2            | 139 ++++
+|  .../CMakeFiles/TargetDirectories.txt              |  10 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |  18 +-
+|  .../CMakeFiles/clion-environment.txt              | Bin 296 -> 161 bytes
+|  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake      |  38 +
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o           | Bin 102832 -> 102832 bytes
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o.d         | 768 ++++++++++++++++++
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 158497 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o    | Bin 0 -> 76552 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o.d  | 767 ++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj  | Bin 80472 -> 0 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o        | Bin 538192 -> 538192 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o.d      | 811 +++++++++++++++++++
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 943187 -> 0 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o     | Bin 97056 -> 97056 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o.d   | 767 ++++++++++++++++++
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 144071 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o        | Bin 90960 -> 90960 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o.d      | 768 ++++++++++++++++++
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 121309 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o        | Bin 0 -> 67472 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o.d      | 646 +++++++++++++++
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj      | Bin 62387 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o      | Bin 726728 -> 726656 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d    | 837 ++++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 944535 -> 0 bytes
+|  .../Players/Behiviors/Behivior.cpp.o.d            | 772 ++++++++++++++++++
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 274584 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o          | Bin 154864 -> 154992 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o.d        | 805 +++++++++++++++++++
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 280971 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o           | Bin 205632 -> 206368 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o.d         | 773 ++++++++++++++++++
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 381033 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o  | Bin 164272 -> 164496 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.o.d           | 772 ++++++++++++++++++
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 271470 -> 0 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d    | 772 ++++++++++++++++++
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 208708 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o    | Bin 441776 -> 441776 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d  | 806 +++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 582274 -> 0 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o          | Bin 98160 -> 98528 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o.d        | 768 ++++++++++++++++++
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 144752 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o       | Bin 171264 -> 171592 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d     | 808 +++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 131058 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/build.make            | 350 ++++++++
+|  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake     |  41 +
+|  .../mtam_hw4.dir/compiler_depend.internal         |  62 +-
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  |  65 +-
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts    |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/depend.make           |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/flags.make            |  12 +
+|  .../CMakeFiles/mtam_hw4.dir/link.txt              |   1 +
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o            | Bin 0 -> 289320 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d          | 833 +++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 733 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o        | Bin 288248 -> 288240 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d      | 814 +++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 284072 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/progress.make         |  18 +
+|  cmake-build-debug/CMakeFiles/progress.marks       |   1 +
+|  cmake-build-debug/CMakeFiles/rules.ninja          |  64 --
+|  .../CMakeFiles/run_test1.dir/DependInfo.cmake     |  22 +
+|  .../CMakeFiles/run_test1.dir/build.make           |  87 ++
+|  .../CMakeFiles/run_test1.dir/cmake_clean.cmake    |   8 +
+|  .../CMakeFiles/run_test1.dir/compiler_depend.make |   2 +
+|  .../CMakeFiles/run_test1.dir/compiler_depend.ts   |   2 +
+|  .../CMakeFiles/run_test1.dir/progress.make        |   1 +
+|  cmake-build-debug/CTestTestfile.cmake             |   8 +-
+|  cmake-build-debug/Makefile                        | 611 ++++++++++++++
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |  10 +-
+|  cmake-build-debug/build.ninja                     | 302 -------
+|  cmake-build-debug/cmake_install.cmake             |   8 +-
+|  cmake-build-debug/mtam_hw4                        | Bin 680504 -> 677496 bytes
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3344479 -> 0 bytes
+|  main.cpp                                          |  78 +-
+|  112 files changed, 15472 insertions(+), 2181 deletions(-)
+| 
+* commit 7a89f57e4ea889651ad018b1bbfe59825ca6fed5
+| Author: Basel Addd <basselhejaze@gmail.com>
+| Date:   Sun Jul 13 01:39:46 2025 +0300
+| 
+|     fix direct acess to object
+| 
+|  Players/Jobs/Job.cpp | 41 ++++++++++++++++++++++-------------------
+|  1 file changed, 22 insertions(+), 19 deletions(-)
+| 
+* commit 940d5a3c232885d71443a15506a40f62d973391d
+| Author: Basel Addd <basselhejaze@gmail.com>
+| Date:   Sun Jul 13 01:25:05 2025 +0300
+| 
+|     fix get charactor root cuse
+| 
+|  Players/Jobs/Job.cpp                              |     2 +-
+|  Players/Player.cpp                                |     4 +-
+|  Rounds/Turns/Turn.cpp                             |     6 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o           |   Bin 0 -> 102832 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o        |   Bin 0 -> 538192 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o     |   Bin 0 -> 97056 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o        |   Bin 0 -> 90960 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o      |   Bin 0 -> 726728 bytes
+|  .../mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o |   Bin 0 -> 131552 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o          |   Bin 0 -> 154864 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o           |   Bin 0 -> 205632 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o  |   Bin 0 -> 164272 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o      |   Bin 0 -> 133336 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o    |   Bin 0 -> 441776 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o          |   Bin 0 -> 98160 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o       |   Bin 0 -> 171264 bytes
+|  .../mtam_hw4.dir/compiler_depend.internal         | 12438 +++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  | 14133 ++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o        |   Bin 0 -> 288248 bytes
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |     6 +
+|  cmake-build-debug/mtam_hw4                        |   Bin 0 -> 680504 bytes
+|  21 files changed, 26585 insertions(+), 4 deletions(-)
+|   
+| * commit b21054df88656e760ccb4288f6ccd131ef9fc180
+|/| Merge: 32d26e0 a846872
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Sun Jul 13 09:26:13 2025 +0300
+| | 
+| |     WIP on finalKarm: 32d26e0 add ) at the end of the charctor
+| | 
+| * commit a846872b08764314c54a0da6d906c4d2d1256353
+|/  Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+|   Date:   Sun Jul 13 09:26:13 2025 +0300
+|   
+|       index on finalKarm: 32d26e0 add ) at the end of the charctor
+| 
+* commit 32d26e0e0c230b6cd517afaa31d7b5c15fa638c3
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sun Jul 13 00:48:45 2025 +0300
+| 
+|     add ) at the end of the charctor
+| 
+|  .idea/.name                                       |   1 +
+|  CMakeLists 2.txt                                  |  39 -
+|  MatamStory.h                                      |   2 +-
+|  Players/Charactor.cpp                             |   4 +
+|  Rounds/Turns/Turn.cpp                             |   2 +-
+|  ...9a.json => cache-v2-cbed727bdaddce778b5d.json} | 320 ++++++--
+|  .../reply/cmakeFiles-v1-4cf80b2ee9196413e04b.json | 828 +++++++++++++++++++
+|  .../reply/cmakeFiles-v1-766bdf4348a3b56a1f34.json | 804 -------------------
+|  ...son => codemodel-v2-cc3c8f47fa11bc0326e6.json} |  10 +-
+|  ...> directory-.-Debug-d0094a50bb2071803777.json} |   0
+|  ...3.json => index-2025-07-12T21-36-22-0926.json} |  26 +-
+|  ...rget-mtam_hw4-Debug-f5bd41a278774b9dffd0.json} |  13 +-
+|  ...get-run_test1-Debug-500bea3c785399e4a3c3.json} |   0
+|  .../reply/toolchains-v1-34e713db58121691db7d.json |  87 --
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |  93 +++
+|  cmake-build-debug/.ninja_deps                     | Bin 66228 -> 38112 bytes
+|  cmake-build-debug/.ninja_deps 2                   | Bin 38828 -> 0 bytes
+|  cmake-build-debug/.ninja_log                      |  67 +-
+|  cmake-build-debug/.ninja_log 2                    |  26 -
+|  cmake-build-debug/CMakeCache.txt                  | 146 ++--
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |  36 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |  38 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        | Bin 17000 -> 43069 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      | Bin 16984 -> 43088 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |   6 +
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |  16 +-
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           | Bin 0 -> 43144 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.out           | Bin 33736 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         | Bin 0 -> 43172 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out         | Bin 33736 -> 0 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             | 482 +++++++----
+|  .../CMakeFiles/CMakeDirectoryInformation.cmake    |  16 -
+|  cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt  |   2 -
+|  cmake-build-debug/CMakeFiles/Makefile.cmake       | 134 ----
+|  cmake-build-debug/CMakeFiles/Makefile2            | 139 ----
+|  .../CMakeFiles/TargetDirectories.txt              |  10 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |  14 +-
+|  .../CMakeFiles/clion-environment.txt              | Bin 161 -> 296 bytes
+|  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake      |  39 -
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o           | Bin 102832 -> 0 bytes
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o.d         | 768 ------------------
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 187020 -> 158497 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o    | Bin 76552 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o.d  | 767 ------------------
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o        | Bin 535360 -> 0 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o.d      | 811 -------------------
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 938770 -> 943187 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o     | Bin 97056 -> 0 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o.d   | 767 ------------------
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 144071 -> 144071 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o        | Bin 90960 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o.d      | 768 ------------------
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 156074 -> 121309 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o        | Bin 67472 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o.d      | 646 ---------------
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o      | Bin 726728 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d    | 837 --------------------
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 944587 -> 944535 bytes
+|  .../mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o | Bin 131552 -> 0 bytes
+|  .../Players/Behiviors/Behivior.cpp.o.d            | 772 ------------------
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 274584 -> 274584 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o          | Bin 154864 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o.d        | 767 ------------------
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 280617 -> 280971 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o           | Bin 205632 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o.d         | 773 ------------------
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 404870 -> 381033 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o  | Bin 164272 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.o.d           | 772 ------------------
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 271506 -> 271470 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o      | Bin 133336 -> 0 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d    | 772 ------------------
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 208708 -> 208708 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o    | Bin 441776 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d  | 806 -------------------
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 582274 -> 582274 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o          | Bin 98160 -> 0 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o.d        | 768 ------------------
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 141767 -> 144752 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o       | Bin 171264 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d     | 808 -------------------
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 131058 -> 131058 bytes
+|  .../CMakeFiles/mtam_hw4.dir/build.make            | 366 ---------
+|  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake     |  43 -
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts    |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/depend.make           |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/flags.make            |  12 -
+|  .../CMakeFiles/mtam_hw4.dir/link.txt              |   1 -
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o            | Bin 336 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d          |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o        | Bin 288248 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d      | 814 -------------------
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 284108 -> 284072 bytes
+|  .../CMakeFiles/mtam_hw4.dir/progress.make         |  19 -
+|  cmake-build-debug/CMakeFiles/progress.marks       |   1 -
+|  cmake-build-debug/CMakeFiles/rules.ninja          |  64 ++
+|  .../CMakeFiles/run_test1.dir/DependInfo.cmake     |  22 -
+|  .../CMakeFiles/run_test1.dir/build.make           |  87 --
+|  .../CMakeFiles/run_test1.dir/cmake_clean.cmake    |   8 -
+|  .../CMakeFiles/run_test1.dir/compiler_depend.make |   2 -
+|  .../CMakeFiles/run_test1.dir/compiler_depend.ts   |   2 -
+|  .../CMakeFiles/run_test1.dir/progress.make        |   1 -
+|  cmake-build-debug/CTestTestfile.cmake             |   8 +-
+|  cmake-build-debug/Makefile                        | 638 ---------------
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build 2.ninja                   | 236 ------
+|  cmake-build-debug/build.ninja                     |  41 +-
+|  cmake-build-debug/cmake_install 2.cmake           |  49 --
+|  cmake-build-debug/cmake_install.cmake             |   8 +-
+|  cmake-build-debug/events.tmp                      |   5 -
+|  cmake-build-debug/mtam_hw4                        | Bin 680472 -> 0 bytes
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3383336 -> 3344479 bytes
+|  cmake-build-debug/players.tmp                     |   3 -
+|  cmake-build-debug/tmp_events.txt                  |   9 -
+|  cmake-build-debug/tmp_players.txt                 |   4 -
+|  116 files changed, 1815 insertions(+), 15642 deletions(-)
+| 
+* commit e072d181bb0040b4de74646f897c1f1c6ec7efb0
+| Author: Basel Addd <basselhejaze@gmail.com>
+| Date:   Sun Jul 13 00:33:34 2025 +0300
+| 
+|     fix job apply turn
+| 
+|  .idea/{.name => .name 2}                          |   0
+|  CMakeLists 2.txt                                  |  39 +
+|  Events/Encounter 2.cpp                            |  23 +
+|  Events/Encounter 2.h                              |  24 +
+|  Events/Encounter.cpp                              |   4 +-
+|  Events/Enemy 2.h                                  | 127 +++
+|  Events/Enemy.h                                    |  24 +-
+|  Events/Event 2.cpp                                |  19 +
+|  Events/EventFactory 2.cpp                         |  43 +
+|  Events/EventFactory 2.h                           |  12 +
+|  Events/PotionsMerchant 2.cpp                      |  18 +
+|  Events/PotionsMerchant 2.h                        |  16 +
+|  Events/PotionsMerchant.cpp                        |   2 +-
+|  Events/PotionsMerchant.h                          |   6 +-
+|  Events/SolarEclipse 2.cpp                         |  18 +
+|  Events/SolarEclipse 2.h                           |  21 +
+|  Events/SolarEclipse.cpp                           |   7 +-
+|  Events/SolarEclipse.h                             |   2 +-
+|  Events/SpecialEvent 2.cpp                         |  11 +
+|  Events/SpecialEvent 2.h                           |  18 +
+|  LeaderBoard 2.cpp                                 |   1 +
+|  Players/Jobs/Archer.h                             |   8 +-
+|  Players/Jobs/Job.cpp                              |  71 +-
+|  Players/Jobs/Job.h                                |   9 +-
+|  Players/Jobs/Magician .h                          |  10 +-
+|  Players/Jobs/Warrior.h                            |   5 +-
+|  Players/Player.cpp                                |   3 +-
+|  Rounds/Round 2.cpp                                |  67 ++
+|  Rounds/Round 2.h                                  |  20 +
+|  Rounds/Turns/Turn.cpp                             |   3 +-
+|  ...54.json => cache-v2-ab54755d713691f0c49a.json} | 324 ++------
+|  .../reply/cmakeFiles-v1-415425d98e9cdba7ed43.json | 165 ----
+|  .../reply/cmakeFiles-v1-766bdf4348a3b56a1f34.json | 804 +++++++++++++++++++
+|  ...son => codemodel-v2-084947f545113b302d9a.json} |  10 +-
+|  ...> directory-.-Debug-f5ebdc15457944623624.json} |   0
+|  ...2.json => index-2025-07-12T20-54-37-0463.json} |  26 +-
+|  ...rget-mtam_hw4-Debug-fce85fc58d8257a20da1.json} |  13 +-
+|  ...get-run_test1-Debug-2f79a13d41757c575312.json} |   0
+|  .../reply/toolchains-v1-34e713db58121691db7d.json |  87 ++
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |  93 ---
+|  cmake-build-debug/.ninja_deps 2                   | Bin 0 -> 38828 bytes
+|  cmake-build-debug/.ninja_log 2                    |  26 +
+|  cmake-build-debug/CMakeCache.txt                  | 148 ++--
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |  36 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |  38 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        | Bin 43069 -> 17000 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      | Bin 43088 -> 16984 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |   6 -
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |  16 +-
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           | Bin 43144 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.out           | Bin 0 -> 33736 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         | Bin 43172 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out         | Bin 0 -> 33736 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             | 482 ++++-------
+|  .../CMakeFiles/CMakeDirectoryInformation.cmake    |  16 +
+|  cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt  |   2 +
+|  cmake-build-debug/CMakeFiles/Makefile.cmake       | 134 ++++
+|  cmake-build-debug/CMakeFiles/Makefile2            | 139 ++++
+|  .../CMakeFiles/TargetDirectories.txt              |  10 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |  18 +-
+|  .../CMakeFiles/clion-environment.txt              | Bin 296 -> 161 bytes
+|  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake      |  39 +
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o           | Bin 0 -> 102832 bytes
+|  .../mtam_hw4.dir/Events/Encounter.cpp.o.d         | 768 ++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o    | Bin 0 -> 76552 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o.d  | 767 ++++++++++++++++++
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o        | Bin 0 -> 535360 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.o.d      | 811 +++++++++++++++++++
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o     | Bin 0 -> 97056 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o.d   | 767 ++++++++++++++++++
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o        | Bin 0 -> 90960 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.o.d      | 768 ++++++++++++++++++
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o        | Bin 0 -> 67472 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.o.d      | 646 +++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o      | Bin 0 -> 726728 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d    | 837 ++++++++++++++++++++
+|  .../mtam_hw4.dir/Players/Behiviors/Behivior.cpp.o | Bin 0 -> 131552 bytes
+|  .../Players/Behiviors/Behivior.cpp.o.d            | 772 ++++++++++++++++++
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o          | Bin 0 -> 154864 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.o.d        | 767 ++++++++++++++++++
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o           | Bin 0 -> 205632 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.o.d         | 773 ++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o  | Bin 0 -> 164272 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.o.d           | 772 ++++++++++++++++++
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o      | Bin 0 -> 133336 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d    | 772 ++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o    | Bin 0 -> 441776 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d  | 806 +++++++++++++++++++
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o          | Bin 0 -> 98160 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o.d        | 768 ++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o       | Bin 0 -> 171264 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d     | 808 +++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/build.make            | 366 +++++++++
+|  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake     |  43 +
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts    |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/depend.make           |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/flags.make            |  12 +
+|  .../CMakeFiles/mtam_hw4.dir/link.txt              |   1 +
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o            | Bin 0 -> 336 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d          |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o        | Bin 0 -> 288248 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d      | 814 +++++++++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/progress.make         |  19 +
+|  cmake-build-debug/CMakeFiles/progress.marks       |   1 +
+|  cmake-build-debug/CMakeFiles/rules.ninja          |  64 --
+|  .../CMakeFiles/run_test1.dir/DependInfo.cmake     |  22 +
+|  .../CMakeFiles/run_test1.dir/build.make           |  87 ++
+|  .../CMakeFiles/run_test1.dir/cmake_clean.cmake    |   8 +
+|  .../CMakeFiles/run_test1.dir/compiler_depend.make |   2 +
+|  .../CMakeFiles/run_test1.dir/compiler_depend.ts   |   2 +
+|  .../CMakeFiles/run_test1.dir/progress.make        |   1 +
+|  cmake-build-debug/CTestTestfile.cmake             |   8 +-
+|  cmake-build-debug/Makefile                        | 638 +++++++++++++++
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build 2.ninja                   | 236 ++++++
+|  cmake-build-debug/cmake_install 2.cmake           |  49 ++
+|  cmake-build-debug/cmake_install.cmake             |   8 +-
+|  cmake-build-debug/mtam_hw4                        | Bin 0 -> 680472 bytes
+|  119 files changed, 16087 insertions(+), 1171 deletions(-)
+| 
+* commit f268e596056a05760d97c3956b7a97df63c08a64
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sat Jul 12 23:49:45 2025 +0300
+| 
+|     mtam story work but player and evant need to be check
+| 
+|  CMakeLists.txt                                    |  17 ++-
+|  Events/EventFactory.cpp                           |   3 +-
+|  mtam_hw4.exe => MatamStory                        | Bin
+|  MatamStory.cpp                                    | 156 ++++++++++++--------
+|  MatamStory.h                                      |   3 +-
+|  Players/Behiviors/Behivior.cpp                    |   2 +-
+|  Rounds/Round.cpp                                  |  15 +-
+|  ...son => codemodel-v2-cc3c8f47fa11bc0326e6.json} |  15 +-
+|  ...4.json => index-2025-07-12T19-20-31-0822.json} |   4 +-
+|  ...rget-mtam_hw4-Debug-f5bd41a278774b9dffd0.json} |   6 +-
+|  ...rget-run_test1-Debug-500bea3c785399e4a3c3.json |  73 +++++++++
+|  cmake-build-debug/.ninja_deps                     | Bin 45780 -> 66228 bytes
+|  cmake-build-debug/.ninja_log                      |  69 ++++++---
+|  .../CMakeFiles/TargetDirectories.txt              |   2 +
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   2 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 211026 -> 187020 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj  | Bin 73866 -> 80472 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 972339 -> 938770 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 153451 -> 144071 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 180076 -> 156074 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj      | Bin 86393 -> 62387 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 759286 -> 944587 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 283781 -> 274584 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 287299 -> 280617 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 413945 -> 404870 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 263242 -> 271506 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 201736 -> 208708 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 573638 -> 582274 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 119200 -> 141767 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 118097 -> 131058 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 150980 -> 733 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 737 -> 284108 bytes
+|  cmake-build-debug/CTestTestfile.cmake             |   8 +
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build.ninja                     |  59 +++++---
+|  cmake-build-debug/events.tmp                      |   5 +
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3346654 -> 3383336 bytes
+|  cmake-build-debug/players.tmp                     |   3 +
+|  cmake-build-debug/tmp_events.txt                  |   9 ++
+|  cmake-build-debug/tmp_players.txt                 |   4 +
+|  main.cpp                                          |  78 +++++-----
+|  maintest.cpp                                      | 102 +++++++------
+|  mtam_hw4                                          | Bin 0 -> 390208 bytes
+|  test1.out                                         |   1 +
+|  44 files changed, 430 insertions(+), 210 deletions(-)
+| 
+* commit 4b457b85105d89dcbe9f51ebf012966532823b73
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sat Jul 12 20:50:54 2025 +0300
+| 
+|     debugge start expeted test
+| 
+|  CMakeLists.txt                                    |  11 +-
+|  Events/Encounter.cpp                              |   5 +-
+|  Events/Encounter.h                                |   4 +-
+|  Events/Enemy.h                                    |  13 ++-
+|  Events/SolarEclipse.cpp                           |   3 +-
+|  Players/Jobs/Archer.h                             |   2 +-
+|  Players/Jobs/Job.cpp                              |  10 +-
+|  Players/Jobs/Job.h                                |   2 +-
+|  Players/Jobs/Magician .h                          |   2 +-
+|  Players/Jobs/Warrior.h                            |   2 +-
+|  Players/Player.h                                  |   2 +-
+|  Players/PlayerFactory.cpp                         |   3 -
+|  Rounds/Round.cpp                                  |  10 +-
+|  ...fa.json => cache-v2-7d2f3235698636087554.json} |   2 +-
+|  ...son => codemodel-v2-71f87d0e69b659410b3c.json} |   2 +-
+|  ...2.json => index-2025-07-12T17-48-38-0674.json} |   8 +-
+|  ...rget-mtam_hw4-Debug-3d2316835632b6a8e760.json} |  12 +--
+|  cmake-build-debug/.ninja_deps                     | Bin 75576 -> 45780 bytes
+|  cmake-build-debug/.ninja_log                      | 108 ++++----------------
+|  cmake-build-debug/CMakeCache.txt                  |   2 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   2 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 180013 -> 211026 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 975142 -> 972339 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 153547 -> 153451 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 145419 -> 180076 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 759382 -> 759286 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 283877 -> 283781 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 416201 -> 413945 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 263338 -> 263242 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 202119 -> 201736 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 570416 -> 573638 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 119292 -> 119200 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 118193 -> 118097 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 151076 -> 150980 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   4 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build.ninja                     |  14 +--
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3303967 -> 3346654 bytes
+|  mtam_hw4.exe                                      | Bin 0 -> 394464 bytes
+|  test1.out                                         |   0
+|  40 files changed, 88 insertions(+), 139 deletions(-)
+| 
+* commit 8fec6281d31d8e034b3ac221c93fa1faa88cdb22
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sat Jul 12 19:46:40 2025 +0300
+| 
+|     debugging dtill not working
+| 
+|  Events/Encounter.cpp                              |  22 ++-
+|  Events/Encounter.h                                |  16 +-
+|  Events/Enemy.h                                    |  17 +-
+|  MatamStory.cpp                                    | 200 ++++++++++++++------
+|  MatamStory.h                                      |  88 +++++----
+|  Players/Jobs/Archer.h                             |   6 +-
+|  Players/Jobs/Job.cpp                              |  68 ++++---
+|  Players/Jobs/Job.h                                |   9 +-
+|  Players/Jobs/Magician .h                          |   8 +-
+|  Players/Jobs/Warrior.h                            |   8 +-
+|  Players/Player.cpp                                |  45 +++--
+|  Players/Player.h                                  |   7 +-
+|  Players/PlayerFactory.cpp                         |   3 +-
+|  Players/PlayerFactory.h                           |   1 +
+|  Rounds/Round.cpp                                  |  80 ++++----
+|  Rounds/Round.h                                    |  25 ++-
+|  Rounds/Turns/Turn.cpp                             |  10 +-
+|  Rounds/Turns/Turn.h                               |   5 +-
+|  ...54.json => cache-v2-2d0b4b16d7df7fc8bcfa.json} |   2 +-
+|  ...0.json => index-2025-07-12T15-50-43-0612.json} |   4 +-
+|  cmake-build-debug/.ninja_deps                     | Bin 65792 -> 75576 bytes
+|  cmake-build-debug/.ninja_log                      | 138 ++++++++------
+|  cmake-build-debug/CMakeCache.txt                  |   2 +-
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 179989 -> 180013 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 153523 -> 153547 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 145395 -> 145419 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 939926 -> 759382 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 283853 -> 283877 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 287299 -> 287299 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 390172 -> 416201 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 249918 -> 263338 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 201197 -> 202119 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 611668 -> 570416 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 117565 -> 119292 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 118169 -> 118193 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 733 -> 151076 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 359493 -> 737 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   4 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 3561300 -> 3303967 bytes
+|  main.cpp                                          |  40 ++++
+|  maintest.cpp                                      | 198 +++++++++----------
+|  42 files changed, 592 insertions(+), 418 deletions(-)
+| 
+* commit 43b532bd6997580c028272c5d73f69c5642176ae
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sat Jul 12 18:48:58 2025 +0300
+| 
+|     testmain work
+| 
+|  CMakeLists.txt                                    |   1 +
+|  Events/Enemy.h                                    |   3 +-
+|  Events/Event.cpp                                  |   4 +
+|  Events/Event.h                                    |   2 +-
+|  MatamStory.cpp                                    |   7 +-
+|  Players/Behiviors/Behivior.cpp                    |   6 +-
+|  Players/Behiviors/Behivior.h                      |   4 +-
+|  Players/Jobs/Archer.h                             |   2 +-
+|  Players/Jobs/Job.cpp                              |   8 -
+|  Players/Jobs/Job.h                                |   2 +-
+|  Players/Jobs/Magician .h                          |   2 +-
+|  Players/Jobs/Warrior.h                            |   2 +-
+|  Players/Player.cpp                                |   7 +
+|  Rounds/Turns/Turn.cpp                             |   1 -
+|  ...bb.json => cache-v2-7d2f3235698636087554.json} | 320 ++++++++---
+|  .../reply/cmakeFiles-v1-415425d98e9cdba7ed43.json | 165 ++++++
+|  .../reply/cmakeFiles-v1-61fb60a7c59cfec4e73d.json | 161 ------
+|  ...son => codemodel-v2-780a3d47e4ac64eadbeb.json} |   8 +-
+|  ...> directory-.-Debug-d0094a50bb2071803777.json} |   0
+|  ...5.json => index-2025-07-12T15-43-39-0390.json} |  26 +-
+|  ...rget-mtam_hw4-Debug-ff5f0741f628f20cd820.json} |  25 +-
+|  .../reply/toolchains-v1-34e713db58121691db7d.json |  87 ---
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |  93 ++++
+|  cmake-build-debug/.ninja_deps                     | Bin 38828 -> 65792 bytes
+|  cmake-build-debug/.ninja_log                      |  93 +++-
+|  cmake-build-debug/CMakeCache.txt                  | 146 +++--
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |  36 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |  38 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        | Bin 17000 -> 43069 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      | Bin 16984 -> 43088 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |   6 +
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |  16 +-
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           | Bin 0 -> 43144 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.out           | Bin 33736 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         | Bin 0 -> 43172 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out         | Bin 33736 -> 0 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             | 472 +++++++++++-----
+|  .../CMakeFiles/CMakeDirectoryInformation.cmake    |  16 -
+|  cmake-build-debug/CMakeFiles/Makefile.cmake       |  51 --
+|  cmake-build-debug/CMakeFiles/Makefile2            | 112 ----
+|  .../CMakeFiles/TargetDirectories.txt              |   6 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   6 +-
+|  .../CMakeFiles/clion-environment.txt              | Bin 161 -> 296 bytes
+|  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake      |  38 --
+|  .../mtam_hw4.dir/Events/Encounter.cpp.obj         | Bin 0 -> 179989 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj  | Bin 0 -> 73866 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 0 -> 975142 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 0 -> 153523 bytes
+|  .../mtam_hw4.dir/Events/SolarEclipse.cpp.obj      | Bin 0 -> 145395 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj      | Bin 0 -> 86393 bytes
+|  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj    | Bin 0 -> 939926 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 0 -> 283853 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 0 -> 287299 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 0 -> 390172 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 0 -> 249918 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 0 -> 201197 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 0 -> 611668 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 0 -> 117565 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 0 -> 118169 bytes
+|  .../CMakeFiles/mtam_hw4.dir/build.make            | 350 ------------
+|  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake     |  41 --
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts    |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/depend.make           |   2 -
+|  .../CMakeFiles/mtam_hw4.dir/flags.make            |  12 -
+|  .../CMakeFiles/mtam_hw4.dir/link.txt              |   1 -
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 0 -> 733 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 0 -> 359493 bytes
+|  .../CMakeFiles/mtam_hw4.dir/progress.make         |  18 -
+|  cmake-build-debug/CMakeFiles/progress.marks       |   1 -
+|  cmake-build-debug/CMakeFiles/rules.ninja          |  64 +++
+|  cmake-build-debug/Makefile                        | 586 --------------------
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/build.ninja                     |   8 +-
+|  cmake-build-debug/cmake_install.cmake             |   8 +-
+|  cmake-build-debug/mtam_hw4.exe                    | Bin 0 -> 3561300 bytes
+|  76 files changed, 1189 insertions(+), 1882 deletions(-)
+|   
+| * commit e7da37ceab3900ccc002df0839af7f69a1f6dc71
+|/  Author: Basel Addd <basselhejaze@gmail.com>
+|   Date:   Sat Jul 12 21:01:55 2025 +0300
+|   
+|       fix all compilation problem + start testing input output
+|   
+|    CMakeLists.txt                                   |     1 +
+|    Events/Encounter.cpp                             |     2 +-
+|    Events/Enemy.h                                   |     2 +-
+|    Events/Event.cpp                                 |     4 +
+|    Events/Event.h                                   |     4 +-
+|    Events/EventFactory.cpp                          |     2 +-
+|    Events/PotionsMerchant.cpp                       |     2 +-
+|    Events/SolarEclipse.cpp                          |     2 +-
+|    MatamStory.cpp                                   |    47 +-
+|    Players/Behiviors/Behivior.cpp                   |    16 +-
+|    Players/Behiviors/Behivior.h                     |     3 +-
+|    Players/Jobs/Archer.h                            |     1 -
+|    Players/Jobs/Job.cpp                             |    37 +-
+|    Players/Jobs/Job.h                               |     1 -
+|    Players/Jobs/Magician .h                         |     1 -
+|    Players/Jobs/Warrior.h                           |     1 -
+|    Players/Player.cpp                               |    16 +-
+|    Players/Player.h                                 |    11 +-
+|    Players/PlayerFactory.cpp                        |     2 +-
+|    ...on => codemodel-v2-ebfbc7e109c2b7a2f8b1.json} |     2 +-
+|    ....json => index-2025-07-12T17-16-15-0812.json} |     4 +-
+|    ...get-mtam_hw4-Debug-74bb3d2a8105768f7799.json} |    12 +-
+|    cmake-build-debug/CMakeFiles/Makefile2           |     4 +-
+|    .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake     |     1 +
+|    .../mtam_hw4.dir/Events/Encounter.cpp.o          |   Bin 0 -> 104104 bytes
+|    .../mtam_hw4.dir/Events/Encounter.cpp.o.d        |   763 +
+|    .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o   |   Bin 0 -> 74208 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.o.d |   640 +
+|    .../mtam_hw4.dir/Events/EventFactory.cpp.o       |   Bin 0 -> 523688 bytes
+|    .../mtam_hw4.dir/Events/EventFactory.cpp.o.d     |   802 +
+|    .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o    |   Bin 0 -> 97656 bytes
+|    .../mtam_hw4.dir/Events/PotionsMerchant.cpp.o.d  |   762 +
+|    .../mtam_hw4.dir/Events/SolarEclipse.cpp.o       |   Bin 0 -> 91712 bytes
+|    .../mtam_hw4.dir/Events/SolarEclipse.cpp.o.d     |   763 +
+|    .../mtam_hw4.dir/Events/SpecialEvent.cpp.o       |   Bin 0 -> 66976 bytes
+|    .../mtam_hw4.dir/Events/SpecialEvent.cpp.o.d     |   641 +
+|    .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o     |   Bin 0 -> 478616 bytes
+|    .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d   |   809 +
+|    .../Players/Behiviors/Behivior.cpp.o             |   Bin 0 -> 168704 bytes
+|    .../Players/Behiviors/Behivior.cpp.o.d           |   767 +
+|    .../mtam_hw4.dir/Players/Charactor.cpp.o         |   Bin 0 -> 115080 bytes
+|    .../mtam_hw4.dir/Players/Charactor.cpp.o.d       |   762 +
+|    .../mtam_hw4.dir/Players/Jobs/Job.cpp.o          |   Bin 0 -> 204936 bytes
+|    .../mtam_hw4.dir/Players/Jobs/Job.cpp.o.d        |   768 +
+|    .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o |   Bin 0 -> 144512 bytes
+|    .../mtam_hw4.dir/Players/Player.cpp.o.d          |   767 +
+|    .../mtam_hw4.dir/Players/PlayerFactory.cpp.o     |   Bin 0 -> 130304 bytes
+|    .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d   |   767 +
+|    .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o   |   Bin 0 -> 473648 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d |   790 +
+|    .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o         |   Bin 0 -> 90680 bytes
+|    .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.o.d       |   763 +
+|    .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o      |   Bin 0 -> 167712 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d    |   799 +
+|    .../CMakeFiles/mtam_hw4.dir/build.make           |    20 +-
+|    .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake    |     2 +
+|    .../mtam_hw4.dir/compiler_depend.internal        | 12193 +++++++++++++++
+|    .../CMakeFiles/mtam_hw4.dir/compiler_depend.make | 13828 ++++++++++++++++-
+|    .../CMakeFiles/mtam_hw4.dir/link.txt             |     2 +-
+|    .../CMakeFiles/mtam_hw4.dir/main.cpp.o           |   Bin 0 -> 336 bytes
+|    .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d         |     2 +
+|    .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o       |   Bin 0 -> 363488 bytes
+|    .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d     |   808 +
+|    .../CMakeFiles/mtam_hw4.dir/progress.make        |     1 +
+|    cmake-build-debug/CMakeFiles/progress.marks      |     2 +-
+|    cmake-build-debug/Makefile                       |    27 +
+|    cmake-build-debug/Testing/Temporary/LastTest.log |     4 +-
+|    cmake-build-debug/mtam_hw4                       |   Bin 0 -> 636888 bytes
+|    maintest.cpp                                     |     1 -
+|    69 files changed, 38323 insertions(+), 108 deletions(-)
+| 
+* commit 8805796f087fb1d1ed93c52c7f57aff6afa91c28
+| Author: Basel Addd <basselhejaze@gmail.com>
+| Date:   Sat Jul 12 18:13:07 2025 +0300
+| 
+|     fix some errors in apply event in job
+| 
+|  Events/Encounter.cpp                              |   4 +-
+|  Events/Encounter.h                                |   2 +-
+|  Events/SolarEclipse.cpp                           |   4 +-
+|  Players/Jobs/Archer.h                             |   4 +-
+|  Players/Jobs/Job.cpp                              |  55 +-
+|  Players/Jobs/Job.h                                |   4 +-
+|  Players/Jobs/Magician .h                          |   4 +-
+|  Players/Jobs/Warrior.h                            |   4 +-
+|  Players/Player.cpp                                |   1 -
+|  ...fa.json => cache-v2-093ba7bb237a63f474bb.json} | 320 +++--------
+|  .../reply/cmakeFiles-v1-415425d98e9cdba7ed43.json | 165 ------
+|  .../reply/cmakeFiles-v1-61fb60a7c59cfec4e73d.json | 161 ++++++
+|  ...son => codemodel-v2-a8d5db8f0e1ff79a6437.json} |   8 +-
+|  ...> directory-.-Debug-f5ebdc15457944623624.json} |   0
+|  ...8.json => index-2025-07-12T14-22-50-0275.json} |  26 +-
+|  ...rget-mtam_hw4-Debug-355b695d7ef3fee3747b.json} |  13 +-
+|  .../reply/toolchains-v1-34e713db58121691db7d.json |  87 +++
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |  93 ----
+|  cmake-build-debug/CMakeCache.txt                  | 146 ++---
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |  36 +-
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |  38 +-
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        | Bin 43069 -> 17000 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      | Bin 43088 -> 16984 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |   6 -
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |  16 +-
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           | Bin 43144 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.out           | Bin 0 -> 33736 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         | Bin 43172 -> 0 bytes
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out         | Bin 0 -> 33736 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             | 472 +++++-----------
+|  .../CMakeFiles/CMakeDirectoryInformation.cmake    |  16 +
+|  cmake-build-debug/CMakeFiles/Makefile.cmake       |  51 ++
+|  cmake-build-debug/CMakeFiles/Makefile2            | 112 ++++
+|  .../CMakeFiles/TargetDirectories.txt              |   6 +-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |   6 +-
+|  .../CMakeFiles/clion-environment.txt              | Bin 296 -> 161 bytes
+|  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake      |  38 ++
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj  | Bin 70348 -> 0 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      | Bin 970546 -> 0 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   | Bin 149953 -> 0 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj      | Bin 78563 -> 0 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            | Bin 283758 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        | Bin 287299 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         | Bin 414199 -> 0 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           | Bin 247697 -> 0 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    | Bin 201197 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  | Bin 610068 -> 0 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        | Bin 115985 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     | Bin 114485 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/build.make            | 350 ++++++++++++
+|  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake     |  41 ++
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make  |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts    |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/depend.make           |   2 +
+|  .../CMakeFiles/mtam_hw4.dir/flags.make            |  12 +
+|  .../CMakeFiles/mtam_hw4.dir/link.txt              |   1 +
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          | Bin 733 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      | Bin 357893 -> 0 bytes
+|  .../CMakeFiles/mtam_hw4.dir/progress.make         |  18 +
+|  cmake-build-debug/CMakeFiles/progress.marks       |   1 +
+|  cmake-build-debug/CMakeFiles/rules.ninja          |  64 ---
+|  cmake-build-debug/Makefile                        | 586 ++++++++++++++++++++
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |   4 +-
+|  cmake-build-debug/cmake_install.cmake             |   8 +-
+|  64 files changed, 1872 insertions(+), 1117 deletions(-)
+| 
+* commit f9984edf56bb2d6b4499b9f14cab28c087f74a96
+| Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| Date:   Sat Jul 12 16:47:58 2025 +0300
+| 
+|     include circalar problme
+| 
+|  CMakeLists.txt                                    |   38 +-
+|  Encounter/Encounter .cpp                          |   26 -
+|  Events/Encounter.cpp                              |   25 +
+|  {Encounter => Events}/Encounter.h                 |   16 +-
+|  {Encounter => Events}/Enemy.h                     |   12 +-
+|  Events/{Event .cpp => Event.cpp}                  |    0
+|  Events/Event.h                                    |   32 +-
+|  Events/EventFactory.cpp                           |    8 +-
+|  {SpecialEvent => Events}/PotionsMerchant.cpp      |    4 +-
+|  Events/PotionsMerchant.h                          |   16 +
+|  Events/SolarEclipse.cpp                           |   18 +
+|  Events/SolarEclipse.h                             |   21 +
+|  {SpecialEvent => Events}/SpecialEvent.cpp         |    0
+|  Events/SpecialEvent.h                             |   18 +
+|  LeaderBoard.cpp                                   |   48 -
+|  Leaderboard.h                                     |   16 -
+|  MatamStory.cpp                                    |    2 +-
+|  Players/Behiviors/Behivior.cpp                    |    6 +-
+|  Players/Behiviors/Behivior.h                      |    7 +-
+|  Players/Behiviors/Responsible.h                   |    7 +-
+|  Players/Behiviors/RiskTaking.h                    |    9 +-
+|  Players/Charactor.cpp                             |   19 +-
+|  Players/Charactor.h                               |   19 +-
+|  Players/Jobs/Job.cpp                              |    3 +-
+|  Players/Jobs/Job.h                                |   11 +-
+|  Players/Jobs/Magician .h                          |    1 -
+|  Players/Player.cpp                                |   44 +-
+|  Players/Player.h                                  |  164 +--
+|  Rounds/Round.h                                    |    2 +-
+|  {Turns => Rounds/Turns}/Turn.cpp                  |    2 +-
+|  {Turns => Rounds/Turns}/Turn.h                    |    5 +-
+|  SpecialEvent/PotionsMerchant.h                    |   12 -
+|  SpecialEvent/SolarEclipse.cpp                     |   15 -
+|  SpecialEvent/SolarEclipse.h                       |   15 -
+|  SpecialEvent/SpecialEvent.h                       |   16 -
+|  Utilities.h                                       |    2 +-
+|  .../v1/reply/cache-v2-2d0b4b16d7df7fc8bcfa.json   | 1327 +++++++++++++++++++
+|  .../reply/cmakeFiles-v1-415425d98e9cdba7ed43.json |  165 +++
+|  .../reply/codemodel-v2-4e0cde2ac766e6b511ff.json  |   60 +
+|  .../directory-.-Debug-d0094a50bb2071803777.json   |   14 +
+|  .../v1/reply/index-2025-07-12T13-33-22-0388.json  |  108 ++
+|  ...arget-mtam_hw4-Debug-c0061b2875eff4478f94.json |  226 ++++
+|  .../reply/toolchains-v1-8ce3f78fc5758414dfe9.json |   93 ++
+|  cmake-build-debug/.ninja_deps                     |  Bin 31444 -> 38828 bytes
+|  cmake-build-debug/.ninja_log                      |   40 +-
+|  cmake-build-debug/CMakeCache.txt                  |    2 +-
+|  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake        |   80 ++
+|  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake      |   92 ++
+|  .../3.29.6/CMakeDetermineCompilerABI_C.bin        |  Bin 0 -> 43069 bytes
+|  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin      |  Bin 0 -> 43088 bytes
+|  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake       |    6 +
+|  .../CMakeFiles/3.29.6/CMakeSystem.cmake           |   15 +
+|  .../3.29.6/CompilerIdC/CMakeCCompilerId.c         |  895 +++++++++++++
+|  .../CMakeFiles/3.29.6/CompilerIdC/a.exe           |  Bin 0 -> 43144 bytes
+|  .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp   |  878 ++++++++++++
+|  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe         |  Bin 0 -> 43172 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             |  454 +++++++
+|  .../CMakeFiles/TargetDirectories.txt              |    3 +
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |    2 +-
+|  .../CMakeFiles/mtam_hw4.dir/Events/Event.cpp.obj  |  Bin 0 -> 70348 bytes
+|  .../mtam_hw4.dir/Events/EventFactory.cpp.obj      |  Bin 0 -> 970546 bytes
+|  .../mtam_hw4.dir/Events/PotionsMerchant.cpp.obj   |  Bin 0 -> 149953 bytes
+|  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj      |  Bin 0 -> 78563 bytes
+|  .../Players/Behiviors/Behivior.cpp.obj            |  Bin 0 -> 283758 bytes
+|  .../mtam_hw4.dir/Players/Charactor.cpp.obj        |  Bin 0 -> 287299 bytes
+|  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj         |  Bin 0 -> 414199 bytes
+|  .../mtam_hw4.dir/Players/Player.cpp.obj           |  Bin 0 -> 247697 bytes
+|  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj    |  Bin 0 -> 201197 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.obj  |  Bin 0 -> 610068 bytes
+|  .../mtam_hw4.dir/Rounds/Turns/Turn.cpp.obj        |  Bin 0 -> 115985 bytes
+|  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj     |  Bin 0 -> 114485 bytes
+|  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj          |  Bin 0 -> 733 bytes
+|  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj      |  Bin 0 -> 357893 bytes
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   64 +
+|  cmake-build-debug/Makefile                        |  667 ----------
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |    4 +-
+|  cmake-build-debug/build.ninja                     |   82 +-
+|  mainRound.cpp                                     |   12 -
+|  78 files changed, 4853 insertions(+), 1095 deletions(-)
+|   
+*   commit 708336c4d207b224407d69f89eb729fd07dc1ab0
+|\  Merge: 3327297 c3df5b7
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Sat Jul 12 12:53:21 2025 +0300
+| | 
+| |     after merge 3
+| | 
+| * commit c3df5b71b86e5f9701156b0d83adb0b420b09694
+| | Author: Basel Addd <basselhejaze@gmail.com>
+| | Date:   Sat Jul 12 12:35:46 2025 +0300
+| | 
+| |     applying the affect that each player face
+| | 
+| |  CMakeLists.txt                                   |  2 +-
+| |  Encounter/Encounter .cpp                         |  6 +-
+| |  Encounter/Encounter.h                            |  3 +-
+| |  Events/Event.h                                   |  4 +-
+| |  Events/EventFactory.cpp                          | 43 ++++--------
+| |  Events/EventFactory.h                            | 13 ++--
+| |  Players/Behiviors/Behivior.cpp                   | 31 +++++----
+| |  Players/Behiviors/Behivior.h                     |  7 +-
+| |  Players/Behiviors/Responsible.h                  |  2 +-
+| |  Players/Behiviors/RiskTaking.h                   |  2 +-
+| |  Players/Charactor.cpp                            |  7 +-
+| |  Players/Charactor.h                              | 19 ++++--
+| |  Players/Jobs/Archer.h                            |  2 +
+| |  Players/Jobs/Job.cpp                             | 70 ++++++++++++++++++--
+| |  Players/Jobs/Job.h                               |  8 +--
+| |  Players/Jobs/Magician .h                         |  2 +
+| |  Players/Jobs/Warrior.h                           |  2 +
+| |  Players/Player.cpp                               |  4 +-
+| |  Players/Player.h                                 |  2 +-
+| |  SpecialEvent/PotionsMerchant.cpp                 |  6 +-
+| |  SpecialEvent/PotionsMerchant.h                   |  5 +-
+| |  SpecialEvent/SolarEclipse.cpp                    |  4 +-
+| |  SpecialEvent/SolarEclipse.h                      |  3 +-
+| |  SpecialEvent/SpecialEvent.h                      |  2 +-
+| |  ...on => codemodel-v2-2e82b0a9bcbb50c44f88.json} |  2 +-
+| |  ....json => index-2025-07-11T22-34-03-0102.json} |  4 +-
+| |  ...get-mtam_hw4-Debug-9f357fa719bd02bd755d.json} | 20 +++---
+| |  .../CMakeFiles/mtam_hw4.dir/build.make           | 44 ++++++------
+| |  .../CMakeFiles/mtam_hw4.dir/link.txt             |  2 +-
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |  4 +-
+| |  30 files changed, 196 insertions(+), 129 deletions(-)
+| | 
+| * commit 510ac5b8d37dcc8f812d4279d379513c1a5c68b2
+| | Author: Basel Addd <basselhejaze@gmail.com>
+| | Date:   Sat Jul 12 00:11:02 2025 +0300
+| | 
+| |      adding the double dispatch patent
+| | 
+| |  CMakeLists.txt                                   |   67 +-
+| |  Encounter/Encounter .cpp                         |    2 +-
+| |  Encounter/Encounter.h                            |   10 +-
+| |  Encounter/Enemy.h                                |   52 +-
+| |  Events/Event .cpp                                |    1 +
+| |  Events/Event.h                                   |    4 +-
+| |  Events/EventFactory.cpp                          |   98 +-
+| |  Events/EventFactory.h                            |    3 +-
+| |  Players/Behiviors/Behivior.cpp                   |   19 +-
+| |  Players/Behiviors/Responsible.h                  |    2 +-
+| |  Players/Behiviors/RiskTaking.h                   |    2 +-
+| |  Players/Charactor.cpp                            |   14 +-
+| |  Players/Charactor.h                              |   20 +-
+| |  Players/Jobs/Archer.h                            |    1 +
+| |  Players/Jobs/Job.cpp                             |    8 +-
+| |  Players/Jobs/Job.h                               |   16 +-
+| |  Players/Jobs/Magician .h                         |    4 +-
+| |  Players/Jobs/Warrior.h                           |   13 +-
+| |  Players/Player.cpp                               |   15 +-
+| |  Players/Player.h                                 |    8 +-
+| |  Players/PlayerFactory.cpp                        |    4 +
+| |  Rounds/Round.cpp                                 |    2 +-
+| |  SpecialEvent/PotionsMerchant.cpp                 |    2 +-
+| |  SpecialEvent/PotionsMerchant.h                   |    2 +-
+| |  SpecialEvent/SolarEclipse.cpp                    |    7 +-
+| |  SpecialEvent/SolarEclipse.h                      |    2 +-
+| |  SpecialEvent/SpecialEvent.h                      |    2 +-
+| |  Turns/Turn.cpp                                   |    2 +-
+| |  .../v1/reply/cache-v2-093ba7bb237a63f474bb.json  | 1167 ++++++++++++++++++
+| |  .../cmakeFiles-v1-61fb60a7c59cfec4e73d.json      |  161 +++
+| |  .../reply/codemodel-v2-695332a1e4568da41d6a.json |   60 +
+| |  .../directory-.-Debug-f5ebdc15457944623624.json  |   14 +
+| |  .../v1/reply/index-2025-07-11T17-01-41-0691.json |  108 ++
+| |  ...rget-mtam_hw4-Debug-c54c840077ae8742faf1.json |  285 +++++
+| |  .../toolchains-v1-34e713db58121691db7d.json      |   87 ++
+| |  cmake-build-debug/.ninja_deps                    |  Bin 29160 -> 0 bytes
+| |  cmake-build-debug/.ninja_log                     |   16 -
+| |  cmake-build-debug/CMakeCache.txt                 |    8 +-
+| |  .../3.29.6/CMakeDetermineCompilerABI_C.bin       |  Bin 17000 -> 17000 bytes
+| |  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     |  Bin 16984 -> 16984 bytes
+| |  .../CMakeFiles/CMakeConfigureLog.yaml            |   72 +-
+| |  .../CMakeFiles/CMakeDirectoryInformation.cmake   |   16 +
+| |  cmake-build-debug/CMakeFiles/Makefile.cmake      |   51 +
+| |  cmake-build-debug/CMakeFiles/Makefile2           |  112 ++
+| |  cmake-build-debug/CMakeFiles/Progress/10         |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/11         |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/12         |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/3          |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/4          |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/6          |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/7          |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/8          |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/9          |    1 +
+| |  cmake-build-debug/CMakeFiles/Progress/count.txt  |    1 +
+| |  .../CMakeFiles/TargetDirectories.txt             |    3 +
+| |  cmake-build-debug/CMakeFiles/clion-Debug-log.txt |   27 +-
+| |  .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake     |   41 +
+| |  .../mtam_hw4.dir/Events/Event_.cpp.o.d           |  645 ++++++++++
+| |  .../CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.o.d  |  820 ++++++++++++
+| |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d   |  831 +++++++++++++
+| |  .../mtam_hw4.dir/Players/Player.cpp.o.d          |  653 ++++++++++
+| |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d   |  654 ++++++++++
+| |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o      |  Bin 0 -> 166224 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d    |  801 ++++++++++++
+| |  .../CMakeFiles/mtam_hw4.dir/build.make           |  398 ++++++
+| |  .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake    |   47 +
+| |  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make |    2 +
+| |  .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts   |    2 +
+| |  .../CMakeFiles/mtam_hw4.dir/depend.make          |    2 +
+| |  .../CMakeFiles/mtam_hw4.dir/flags.make           |   12 +
+| |  .../CMakeFiles/mtam_hw4.dir/link.txt             |    1 +
+| |  .../CMakeFiles/mtam_hw4.dir/main.cpp.o           |  Bin 0 -> 336 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d         |    2 +
+| |  .../CMakeFiles/mtam_hw4.dir/mainRound.cpp.o      |  Bin 0 -> 60976 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/mainRound.cpp.o.d    |  800 ++++++++++++
+| |  .../CMakeFiles/mtam_hw4.dir/progress.make        |   21 +
+| |  cmake-build-debug/CMakeFiles/progress.marks      |    1 +
+| |  cmake-build-debug/Makefile                       |   81 ++
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |    4 +-
+| |  cmake-build-debug/build.ninja                    |  210 ----
+| |  cmake-build-debug/cmake_install.cmake            |    9 +-
+| |  cmake-build-debug/mtam_hw4.exe                   |  Bin 1645218 -> 0 bytes
+| |  82 files changed, 8125 insertions(+), 491 deletions(-)
+| | 
+| * commit 2ac67640b696bbdcd00925c826923f908bce3d29
+| | Author: Basel Addd <basselhejaze@gmail.com>
+| | Date:   Fri Jul 11 15:56:50 2025 +0300
+| | 
+| |      first commit after branch
+| | 
+| |  cmake-build-debug/CMakeCache.txt                 | 755 +++++++++----------
+| |  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake       |  18 -
+| |  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake     |  19 -
+| |  .../3.29.6/CMakeDetermineCompilerABI_C.bin       | Bin 43069 -> 17000 bytes
+| |  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     | Bin 43088 -> 16984 bytes
+| |  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake      |   6 -
+| |  .../CMakeFiles/3.29.6/CMakeSystem.cmake          |  12 -
+| |  .../CMakeFiles/3.29.6/CompilerIdC/a.exe          | Bin 43144 -> 0 bytes
+| |  .../CMakeFiles/3.29.6/CompilerIdC/a.out          | Bin 0 -> 33736 bytes
+| |  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe        | Bin 43172 -> 0 bytes
+| |  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out        | Bin 0 -> 33736 bytes
+| |  .../CMakeFiles/CMakeConfigureLog.yaml            | 400 +---------
+| |  cmake-build-debug/CMakeFiles/clion-Debug-log.txt |  31 +-
+| |  .../CMakeFiles/clion-environment.txt             | Bin 296 -> 161 bytes
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |   6 +-
+| |  15 files changed, 433 insertions(+), 814 deletions(-)
+| |   
+| | * commit cdb94eafdbe3a4e96357b006a4472783a8efb11d
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Sat Jul 12 12:25:51 2025 +0300
+| | | 
+| | |     beefore merege 3
+| | | 
+| | |  CMakeLists.txt                                  |   4 ----
+| | |  MatamStory.cpp                                  |   5 ++++-
+| | |  Turns/Turn.cpp                                  |   2 +-
+| | |  ....json => cache-v2-7d2f3235698636087554.json} |   2 +-
+| | |  ...n => codemodel-v2-ac07b779a7c04a3ac393.json} |   2 +-
+| | |  ...json => index-2025-07-11T21-08-54-0586.json} |   8 ++++----
+| | |  ...et-mtam_hw4-Debug-d2fcb28952da78b2f9b8.json} |   2 +-
+| | |  cmake-build-debug/.ninja_deps                   | Bin 34772 -> 39224 bytes
+| | |  cmake-build-debug/.ninja_log                    |  18 +++++++++++++-----
+| | |  cmake-build-debug/CMakeCache.txt                |   2 +-
+| | |  .../CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.obj | Bin 194051 -> 741 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj  | Bin 615616 -> 766561 bytes
+| | |  .../mtam_hw4.dir/Rounds/Round.cpp.obj           | Bin 614724 -> 572188 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj   | Bin 115245 -> 115519 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj    | Bin 357797 -> 227257 bytes
+| | |  cmake-build-debug/CMakeFiles/rules.ninja        |   4 ++--
+| | |  16 files changed, 28 insertions(+), 21 deletions(-)
+| | | 
+| | * commit 18a57f3814efa2ef27091c257ddcc8afb44ce984
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Fri Jul 11 21:41:48 2025 +0300
+| | | 
+| | |     DElElT aomlost leaderBoard there is no need
+| | | 
+| | |  LeaderBoard.cpp | 126 +++++++++++++++++++++++++++-----------------------
+| | |  Leaderboard.h   |  33 ++++++-------
+| | |  MatamStory.cpp  |  43 +++++++++++++----
+| | |  MatamStory.h    |   2 +
+| | |  4 files changed, 120 insertions(+), 84 deletions(-)
+| | | 
+| | * commit d387eebb48af95e8dada505359b5df03d7b77d08
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Fri Jul 11 21:19:19 2025 +0300
+| | | 
+| | |     add print turndetial
+| | | 
+| | |  Rounds/Round.cpp | 20 ++------------------
+| | |  Turns/Turn.cpp   |  5 +++++
+| | |  Turns/Turn.h     |  3 +--
+| | |  Utilities.cpp    |  2 +-
+| | |  4 files changed, 9 insertions(+), 21 deletions(-)
+| | | 
+| | * commit 1ce867bc3a19534ee727b88be76013992365e4cc
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Fri Jul 11 21:04:46 2025 +0300
+| | | 
+| | |     ADD round / turn and make them work
+| | | 
+| | |  CMakeLists.txt                                  |  11 +-
+| | |  Events/EventFactory.cpp                         |  95 +++++-------
+| | |  Events/EventFactory.h                           |   7 +-
+| | |  LeaderBoard.cpp                                 |  65 +++++---
+| | |  MatamStory.cpp                                  | 144 ++++++++++++------
+| | |  MatamStory.h                                    |  14 +-
+| | |  Players/Player.cpp                              |   6 +-
+| | |  Players/Player.h                                |   4 +-
+| | |  Rounds/Round.cpp                                |  42 +++--
+| | |  Rounds/Round.h                                  |   9 +-
+| | |  Turns/Turn.h                                    |   4 +-
+| | |  ....json => cache-v2-2d0b4b16d7df7fc8bcfa.json} |   2 +-
+| | |  ...n => codemodel-v2-d6f39c448e351c52f2c2.json} |   2 +-
+| | |  ...json => index-2025-07-11T16-41-55-0217.json} |   8 +-
+| | |  ...et-mtam_hw4-Debug-4941d80d70c399a5edc8.json} |  12 +-
+| | |  cmake-build-debug/.ninja_deps                   | Bin 35240 -> 34772 bytes
+| | |  cmake-build-debug/.ninja_log                    |  32 ++--
+| | |  cmake-build-debug/CMakeCache.txt                |   2 +-
+| | |  .../mtam_hw4.dir/Encounter/Encounter_.cpp.obj   | Bin 186741 -> 186761 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.obj | Bin 281309 -> 194051 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj  | Bin 0 -> 615616 bytes
+| | |  .../Players/Behiviors/Behivior.cpp.obj          | Bin 265765 -> 265785 bytes
+| | |  .../mtam_hw4.dir/Players/Player.cpp.obj         | Bin 144805 -> 144825 bytes
+| | |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj  | Bin 246629 -> 246649 bytes
+| | |  .../mtam_hw4.dir/Rounds/Round.cpp.obj           | Bin 614704 -> 614724 bytes
+| | |  .../SpecialEvent/PotionsMerchant.cpp.obj        | Bin 88788 -> 88808 bytes
+| | |  .../SpecialEvent/SolarEclipse.cpp.obj           | Bin 82825 -> 82841 bytes
+| | |  .../SpecialEvent/SpecialEvent.cpp.obj           | Bin 76739 -> 76759 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.obj  | Bin 116358 -> 116378 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj   | Bin 115229 -> 115245 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/mainRound.cpp.obj   | Bin 44741 -> 44067 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj    | Bin 357709 -> 357797 bytes
+| | |  cmake-build-debug/CMakeFiles/rules.ninja        |   4 +-
+| | |  .../Testing/Temporary/LastTest.log              |   4 +-
+| | |  mainRound.cpp                                   |   7 -
+| | |  35 files changed, 276 insertions(+), 198 deletions(-)
+| | | 
+| | * commit 2157c913a8df85e673e440d7df02e7bcdb1730de
+| |/  Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+|/|   Date:   Fri Jul 11 16:19:05 2025 +0300
+| |   
+| |       aafter merge 2 for basel
+| |   
+| |    Encounter/Enemy.h                               |  22 +++++++++++-------
+| |    Events/EventFactory.cpp                         |   6 +++--
+| |    LeaderBoard.cpp                                 |   2 +-
+| |    Turns/Turn.h                                    |   1 +
+| |    cmake-build-debug/.ninja_deps                   | Bin 31444 -> 35240 bytes
+| |    cmake-build-debug/.ninja_log                    |   5 ++++
+| |    .../mtam_hw4.dir/Encounter/Encounter_.cpp.obj   | Bin 0 -> 186741 bytes
+| |    .../CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.obj | Bin 0 -> 281309 bytes
+| |    .../mtam_hw4.dir/Rounds/Round.cpp.obj           | Bin 0 -> 614704 bytes
+| |    .../CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.obj  | Bin 116374 -> 116358 bytes
+| |    10 files changed, 25 insertions(+), 11 deletions(-)
+| | 
+* | commit 3327297acc0e5ed39bd8db930d826a7819482ac6
+|/  Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+|   Date:   Fri Jul 11 15:48:50 2025 +0300
+|   
+|       after merge 2
+|   
+|    .idea/editor.xml                                 |  194 +--
+|    CMakeLists.txt                                   |   63 +-
+|    Encounter/Encounter .cpp                         |    3 +-
+|    Encounter/Enemy.h                                |    2 +-
+|    Events/Event .cpp                                |    2 +
+|    Events/Event.h                                   |    2 +
+|    Events/EventFactory.cpp                          |    4 +-
+|    Events/EventFactory.h                            |    1 +
+|    Players/Behiviors/Behivior.cpp                   |   18 +-
+|    Players/Behiviors/Behivior.h                     |    1 +
+|    Players/Behiviors/Responsible.h                  |    2 +-
+|    Players/Behiviors/RiskTaking.h                   |    2 +-
+|    Players/Charactor.cpp                            |    3 +-
+|    Players/Jobs/Job.cpp                             |    4 +-
+|    Players/Player.cpp                               |   11 +-
+|    SpecialEvent/PotionsMerchant.cpp                 |    2 +-
+|    SpecialEvent/PotionsMerchant.h                   |    1 +
+|    SpecialEvent/SolarEclipse.h                      |    1 +
+|    SpecialEvent/SpecialEvent.h                      |    1 +
+|    .../v1/reply/cache-v2-7d2f3235698636087554.json  | 1327 ++++++++++++++++++
+|    .../cmakeFiles-v1-415425d98e9cdba7ed43.json      |  165 +++
+|    .../reply/codemodel-v2-42052326517b58e6ad99.json |   60 +
+|    .../directory-.-Debug-d0094a50bb2071803777.json  |   14 +
+|    .../v1/reply/index-2025-07-11T12-47-36-0713.json |  108 ++
+|    ...rget-mtam_hw4-Debug-64f869af71ca93db6d92.json |  292 ++++
+|    .../toolchains-v1-8ce3f78fc5758414dfe9.json      |   93 ++
+|    cmake-build-debug/.ninja_deps                    |  Bin 29160 -> 31444 bytes
+|    cmake-build-debug/.ninja_log                     |   31 +-
+|    cmake-build-debug/CMakeCache.txt                 |  805 ++++++-----
+|    .../CMakeFiles/3.29.6/CMakeCCompiler.cmake       |   18 -
+|    .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake     |   19 -
+|    .../3.29.6/CMakeDetermineCompilerABI_C.bin       |  Bin 43069 -> 43069 bytes
+|    .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     |  Bin 43088 -> 43088 bytes
+|    .../CMakeFiles/3.29.6/CMakeSystem.cmake          |   12 -
+|    .../CMakeFiles/3.29.6/CompilerIdC/a.exe          |  Bin 43144 -> 43144 bytes
+|    .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe        |  Bin 43172 -> 43172 bytes
+|    .../CMakeFiles/CMakeConfigureLog.yaml            |  264 +---
+|    .../CMakeFiles/TargetDirectories.txt             |    3 +
+|    cmake-build-debug/CMakeFiles/clion-Debug-log.txt |    6 +-
+|    .../mtam_hw4.dir/Events/Event_.cpp.obj           |  Bin 0 -> 48122 bytes
+|    .../Players/Behiviors/Behivior.cpp.obj           |  Bin 0 -> 265765 bytes
+|    .../mtam_hw4.dir/Players/Charactor.cpp.obj       |  Bin 0 -> 159519 bytes
+|    .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj        |  Bin 0 -> 313772 bytes
+|    .../mtam_hw4.dir/Players/Player.cpp.obj          |  Bin 0 -> 144805 bytes
+|    .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj   |  Bin 0 -> 246629 bytes
+|    .../SpecialEvent/PotionsMerchant.cpp.obj         |  Bin 0 -> 88788 bytes
+|    .../SpecialEvent/SolarEclipse.cpp.obj            |  Bin 0 -> 82825 bytes
+|    .../SpecialEvent/SpecialEvent.cpp.obj            |  Bin 0 -> 76739 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.obj   |  Bin 0 -> 116374 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj    |  Bin 0 -> 115229 bytes
+|    .../CMakeFiles/mtam_hw4.dir/main.cpp.obj         |  Bin 0 -> 733 bytes
+|    .../CMakeFiles/mtam_hw4.dir/mainRound.cpp.obj    |  Bin 0 -> 44741 bytes
+|    .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj     |  Bin 0 -> 357709 bytes
+|    cmake-build-debug/CMakeFiles/rules.ninja         |   64 +
+|    cmake-build-debug/Makefile                       |  586 --------
+|    cmake-build-debug/Testing/Temporary/LastTest.log |    6 +-
+|    cmake-build-debug/build.ninja                    |   90 +-
+|    cmake-build-debug/cmake_install.cmake            |    7 -
+|    cmake-build-debug/mtam_hw4.exe                   |  Bin 1645218 -> 0 bytes
+|    maintest.cpp                                     |    2 +-
+|    60 files changed, 2843 insertions(+), 1446 deletions(-)
+|   
+*   commit c32b99d2fd97134190d6474cfa6a0779e31e5b87
+|\  Merge: 554a7ff 91bee00
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Fri Jul 11 14:34:19 2025 +0300
+| | 
+| |     after merge
+| | 
+| * commit 91bee00eba94414a6ba5942f346d40b944c685a9
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Fri Jul 11 14:15:28 2025 +0300
+| | 
+| |     before merge
+| | 
+| |  .../v1/reply/cache-v2-cbed727bdaddce778b5d.json  | 1327 ++++++++++++++++++
+| |  .../cmakeFiles-v1-4cf80b2ee9196413e04b.json      |  828 +++++++++++
+| |  .../reply/codemodel-v2-8e6d477851df358024d2.json |   60 +
+| |  .../directory-.-Debug-d0094a50bb2071803777.json  |   14 +
+| |  .../v1/reply/index-2025-07-11T11-11-21-0456.json |  108 ++
+| |  ...rget-mtam_hw4-Debug-ac8f3b7f5ceb15ff2f97.json |  338 +++++
+| |  .../toolchains-v1-8ce3f78fc5758414dfe9.json      |   93 ++
+| |  .../3.29.6/CMakeDetermineCompilerABI_C.bin       |  Bin
+| |  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     |  Bin
+| |  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake      |    6 +
+| |  .../CMakeFiles/3.29.6/CompilerIdC/a.exe          |  Bin 0 -> 43144 bytes
+| |  .../CMakeFiles/3.29.6/CompilerIdC/a.out          |  Bin
+| |  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe        |  Bin 0 -> 43172 bytes
+| |  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out        |  Bin
+| |  cmake-build-debug/CMakeFiles/rules.ninja         |   64 +
+| |  cmake-build-debug/mtam_hw4.exe                   |  Bin 1100739 -> 1645218 bytes
+| |  16 files changed, 2838 insertions(+)
+| | 
+* | commit 554a7ffd69a90996e34d2cb34aa4635207b792be
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Fri Jul 11 14:16:32 2025 +0300
+| | 
+| |     before merge 2 v2
+| | 
+| |  ...-11T09-32-35-0014.json => index-2025-07-11T11-15-48-0107.json} | 0
+| |  cmake-build-debug/.ninja_log                                      | 2 +-
+| |  cmake-build-debug/CMakeFiles/clion-Debug-log.txt                  | 2 +-
+| |  cmake-build-debug/Testing/Temporary/LastTest.log                  | 4 ++--
+| |  4 files changed, 4 insertions(+), 4 deletions(-)
+| | 
+* | commit 8c84aecf2eca8a541ba1a996d8e494375bd47715
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Fri Jul 11 14:05:41 2025 +0300
+| | 
+| |     before merge 2
+| | 
+| |  CMakeLists.txt                                   |   1 +
+| |  Events/Encounter.h                               |   2 +-
+| |  Events/Event.h                                   |   2 +-
+| |  Players/Behiviors/Behivior.cpp                   |   6 ++--
+| |  Players/Behiviors/Responsible.h                  |   2 +-
+| |  Players/Behiviors/RiskTaking.h                   |   2 +-
+| |  Players/Charactor.cpp                            |   4 +++
+| |  Players/Charactor.h                              |   4 +++
+| |  Players/Player.cpp                               |   8 +++++-
+| |  Players/Player.h                                 |   8 +++++-
+| |  ...on => codemodel-v2-829446aaf643256ad144.json} |   2 +-
+| |  ....json => index-2025-07-11T09-32-35-0014.json} |   4 +--
+| |  ...get-mtam_hw4-Debug-1430962f6bee9a9aad64.json} |   8 +++++-
+| |  cmake-build-debug/.ninja_deps                    | Bin 32524 -> 29160 bytes
+| |  cmake-build-debug/.ninja_log                     |  28 ++++++++-----------
+| |  cmake-build-debug/CMakeFiles/clion-Debug-log.txt |   2 +-
+| |  .../CMakeFiles/mtam_hw4.dir/LeaderBoard.cpp.obj  | Bin 0 -> 281081 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj   | Bin 486110 -> 486114 bytes
+| |  .../Players/Behiviors/Behivior.cpp.obj           | Bin 265736 -> 265740 bytes
+| |  .../mtam_hw4.dir/Players/Player.cpp.obj          | Bin 136470 -> 136846 bytes
+| |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj   | Bin 246373 -> 246405 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj    | Bin 114977 -> 115005 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj     | Bin 298350 -> 260250 bytes
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |   4 +--
+| |  cmake-build-debug/mtam_hw4.exe                   | Bin 1316052 -> 1645218 bytes
+| |  maintest.cpp                                     |  18 ++++++------
+| |  26 files changed, 63 insertions(+), 42 deletions(-)
+| | 
+* | commit 597f53c3dc2665eee4f82de6252b552effb42b46
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Thu Jul 10 20:51:32 2025 +0300
+| | 
+| |     ADD isDead function
+| | 
+| |  Players/Player.cpp | 10 ++++++++++
+| |  Players/Player.h   |  3 +++
+| |  2 files changed, 13 insertions(+)
+| | 
+* | commit a12e683f8531db68a5c3d6af398427616c072840
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Thu Jul 10 20:08:30 2025 +0300
+| | 
+| |     ADD leaderBoard
+| | 
+| |  CMakeLists.txt                                   |   1 +
+| |  LeaderBoard.cpp                                  |  49 ++++++++++++
+| |  Leaderboard.h                                    |  14 +++-
+| |  MatamStory.cpp                                   |  14 ++--
+| |  MatamStory.h                                     |   3 +-
+| |  Players/Charactor.cpp                            |  42 +++++++++++
+| |  Players/Charactor.h                              |   4 +
+| |  Players/Player.cpp                               |  19 +++++
+| |  Players/Player.h                                 |   2 +
+| |  Players/PlayerFactory.cpp                        |   9 ++-
+| |  Players/PlayerFactory.h                          |   2 +-
+| |  ...b.json => cache-v2-53ca1633ea08dbfa4226.json} |   2 +-
+| |  ...on => codemodel-v2-9185b8261c652bcd6929.json} |   2 +-
+| |  ....json => index-2025-07-10T15-05-45-0682.json} |   8 +-
+| |  ...get-mtam_hw4-Debug-3df5c59845726a8700b5.json} |  12 ++-
+| |  cmake-build-debug/.ninja_deps                    | Bin 68536 -> 32524 bytes
+| |  cmake-build-debug/.ninja_log                     |  75 ++++---------------
+| |  cmake-build-debug/CMakeCache.txt                 |   2 +-
+| |  cmake-build-debug/CMakeFiles/clion-Debug-log.txt |   2 +-
+| |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj   | Bin 429298 -> 486110 bytes
+| |  .../Players/Behiviors/Behivior.cpp.obj           | Bin 265540 -> 265736 bytes
+| |  .../mtam_hw4.dir/Players/Charactor.cpp.obj       | Bin 152480 -> 159231 bytes
+| |  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj        | Bin 313588 -> 313688 bytes
+| |  .../mtam_hw4.dir/Players/Player.cpp.obj          | Bin 119682 -> 136470 bytes
+| |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj   | Bin 140607 -> 246373 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj    | Bin 114725 -> 114977 bytes
+| |  cmake-build-debug/CMakeFiles/rules.ninja         |   4 +-
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |   4 +-
+| |  cmake-build-debug/build.ninja                    |   9 ++-
+| |  29 files changed, 190 insertions(+), 89 deletions(-)
+| | 
+* | commit 4027c7e54125409261d31b3040392ddc24348c5b
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Thu Jul 10 17:14:33 2025 +0300
+| | 
+| |     ADD/FIX doevant and fix Evant
+| | 
+| |  Events/Encounter .cpp                            |   2 +-
+| |  Events/Encounter.h                               |   2 +-
+| |  Events/Event.h                                   |   5 +-
+| |  Events/SpecialEvent.cpp                          |   7 +-
+| |  Events/SpecialEvent.h                            |   8 +-
+| |  MatamStory.cpp                                   |   2 +
+| |  MatamStory.h                                     |   1 +
+| |  Players/Charactor.cpp                            |   3 +-
+| |  Players/Player.cpp                               |   2 +-
+| |  Players/Player.h                                 |   1 -
+| |  Turns/Turn.cpp                                   |   4 +-
+| |  cmake-build-debug/.ninja_deps                    | Bin 57036 -> 68536 bytes
+| |  cmake-build-debug/.ninja_log                     |  22 ++++
+| |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj   | Bin 429370 -> 429298 bytes
+| |  .../Players/Behiviors/Behivior.cpp.obj           | Bin 265616 -> 265540 bytes
+| |  .../mtam_hw4.dir/Players/Charactor.cpp.obj       | Bin 152440 -> 152480 bytes
+| |  .../mtam_hw4.dir/Players/Player.cpp.obj          | Bin 119638 -> 119682 bytes
+| |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj   | Bin 140683 -> 140607 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj    | Bin 114801 -> 114725 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj     | Bin 215397 -> 298350 bytes
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |   4 +-
+| |  cmake-build-debug/mtam_hw4.exe                   | Bin 1261599 -> 1316052 bytes
+| |  maintest.cpp                                     | 115 ++++++++++---------
+| |  23 files changed, 106 insertions(+), 72 deletions(-)
+| | 
+* | commit ae80c51e387f2b8362fb8dda505c349eecaeb1be
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Thu Jul 10 16:27:32 2025 +0300
+| | 
+| |     ADD addPlayers in mtamstory
+| | 
+| |  CMakeLists.txt                                   |   18 +-
+| |  MatamStory.cpp                                   |   54 +-
+| |  MatamStory.h                                     |    9 +-
+| |  Players/Charactor.cpp                            |    5 +
+| |  Players/Charactor.h                              |    6 +-
+| |  Players/Player.cpp                               |   28 +-
+| |  Players/Player.h                                 |    9 +-
+| |  Rounds/Round.h                                   |    4 +-
+| |  Turns/Turn.h                                     |    4 +-
+| |  .../v1/reply/cache-v2-b465b8ba7a398584da8b.json  | 1387 ++++++++++++++++++
+| |  .../cmakeFiles-v1-415425d98e9cdba7ed43.json      |  165 +++
+| |  .../reply/codemodel-v2-e4408ea4455ad492308e.json |   60 +
+| |  .../directory-.-Debug-d0094a50bb2071803777.json  |   14 +
+| |  .../v1/reply/index-2025-07-10T12-23-18-0483.json |  108 ++
+| |  ...rget-mtam_hw4-Debug-aae2650b9bada36f257f.json |  294 ++++
+| |  .../toolchains-v1-8ce3f78fc5758414dfe9.json      |   93 ++
+| |  cmake-build-debug/.ninja_deps                    |  Bin 25752 -> 57036 bytes
+| |  cmake-build-debug/.ninja_log                     |   51 +-
+| |  cmake-build-debug/CMakeCache.txt                 |   14 +-
+| |  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake       |   80 +
+| |  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake     |   92 ++
+| |  .../3.29.6/CMakeDetermineCompilerABI_C.bin       |  Bin 0 -> 43069 bytes
+| |  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     |  Bin 0 -> 43088 bytes
+| |  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake      |    6 +
+| |  .../CMakeFiles/3.29.6/CMakeSystem.cmake          |   15 +
+| |  .../3.29.6/CompilerIdC/CMakeCCompilerId.c        |  895 +++++++++++
+| |  .../CMakeFiles/3.29.6/CompilerIdC/a.exe          |  Bin 0 -> 43144 bytes
+| |  .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp  |  878 +++++++++++
+| |  .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe        |  Bin 0 -> 43172 bytes
+| |  .../CMakeFiles/CMakeConfigureLog.yaml            |  460 ++++++
+| |  .../CMakeFiles/TargetDirectories.txt             |    3 +
+| |  cmake-build-debug/CMakeFiles/clion-Debug-log.txt |    9 +-
+| |  .../mtam_hw4.dir/Events/Event_.cpp.obj           |  Bin 0 -> 43805 bytes
+| |  .../mtam_hw4.dir/Events/SpecialEvent.cpp.obj     |  Bin 0 -> 78777 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj   |  Bin 0 -> 429370 bytes
+| |  .../Players/Behiviors/Behivior.cpp.obj           |  Bin 0 -> 265616 bytes
+| |  .../mtam_hw4.dir/Players/Charactor.cpp.obj       |  Bin 0 -> 152440 bytes
+| |  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj        |  Bin 0 -> 313588 bytes
+| |  .../mtam_hw4.dir/Players/Player.cpp.obj          |  Bin 0 -> 119638 bytes
+| |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj   |  Bin 0 -> 140683 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.obj   |  Bin 0 -> 122816 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj    |  Bin 0 -> 114801 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj         |  Bin 0 -> 733 bytes
+| |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj     |  Bin 0 -> 215397 bytes
+| |  cmake-build-debug/CMakeFiles/rules.ninja         |   64 +
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |    4 +-
+| |  cmake-build-debug/build.ninja                    |  104 +-
+| |  cmake-build-debug/cmake_install.cmake            |    9 -
+| |  cmake-build-debug/mtam_hw4.exe                   |  Bin 1100739 -> 1261599 bytes
+| |  maintest.cpp                                     |  128 +-
+| |  50 files changed, 4852 insertions(+), 218 deletions(-)
+| |   
+| | * commit b99d51e34fca52894b50c2b32242a6bf387280d3
+| |/  Author: Basel Addd <basselhejaze@gmail.com>
+| |   Date:   Fri Jul 11 15:15:57 2025 +0300
+| |   
+| |        fix pack factory add recursive call
+| |   
+| |    Encounter/Encounter.h                           | 11 ++-
+| |    Encounter/Enemy.h                               |  6 +-
+| |    Events/EventFactory.cpp                         | 81 +++++++++----------
+| |    SpecialEvent/SpecialEvent.h                     |  2 +
+| |    .../Testing/Temporary/LastTest.log              |  4 +-
+| |    5 files changed, 52 insertions(+), 52 deletions(-)
+| | 
+| * commit e164234d51134a7b8f22e465cdaff6f1c2522911
+| | Author: Basel Addd <basselhejaze@gmail.com>
+| | Date:   Fri Jul 11 14:04:21 2025 +0300
+| | 
+| |     add function to enemy the add enemy to pack add how to deal withe pack to th
+| | 
+| |  Events/EventFactory.cpp | 5 ++---
+| |  1 file changed, 2 insertions(+), 3 deletions(-)
+| | 
+| * commit 6d5d4d5f492ac1b647a7a6f17386ce8006aa36ae
+| | Author: Basel Addd <basselhejaze@gmail.com>
+| | Date:   Fri Jul 11 00:42:05 2025 +0300
+| | 
+| |     add function to enemy the add enemy to pack add how to deal withe pack to the factory
+| | 
+| |  CMakeLists.txt                                   |     5 +-
+| |  Encounter/Enemy.h                                |    25 +-
+| |  Events/EventFactory.cpp                          |    39 +-
+| |  SpecialEvent/SolarEclipse.cpp                    |     5 +-
+| |  SpecialEvent/SolarEclipse.h                      |    13 +-
+| |  SpecialEvent/SpecialEvent.h                      |     1 +
+| |  ...on => codemodel-v2-0fbdc1a4f84a7c96b1b3.json} |     2 +-
+| |  ....json => index-2025-07-10T17-11-01-0139.json} |     4 +-
+| |  ...get-mtam_hw4-Debug-c588e91be61caf2ed56f.json} |    46 +-
+| |  .../CMakeFiles/mtam_hw4.dir/build.make           |    80 +-
+| |  .../mtam_hw4.dir/compiler_depend.internal        |  8612 --------------
+| |  .../CMakeFiles/mtam_hw4.dir/compiler_depend.make | 10239 +----------------
+| |  .../CMakeFiles/mtam_hw4.dir/link.txt             |     2 +-
+| |  cmake-build-debug/Testing/Temporary/LastTest.log |     4 +-
+| |  14 files changed, 137 insertions(+), 18940 deletions(-)
+| | 
+| * commit cbafa379495474710fb55ca4fc2be99b425868d6
+|/  Author: Basel Addd <basselhejaze@gmail.com>
+|   Date:   Thu Jul 10 19:32:59 2025 +0300
+|   
+|       event factory do action virtaul
+|   
+|    CMakeLists.txt                                   |    38 +-
+|    {Events => Encounter}/Encounter .cpp             |    13 +-
+|    {Events => Encounter}/Encounter.h                |     9 +-
+|    {Enemy => Encounter}/Enemy.h                     |     5 +
+|    Events/Event .cpp                                |     8 +
+|    Events/Event.h                                   |    10 +-
+|    Events/EventFactory.cpp                          |    44 +
+|    Events/EventFactory.h                            |    12 +
+|    Events/SpecialEvent.cpp                          |    11 -
+|    Events/SpecialEvent.h                            |    11 -
+|    MatamStory.cpp                                   |    35 +-
+|    MatamStory.h                                     |     1 +
+|    Rounds/Round.h                                   |     2 +-
+|    SpecialEvent/PotionsMerchant.cpp                 |    20 +
+|    SpecialEvent/PotionsMerchant.h                   |    10 +
+|    SpecialEvent/SolarEclipse.cpp                    |    17 +
+|    SpecialEvent/SolarEclipse.h                      |    11 +
+|    SpecialEvent/SpecialEvent.cpp                    |    11 +
+|    SpecialEvent/SpecialEvent.h                      |    14 +
+|    .../v1/reply/cache-v2-093ba7bb237a63f474bb.json  |  1167 ++
+|    .../cmakeFiles-v1-61fb60a7c59cfec4e73d.json      |   161 +
+|    .../reply/codemodel-v2-a0c5a32b9505e81ee512.json |    60 +
+|    .../directory-.-Debug-f5ebdc15457944623624.json  |    14 +
+|    .../v1/reply/index-2025-07-10T16-05-34-0405.json |   108 +
+|    ...rget-mtam_hw4-Debug-aa290b717f0aa3d7fd9c.json |   337 +
+|    .../toolchains-v1-34e713db58121691db7d.json      |    87 +
+|    cmake-build-debug/CMakeCache.txt                 |   788 +-
+|    .../CMakeFiles/3.29.6/CMakeCCompiler.cmake       |    80 +
+|    .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake     |    92 +
+|    .../3.29.6/CMakeDetermineCompilerABI_C.bin       |   Bin 0 -> 17000 bytes
+|    .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     |   Bin 0 -> 16984 bytes
+|    .../CMakeFiles/3.29.6/CMakeSystem.cmake          |    15 +
+|    .../3.29.6/CompilerIdC/CMakeCCompilerId.c        |   895 ++
+|    .../CMakeFiles/3.29.6/CompilerIdC/a.out          |   Bin 0 -> 33736 bytes
+|    .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp  |   878 ++
+|    .../CMakeFiles/3.29.6/CompilerIdCXX/a.out        |   Bin 0 -> 33736 bytes
+|    .../CMakeFiles/CMakeConfigureLog.yaml            |   278 +
+|    .../CMakeFiles/CMakeDirectoryInformation.cmake   |    16 +
+|    cmake-build-debug/CMakeFiles/Makefile.cmake      |    51 +
+|    cmake-build-debug/CMakeFiles/Makefile2           |   112 +
+|    cmake-build-debug/CMakeFiles/Progress/14         |     1 +
+|    cmake-build-debug/CMakeFiles/Progress/15         |     1 +
+|    cmake-build-debug/CMakeFiles/Progress/16         |     1 +
+|    cmake-build-debug/CMakeFiles/Progress/2          |     1 +
+|    cmake-build-debug/CMakeFiles/Progress/4          |     1 +
+|    cmake-build-debug/CMakeFiles/Progress/7          |     1 +
+|    cmake-build-debug/CMakeFiles/Progress/count.txt  |     1 +
+|    .../CMakeFiles/TargetDirectories.txt             |     3 +
+|    cmake-build-debug/CMakeFiles/clion-Debug-log.txt |    11 +-
+|    .../CMakeFiles/clion-environment.txt             |   Bin 296 -> 161 bytes
+|    cmake-build-debug/CMakeFiles/cmake.check_cache   |     2 +-
+|    .../CMakeFiles/mtam_hw4.dir/DependInfo.cmake     |    38 +
+|    .../mtam_hw4.dir/Encounter/Encounter_.cpp.o.d    |   758 ++
+|    .../mtam_hw4.dir/Events/EventFactory.cpp.o.d     |   763 ++
+|    .../CMakeFiles/mtam_hw4.dir/Events/Event_.cpp.o  |   Bin 0 -> 80376 bytes
+|    .../mtam_hw4.dir/Events/Event_.cpp.o.d           |   644 ++
+|    .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.o.d   |   802 ++
+|    .../mtam_hw4.dir/Players/Jobs/Job.cpp.o          |   Bin 0 -> 129504 bytes
+|    .../mtam_hw4.dir/Players/Jobs/Job.cpp.o.d        |   645 ++
+|    .../CMakeFiles/mtam_hw4.dir/Players/Player.cpp.o |   Bin 0 -> 101424 bytes
+|    .../mtam_hw4.dir/Players/Player.cpp.o.d          |   648 ++
+|    .../mtam_hw4.dir/Players/PlayerFactory.cpp.o     |   Bin 0 -> 83632 bytes
+|    .../mtam_hw4.dir/Players/PlayerFactory.cpp.o.d   |   649 ++
+|    .../CMakeFiles/mtam_hw4.dir/Rounds/Round.cpp.o.d |   783 ++
+|    .../SpecialEvent/PotionsMerchant.cpp.o           |   Bin 0 -> 83816 bytes
+|    .../SpecialEvent/PotionsMerchant.cpp.o.d         |   646 ++
+|    .../mtam_hw4.dir/SpecialEvent/SolarEclipse.cpp.o |   Bin 0 -> 83600 bytes
+|    .../SpecialEvent/SolarEclipse.cpp.o.d            |   646 ++
+|    .../mtam_hw4.dir/SpecialEvent/SpecialEvent.cpp.o |   Bin 0 -> 75856 bytes
+|    .../SpecialEvent/SpecialEvent.cpp.o.d            |   645 ++
+|    .../CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o     |   Bin 0 -> 88328 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Turns/Turn.cpp.o.d   |   646 ++
+|    .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o      |   Bin 0 -> 163936 bytes
+|    .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.o.d    |   793 ++
+|    .../CMakeFiles/mtam_hw4.dir/build.make           |   350 +
+|    .../CMakeFiles/mtam_hw4.dir/cmake_clean.cmake    |    41 +
+|    .../mtam_hw4.dir/compiler_depend.internal        |  8612 ++++++++++++++
+|    .../CMakeFiles/mtam_hw4.dir/compiler_depend.make | 10237 +++++++++++++++++
+|    .../CMakeFiles/mtam_hw4.dir/compiler_depend.ts   |     2 +
+|    .../CMakeFiles/mtam_hw4.dir/depend.make          |     2 +
+|    .../CMakeFiles/mtam_hw4.dir/flags.make           |    12 +
+|    .../CMakeFiles/mtam_hw4.dir/link.txt             |     1 +
+|    .../CMakeFiles/mtam_hw4.dir/main.cpp.o           |   Bin 0 -> 336 bytes
+|    .../CMakeFiles/mtam_hw4.dir/main.cpp.o.d         |     2 +
+|    .../CMakeFiles/mtam_hw4.dir/mainRound.cpp.o      |   Bin 0 -> 60664 bytes
+|    .../CMakeFiles/mtam_hw4.dir/mainRound.cpp.o.d    |   791 ++
+|    .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o       |   Bin 0 -> 202472 bytes
+|    .../CMakeFiles/mtam_hw4.dir/maintest.cpp.o.d     |   791 ++
+|    .../CMakeFiles/mtam_hw4.dir/progress.make        |    18 +
+|    cmake-build-debug/CMakeFiles/progress.marks      |     1 +
+|    cmake-build-debug/Makefile                       |   586 +
+|    cmake-build-debug/Testing/Temporary/LastTest.log |     6 +-
+|    cmake-build-debug/cmake_install.cmake            |     9 -
+|    mainRound.cpp                                    |    12 +
+|    94 files changed, 35524 insertions(+), 499 deletions(-)
+|   
+*   commit de754ac94d10e71c0b9de9993fb45c1af2620f45
+|\  Merge: 83cd512 67a2c04
+| | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | Date:   Wed Jul 9 18:01:14 2025 +0300
+| | 
+| |     after merge 1
+| | 
+| * commit 67a2c047906838717592f0db7a33ecdcff465c54
+| | Author: ClearTerminal1123 <basselhejaze@gmail.com>
+| | Date:   Wed Jul 9 17:29:32 2025 +0300
+| | 
+| |     Delete Players directory
+| | 
+| |  Players/Archer.h        | 12 -------
+| |  Players/Behavior.h      | 12 -------
+| |  Players/Charactor.h     | 78 ---------------------------------------------
+| |  Players/Job.h           | 14 --------
+| |  Players/Magician .h     | 12 -------
+| |  Players/Player.cpp      | 41 ------------------------
+| |  Players/Player.h        | 66 --------------------------------------
+| |  Players/PlayerFactory.h | 17 ----------
+| |  Players/Worrior.h       | 12 -------
+| |  9 files changed, 264 deletions(-)
+| | 
+| * commit ecc458833ce8d6a5a472e9645f980fea0f280b94
+| | Author: ClearTerminal1123 <basselhejaze@gmail.com>
+| | Date:   Wed Jul 9 17:20:48 2025 +0300
+| | 
+| |     Delete log.txt
+| | 
+| |  log.txt | Bin 9796 -> 0 bytes
+| |  1 file changed, 0 insertions(+), 0 deletions(-)
+| |   
+| *   commit 7b9d79d884bfd1b4cfc70281d1b720cb4ce943c9
+| |\  Merge: 6bf32ca 88c49e7
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Wed Jul 9 17:01:53 2025 +0300
+| | | 
+| | |      merge player and turn
+| | | 
+| | * commit 88c49e7a4578ec55605a6b5e03c69ed458da5914
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Thu Jul 3 23:20:20 2025 +0300
+| | | 
+| | |     ADD log file
+| | | 
+| | |  CMakeLists.txt                                  |   3 ++-
+| | |  Players/Behavior.h                              |  12 ++++++++++++
+| | |  Players/Charactor.h                             |  18 +++++++++++++++---
+| | |  Players/Job.h                                   |   1 +
+| | |  Players/Player.cpp                              |  11 ++++++++++-
+| | |  Players/Player.h                                |   2 +-
+| | |  ...n => codemodel-v2-4648d7980f4f845fc161.json} |   2 +-
+| | |  ...json => index-2025-07-03T19-59-32-0965.json} |   4 ++--
+| | |  ...et-mtam_hw4-Debug-256785bc98b76e71dbbf.json} |  10 ++++++++--
+| | |  .../CMakeFiles/clion-Debug-log.txt              |   2 +-
+| | |  .../Testing/Temporary/LastTest.log              |   4 ++--
+| | |  cmake-build-debug/build.ninja                   |   8 ++++----
+| | |  log.txt                                         | Bin 0 -> 9796 bytes
+| | |  13 files changed, 59 insertions(+), 18 deletions(-)
+| | | 
+| * | commit 6bf32ca83c4500fe88063e5955fae829fbb595fb
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Wed Jul 9 16:57:11 2025 +0300
+| | | 
+| | |      disctption for each enemy fix
+| | | 
+| | |  Enemy/Enemy.h    | 3 +++
+| | |  Rounds/Round.cpp | 2 +-
+| | |  2 files changed, 4 insertions(+), 1 deletion(-)
+| | | 
+| * | commit c4f18000be35e20a129a636142d80211f6c683ab
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Mon Jul 7 18:50:10 2025 +0300
+| | | 
+| | |      disctption for each enemy
+| | | 
+| | |  Enemy/Enemy.h         | 38 +++++++++++++++++++++++++++++---------
+| | |  Events/Encounter .cpp |  3 +++
+| | |  2 files changed, 32 insertions(+), 9 deletions(-)
+| | | 
+| * | commit 4189607937d9c5573e1966fa7230e127e3946a69
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Mon Jul 7 17:42:19 2025 +0300
+| | | 
+| | |      make discrption and aplly event
+| | | 
+| | |  CMakeLists.txt                                  |  5 ++-
+| | |  Enemy/Enemy.h                                   | 19 +++++-----
+| | |  Events/Encounter .cpp                           | 13 +++++++
+| | |  Events/Encounter.h                              |  9 ++---
+| | |  Events/Event .cpp                               |  4 ++
+| | |  Events/Event.h                                  |  2 +-
+| | |  Events/SpecialEvent.cpp                         | 11 ++++++
+| | |  Rounds/Round.cpp                                | 38 ++++++++++++++++---
+| | |  Rounds/Round.h                                  |  2 +-
+| | |  Turns/Turn.cpp                                  | 12 ++++--
+| | |  Turns/Turn.h                                    |  3 +-
+| | |  ...n => codemodel-v2-0ded5c69c935005ca573.json} |  2 +-
+| | |  ...json => index-2025-07-07T14-37-40-0484.json} |  4 +-
+| | |  ...et-mtam_hw4-Debug-c3d02a15222f0586f40c.json} | 28 +++++++++++++-
+| | |  .../Testing/Temporary/LastTest.log              |  4 +-
+| | |  cmake-build-debug/build.ninja                   | 23 ++++++++++-
+| | |  16 files changed, 144 insertions(+), 35 deletions(-)
+| | | 
+| * | commit 96f861bdfd8962ca29ecc6d6ba14f9295ad97c2a
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Sun Jul 6 15:47:53 2025 +0300
+| | | 
+| | |      work on the abstract class enemy adding the kind of enemys +  add the virtual  function attack + create
+| | | 
+| | |  Enemy/Enemy.h      | 72 +++++++++++++++++++++++++++++++++++++++++-------
+| | |  Events/Encounter.h |  8 +++++-
+| | |  Turns/Turn.cpp     |  2 +-
+| | |  3 files changed, 70 insertions(+), 12 deletions(-)
+| | | 
+| * | commit 1c2988cfbb9d8f174d7a54fca456ec15f46e8b9a
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Sun Jul 6 14:25:17 2025 +0300
+| | | 
+| | |     adding startRound function + connect the Round to turn and event add the counstructor for turn
+| | | 
+| | |  CMakeLists.txt                                  |  5 ++-
+| | |  Enemy/Enemy.h                                   | 29 +++++++++++++++++
+| | |  Events/Encounter.h                              |  5 ++-
+| | |  Events/Event.h                                  |  7 +++-
+| | |  Events/SpecialEvent.h                           |  1 +
+| | |  Leaderboard.h                                   |  7 ++++
+| | |  MatamStory.h                                    |  3 ++
+| | |  Rounds/Round.cpp                                | 32 ++++++++++++++++---
+| | |  Rounds/Round.h                                  | 14 +++-----
+| | |  Turns/Turn.cpp                                  | 13 ++++++++
+| | |  Turns/Turn.h                                    |  4 +--
+| | |  ...n => codemodel-v2-1983a5a3a0a40a63b038.json} |  2 +-
+| | |  ...json => index-2025-07-06T10-53-55-0177.json} |  4 +--
+| | |  ...et-mtam_hw4-Debug-b10af313ac08a9741979.json} | 26 +++++++++++++--
+| | |  .../Testing/Temporary/LastTest.log              |  4 +--
+| | |  cmake-build-debug/build.ninja                   |  9 +++++-
+| | |  16 files changed, 136 insertions(+), 29 deletions(-)
+| | | 
+| * | commit 66978d4e7aedacb4a45095501bdb54d4db56a79a
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Sat Jul 5 17:19:27 2025 +0300
+| | | 
+| | |     adding counstructor to round
+| | | 
+| | |  Rounds/Round.cpp | 17 +++++++++++++++++
+| | |  Rounds/Round.h   |  7 +++++--
+| | |  Turns/Turn.h     |  2 ++
+| | |  3 files changed, 24 insertions(+), 2 deletions(-)
+| | | 
+| * | commit 0d85b05b377427c49e927b10d8ec8359b8bdea19
+| | | Author: Basel Addd <basselhejaze@gmail.com>
+| | | Date:   Sat Jul 5 16:19:51 2025 +0300
+| | | 
+| | |     making the base of the classes(Round,turn,event)
+| | | 
+| | |  .idea/.gitignore                                |    8 +
+| | |  .idea/.name                                     |    1 +
+| | |  .idea/editor.xml                                |  580 ++++++++
+| | |  .idea/misc.xml                                  |   13 +
+| | |  .idea/modules.xml                               |    8 +
+| | |  .idea/mtam-hw4.iml                              |    2 +
+| | |  .idea/vcs.xml                                   |    6 +
+| | |  CMakeLists.txt                                  |   22 +
+| | |  Events/Encounter.h                              |   10 +
+| | |  Events/Event.h                                  |    2 +-
+| | |  Events/SpecialEvent.h                           |   10 +
+| | |  Rounds/Round.cpp                                |    0
+| | |  Rounds/Round.h                                  |   23 +
+| | |  Turns/Turn.h                                    |   15 +
+| | |  cmake-build-debug/.cmake/api/v1/query/cache-v2  |    0
+| | |  .../.cmake/api/v1/query/cmakeFiles-v1           |    0
+| | |  .../.cmake/api/v1/query/codemodel-v2            |    0
+| | |  .../.cmake/api/v1/query/toolchains-v1           |    0
+| | |  .../v1/reply/cache-v2-9af07c4d3b1ce135679a.json | 1163 +++++++++++++++++
+| | |  .../cmakeFiles-v1-61fb60a7c59cfec4e73d.json     |  161 +++
+| | |  .../codemodel-v2-e4429a16679a7c1702c0.json      |   60 +
+| | |  .../directory-.-Debug-f5ebdc15457944623624.json |   14 +
+| | |  .../reply/index-2025-07-05T12-43-42-0159.json   |  108 ++
+| | |  ...get-mtam_hw4-Debug-2ce4fdaffaaabd36a96b.json |  211 +++
+| | |  .../toolchains-v1-dd97cd1691b5366ebd4e.json     |   93 ++
+| | |  cmake-build-debug/CMakeCache.txt                |  363 +++++
+| | |  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake      |   80 ++
+| | |  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake    |   92 ++
+| | |  .../3.29.6/CMakeDetermineCompilerABI_C.bin      |  Bin 0 -> 17000 bytes
+| | |  .../3.29.6/CMakeDetermineCompilerABI_CXX.bin    |  Bin 0 -> 16984 bytes
+| | |  .../CMakeFiles/3.29.6/CMakeSystem.cmake         |   15 +
+| | |  .../3.29.6/CompilerIdC/CMakeCCompilerId.c       |  895 +++++++++++++
+| | |  .../CMakeFiles/3.29.6/CompilerIdC/a.out         |  Bin 0 -> 33736 bytes
+| | |  .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp |  878 +++++++++++++
+| | |  .../CMakeFiles/3.29.6/CompilerIdCXX/a.out       |  Bin 0 -> 33736 bytes
+| | |  .../CMakeFiles/CMakeConfigureLog.yaml           |  405 ++++++
+| | |  .../CMakeFiles/TargetDirectories.txt            |    3 +
+| | |  .../CMakeFiles/clion-Debug-log.txt              |    4 +
+| | |  .../CMakeFiles/clion-environment.txt            |  Bin 0 -> 243 bytes
+| | |  cmake-build-debug/CMakeFiles/cmake.check_cache  |    1 +
+| | |  cmake-build-debug/CMakeFiles/rules.ninja        |   64 +
+| | |  .../Testing/Temporary/LastTest.log              |    3 +
+| | |  cmake-build-debug/build.ninja                   |  164 +++
+| | |  cmake-build-debug/cmake_install.cmake           |   49 +
+| | |  44 files changed, 5525 insertions(+), 1 deletion(-)
+| | | 
+* | | commit 83cd51218f8a1a047c78f6a6f6ccf5291a47381b
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Wed Jul 9 17:30:40 2025 +0300
+| | | 
+| | |     delet event before merge 1
+| | | 
+| | |  Events/Event.h                                  |  14 --
+| | |  Players/PlayerFactory.cpp                       |   1 +
+| | |  ...json => index-2025-07-09T14-16-01-0727.json} | 216 +++++++++---------
+| | |  cmake-build-debug/.ninja_deps                   | Bin 68680 -> 25752 bytes
+| | |  cmake-build-debug/.ninja_log                    |  94 +-------
+| | |  .../CMakeFiles/clion-Debug-log.txt              |   2 +-
+| | |  .../Testing/Temporary/LastTest.log              |   4 +-
+| | |  7 files changed, 118 insertions(+), 213 deletions(-)
+| | | 
+* | | commit 7237715cdd115bc5af8fdd1e5d31b29cbf5d8c6d
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Wed Jul 9 16:59:09 2025 +0300
+| | | 
+| | |     before merge 1
+| | | 
+| | |  Players/Charactor.h                              | 2 +-
+| | |  cmake-build-debug/Testing/Temporary/LastTest.log | 4 ++--
+| | |  2 files changed, 3 insertions(+), 3 deletions(-)
+| | | 
+* | | commit 6a466ff480d586cf1a84ca67382cca516ef108e9
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Mon Jul 7 13:16:10 2025 +0300
+| | | 
+| | |     ADD doJob and static player number
+| | | 
+| | |  .idea/.gitignore                                |   16 +-
+| | |  .idea/editor.xml                                | 1158 +++----
+| | |  .idea/misc.xml                                  |   24 +-
+| | |  .idea/modules.xml                               |   14 +-
+| | |  .idea/mtam-hw4.iml                              |    2 +-
+| | |  .idea/vcs.xml                                   |   10 +-
+| | |  CMakeLists.txt                                  |   68 +-
+| | |  Events/Event.h                                  |   28 +-
+| | |  Game                                            |  Bin 258835 -> 598320 bytes
+| | |  MatamStory.cpp                                  |  148 +-
+| | |  MatamStory.h                                    |  110 +-
+| | |  Players/Behiviors/Behivior.cpp                  |  106 +-
+| | |  Players/Behiviors/Behivior.h                    |   51 +-
+| | |  Players/Behiviors/Responsible.h                 |   32 +-
+| | |  Players/Behiviors/RiskTaking.h                  |   33 +-
+| | |  Players/Charactor.cpp                           |  193 +-
+| | |  Players/Charactor.h                             |  174 +-
+| | |  Players/Jobs/Archer.h                           |   31 +-
+| | |  Players/Jobs/Job.cpp                            |  167 +-
+| | |  Players/Jobs/Job.h                              |   49 +-
+| | |  Players/Jobs/Magician .h                        |   31 +-
+| | |  Players/Jobs/Warrior.h                          |   33 +-
+| | |  Players/Player.cpp                              |  146 +-
+| | |  Players/Player.h                                |  164 +-
+| | |  Players/PlayerFactory.cpp                       |   46 +-
+| | |  Players/PlayerFactory.h                         |   45 +-
+| | |  Utilities.cpp                                   |  234 +-
+| | |  Utilities.h                                     |  292 +-
+| | |  .../v1/reply/cache-v2-2d0b4b16d7df7fc8bcfa.json | 2654 ++++++++---------
+| | |  .../cmakeFiles-v1-415425d98e9cdba7ed43.json     |  330 +-
+| | |  .../codemodel-v2-968c63ef7f294fc11a4d.json      |  120 +-
+| | |  .../directory-.-Debug-d0094a50bb2071803777.json |   28 +-
+| | |  .../reply/index-2025-07-06T21-14-05-0416.json   |  216 +-
+| | |  ...get-mtam_hw4-Debug-41ebb420ee1009aa06e9.json |  576 ++--
+| | |  .../toolchains-v1-8ce3f78fc5758414dfe9.json     |  186 +-
+| | |  cmake-build-debug/.ninja_deps                   |  Bin 33236 -> 68680 bytes
+| | |  cmake-build-debug/.ninja_log                    |   68 +
+| | |  cmake-build-debug/CMakeCache.txt                |  830 +++---
+| | |  .../CMakeFiles/3.29.6/CMakeCCompiler.cmake      |  160 +-
+| | |  .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake    |  184 +-
+| | |  .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake     |   12 +-
+| | |  .../CMakeFiles/3.29.6/CMakeSystem.cmake         |   30 +-
+| | |  .../3.29.6/CompilerIdC/CMakeCCompilerId.c       | 1790 +++++------
+| | |  .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp | 1756 +++++------
+| | |  .../CMakeFiles/CMakeConfigureLog.yaml           |  908 +++---
+| | |  .../CMakeFiles/TargetDirectories.txt            |    6 +-
+| | |  cmake-build-debug/CMakeFiles/cmake.check_cache  |    2 +-
+| | |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj  |  Bin 75546 -> 75934 bytes
+| | |  .../Players/Behiviors/Behivior.cpp.obj          |  Bin 265270 -> 265420 bytes
+| | |  .../mtam_hw4.dir/Players/Charactor.cpp.obj      |  Bin 151666 -> 152106 bytes
+| | |  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj       |  Bin 313556 -> 313492 bytes
+| | |  .../mtam_hw4.dir/Players/Player.cpp.obj         |  Bin 193492 -> 192240 bytes
+| | |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj  |  Bin 78151 -> 144225 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj   |  Bin 114379 -> 114803 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj    |  Bin 232317 -> 233322 bytes
+| | |  cmake-build-debug/CMakeFiles/rules.ninja        |  128 +-
+| | |  .../Testing/Temporary/LastTest.log              |    6 +-
+| | |  cmake-build-debug/build.ninja                   |  406 +--
+| | |  cmake-build-debug/cmake_install.cmake           |   98 +-
+| | |  cmake-build-debug/mtam_hw4.exe                  |  Bin 1088021 -> 1100739 bytes
+| | |  maintest.cpp                                    |  105 +-
+| | |  tests/test1.expected                            |  192 +-
+| | |  tests/test2.expected                            |    2 +-
+| | |  tests/test3.expected                            |    2 +-
+| | |  64 files changed, 7154 insertions(+), 7046 deletions(-)
+| | | 
+* | | commit e398f6fc14a6fedb0396d9a69d1cc0ae4f1469ff
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Mon Jul 7 08:58:51 2025 +0300
+| | | 
+| | |     FIX FEW PROBLEM IT WORK BUT NENORY LEAK
+| | | 
+| | |  CMakeLists.txt                                  |   1 +
+| | |  Game                                            | Bin 0 -> 258835 bytes
+| | |  Players/Behiviors/RiskTaking.h                  |   8 +-
+| | |  Players/Charactor.cpp                           |  11 +--
+| | |  Players/Charactor.h                             |  10 +--
+| | |  Players/Jobs/Job.cpp                            |   1 +
+| | |  Players/Jobs/Job.h                              |   3 +-
+| | |  Players/Jobs/Magician .h                        |   7 +-
+| | |  Players/Jobs/Warrior.h                          |   2 +-
+| | |  Players/Player.cpp                              |  23 +++---
+| | |  Players/Player.h                                |   6 +-
+| | |  Players/PlayerFactory.cpp                       |   4 +-
+| | |  Players/PlayerFactory.h                         |   4 +-
+| | |  Utilities.cpp                                   |   2 +-
+| | |  ...n => codemodel-v2-968c63ef7f294fc11a4d.json} |   2 +-
+| | |  ...json => index-2025-07-06T21-14-05-0416.json} |   4 +-
+| | |  ...et-mtam_hw4-Debug-41ebb420ee1009aa06e9.json} |  12 +--
+| | |  cmake-build-debug/.ninja_deps                   | Bin 0 -> 33236 bytes
+| | |  cmake-build-debug/.ninja_log                    |  26 ++++++
+| | |  .../CMakeFiles/clion-Debug-log.txt              |   2 +-
+| | |  .../CMakeFiles/mtam_hw4.dir/MatamStory.cpp.obj  | Bin 0 -> 75546 bytes
+| | |  .../Players/Behiviors/Behivior.cpp.obj          | Bin 0 -> 265270 bytes
+| | |  .../mtam_hw4.dir/Players/Charactor.cpp.obj      | Bin 0 -> 151666 bytes
+| | |  .../mtam_hw4.dir/Players/Jobs/Job.cpp.obj       | Bin 0 -> 313556 bytes
+| | |  .../mtam_hw4.dir/Players/Player.cpp.obj         | Bin 0 -> 193492 bytes
+| | |  .../mtam_hw4.dir/Players/PlayerFactory.cpp.obj  | Bin 0 -> 78151 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/Utilities.cpp.obj   | Bin 0 -> 114379 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/main.cpp.obj        | Bin 0 -> 733 bytes
+| | |  .../CMakeFiles/mtam_hw4.dir/maintest.cpp.obj    | Bin 0 -> 232317 bytes
+| | |  .../Testing/Temporary/LastTest.log              |   4 +-
+| | |  cmake-build-debug/build.ninja                   |   9 +-
+| | |  cmake-build-debug/mtam_hw4.exe                  | Bin 0 -> 1088021 bytes
+| | |  main.cpp                                        |  40 ---------
+| | |  maintest.cpp                                    |  77 +++++++++---------
+| | |  34 files changed, 119 insertions(+), 139 deletions(-)
+| | | 
+* | | commit e2e03d54e105449e9a6e7bd012d867e0a6988e85
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Sun Jul 6 23:37:51 2025 +0300
+| | | 
+| | |     Fix factory player constructor
+| | | 
+| | |  Players/Behiviors/Behivior.cpp |  4 ++--
+| | |  Players/Charactor.cpp          | 22 ++++++++-----------
+| | |  Players/Charactor.h            |  4 ++--
+| | |  Players/Player.cpp             | 19 +++++++----------
+| | |  Players/PlayerFactory.cpp      | 41 ++++++------------------------------
+| | |  Players/PlayerFactory.h        |  4 ++--
+| | |  6 files changed, 29 insertions(+), 65 deletions(-)
+| | | 
+* | | commit 76bbe7d52b822d4d03308e883878603f4cd73587
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Sun Jul 6 23:21:46 2025 +0300
+| | | 
+| | |     FIX behivior Constructor
+| | | 
+| | |  Players/Behiviors/Behivior.cpp  | 7 +++++++
+| | |  Players/Behiviors/Behivior.h    | 7 ++++++-
+| | |  Players/Behiviors/Responsible.h | 5 +++--
+| | |  Players/Behiviors/RiskTaking.h  | 3 +++
+| | |  4 files changed, 19 insertions(+), 3 deletions(-)
+| | | 
+* | | commit df3ef33d42dcc37c93ea39b72e1c565ef8314eaa
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Sun Jul 6 23:06:59 2025 +0300
+| | | 
+| | |     FIX job constructor
+| | | 
+| | |  CMakeLists.txt                                  |  7 +-
+| | |  Players/Behiviors/Behivior.h                    |  2 +
+| | |  Players/Behiviors/Responsible.h                 |  2 +
+| | |  Players/Charactor.cpp                           | 44 +++++++++++-
+| | |  Players/Charactor.h                             | 12 +++-
+| | |  Players/Jobs/Archer.h                           |  4 +-
+| | |  Players/Jobs/Job.cpp                            | 48 ++++++++++---
+| | |  Players/Jobs/Job.h                              |  6 +-
+| | |  Players/Jobs/Magician .h                        |  4 +-
+| | |  Players/Jobs/{Worrior.h => Warrior.h}           |  6 +-
+| | |  Players/Player.cpp                              | 38 +++++++++++
+| | |  Players/Player.h                                | 18 +++--
+| | |  Players/PlayerFactory.cpp                       | 51 ++++++++++++++
+| | |  Players/PlayerFactory.h                         | 17 +++--
+| | |  ...n => codemodel-v2-1cc376a2e584bdc50a78.json} |  2 +-
+| | |  ...json => index-2025-07-06T19-48-10-0394.json} |  4 +-
+| | |  ...et-mtam_hw4-Debug-176a390c09db1c2d32e5.json} | 30 +++++++-
+| | |  .../CMakeFiles/clion-Debug-log.txt              |  2 +-
+| | |  .../Testing/Temporary/LastTest.log              |  4 +-
+| | |  cmake-build-debug/build.ninja                   | 23 ++++++-
+| | |  main.cpp                                        | 68 +++++++++----------
+| | |  maintest.cpp                                    | 48 +++++++++++++
+| | |  22 files changed, 364 insertions(+), 76 deletions(-)
+| | | 
+* | | commit 803496bf90d06a40c828412d229ae3ed57c5a7c6
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Sat Jul 5 22:15:07 2025 +0300
+| | | 
+| | |     ADD decsrption function
+| | | 
+| | |  CMakeLists.txt                                  |  3 +-
+| | |  Players/Behiviors/Behivior.h                    |  1 +
+| | |  Players/Charactor.cpp                           | 58 +++++++++++++++++++
+| | |  Players/Charactor.h                             | 13 +++--
+| | |  Players/Jobs/Job.cpp                            |  3 +-
+| | |  Players/Jobs/Job.h                              |  3 +-
+| | |  Players/Player.cpp                              |  2 +-
+| | |  Players/Player.h                                |  4 +-
+| | |  ...n => codemodel-v2-40235c778084d78c99b6.json} |  2 +-
+| | |  ...json => index-2025-07-05T17-14-14-0924.json} |  4 +-
+| | |  ...et-mtam_hw4-Debug-02ad1344142786f1dd35.json} | 20 +++++--
+| | |  .../Testing/Temporary/LastTest.log              |  4 +-
+| | |  cmake-build-debug/build.ninja                   | 15 +++--
+| | |  13 files changed, 108 insertions(+), 24 deletions(-)
+| | | 
+* | | commit 82f11a6d7cbcce03003ee7f2ce0c644ec7263cb3
+| | | Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+| | | Date:   Sat Jul 5 20:13:07 2025 +0300
+| | | 
+| | |     Add behivior class and all its sup classes
+| | | 
+| | |  CMakeLists.txt                                  | 15 +++--
+| | |  Players/Archer.h                                | 12 ----
+| | |  Players/Behiviors/Behivior.cpp                  | 47 ++++++++++++++++
+| | |  Players/Behiviors/Behivior.h                    | 16 ++++++
+| | |  Players/Behiviors/Responsible.h                 | 13 +++++
+| | |  Players/Behiviors/RiskTaking.h                  | 12 ++++
+| | |  Players/Charactor.h                             | 10 +++-
+| | |  Players/Job.h                                   | 13 -----
+| | |  Players/Jobs/Archer.h                           | 14 +++++
+| | |  Players/Jobs/Job.cpp                            | 56 +++++++++++++++++++
+| | |  Players/Jobs/Job.h                              | 19 +++++++
+| | |  Players/Jobs/Magician .h                        | 14 +++++
+| | |  Players/Jobs/Worrior.h                          | 15 +++++
+| | |  Players/Magician .h                             | 12 ----
+| | |  Players/Player.h                                |  4 ++
+| | |  Players/Worrior.h                               | 12 ----
+| | |  ...n => codemodel-v2-3497ff9827b3b5f0b8cb.json} |  2 +-
+| | |  ...json => index-2025-07-05T16-12-19-0917.json} |  4 +-
+| | |  ...et-mtam_hw4-Debug-450d26919cd310c12664.json} | 48 +++++++++++++---
+| | |  .../Testing/Temporary/LastTest.log              |  4 +-
+| | |  cmake-build-debug/build.ninja                   | 16 +++++-
+| | |  21 files changed, 288 insertions(+), 70 deletions(-)
+| | | 
+* | | commit 6673032dbb476971b15025fde79e7fabdac59aef
+| |/  Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+|/|   Date:   Sat Jul 5 18:13:02 2025 +0300
+| |   
+| |       ADD Job cpp
+| |   
+| |    ...f0c6cd66.json => codemodel-v2-2f0c882f86da97311eb7.json} | 2 +-
+| |    ...-41-17-0620.json => index-2025-07-05T15-12-39-0252.json} | 4 ++--
+| |    ...json => target-mtam_hw4-Debug-5668246555e45f858f31.json} | 2 +-
+| |    cmake-build-debug/Testing/Temporary/LastTest.log            | 4 ++--
+| |    cmake-build-debug/build.ninja                               | 8 ++++----
+| |    5 files changed, 10 insertions(+), 10 deletions(-)
+| | 
+* | commit c07bd4ad69f5603f7a1f3e6e0df5643f8ea2f34a
+|/  Author: karm-4-uni <karm.hijazi@campus.technion.ac.il>
+|   Date:   Thu Jul 3 22:51:01 2025 +0300
+|   
+|       start/Add work and add the header file for player
+|   
+|    .idea/.gitignore                                 |    8 +
+|    .idea/.name                                      |    1 +
+|    .idea/editor.xml                                 |  580 ++++++++
+|    .idea/misc.xml                                   |   13 +
+|    .idea/modules.xml                                |    8 +
+|    .idea/mtam-hw4.iml                               |    2 +
+|    .idea/vcs.xml                                    |    6 +
+|    CMakeLists.txt                                   |   24 +
+|    Players/Archer.h                                 |   12 +
+|    Players/Charactor.h                              |   66 +
+|    Players/Job.h                                    |   13 +
+|    Players/Magician .h                              |   12 +
+|    Players/Player.cpp                               |   32 +
+|    Players/Player.h                                 |   17 +-
+|    Players/PlayerFactory.h                          |   17 +
+|    Players/Worrior.h                                |   12 +
+|    cmake-build-debug/.cmake/api/v1/query/cache-v2   |    0
+|    .../.cmake/api/v1/query/cmakeFiles-v1            |    0
+|    .../.cmake/api/v1/query/codemodel-v2             |    0
+|    .../.cmake/api/v1/query/toolchains-v1            |    0
+|    .../v1/reply/cache-v2-2d0b4b16d7df7fc8bcfa.json  | 1327 ++++++++++++++++++
+|    .../cmakeFiles-v1-415425d98e9cdba7ed43.json      |  165 +++
+|    .../reply/codemodel-v2-16d51d808e75f0c6cd66.json |   60 +
+|    .../directory-.-Debug-d0094a50bb2071803777.json  |   14 +
+|    .../v1/reply/index-2025-07-03T19-41-17-0620.json |  108 ++
+|    ...rget-mtam_hw4-Debug-f17c63b2efe9da6cb875.json |  230 +++
+|    .../toolchains-v1-8ce3f78fc5758414dfe9.json      |   93 ++
+|    cmake-build-debug/CMakeCache.txt                 |  415 ++++++
+|    .../CMakeFiles/3.29.6/CMakeCCompiler.cmake       |   80 ++
+|    .../CMakeFiles/3.29.6/CMakeCXXCompiler.cmake     |   92 ++
+|    .../3.29.6/CMakeDetermineCompilerABI_C.bin       |  Bin 0 -> 43069 bytes
+|    .../3.29.6/CMakeDetermineCompilerABI_CXX.bin     |  Bin 0 -> 43088 bytes
+|    .../CMakeFiles/3.29.6/CMakeRCCompiler.cmake      |    6 +
+|    .../CMakeFiles/3.29.6/CMakeSystem.cmake          |   15 +
+|    .../3.29.6/CompilerIdC/CMakeCCompilerId.c        |  895 ++++++++++++
+|    .../CMakeFiles/3.29.6/CompilerIdC/a.exe          |  Bin 0 -> 43144 bytes
+|    .../3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp  |  878 ++++++++++++
+|    .../CMakeFiles/3.29.6/CompilerIdCXX/a.exe        |  Bin 0 -> 43172 bytes
+|    .../CMakeFiles/CMakeConfigureLog.yaml            |  454 ++++++
+|    .../CMakeFiles/TargetDirectories.txt             |    3 +
+|    cmake-build-debug/CMakeFiles/clion-Debug-log.txt |    4 +
+|    .../CMakeFiles/clion-environment.txt             |  Bin 0 -> 296 bytes
+|    cmake-build-debug/CMakeFiles/cmake.check_cache   |    1 +
+|    cmake-build-debug/CMakeFiles/rules.ninja         |   64 +
+|    cmake-build-debug/Testing/Temporary/LastTest.log |    3 +
+|    cmake-build-debug/build.ninja                    |  168 +++
+|    cmake-build-debug/cmake_install.cmake            |   49 +
+|    47 files changed, 5946 insertions(+), 1 deletion(-)
+| 
+* commit 51796562dfb799a0ac456f5d2f922b9571403bd9
+| Author: Yinon Goldshtein <yinongold@gmail.com>
+| Date:   Tue Jun 24 09:06:41 2025 +0300
+| 
+|     updated course number in README
+| 
+|  README.md | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 11db499619ae45b95224312022c5e0459653edcd
+| Author: Egbaria Mohammad-Baraa <102754795+EgbariaMohammad@users.noreply.github.com>
+| Date:   Wed Jan 8 19:48:30 2025 +0200
+| 
+|     Update README.md
+| 
+|  README.md | 4 ++--
+|  1 file changed, 2 insertions(+), 2 deletions(-)
+| 
+* commit 89b5f6299cabd5cfeb30a0873786055da6280436
+  Author: Yinon Goldshtein <yinongold@gmail.com>
+  Date:   Tue Jan 7 01:02:53 2025 +0200
+  
+      initial commit
+  
+   Events/Event.h       |  14 +++++
+   MatamStory.cpp       |  74 +++++++++++++++++++++++++
+   MatamStory.h         |  55 +++++++++++++++++++
+   Players/Player.h     |  51 +++++++++++++++++
+   README.md            |   7 +++
+   Utilities.cpp        | 117 +++++++++++++++++++++++++++++++++++++++
+   Utilities.h          | 146 +++++++++++++++++++++++++++++++++++++++++++++++++
+   main.cpp             |  40 ++++++++++++++
+   tests/test1.events   |   5 ++
+   tests/test1.expected |  96 ++++++++++++++++++++++++++++++++
+   tests/test1.players  |   3 +
+   tests/test2.events   |   4 ++
+   tests/test2.expected |   1 +
+   tests/test2.players  |   3 +
+   tests/test3.events   |   5 ++
+   tests/test3.expected |   1 +
+   tests/test3.players  |   2 +
+   17 files changed, 624 insertions(+)

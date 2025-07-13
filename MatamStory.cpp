@@ -247,9 +247,10 @@ void MatamStory::addPlayers(std::istream& in) {
     int count = 0;
 
     while (std::getline(in, line)) {
-        // Skip blank/whitespace-only
-        if (line.find_first_not_of(" \t\r\n") == std::string::npos)
+        // Skip blanks
+        if (line.find_first_not_of(" \t\r\n") == std::string::npos){
             continue;
+    }
 
         ++count;
         if (count > 6)

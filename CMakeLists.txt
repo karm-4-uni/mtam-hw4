@@ -7,10 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # List *only* your .cpp files here—headers are found by your include paths.
 add_executable(mtam_hw4
-        main.cpp
 
         # utilities
-        Utilities.cpp
 
         # players
         Players/Player.cpp
@@ -32,7 +30,6 @@ add_executable(mtam_hw4
 
         # story driver
         MatamStory.cpp
-        maintest.cpp
         Players/Behivior.cpp
         Players/Behivior.cpp
         Players/Archer.h
