@@ -1,4 +1,5 @@
 
+
 #include "MatamStory.h"
 
 #include <algorithm>
@@ -222,8 +223,7 @@ void MatamStory::addEvants(std::istream &in) {
 //     }
 // }
 void MatamStory::orderPlayers() {
-      this->playersV;
-    size_t n = this->playersV.size();
+    size_t n = playersV.size();
     for (size_t i = 0; i < n; ++i) {
         size_t bestplayer = i;
         for (size_t j = i + 1; j < n; ++j) {
