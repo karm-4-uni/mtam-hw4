@@ -102,6 +102,6 @@ bool Player::operator>(const Player& other) const {
       return ((*this->charactor) > (*other.charactor) );
    }
 }
-bool operator<=(const Player &thisplayer, const Player &other) {
+bool operator<(const Player &thisplayer, const Player &other) {
    return  (other > thisplayer);
 }

@@ -133,7 +133,7 @@ bool Charactor::operator==(const Charactor &other) const {
 
 
 bool operator<=(const Charactor& currntChar ,const Charactor &other) {
-    return  (other  >= currntChar);
+    return  (other  > currntChar);
 }
 //
 // void Charactor::doBehivior() {
