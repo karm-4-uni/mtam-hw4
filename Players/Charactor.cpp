@@ -12,7 +12,7 @@
 
 #include "../Events/Event.h"
 #include "Behiviors/Behivior.h"
-#include "Jobs/Job.h"
+#include "../Players/Jobs/Job.h"
 
 int Charactor::getCoins() const {
     return this->coin;

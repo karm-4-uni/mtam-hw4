@@ -1,55 +1,55 @@
 
-
-#include <iostream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <exception>
-#include "MatamStory.h"
-
-int main() {
-    using namespace std;
-
-    // 1) Read events
-    cout << "Enter events (type END on its own line to finish):" << endl;
-    vector<string> eventLines;
-    string line;
-    while (getline(cin, line)) {
-        if (line == "END") break;
-        // skip blank lines if you like:
-        if (!line.empty())
-            eventLines.push_back(line);
-    }
-
-    // 2) Read players
-    cout << "\nEnter players (type END on its own line to finish):" << endl;
-    vector<string> playerLines;
-    while (getline(cin, line)) {
-        if (line == "END") break;
-        if (!line.empty())
-            playerLines.push_back(line);
-    }
-
-    // 3) Build input‐streams
-    ostringstream evStreamBuf, plStreamBuf;
-    for (auto &l : eventLines)  evStreamBuf << l << '\n';
-    for (auto &l : playerLines) plStreamBuf << l << '\n';
-
-    istringstream evStream(evStreamBuf.str()), plStream(plStreamBuf.str());
-
-    // 4) Run the game
-    try {
-        MatamStory game(evStream, plStream);
-        // if your ctor already calls play(), you’re done
-    }
-    catch (const exception &e) {
-        cerr << "Error: " << e.what() << endl;
-        return 1;
-    }
-
-    return 0;
-}
+//
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// #include <sstream>
+// #include <exception>
+// #include "MatamStory.h"
+//
 // int main() {
+//     using namespace std;
+//
+//     // 1) Read events
+//     cout << "Enter events (type END on its own line to finish):" << endl;
+//     vector<string> eventLines;
+//     string line;
+//     while (getline(cin, line)) {
+//         if (line == "END") break;
+//         // skip blank lines if you like:
+//         if (!line.empty())
+//             eventLines.push_back(line);
+//     }
+//
+//     // 2) Read players
+//     cout << "\nEnter players (type END on its own line to finish):" << endl;
+//     vector<string> playerLines;
+//     while (getline(cin, line)) {
+//         if (line == "END") break;
+//         if (!line.empty())
+//             playerLines.push_back(line);
+//     }
+//
+//     // 3) Build input‐streams
+//     ostringstream evStreamBuf, plStreamBuf;
+//     for (auto &l : eventLines)  evStreamBuf << l << '\n';
+//     for (auto &l : playerLines) plStreamBuf << l << '\n';
+//
+//     istringstream evStream(evStreamBuf.str()), plStream(plStreamBuf.str());
+//
+//     // 4) Run the game
+//     try {
+//         MatamStory game(evStream, plStream);
+//         // if your ctor already calls play(), you’re done
+//     }
+//     catch (const exception &e) {
+//         cerr << "Error: " << e.what() << endl;
+//         return 1;
+//     }
+//
+//     return 0;
+// }
+// // int main() {
 //     try {
 //
 //         std::shared_ptr<Player> p1 = PlayerFactory::createPlayer(

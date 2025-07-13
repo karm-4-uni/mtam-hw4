@@ -5,7 +5,7 @@
 #include "../Events/Enemy.h"
 
 #include <string>
-#include "Jobs/Job.h"
+#include "../Players/Jobs/Job.h"
 #include "Behiviors/Behivior.h"
 class Event;
 class Job;
