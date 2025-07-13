@@ -75,6 +75,7 @@ void MatamStory::play() {
     }
 
     printRoundEnd();
+    orderPlayers();
  printLeaderBoardMessage();
     printLeaderBordplayer(playersV);
     printBarrier();
