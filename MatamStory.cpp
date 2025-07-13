@@ -100,7 +100,7 @@ void MatamStory::playTurn(Player& player) {
 
 
 void printLeaderBordplayer(std::vector<std::shared_ptr<Player>> playersV) {
-    int i = 0 ;
+    int i = 1 ;
     for ( auto it = playersV.begin();it !=  playersV.end();  ++it) {
         printLeaderBoardEntry(i, *it->get());i++;
     }
