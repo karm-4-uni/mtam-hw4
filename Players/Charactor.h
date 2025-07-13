@@ -5,8 +5,8 @@
 #include "../Events/Enemy.h"
 
 #include <string>
-#include "Jobs/Job.h"
-#include "Behiviors/Behivior.h"
+#include "Job.h"
+#include "Behivior.h"
 class Event;
 class Job;
  class  Charactor  : public std::enable_shared_from_this<Charactor>{

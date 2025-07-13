@@ -16,7 +16,7 @@ add_executable(mtam_hw4
         Players/Player.cpp
         Players/Charactor.cpp
         Players/PlayerFactory.cpp
-        Players/Jobs/Job.cpp
+        Players/Job.cpp
 
         # events
         Events/Event.cpp
@@ -27,14 +27,15 @@ add_executable(mtam_hw4
         Events/SolarEclipse.cpp
 
         # rounds & turns  ← and this
-        Rounds/Round.cpp
-        Rounds/Turns/Turn.cpp
+        Events/Round.cpp
+        Events/Turn.cpp
 
         # story driver
         MatamStory.cpp
         maintest.cpp
-        Players/Behiviors/Behivior.cpp
-        Players/Behiviors/Behivior.cpp
+        Players/Behivior.cpp
+        Players/Behivior.cpp
+        Players/Archer.h
 
 
 )

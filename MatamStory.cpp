@@ -189,13 +189,13 @@ void MatamStory::addEvants(std::istream &in) {
     std::string line;
    // std::vector<string> Evantinput  ;
     EventFactory factory;
+
     while (!events->empty()) events->pop();
     while ( std::getline(in, line)) {
         if (line.empty()) { continue;}
-
         try {
           std::shared_ptr<Event> newEvent = factory.createEvent(line);
-        events.get()->push(newEvent);
+        events->push(newEvent);
         } catch (...) {
             throw std::runtime_error("EventFactory cant creat event");
         }

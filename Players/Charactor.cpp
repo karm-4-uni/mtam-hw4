@@ -11,8 +11,8 @@
 #include <ostream>
 
 #include "../Events/Event.h"
-#include "Behiviors/Behivior.h"
-#include "Jobs/Job.h"
+#include "Behivior.h"
+#include "Job.h"
 
 int Charactor::getCoins() const {
     return this->coin;

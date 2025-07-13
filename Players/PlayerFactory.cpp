@@ -5,11 +5,11 @@
 
 #include <stdexcept>
 
-#include "Behiviors/Responsible.h"
-#include "Behiviors/RiskTaking.h"
-#include "Jobs/Archer.h"
-#include "Jobs/Magician .h"
-#include "Jobs/Warrior.h"
+#include "Responsible.h"
+#include "RiskTaking.h"
+#include "Archer.h"
+#include "Magician .h"
+#include "Warrior.h"
 
 
 std::shared_ptr<Player> PlayerFactory::createPlayer(const std::string& name,

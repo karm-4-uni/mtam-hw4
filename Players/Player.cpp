@@ -3,15 +3,15 @@
 
 #include <stdexcept>
 #include "Player.h"
-#include "Jobs/Magician .h"
-#include "Jobs/Warrior.h"
-#include "Behiviors/RiskTaking.h"
-#include "Behiviors/Responsible.h"
+#include "Magician .h"
+#include "Warrior.h"
+#include "RiskTaking.h"
+#include "Responsible.h"
 #include <stdexcept>
 #include <utility>
 #include <memory>
 #include "../Events/Event.h"
-#include "Jobs/Archer.h"
+#include "Archer.h"
 
 string Player::getName() const {
    return  this->charactor->getName();

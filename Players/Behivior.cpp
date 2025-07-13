@@ -3,12 +3,12 @@
 
 #include "Responsible.h"
 #include "RiskTaking.h"
-#include "../Player.h"
+#include "Player.h"
 #include "Behivior.h"
 
 #include <iostream>
 
-#include "../../Utilities.h"
+#include "../Utilities.h"
 const int PostinCost = 5 ;
 const std::string Behivior::getBehivior() const {
     return "defult";

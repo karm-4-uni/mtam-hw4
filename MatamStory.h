@@ -7,7 +7,7 @@
 #include "Events/Event.h"
 # include <memory>
 
-#include "Rounds/Round.h"
+#include "Events/Round.h"
 
 enum class Gamestat {
  notOver,
