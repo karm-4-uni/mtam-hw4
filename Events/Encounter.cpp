@@ -8,7 +8,7 @@
 #include "Enemy.h"
 #include "Encounter.h"
 
-int Barlog::bonusPower = 0;
+
 Encounter::Encounter() {
 
 }

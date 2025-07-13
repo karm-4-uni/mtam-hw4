@@ -80,23 +80,11 @@ class Barlog : public Enemy {
     static int bonusPower;
 public:
 
-    Barlog() {
-        this->name="Balrog";
-        this->damge=9001;
-        this->loot =100;
-        this->combatPower=15 + bonusPower;
-       bonusPower+=2;
-    }
-    std::shared_ptr<Enemy> create()  const override {
-        return std::make_shared<Barlog>();
-    }
+    Barlog() ;
 
+    std::shared_ptr<Enemy> create()  const override ;
 
-    std::string getdescription() const override {
-        std::string g= "Balrog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                       "damage "+std::to_string(damge)+ ")";
-        return  g;
-    }
+    std::string getdescription() const override ;
 };
 
     class Pack : public Enemy {

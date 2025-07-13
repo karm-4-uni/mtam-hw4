@@ -36,6 +36,8 @@ add_executable(mtam_hw4
         Players/Behivior.cpp
         Players/Behivior.cpp
         Players/Archer.h
+        Events/Barlog.cpp
+        Events/Barlog.cpp
 
 
 )

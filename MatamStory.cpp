@@ -39,7 +39,7 @@ MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
     }
 
     /*==========================================*/
-           play();
+
     }
 
 //return winnerindex
@@ -83,7 +83,6 @@ void MatamStory::play() {
  if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
 
     if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
-    return;
     /*========================================================================*/
 }
 void MatamStory::playTurn(Player& player) {
