@@ -94,10 +94,7 @@ void setCoins(int gainedCoin);
 bool operator== (const Charactor& other) const;
 
 
-int getcombatpower()
-  {
-   return this->force+this->getLevel();
-  }
+int getcombatpower();
 
  const std::shared_ptr<Job> getjob()  {
  return this->job;

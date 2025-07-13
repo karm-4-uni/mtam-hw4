@@ -19,8 +19,8 @@ void Archer::doJob(Charactor& charactor) {
     charactor.setCoins(newCoin);
 }
 void Warrior::doJob(Charactor& charactor) {
-    int newForce = charactor.getForce() * 2 +  charactor.getLevel();
-    charactor.setForce(newForce);
+charactor.maxHP += 50 ;
+    charactor.CurrentHP += 50 ;
 }
 
 const std::string Job::getjob() const {
@@ -95,7 +95,7 @@ void Warrior::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> ene
 }
 void Warrior::applyin(std::shared_ptr<Player> player ) {
     player.operator*().getCharator().force-=1;
-    getSolarEclipseMessage(*player,-1);
+  std::cout <<   getSolarEclipseMessage(*player,-1);
 
 }
 
@@ -134,7 +134,7 @@ void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> en
 }
 void Magician::applyin(std::shared_ptr<Player> player) {
     player.operator*().getCharator().force+=1;
- std::cout <<   getSolarEclipseMessage(*player,1);
+ std::cout <<  getSolarEclipseMessage(*player,1);
 
 }
 

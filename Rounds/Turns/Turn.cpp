@@ -1,4 +1,7 @@
 # include "Turn.h"
+
+#include <iostream>
+
 # include "../../Events/Event.h"
 #include "../../Utilities.h"
 Turn::Turn() {
@@ -16,7 +19,7 @@ Turn::~Turn() {
 void Turn::applyTurn() {
     printTurnDetails(turnnumber,*currPlayer,*currEvent);
 this->currPlayer->doEvent(currEvent);
-
+std::cout << "\n";
 }
 //
 // const std::string Turn::printTurnoutcome() {

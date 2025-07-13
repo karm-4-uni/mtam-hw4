@@ -62,7 +62,7 @@ checkPlayers();
     } catch (...) {
         throw std::runtime_error("can't creat  an Event");
     }
-    std::cout << "\n";
+  //  std::cout << "\n";
 }
 
 void Round::checkPlayers() {

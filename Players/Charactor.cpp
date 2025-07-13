@@ -65,12 +65,7 @@ std::string Charactor::getDescription() const {
     description+=" character (level ";
     description+= std::to_string(Level)  ;
     description+=",force ";
-    if(this->job.get()->getjob() == "Warrior") {
-         description+= std::to_string((force- this->Level) / 2)  ;
-    } else {
         description+= std::to_string((force) )  ;
-    }
-
     description+= ")";
     return description;
 }
@@ -165,4 +160,12 @@ bool operator<=(const Charactor& currntChar ,const Charactor &other) {
 
 void Charactor::takeDamge(std::shared_ptr<Enemy> enemy) {
 
+}
+
+int Charactor::getcombatpower() {
+    if(this->job->getjob() == "Warrior") {
+        return  this->force * 2 + this->Level ;
+    } else {
+        return this->force + this->Level ;
+    }
 }

@@ -79,7 +79,7 @@ public:
 class Barlog : public Enemy {
 public:
     Barlog() {
-        this->name="Barlog";
+        this->name="Balrog";
         this->damge=9001;
         this->loot =100;
         this->combatPower=15;
@@ -90,7 +90,7 @@ public:
 
 
     std::string getdescription() const override {
-        std::string g= "Barlog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
+        std::string g= "Balrog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
                        "damge "+std::to_string(damge)+ ")";
         return  g;
     }
@@ -128,7 +128,7 @@ public:
 
         std::string getdescription() const override {
             std::string g= "Pack of "+std::to_string(count)+" members (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                          "damge "+std::to_string(damge)+")";
+                          "damage "+std::to_string(damge)+")";
             return  g;
         }
 

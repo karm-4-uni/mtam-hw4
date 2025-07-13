@@ -71,6 +71,5 @@ public:
 
  //moved to round
  //void checkdeadplayer() ;
-
+void orderPlayers();
 };
-void orderPlayers(std::vector<std::shared_ptr<Player>> playersV);

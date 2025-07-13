@@ -5,6 +5,9 @@
 #include "RiskTaking.h"
 #include "../Player.h"
 #include "Behivior.h"
+
+#include <iostream>
+
 #include "../../Utilities.h"
 const int PostinCost = 5 ;
 const std::string Behivior::getBehivior() const {
@@ -20,32 +23,31 @@ void Behivior::PotionsMerchant(std::shared_ptr<Player>player) {
     //nothing
 }
 void Risktaking::PotionsMerchant(std::shared_ptr<Player>player) {
-    bool didhebuy=false;
+  int didhebuy= 0;
     if(player.operator*().getCharator().getHealthPoints() < 50  ) {
         int coins = player.operator*().getCoins();
         int hp = player.operator*().getHealthPoints();
         if(coins > PostinCost) {
             player.operator*().getCharator().setCoins(coins - PostinCost);
             player.operator*().getCharator().setHealthPoints(hp + 10);
-            didhebuy=true;
+            didhebuy++ ;
             //   getPotionsPurchaseMessage(player,1);
         }
-        getPotionsPurchaseMessage(*player,didhebuy);
 
-    }
+    }std::cout << getPotionsPurchaseMessage(*player,didhebuy);
 }
 void Responsible::PotionsMerchant(std::shared_ptr<Player>player) {
     int count = 0 ;
     int coins = player.operator*().getCoins();
     int hp = player.operator*().getHealthPoints();
-    while (player.operator*().getCoins() > PostinCost && player.operator*().isfullhp() ) {
+    while (player.operator*().getCoins() > PostinCost && !player.operator*().isfullhp() ) {
         player.operator*().getCharator().setCoins(coins - PostinCost);
         coins-= PostinCost ;
         hp+= 10 ;
         player.operator*().getCharator().setHealthPoints(hp);
         count++;
     }
-    getPotionsPurchaseMessage(*player,count);
+  std::cout <<   getPotionsPurchaseMessage(*player,count);
 
 }
 

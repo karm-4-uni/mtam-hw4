@@ -1,5 +1,7 @@
 
 #include "MatamStory.h"
+
+#include <algorithm>
 # include <fstream>
 # include <iostream>
 # include <string>
@@ -64,13 +66,15 @@ void MatamStory::play() {
         playRound();
          gamestate = isGameOver();
     }
-    printGameOver();
-    if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
-    if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
+
+    printRoundEnd();
  printLeaderBoardMessage();
     printLeaderBordplayer(playersV);
     printBarrier();
     printGameOver();
+        if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
+
+    if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
 
     /*===== TODO: Print either a "winner" message or "no winner" message =====*/
 
@@ -105,9 +109,11 @@ if(isGameOver() != Gamestat::notOver) {
 }
 
 
-orderPlayers(this->playersV);
+orderPlayers();
     printRoundEnd();
     printLeaderBoardMessage();
+
+
     /*===== TODO: Print leaderboard entry for each player using "printLeaderBoardEntry" =====*/
 printLeaderBordplayer(this->playersV);
     /*=======================================================================================*/
@@ -211,30 +217,22 @@ void MatamStory::addEvants(std::istream &in) {
 //     }
 // }
 
-void orderPlayers( std::vector<std::shared_ptr<Player>> playersV) {
-    int n = playersV.size();
-    int aliveEnd = 0;
+void MatamStory::orderPlayers() {
     try {
-        for (int i = 0; i < n; ++i) {
-            if (!playersV[i]->isDead()) {
-                std::swap(playersV[i], playersV[aliveEnd]);
-                ++aliveEnd;
+        std::sort(
+            this->playersV.begin(),
+            this->playersV.end(),
+            [](const std::shared_ptr<Player>& a,
+               const std::shared_ptr<Player>& b) {
+                // place “larger” players first
+                return *a >= *b;
             }
-        }
-        for (int i = 0; i < aliveEnd; ++i) {
-            int best = i;
-            for (int j = i + 1; j < aliveEnd; ++j) {
-                if (*playersV[j] >= *playersV[best])
-                    best = j;
-            }
-            if (best != i)
-                std::swap(playersV[i], playersV[best]);
-        }
+        );
     } catch (...) {
         throw std::runtime_error("orderplayer Error");
     }
-
 }
+
 void MatamStory::addPlayers(std::istream& in) {
     std::string line;
     int count = 0;
