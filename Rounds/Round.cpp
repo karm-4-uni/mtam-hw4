@@ -29,46 +29,46 @@ Round::~Round() {
 
 void Round::startRound() {
      std::size_t count = 0 ;
-    std::queue<std::shared_ptr<Player>> players_copy = *players;
-    assert(!players_copy.empty() && !events->empty());
-    std::size_t playersize = players_copy.size();
+    //std::queue<std::shared_ptr<Player>> players_copy = *players;
+    assert(!players.get()->empty() && !events->empty());
+    std::size_t playersize = players.get()->size();
     //IF cant happen but if it happend then the code is fully worng
     try {
-        for (size_t i = 1; i <= playersize; ++i) {
-            std::shared_ptr<Turn>  newTurn;
-            std::shared_ptr<Player> p = players_copy.front();
-            players_copy.pop();
-            if (p) {
-                std::shared_ptr<Event> frontEvent = events->front();
-                events->pop();
-                // Each player applies the current event
-                if (frontEvent) {
-                    newTurn = std::make_shared<Turn>(p,frontEvent,turnNumber++);
-                }
-                //  frontEvent->applyTurn(*p);  // double dispatch
-                // Push event to the back
-                events->push(frontEvent);
-                count++;
-                newTurn.get()->applyTurn();
-                printTurnDetails(turnNumber,*p,*frontEvent);
-                printTurnOutcome(newTurn.get()->printTurnoutcome());
-            }
+        for (std::size_t i = 0; i < playersize; ++i) {
+            // 1) rotate player
+            auto p = players->front();
+            players->pop();
+            players->push(p);
 
-        }   checkPlayers();
+            // 2) rotate event
+            auto e = events->front();
+            events->pop();
+            events->push(e);
+
+            // 3) advance turnNumber exactly once
+            ++turnNumber;
+            auto currentTurn = turnNumber;
+
+            // 4) construct, apply, and print
+            auto newTurn = std::make_shared<Turn>(p, e, currentTurn);
+            newTurn->applyTurn();
+        //    printTurnDetails(currentTurn, *p, *e);
+          //  printTurnOutcome(newTurn.get()->printTurnoutcome());
+            }
+checkPlayers();
+
     } catch (...) {
         throw std::runtime_error("can't creat  an Event");
     }
-turnNumber++;
 }
 
 void Round::checkPlayers() {
-     std::queue<std::shared_ptr<Player>> q = *players;
-        size_t n = q.size();
+        size_t n = players->size();
     for ( size_t i = 0; i < n; ++i){
-        std::shared_ptr<Player> p = q.front();
-        q.pop();
+        std::shared_ptr<Player> p = players->front();
+       players->pop();
         if (!p->isDead()) {
-            q.push(p);
+            players->push(p);
         }
     }
 }

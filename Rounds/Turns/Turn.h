@@ -15,5 +15,5 @@ public:
     Turn(std::shared_ptr<Player> currPlayer,    std::shared_ptr<Event> currEvent , int turnnumber);
     ~Turn();
     void applyTurn();
-    const std::string printTurnoutcome() ;
+    //const std::string printTurnoutcome() ;
 };

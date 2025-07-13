@@ -50,7 +50,7 @@ public:
 
     std::string getdescription() const override {
         std::string g= "Snail (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                       "damge "+std::to_string(damge);
+                       "damge "+std::to_string(damge)+ ")";
         return  g;
     }
 };
@@ -71,7 +71,7 @@ public:
 
     std::string getdescription() const override {
         std::string g= "Slime (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                       "damge "+std::to_string(damge);
+                       "damge "+std::to_string(damge)+ ")";
         return  g;
     }
 };
@@ -91,7 +91,7 @@ public:
 
     std::string getdescription() const override {
         std::string g= "Barlog (power "+ std::to_string(combatPower) +", loot "+ std::to_string(loot)+", "
-                       "damge "+std::to_string(damge);
+                       "damge "+std::to_string(damge)+ ")";
         return  g;
     }
 };

@@ -60,8 +60,13 @@ std::string Charactor::getDescription() const {
     description+=" character (level ";
     description+= std::to_string(Level)  ;
     description+=",force ";
-    description+= std::to_string(force) ;
-    description+= ")\n";
+    if(this->job.get()->getjob() == "Warrior") {
+         description+= std::to_string((force- this->Level) / 2)  ;
+    } else {
+        description+= std::to_string((force) )  ;
+    }
+
+    description+= ")";
     return description;
 }
 
@@ -89,7 +94,7 @@ Charactor::Charactor(std::string name,
 : name(std::move(name)) ,
     Level(1),
     CurrentHP(hp),
-    maxHP(hp),coin(coin),
+    maxHP(hp ),coin(coin),
     job(Job::fromString(jobName)),
     behivior(Behivior::fromString(behaviorName)) ,
 force(force)

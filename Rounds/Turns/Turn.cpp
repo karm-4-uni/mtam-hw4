@@ -18,9 +18,9 @@ void Turn::applyTurn() {
 this->currPlayer->doEvent(currEvent);
 
 }
-
-const std::string Turn::printTurnoutcome() {
-    //add getdetails
-    //return   currEvent.get().getdetails();
-    return "";
-}
+//
+// const std::string Turn::printTurnoutcome() {
+//     //add getdetails
+//     //return   currEvent.get().getdetails();
+//     return "";
+// }

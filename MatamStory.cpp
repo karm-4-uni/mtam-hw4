@@ -11,6 +11,7 @@
 
 #include "Players/PlayerFactory.h"
 
+void printLeaderBordplayer(std::vector<std::shared_ptr<Player>> playersV) ;
 MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
 {
     playersQ = std::make_shared<std::queue<std::shared_ptr<Player>>>();
@@ -68,6 +69,8 @@ void MatamStory::play() {
     if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
 
     printGameOver();
+   printLeaderBoardMessage();
+    printLeaderBordplayer(playersV);
     /*===== TODO: Print either a "winner" message or "no winner" message =====*/
 
     /*========================================================================*/
@@ -179,9 +182,10 @@ void MatamStory::addEvants(std::istream &in) {
     std::string line;
    // std::vector<string> Evantinput  ;
     EventFactory factory;
+    while (!events->empty()) events->pop();
     while ( std::getline(in, line)) {
         if (line.empty()) { continue;}
-        while (!events->empty()) events->pop();
+
         try {
           std::shared_ptr<Event> newEvent = factory.createEvent(line);
         events.get()->push(newEvent);
