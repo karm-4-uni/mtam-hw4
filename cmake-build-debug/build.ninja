@@ -171,24 +171,6 @@ build mtam_hw4.exe: CXX_EXECUTABLE_LINKER__mtam_hw4_Debug CMakeFiles/mtam_hw4.di
 
 
 #############################################
-# Utility command for run_test1
-
-build run_test1: phony CMakeFiles/run_test1 mtam_hw4.exe
-
-
-#############################################
-# Utility command for test
-
-build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Admin\Documents\uni\mtam-hw4\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-
-build test: phony CMakeFiles/test.util
-
-
-#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -209,13 +191,6 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Custom command for CMakeFiles\run_test1
-
-build CMakeFiles/run_test1 | ${cmake_ninja_workdir}CMakeFiles/run_test1: CUSTOM_COMMAND mtam_hw4.exe || mtam_hw4.exe
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Admin\Documents\uni\mtam-hw4\tests && C:\Users\Admin\Documents\uni\mtam-hw4\cmake-build-debug\mtam_hw4.exe test1"
 
 # =============================================================================
 # Target aliases.

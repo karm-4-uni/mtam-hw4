@@ -6,7 +6,7 @@
 #include "../Charactor.h"
 #include "Warrior.h"
 #include "../../Utilities.h"
-
+#include "Job.h"
 void Job::doJob(Charactor& charactor) {
 // nothing
 }
