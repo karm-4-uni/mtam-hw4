@@ -90,7 +90,7 @@ void setCoins(int gainedCoin);
 
 //  void doEvent(std::shared_ptr<Event>event);
 
-  bool operator>=( const Charactor& other) const;
+  bool operator>( const Charactor& other) const;
 bool operator== (const Charactor& other) const;
 
 

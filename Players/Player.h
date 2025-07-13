@@ -86,7 +86,7 @@ enum class Stat {
 
   void doEvent(std::shared_ptr<Event> event);
 
-  bool operator>=( const Player& other) const;
+  bool operator>( const Player& other) const;
 
 
   bool isDead() ;
@@ -97,4 +97,4 @@ enum class Stat {
 
 // void takeDamge(std::shared_ptr<Enemy>enemy);
  };
-bool operator<=(const Player& thisplayer ,const Player& other) ;
+bool operator<(const Player& thisplayer ,const Player& other) ;

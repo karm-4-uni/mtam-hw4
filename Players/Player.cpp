@@ -89,7 +89,7 @@ bool Player::isDead()  {
    }
    return  false ;
 }
-bool Player::operator>=(const Player& other) const {
+bool Player::operator>(const Player& other) const {
    if(this->charactor == other.charactor) {
       if(this->name == other.name) {
          throw std::out_of_range("A player has the same artuibut");
@@ -99,9 +99,9 @@ bool Player::operator>=(const Player& other) const {
          } else { return  false ;}
       }
    } else {
-      return ((*this->charactor) >= (*other.charactor) );
+      return ((*this->charactor) > (*other.charactor) );
    }
 }
 bool operator<=(const Player &thisplayer, const Player &other) {
-   return  (other >= thisplayer);
+   return  (other > thisplayer);
 }

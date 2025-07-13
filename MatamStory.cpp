@@ -230,7 +230,7 @@ void MatamStory::orderPlayers() {
             [](const std::shared_ptr<Player>& a,
                const std::shared_ptr<Player>& b) {
                 // place “larger” players first
-                return *a >= *b;
+                return *a > *b;
             }
         );
     } catch (...) {

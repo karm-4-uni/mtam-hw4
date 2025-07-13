@@ -115,7 +115,7 @@ void Charactor::doJob() {
 
 
 
-bool Charactor::operator>=(const Charactor &other) const {
+bool Charactor::operator>(const Charactor &other) const {
         if (Level != other.Level)
             return Level > other.Level;
         if (coin != other.coin)
