@@ -15,7 +15,6 @@ add_executable(mtam_hw4
         Players/Player.cpp
         Players/Charactor.cpp
         Players/PlayerFactory.cpp
-        Players/Behiviors/Behivior.cpp
 
         # jobs  ← you must have this
         Players/Jobs/Job.cpp
@@ -35,8 +34,8 @@ add_executable(mtam_hw4
         # story driver
         MatamStory.cpp
         maintest.cpp
-
-
+        Players/Behiviors/Behivior.cpp
+        Players/Behiviors/Behivior.cpp
 
 
 )

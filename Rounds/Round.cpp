@@ -11,15 +11,12 @@ Round::Round() {
 
 }
 
-
 Round::Round(std::shared_ptr<std::queue<std::shared_ptr<Player>>> players,
-             std::shared_ptr<std::queue<std::shared_ptr<Event>>> events)
-  : players(std::move(players))
-  , events(std::move(events))
-{
-    this->RoundNum = 1;
+             std::shared_ptr<std::queue<std::shared_ptr<Event>>>  events)
+    : players(std::move(players)),
+      events (std::move(events))
 
-}
+{}
 Round::~Round() {
     players.reset();
     events.reset();

@@ -12,7 +12,7 @@
 
 #include "../Events/Event.h"
 #include "Behiviors/Behivior.h"
-#include "../Players/Jobs/Job.h"
+#include "Jobs/Job.h"
 
 int Charactor::getCoins() const {
     return this->coin;
@@ -88,16 +88,19 @@ void valiadation(std::string name , int force,
 }
 
 Charactor::Charactor(std::string name,
-          std::string jobName,
-          std::string behaviorName,
-          int hp, int coin, int force)
-: name(std::move(name)) ,
+                     std::string jobName,
+                     std::string behaviorName,
+                     int hp,
+                     int coin,
+                     int force)
+  : name(std::move(name)),
     Level(1),
     CurrentHP(hp),
-    maxHP(hp ),coin(coin),
+    maxHP(hp),
     job(Job::fromString(jobName)),
-    behivior(Behivior::fromString(behaviorName)) ,
-force(force)
+    behivior(Behivior::fromString(behaviorName)),
+    coin(coin),
+    force(force)
 {
     valiadation(this->name, force, hp, coin);
 }

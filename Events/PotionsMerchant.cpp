@@ -13,6 +13,6 @@ std::string PotionsMerchant::getDescription() const {
 
 }
 void PotionsMerchant:: applyEventP(std::shared_ptr<Player>player) {
-    player.operator*().getCharator().get_behivior().operator*().PotionsMerchant(player);
+    player ->getCharator().get_behivior()->PotionsMerchant(player);
 
 }

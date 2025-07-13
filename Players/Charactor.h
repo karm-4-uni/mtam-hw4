@@ -5,7 +5,7 @@
 #include "../Events/Enemy.h"
 
 #include <string>
-#include "../Players/Jobs/Job.h"
+#include "Jobs/Job.h"
 #include "Behiviors/Behivior.h"
 class Event;
 class Job;
@@ -27,12 +27,12 @@ const std::string   name ;
      int force ;
  public:
 
-   Charactor(std::string name,
-            const std::string job,
-           const std::string behavior,
-           int hp ,
-            int coin,
-            int force);
+  Charactor(std::string name,
+         std::string jobName,
+         std::string behaviorName,
+         int hp,
+         int coin,
+         int force);
      /**
    * Gets the description of the player
    *

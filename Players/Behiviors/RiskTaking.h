@@ -5,7 +5,7 @@
 
 #include "Behivior.h"
 
- class Risktaking : public Behivior {
+class Risktaking : public Behivior {
  protected:
      const std::string getBehivior() const override ;
      void PotionsMerchant(std::shared_ptr<Player>player) override ;

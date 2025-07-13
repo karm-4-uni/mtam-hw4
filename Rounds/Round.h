@@ -1,5 +1,4 @@
 # pragma once
-
 # include <queue>
 # include "../Players/Player.h"
 # include <vector>
@@ -7,10 +6,9 @@
 # include <memory>
 class Round {
 static int turnNumber;
-        friend  class  Turn;
-        std::shared_ptr<std::queue<std:: shared_ptr<Player>>>players;
+       // friend  class  Turn;
+        std::shared_ptr<std::queue<std:: shared_ptr<Player>>> players;
         std::shared_ptr<std::queue<std::shared_ptr<Event>>> events;
-        int RoundNum;
         // std::vector<std::shared_ptr<Turn>> turns;
     public:
         Round();
@@ -18,7 +16,7 @@ static int turnNumber;
             std::shared_ptr<std::queue<std::shared_ptr<Event>>>events);
         ~Round();
         void startRound();
-        void applayturns();
+        //void applayturns();
         void checkPlayers();
 
 
