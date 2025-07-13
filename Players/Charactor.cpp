@@ -120,7 +120,7 @@ bool Charactor::operator>=(const Charactor &other) const {
             return Level > other.Level;
         if (coin != other.coin)
             return coin > other.coin;
-        return name >= other.name;
+        return name > other.name;
 }
 
 bool Charactor::operator==(const Charactor &other) const {
