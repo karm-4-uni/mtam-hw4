@@ -2,6 +2,7 @@
 # include "Round.h"
 
 #include <cassert>
+#include <iostream>
 #include <stdexcept>
 #include "Turns/Turn.h"
 #include "../Utilities.h"
@@ -54,12 +55,14 @@ void Round::startRound() {
             newTurn->applyTurn();
         //    printTurnDetails(currentTurn, *p, *e);
           //  printTurnOutcome(newTurn.get()->printTurnoutcome());
+            std::cout << "\n";
             }
 checkPlayers();
 
     } catch (...) {
         throw std::runtime_error("can't creat  an Event");
     }
+    std::cout << "\n";
 }
 
 void Round::checkPlayers() {

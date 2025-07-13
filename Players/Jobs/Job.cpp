@@ -1,3 +1,4 @@
+#include <iostream>
 #include <stdexcept>
 #include "../../Events/Encounter.h"
 #include "Archer.h"
@@ -85,11 +86,11 @@ void Warrior::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> ene
      enemy->getcobatpower()){
         charct.setCoins(charct.getCoins()+enemy->getloot());
         charct.setLevel(charct.getLevel()+1);
-        getEncounterWonMessage(*player,enemy.operator*().getloot());
+     std::cout <<   getEncounterWonMessage(*player,enemy.operator*().getloot());
         charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
      }else {
          charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
-         getEncounterLostMessage(*player,enemy.operator*().getdamge());
+       std::cout <<  getEncounterLostMessage(*player,enemy.operator*().getdamge());
      }
 }
 void Warrior::applyin(std::shared_ptr<Player> player ) {
@@ -104,17 +105,17 @@ void Archer::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enem
      enemy->getcobatpower()){
         charct.setCoins(charct.getCoins()+enemy->getloot());
         charct.setLevel(charct.getLevel()+1);
-        getEncounterWonMessage(*player,enemy.operator*().getloot());
+     std::cout <<   getEncounterWonMessage(*player,enemy.operator*().getloot());
 
      }else {
          charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
-         getEncounterLostMessage(*player,enemy.operator*().getdamge());
+       std::cout <<  getEncounterLostMessage(*player,enemy.operator*().getdamge());
      }
 }
 void Archer::applyin(std::shared_ptr<Player> player) {
 
     player.operator*().getCharator().force-=1;
-    getSolarEclipseMessage(*player,-1);
+ std::cout <<   getSolarEclipseMessage(*player,-1);
 
 }
 void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> enemy) {
@@ -123,17 +124,17 @@ void Magician::applyin(std::shared_ptr<Player> player, std::shared_ptr<Enemy> en
      enemy->getcobatpower()){
         charct.setCoins(charct.getCoins()+enemy->getloot());
         charct.setLevel(charct.getLevel()+1);
-        getEncounterWonMessage(*player,enemy.operator*().getloot());
+    std::cout <<    getEncounterWonMessage(*player,enemy.operator*().getloot());
 
      }else {
          charct.setHealthPoints(charct.getHealthPoints()-enemy->getdamge());
-         getEncounterLostMessage(*player,enemy.operator*().getdamge());
+      std::cout <<   getEncounterLostMessage(*player,enemy.operator*().getdamge());
      }
 
 }
 void Magician::applyin(std::shared_ptr<Player> player) {
     player.operator*().getCharator().force+=1;
-    getSolarEclipseMessage(*player,1);
+ std::cout <<   getSolarEclipseMessage(*player,1);
 
 }
 

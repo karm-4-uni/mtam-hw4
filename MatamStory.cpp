@@ -67,10 +67,11 @@ void MatamStory::play() {
     printGameOver();
     if(gamestate == Gamestat::ALLPlayerDead){ printNoWinners();}
     if(gamestate == Gamestat::Winner){ printWinner(*playersV[getWinner(playersV)]);}
-
-    printGameOver();
-   printLeaderBoardMessage();
+ printLeaderBoardMessage();
     printLeaderBordplayer(playersV);
+    printBarrier();
+    printGameOver();
+
     /*===== TODO: Print either a "winner" message or "no winner" message =====*/
 
     /*========================================================================*/
